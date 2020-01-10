@@ -6,6 +6,9 @@ app = Flask (__name__)
 def home ():
     return "Welcome to FilmDB!"
 
+@app.route("/Films")
+def Films():
+    return "Films"
 
 
 if __name__ == "__main__":
