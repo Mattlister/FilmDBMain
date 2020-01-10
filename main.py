@@ -6,5 +6,7 @@ app = Flask (__name__)
 def home ():
     return "Welcome to FilmDB!"
 
+
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
