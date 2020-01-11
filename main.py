@@ -7,7 +7,7 @@ def index ():
     return render_template("index.html")
 
 @app.route("/tv")
-def TV():
+def tv():
     return render_template("tv.html")
 
 @app.route("/Casting")
