@@ -23,7 +23,7 @@ def discover():
     return render_template("discover.html")
 
 @app.route("/filmdata")
-def discover():
+def filmdata():
     return render_template("filmdata.html")  
 
 if __name__ == "__main__":
