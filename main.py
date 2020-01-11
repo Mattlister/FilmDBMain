@@ -16,7 +16,11 @@ def tv():
 
 @app.route("/casting")
 def Casting():
-    return render_template("casting")
+    return render_template("casting.html")
+
+    @app.route("/discover")
+def Casting():
+    return render_template("discover.html")
    
 if __name__ == "__main__":
     app.run(debug=True)
