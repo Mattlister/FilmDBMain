@@ -5,9 +5,14 @@
     <title>About Flask</title>
   </head>
   <body>
-    <h1> About Flask </h1>
-    <p> Flask is a micro web framework written in Python.</p>
-    <p> Applications that use the Flask framework include Pinterest,
-      LinkedIn, and the community web page for Flask itself.</p>
+  {% extends "template.html" %}
+  {% block content %}
+    <h1> TV Page </h1>
+    <p> Welcome to the TV page.</p>
+    <p> The small screen has slowly become just as importan as cinema these days. Indepdent studios and TV streaming
+        companies create outstanding TV content to showcase just what Televison can truly offer. And we believe it 
+        should have as much credit as cinema in this day and age</p>
+
+  {% endblock %}      
   </body>
 </html>
