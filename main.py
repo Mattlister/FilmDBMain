@@ -21,6 +21,10 @@ def casting():
 @app.route("/discover")
 def discover():
     return render_template("discover.html")
-   
+
+@app.route("/filmdata")
+def discover():
+    return render_template("filmdata.html")  
+
 if __name__ == "__main__":
     app.run(debug=True)
