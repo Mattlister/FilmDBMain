@@ -20,12 +20,12 @@ body {
 header {
   background-color: #ed0c22;
   height: 80px;
-  width: 100%;
+  width: 200%;
   opacity: .9;
   margin-bottom: 30px;
 }
 header h1.logo {
-  margin: 0;
+  margin: 2;
   font-size: 1.7em;
   color: #fff;
   text-transform: uppercase;
@@ -62,6 +62,9 @@ h2 {
   text-align: center;
   letter-spacing: -2px;
 }
+
+/* Welcome to FilmDB and FilmDB and main header */
+
 h3 {
   font-size: 1.7em;
   font-weight: 100;
@@ -70,16 +73,20 @@ h3 {
   letter-spacing: -1px;
   color: #999;
 }
+
+/* Main Header */
 .menu {
-  float: right;
+  float: left;
   margin-top: 8px;
 }
 .menu li {
   display: inline;
 }
+/* Spacing between title words */
 .menu li + li {
-  margin-left: 35px;
+  margin-left: 55px;
 }
+/* Menu font colours */
 .menu li a {
   color: #444;
   text-decoration: none;
