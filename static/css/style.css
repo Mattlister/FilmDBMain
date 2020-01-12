@@ -3,7 +3,10 @@ body {
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
+  background-color: coral;
 }
+
+
 /*
  * Formatting the header area
  */
@@ -46,31 +49,4 @@ div.about {
      -moz-border-radius: 6px;
           border-radius: 6px;
 }
-h2 {
-  font-size: 3em;
-  margin-top: 40px;
-  text-align: center;
-  letter-spacing: -2px;
-}
-h3 {
-  font-size: 1.7em;
-  font-weight: 100;
-  margin-top: 30px;
-  text-align: center;
-  letter-spacing: -1px;
-  color: #999;
-}
-.menu {
-  float: right;
-  margin-top: 8px;
-}
-.menu li {
-  display: inline;
-}
-.menu li + li {
-  margin-left: 35px;
-}
-.menu li a {
-  color: #444;
-  text-decoration: none;
-}
+;
