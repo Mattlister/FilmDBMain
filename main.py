@@ -27,11 +27,11 @@ def filmdata():
     return render_template("filmdata.html")  
 
 @app.route("/login")
-def filmdata():
+def login():
     return render_template("login.html")  
 
 @app.route("/signup")
-def filmdata():
+def signup():
     return render_template("signup.html")  
 
 
