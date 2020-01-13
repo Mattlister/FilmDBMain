@@ -90,7 +90,7 @@ h3 {
   margin-top: 8px;
 }
 .menu li {
-  display: inline;
+  display: right;
 }
 /* Spacing between title words */
 .menu li + li {
