@@ -26,5 +26,14 @@ def discover():
 def filmdata():
     return render_template("filmdata.html")  
 
+@app.route("/login")
+def filmdata():
+    return render_template("login.html")  
+
+@app.route("/signup")
+def filmdata():
+    return render_template("signup.html")  
+
+
 if __name__ == "__main__":
     app.run(debug=True)
