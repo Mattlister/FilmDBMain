@@ -86,7 +86,7 @@ h3 {
 
 /* Main Header */
 .menu {
-  float: left;
+  float: right;
   margin-top: 8px;
 }
 .menu li {
