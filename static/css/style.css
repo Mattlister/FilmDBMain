@@ -1,6 +1,5 @@
 /* Main Background image and styling */
 
-@import url('https://fonts.googleapis.com/css?family=|Molengo|Oxygen|Righteous|Rubik+Mono+One|Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Molengo|Muli|Oswald&display=swap');
 body {
  margin: 0;
@@ -28,16 +27,16 @@ header {
   background-color: #ed0c22;
   height: 80px;
   width: 100%;
-  opacity: .9;
+  opacity: .8;
   margin-bottom: 30px;
 }
 header h1.logo {
   margin: 2;
   font-size: 1.7em;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 90px;
+  padding-right: 700px;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: inherit;
   float: left;
 }
 header h1.logo:hover {
@@ -94,7 +93,7 @@ h3 {
 }
 /* Spacing between title words */
 .menu li + li {
-  margin-left: 55px;
+  margin-left: 0px;
 }
 /* Menu font colours */
 .menu li a {
