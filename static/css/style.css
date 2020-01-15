@@ -65,7 +65,8 @@ div.about {
      -moz-border-radius: 6px;
           border-radius: 6px;
 }
-h2 {
+title {
+  font-family: 'Molengo', sans-serif;  
   font-size: 3em;
   margin-top: 40px;
   text-align: center;
