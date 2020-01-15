@@ -1,7 +1,7 @@
 /* Main Background image and styling */
 
 @import url('https://fonts.googleapis.com/css?family=|Molengo|Oxygen|Righteous|Rubik+Mono+One|Shadows+Into+Light&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Molengo|Muli|Oswald&display=swap');
 body {
  margin: 0;
   padding: 0;
@@ -15,8 +15,11 @@ body {
   
   
 }
-
-
+/*
+font-family: 'Molengo', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Muli', sans-serif;
+*/
 
 /*
  * Formatting the header area
