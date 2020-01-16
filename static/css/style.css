@@ -1,6 +1,7 @@
 /* Main Background image and styling */
 
 @import url('https://fonts.googleapis.com/css?family=Molengo|Muli|Oswald&display=swap');
+
 body {
  margin: 0;
   padding: 0;
@@ -30,11 +31,15 @@ header {
   opacity: .8;
   margin-bottom: 30px;
 }
+/* Header */
+
 header h1.logo {
+  font-family: 'Molengo', sans-serif;
   margin: 2;
-  font-size: 1.7em;
+  font-size: 3em;
   padding-left: 90px;
   padding-right: 700px;
+  padding-bottom: 10px;
   color: #fff;
   text-transform: inherit;
   float: left;
@@ -75,7 +80,7 @@ title {
 /* Welcome to FilmDB and FilmDB and main header */
 
 h3 {
-  font-size: 1.7em;
+  font-size: 10em;
   font-weight: 100;
   margin-top: 30px;
   text-align: center;
