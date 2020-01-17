@@ -26,12 +26,17 @@ font-family: 'Muli', sans-serif;
  * Formatting the header area
  */
 
-.box {
+.body {
     width: 700px;
     height: 2209x;
     border: 2px solid black;
     background-repeat: no-repeat;
     background-image: url("../img/alien.jpg");
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #FFFF;
 }
     h1{
         color:green;
