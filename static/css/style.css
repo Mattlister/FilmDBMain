@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Molengo|Muli|Oswald&display=swap');
 
+/*
 body {
  margin: 0;
   padding: 0;
@@ -12,9 +13,9 @@ body {
   -o-background-size: cover;
   background-size: cover;
   color: #FFFF;
-  
-  
 }
+
+*/
 /*
 font-family: 'Molengo', sans-serif;
 font-family: 'Oswald', sans-serif;
@@ -24,6 +25,19 @@ font-family: 'Muli', sans-serif;
 /*
  * Formatting the header area
  */
+
+.box {
+    width: 700px;
+    height: 2209x;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-image: url("../img/alien.jpg");
+}
+    h1{
+        color:green;
+    }
+
+
 header {
   background-color: #ed0c22;
   height: 80px;
@@ -105,3 +119,5 @@ h3 {
   color: #FFF;
   text-decoration: none;
 }
+
+
