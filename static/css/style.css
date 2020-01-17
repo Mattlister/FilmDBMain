@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Molengo|Muli|Oswald&display=swap');
 
-/*
+
 body {
  margin: 0;
   padding: 0;
@@ -15,7 +15,6 @@ body {
   color: #FFFF;
 }
 
-*/
 /*
 font-family: 'Molengo', sans-serif;
 font-family: 'Oswald', sans-serif;
@@ -26,6 +25,7 @@ font-family: 'Muli', sans-serif;
  * Formatting the header area
  */
 
+/*
 .body {
     width: 700px;
     height: 2209x;
@@ -41,7 +41,7 @@ font-family: 'Muli', sans-serif;
     h1{
         color:green;
     }
-
+*/
 
 header {
   background-color: #ed0c22;
