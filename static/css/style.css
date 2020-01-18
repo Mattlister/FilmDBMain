@@ -25,23 +25,6 @@ font-family: 'Muli', sans-serif;
  * Formatting the header area
  */
 
-/*
-.body {
-    width: 700px;
-    height: 2209x;
-    border: 2px solid black;
-    background-repeat: no-repeat;
-    background-image: url("../img/alien.jpg");
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #FFFF;
-}
-    h1{
-        color:green;
-    }
-*/
 
 /* background, gradient and border settings */
 
@@ -97,37 +80,19 @@ title {
 
 /* Welcome to FilmDB and FilmDB and main header */
 
-.li {
-   font-family: 'Molengo', sans-serif;   
- font-size: 210em;
-  font-weight: 100;
-  margin-top: 30px;
-  text-align: center;
-  letter-spacing: -1px;
-  color: #FFF;
-}
 
-h3 {
-  font-size: 10em;
-  font-weight: 100;
-  margin-top: 30px;
-  text-align: center;
-  letter-spacing: -1px;
-  color: #FFF;
-}
+
 
 /* Main Header */
 .menu {
   float: right;
-  margin-top: 8px;
+  margin-top: 25px;
+  padding-right: 30px;
 }
 .menu li {
   display: right;
 }
-/* Spacing between title words */
-.menu li + li {
-  margin-left: 0px;
-}
+
 /* Menu font colours */
 .menu li a {
   color: #FFF;
