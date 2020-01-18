@@ -7,7 +7,7 @@ body {
  margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-image: url("../img/newali.jpg");
+  background-image: url("../img/truedet.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -80,9 +80,6 @@ title {
 
 /* Welcome to FilmDB and FilmDB and main header */
 
-
-
-
 /* Main Header */
 .menu {
   float: right;
@@ -99,4 +96,6 @@ title {
   text-decoration: none;
 }
 
-
+.p1 {
+    color: #FFF;
+}
