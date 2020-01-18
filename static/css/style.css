@@ -44,10 +44,10 @@ font-family: 'Muli', sans-serif;
 */
 
 header {
-  background-color: #ed0c22;
-  height: 80px;
+  background-image: linear-gradient(to bottom right, red, grey);
+  height: 110px;
   width: 100%;
-  opacity: .6;
+  opacity: .8;
   margin-bottom: 30px;
 }
 /* Header */
@@ -97,6 +97,16 @@ title {
 }
 
 /* Welcome to FilmDB and FilmDB and main header */
+
+.li {
+   font-family: 'Molengo', sans-serif;   
+ font-size: 10em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #FFF;
+}
 
 h3 {
   font-size: 10em;

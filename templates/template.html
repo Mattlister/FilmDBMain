@@ -10,7 +10,8 @@
  <body>
     <header>
      <h1 class="logo">FilmDB</h1>
-    
+    <li><a href="{{ url_for('login') }}">Login</a></li>
+      <li><a href="{{ url_for('signup') }}">Signup</a></li>
     </header>
      <div class="container">
         
@@ -40,7 +41,7 @@
     </center> 
     {% block content %}
     {% endblock %}
-    
+
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
