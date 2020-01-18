@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Molengo|Muli|Oswald&display=swap');
 
-/*
+
 body {
  margin: 0;
   padding: 0;
@@ -14,7 +14,6 @@ body {
   background-size: cover;
   color: #FFFF;
 }
-
 
 /*
 font-family: 'Molengo', sans-serif;
@@ -48,7 +47,7 @@ header {
   background-color: #ed0c22;
   height: 80px;
   width: 100%;
-  opacity: .8;
+  opacity: .6;
   margin-bottom: 30px;
 }
 /* Header */

@@ -3,22 +3,30 @@
 
 <head>
 	<meta charset="utf-8">
+
 	<title>FilmDB</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="static/css/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	
 	<link rel="shortcut icon" type="image/png" href="">
 </head>
 
 <body>
-<div style="background-image: url('../img/alien.jpg');">
+
 
 	{% extends "template.html" %}py
 	{% block content %}
-	<h1>FilmDB Home </h1>
+    <div class="wrap">
+    <div class="image">
+        <div class="text">
+            <h1>FilmDB Home </h1>
+        </div>
+    </div>
+</div>
+	
 	<p> At FilmDB (DataBase) WE LOVE MOVIES and we want the same for you.
 
 		FilmDB is a movie and database built by you, the user. The site has been designed as an open source website
