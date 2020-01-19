@@ -40,7 +40,7 @@ header {
 header h1.logo {
   font-family: 'Molengo', sans-serif;
   margin: 2;
-  font-size: 6em;
+  font-size: 8em;
   padding-left: 90px;
   padding-right: 700px;
   padding-bottom: 15px;
@@ -83,6 +83,7 @@ title {
 /* Main Header */
 .menu {
   float: right;
+  font-size: 20px;
   margin-top: 25px;
   padding-right: 30px;
 }
@@ -92,10 +93,12 @@ title {
 
 /* Menu font colours */
 .menu li a {
+
   color: #FFF;
   text-decoration: none;
 }
 
 .p1 {
+    font-size: 20px;
     color: #FFF;
 }
