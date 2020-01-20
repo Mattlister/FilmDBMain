@@ -6,8 +6,7 @@
 
 
 body {
- margin: 0;
-  padding: 0;
+ 
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: url("../img/peaky.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -15,7 +14,6 @@ body {
   -o-background-size: cover;
   background-size: cover;
   color: #FFFF;
-  padding-left: 30px;
 }
 
 /*
@@ -47,7 +45,7 @@ header h1.logo {
   font-family: 'Montserrat Subrayada', sans-serif;
   margin: 2;
   font-size: 7em;
-  padding-left: 15px;
+  padding-left: 50px;
   padding-right: 700px;
   padding-bottom: 15px;
   color: #fff;
@@ -58,10 +56,7 @@ header h1.logo {
 /*
  * Centering the body content
  */
-.container {
-  width: 1900px;
-  margin: 0 auto;
-}
+
 div.home {
   padding: 10px 0 30px 0;
   background-color: #E6E6FA;
@@ -88,9 +83,10 @@ title {
 
 /* Main Header */
 .menu {
+  font-family: 'Lato', sans-serif;  
   float: right;
-  font-size: 20px;
-  margin-top: 2px;
+  font-size: 30px;
+  margin-top: 9px;
   padding-right: 10px;
 }
 .menu li {
@@ -103,6 +99,20 @@ title {
   color: #FFF;
   text-decoration: none;
 }
+
+/* Jumbotron Styling */
+
+.jumbotron{
+    position: relative;
+    padding:0 !important;
+    margin-top:70px !important;
+    width: 1000px;
+    background: #eee;
+    margin-top: 23px;
+    margin-bottom: 50px;
+    text-align:center;
+}
+
 
 .p1 {
     font-size: 20px;
