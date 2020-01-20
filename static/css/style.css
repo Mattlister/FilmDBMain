@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Molengo|Muli|Oswald&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Montserrat+Subrayada&display=swap');
+
 
 body {
  margin: 0;
@@ -13,12 +15,16 @@ body {
   -o-background-size: cover;
   background-size: cover;
   color: #FFFF;
+  padding-left: 30px;
 }
 
 /*
 font-family: 'Molengo', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Muli', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Subrayada', sans-serif;
 */
 
 /*
@@ -38,10 +44,10 @@ header {
 /* Film DB header and font */
 
 header h1.logo {
-  font-family: 'Molengo', sans-serif;
+  font-family: 'Montserrat Subrayada', sans-serif;
   margin: 2;
-  font-size: 8em;
-  padding-left: 90px;
+  font-size: 7em;
+  padding-left: 15px;
   padding-right: 700px;
   padding-bottom: 15px;
   color: #fff;
@@ -53,7 +59,7 @@ header h1.logo {
  * Centering the body content
  */
 .container {
-  width: 1200px;
+  width: 1900px;
   margin: 0 auto;
 }
 div.home {
@@ -71,8 +77,8 @@ div.about {
           border-radius: 6px;
 }
 title {
-  font-family: 'Molengo', sans-serif;  
-  font-size: 7em;
+  font-family: 'Montserrat Subrayada', sans-serif; 
+  font-size: 9em;
   margin-top: 40px;
   text-align: center;
   letter-spacing: -2px;
@@ -84,8 +90,8 @@ title {
 .menu {
   float: right;
   font-size: 20px;
-  margin-top: 25px;
-  padding-right: 30px;
+  margin-top: 2px;
+  padding-right: 10px;
 }
 .menu li {
   display: right;
