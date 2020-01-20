@@ -10,13 +10,15 @@
  <body>
     <header>
      <h1 class="logo">FilmDB</h1>
-    <li><a href="{{ url_for('login') }}">Login</a></li>
-      <li><a href="{{ url_for('signup') }}">Signup</a></li>
+    
     </header>
      <div class="container">
         
         <strong><nav>
           <ul class="menu">
+          <li><a href="{{ url_for('signup') }}">Sign up</a></li>
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+      
             <li><a href="{{ url_for('index') }}">Index</a></li>
             <li><a href="{{ url_for('films') }}">Films</a></li>
             <li><a href="{{ url_for('tv') }}">TV</a></li>
@@ -38,6 +40,8 @@
   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
  </body>
 </html>
 
