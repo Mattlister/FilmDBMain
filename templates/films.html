@@ -1,32 +1,40 @@
 {% extends "template.html" %}
-    {% block content %}
-    <h1> Films </h1>
-    <p> Films have been shown on the silver screen for over 100 years now. We want to use this site to discover all films
-         and share the passion of each user for those films. Whether you love it, disklike it and want to share what you think
-         this is the place to be.</p>
+{% block content %}
+<div class="container content">
+	<div class="row">
+		<div class="col-12">
+			<h1> Films </h1>
+			<p> Films have been shown on the silver screen for over 100 years now. We want to use this site to discover
+				all films
+				and share the passion of each user for those films. Whether you love it, disklike it and want to share
+				what you think
+				this is the place to be.</p>
 
-         <div class="container">
-    	<div class="jumbotron">
-	    	<h3 class="text-center">Search For Any Movie</h3>
-	    	<form id="searchForm">
-	    		<input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+			<div class="container">
+				<div class="jumbotron">
+					<h3 class="text-center">Search For Any Movie</h3>
+					<form id="searchForm">
+						<input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
 	    	</form>
-	    </div>
-    </div>
+				</div>
+			</div>
 
-    <div class="container">
-         <div id="movies" class="row"></div>
+			<div class="container">
+				<div id="movies" class="row"></div>
 
-    </div>
-<script src="http://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-    crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-      getMovie();
-    </script>
-    {% endblock %}    
-       
+			</div>
+			<script src="http://code.jquery.com/jquery-1.12.4.min.js"
+				integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+				integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+				crossorigin="anonymous"></script>
+			<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+			<script src="js/script.js"></script>
+			<script>
+				getMovie();
+			</script>
+
+		</div>
+	</div>
+</div>
+{% endblock %}
