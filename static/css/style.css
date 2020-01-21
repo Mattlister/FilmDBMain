@@ -89,13 +89,10 @@ title {
   margin-top: 9px;
   padding-right: 10px;
 }
-.menu li {
-  display: right;
-}
 
 /* Menu font colours */
 .menu li a {
-
+display: right;
   color: #FFF;
   text-decoration: none;
 }
@@ -103,33 +100,12 @@ title {
 /* Jumbotron Styling */
 
 .jumbotron{
-    position: relative;
-    padding:0 !important;
+    position: left;
+    padding: 0px !important;
     margin-top:70px !important;
     width: 1000px;
-    background: #eee;
+    background: linear-gradient(to bottom right, red, black);
     margin-top: 23px;
     margin-bottom: 50px;
     text-align:center;
-}
-
-
-.p1 {
-    font-size: 20px;
-    color: #FFF;
-}
-
-#movies img, #movie img{
-    width:100%;
-}
-
-@media(min-with:960px){}
-
-#movies .col-md-3 .well{
-    height: 390px;
-}
-
-#movies .col-md-3 img{
-    height:240px;
-    }
 }
