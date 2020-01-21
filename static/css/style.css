@@ -8,7 +8,7 @@
 body {
  
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: url("../img/peaky.jpg") no-repeat center center fixed;
+  background: url("../img/newali.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -89,10 +89,13 @@ title {
   margin-top: 9px;
   padding-right: 10px;
 }
+.menu li {
+  display: right;
+}
 
 /* Menu font colours */
 .menu li a {
-display: right;
+
   color: #FFF;
   text-decoration: none;
 }
@@ -101,12 +104,37 @@ display: right;
 
 .jumbotron{
     font-family: 'Montserrat Subrayada', sans-serif;
-    position: left;
-    padding: 0px !important;
+    position: relative;
+    padding:0 !important;
     margin-top:70px !important;
     width: 1000px;
     background: linear-gradient(to bottom right, red, black);
     margin-top: 23px;
     margin-bottom: 50px;
     text-align:center;
+}
+
+.login{
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+
+.p1 {
+    font-size: 20px;
+    color: #FFF;
+}
+
+#movies img, #movie img{
+    width:100%;
+}
+
+@media(min-with:960px){}
+
+#movies .col-md-3 .well{
+    height: 390px;
+}
+
+#movies .col-md-3 img{
+    height:240px;
+    }
 }

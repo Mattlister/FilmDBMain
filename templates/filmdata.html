@@ -1,14 +1,16 @@
-{% extends "template.html" %}
-{% block content %}
-<div class="container content">
-	<div class="row">
-		<div class="col-12">
-			<h1>Film Data</h1>
-			<input onkeyup="getanswer(document.getElementById('qurybox').value)" id="qurybox">
-			<div id="answer"></div>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-			<script>
-				var data;
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Film Data</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+    <h1>Film Data</h1>
+<input onkeyup="getanswer(document.getElementById('qurybox').value)" id="qurybox"> <div id="answer"></div> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script> var data;
 function getanswer(q){
 $.get("https://www.omdbapi.com/?s="+q+"&apikey=be4b405e", function(rawdata){    
  let rawstring =JSON.stringify(rawdata);
@@ -18,7 +20,8 @@ $.get("https://www.omdbapi.com/?s="+q+"&apikey=be4b405e", function(rawdata){
  let imdburl="https://www.imdb.com/title/"+data.Search[0].imdbID+"/";
 
  let posterurl =data.Search[0].Poster;
-document.getElementById('answer').innerHTML="<h1>"+title+"</h1><br> <img src= '"+posterurl+"'><br><p> Year Released:"+year+"</p> <br> <p> IMDB page: <a href='"+imdburl+"'target='_blank'>"+imdburl+"</a></p>"; }); }
-			</script>
+document.getElementById('answer').innerHTML="<h1>"+title+"</h1><br> <img src= '"+posterurl+"'><br><p> Year Released:"+year+"</p> <br> <p> IMDB page: <a href='"+imdburl+"'target='_blank'>"+imdburl+"</a></p>"; }); }</script>
 
-			{% endblock %}
+ {% endblock %}    
+  </body>
+</html>
