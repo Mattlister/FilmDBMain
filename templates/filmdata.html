@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Film Data</title>
-  </head>
-  <body>
     {% extends "template.html" %}
     {% block content %}
     <h1>Film Data</h1>
@@ -23,5 +16,3 @@ $.get("https://www.omdbapi.com/?s="+q+"&apikey=be4b405e", function(rawdata){
 document.getElementById('answer').innerHTML="<h1>"+title+"</h1><br> <img src= '"+posterurl+"'><br><p> Year Released:"+year+"</p> <br> <p> IMDB page: <a href='"+imdburl+"'target='_blank'>"+imdburl+"</a></p>"; }); }</script>
 
  {% endblock %}    
-  </body>
-</html>
