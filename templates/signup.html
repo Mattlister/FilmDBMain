@@ -1,15 +1,112 @@
 {% extends "template.html" %}
 {% block content %}
-<div class="container content">
-	<div class="row">
-		<div class="col-12">
-			<h1> Welcome To FilmDB </h1>
-			<p> FilmDB or Film Database is a website dedicated to movie and also tv fans. It's for the fans to share
-				their love for the big
-				and small screen. The idea behind the site is for passionate fans to share that passion with others to
-				create a community
-				of love for all things on screen. </p>
-		</div>
-	</div>
-</div>
+    <section class="content" id="register">
+        <div class="container register-detail">
+            <div class="row">
+                <div class="col-sm-12 about-title text-center">
+                    <h2>Register for Oly-Track</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 register-desc text-center">
+                    <p>Registering for Oly-Track is essential in unlocking the core functionality of this application. Oly-Track can be used by an un-registered and un-logged user but those users will only be able to see any Sessions made public by a logged-in user.</p>
+                    <p>Take the next step in propelling your training into the Digital age. Record your sessions with agile-ease on one device, your smartphone, with the added caveat that you won't need to download any specific app from the app store, as this application is completely browser based, built for mobile and completely free. Register below!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center" id="about-logo-image">
+                    <img class="img-fluid" src="{{ url_for('static', filename='images/oly-track-large-logo.png') }}" alt="Large Brand Logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                </div>
+            </div>
+            <div class="row form-register-row">
+                <div class="col-sm-12">
+                    <h2 class="register-header text-center">Register</h2>
+                    <!-- Alert to user that duplicate username has been detected. -->
+                    <div class="text-center">
+                        {% with alerts = get_flashed_messages(with_categories=true) %}
+                            {% if alerts %}
+                                {% for category, alert in alerts %}
+                                    <div class="alert alert-{{ category }}">
+                                        {{ alert }}
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        {% endwith %}
+                    </div>
+                    <form id="register-login" action="" method="POST">
+                        <!-- hidden_tag needed to protect against CSRF (cross-site request forgery) attacks in conjunction with our secret key. -->
+                        {{ form.hidden_tag() }}
+
+                        <div class="form-group">
+                            <!-- Username label and associated field. With error capturing and displaying. -->
+                            {{ form.username.label(class="form-control-label") }}
+                            {% if form.username.errors %}
+                                <!-- is-invalid class used and field rendered if any errors are found during submit. -->
+                                {{ form.username(class="form-control is-invalid") }}
+                                <div class="form-errors">
+                                    {% for error in form.username.errors %}
+                                        <!-- error displayed to user -->
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                <!-- Default field displayed including placeholder text to direct user and removing default validation provided by Bootstrap
+                                to ensure field theme is consistent throughout the application as validated in forms.py file and custom styled in css. -->
+                                {{ form.username(class="form-control", placeholder="Username should be 5-15 characters in length!", required=False) }}
+                            {% endif %}
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Password label and associated field. With error capturing and displaying. -->
+                            {{ form.password.label(class="form-control-label") }}
+                            {% if form.password.errors %}
+                                <!-- is-invalid class used and field rendered if any errors are found during submit. -->
+                                {{ form.password(class="form-control is-invalid") }}
+                                <div class="form-errors">
+                                    {% for error in form.password.errors %}
+                                        <!-- error displayed to user -->
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                <!-- Default field displayed including placeholder text to direct user and removing default validation provided by Bootstrap
+                                to ensure field theme is consistent throughout the application as validated in forms.py file and custom styled in css. -->
+                                {{ form.password(class="form-control", placeholder="Password should be 5-12 characters in length!", required=False) }}
+                            {% endif %}
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Password check label and associated field. With error capturing and displaying. -->
+                            {{ form.password_confirm.label(class="form-control-label") }}
+                            {% if form.password_confirm.errors %}
+                                <!-- is-invalid class used and field rendered if any errors are found during submit. -->
+                                {{ form.password_confirm(class="form-control is-invalid") }}
+                                <div class="form-errors">
+                                    {% for error in form.password_confirm.errors %}
+                                        <!-- error displayed to user -->
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                <!-- Default field displayed including placeholder text to direct user and removing default validation provided by Bootstrap
+                                to ensure field theme is consistent throughout the application as validated in forms.py file and custom styled in css. -->
+                                {{ form.password_confirm(class="form-control", placeholder="Retype Password!", required=False) }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group text-center">
+                            {{ form.submit(class="btn btn-primary") }}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
