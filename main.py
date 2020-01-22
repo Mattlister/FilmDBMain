@@ -7,8 +7,8 @@ def index ():
     return render_template("index.html")
 
 @app.route("/films")
-def films ():
-    return render_template("films.html")    
+def films():
+    return render_template("films.html")
 
 @app.route("/tv")
 def tv():
@@ -21,10 +21,7 @@ def casting():
 @app.route("/discover")
 def discover():
     return render_template("discover.html")
-
-@app.route("/filmdata")
-def filmdata():
-    return render_template("filmdata.html")  
+  
 
 @app.route("/login")
 def login():
