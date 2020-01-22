@@ -1,1 +1,8 @@
 { image: gitpod/workspace-mongodb }
+
+vscode:
+  extensions:
+    - eventyret.bootstrap-4-cdn-snippet@1.3.0:3EJTfpRZ7YoP6Ty3NIdt5Q==
+vscode:
+  extensions:
+    - eventyret.bootstrap-4-cdn-snippet@1.3.0:3EJTfpRZ7YoP6Ty3NIdt5Q==

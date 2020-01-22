@@ -81,11 +81,36 @@ function getMovie(){
     });
 }
 
-$(document).ready(function() { 
-            // Change background image of a div by clicking on the button 
-            $("button").click(function() { 
-                var imageUrl =  
-"file:///workspace/FilmDBMain/static/img/suits2.jpg"; 
-                $(".container").css("background-image", "url(" + imageUrl + ")"); 
-            }); 
-        }); 
+<script type="text/javascript">
+    $(function(){
+        $('a').on('click',function(e){
+            var href = this.href.split('='),
+                img;
+
+            // prevents following to the link location
+            e.preventDefault();
+                console.log(response);
+            // determines which background image
+            switch(href[1]){
+                case '/films':
+                   img = 'newali.jpg';
+                   break; 
+                case '/tv':
+                   img = 'suits2.jpg';
+                   break;
+                case 'Career':
+                   img = 'back3.jpg';
+                   break;
+                case 'Message':
+                   img = 'back4.jpg';
+                   break;
+                case 'Opportunity':
+                   img = 'back5.jpg';
+                   break;
+            }
+
+            // assigns background-image
+            $('body').css({backgroundImage:'url(image/'+img+')'});
+        });
+    });
+</script>
