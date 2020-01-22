@@ -1,49 +1,51 @@
-const IMAGE URLS = {
-    films : 'https://da641f8a-74ec-4607-982a-5e597c0231a5.ws-eu01.gitpod.io/files/download/?id=5c0a6d7a-5182-4a87-84c6-f684d072324f',
-    TV: 'https://da641f8a-74ec-4607-982a-5e597c0231a5.ws-eu01.gitpod.io/files/download/?id=a663aee9-9fa2-4300-a1a1-4cdaeb1e2bca',
-};
+$(document).ready(() => {
+  $('#searchForm').on('submit', (e) => {
+    var searchText = $('#searchText').val();
+    getMovies(searchText);
+    e.preventDefault();
+  });
+});
 
 function getMovies(searchText){
   axios.get('http://www.omdbapi.com?s='+searchText)
     .then((response) => {
-       console.log(response);
-        let movies = response.data.Search;
-        let output = '';
-        $.each(movies, (index, movie) => {
-           output += `
+      console.log(response);
+      var movies = response.data.Search;
+      var output = '';
+      $.each(movies, (index, movie) => {
+        output += `
           <div class="col-md-3">
             <div class="well text-center">
               <img src="${movie.Poster}">
               <h5>${movie.Title}</h5>
               <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
             </div>
-           </div> 
-            `;
-    });
+          </div>
+        `;
+      });
 
-    $('#movies').htmnl(output);
-})
+      $('#movies').html(output);
+    })
     .catch((err) => {
-        console.log(err);
+      console.log(err);
     });
 }
+
 function movieSelected(id){
-    sessionStorage.setItem('movieID', id);
-    window.location = 'movie.html';
-    return false;
+  sessionStorage.setItem('movieId', id);
+  window.location = 'movie.html';
+  return false;
 }
 
 function getMovie(){
-    let movieID = sessionStorage.getItem('movieID';)
+  var movieId = sessionStorage.getItem('movieId');
 
-    axios.get('http://www.omdbapi.com?i='+movieId)
+  axios.get('http://www.omdbapi.com?i='+movieId)
     .then((response) => {
-       console.log(response);
-       let movie = response.data;
+      console.log(response);
+      var movie = response.data;
 
-      
-
-    let output =`
+      const output =`
         <div class="row">
           <div class="col-md-4">
             <img src="${movie.Poster}" class="thumbnail">
@@ -75,14 +77,6 @@ function getMovie(){
       $('#movie').html(output);
     })
     .catch((err) => {
-        console.log(err);
+      console.log(err);
     });
-}
-
-}
-
-function changeImage(img){
-    
-    document.body.style.backgroundImage = 'url(http://placehold.it/'+../img/suits9.jpg++')';
-    
 }
