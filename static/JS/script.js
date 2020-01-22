@@ -80,3 +80,12 @@ function getMovie(){
       console.log(err);
     });
 }
+
+$(document).ready(function() { 
+            // Change background image of a div by clicking on the button 
+            $("button").click(function() { 
+                var imageUrl =  
+"file:///workspace/FilmDBMain/static/img/suits2.jpg"; 
+                $(".container").css("background-image", "url(" + imageUrl + ")"); 
+            }); 
+        }); 
