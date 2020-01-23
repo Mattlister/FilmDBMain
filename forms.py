@@ -4,6 +4,12 @@ from wtforms import StringField, PasswordField
 from wtforms.validators import InputRequired, Email, Length, AnyOf
 from flask_bootstrap import Bootstrap
 
+def create_app():
+  app = Flask(__name__)
+  Bootstrap(app)
+
+  return app
+
 app=Flask(__name__)
 Bootstrap(app)
 app.config['SECRET_KEY'] = 'DontTellAnyone'
