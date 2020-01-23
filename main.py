@@ -1,35 +1,44 @@
+import os
 from flask import Flask, render_template
+
+
 
 app = Flask(__name__)
 
-@app.route("/")
+
+@app.route('/')
 def index():
-    return render_template("pages/index.html")
+    return render_template('pages/index.html')
 
-@app.route("/films")
+
+@app.route('/films')
 def films():
-    return render_template("pages/films.html")
+    return render_template('pages/films.html')
 
-@app.route("/tv")
+
+@app.route('/tv')
 def tv():
-    return render_template("pages/tv.html")
+    return render_template('pages/tv.html')
 
-@app.route("/casting")
+
+@app.route('/casting')
 def casting():
-    return render_template("pages/casting.html")
+    return render_template('pages/casting.html')
 
-@app.route("/discover")
+
+@app.route('/discover')
 def discover():
-    return render_template("pages/discover.html")
-  
+    return render_template('pages/discover.html')
 
-@app.route("/login")
+
+@app.route('/login')
 def login():
-    return render_template("pages/login.html")  
+    return render_template('pages/login.html')
 
-@app.route("/signup")
+
+@app.route('/signup', methods=['GET', 'POST'])
 def signup():
-    return render_template("pages/signup.html")  
+    return render_template('pages/signup.html')  
 
 
 if __name__ == "__main__":
