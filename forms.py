@@ -2,8 +2,10 @@ from flask import Flask, render_template
 from flask_wtf import Form
 from wtforms import StringField, PasswordField
 from wtforms.validators import InputRequired, Email, Length, AnyOf
+from flask_bootstrap import Bootstrap
 
 app=Flask(__name__)
+Bootstrap(app)
 app.config['SECRET_KEY'] = 'DontTellAnyone'
 
 class LoginForm(Form):

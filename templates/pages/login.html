@@ -1,24 +1,26 @@
-{% extends "layout/base.html" %}
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+<title>WTForms</title>
+{% endblock %}
+
 {% block content %}
-<div class="container content">
-	<div class="row">
-		<div class="col-12">
-			<h1> Log In </h1>
-			<div class="container">
-				<div class="row justify-content-center">
-					<form method="POST" action="/user_auth">
-						<div class="form-group">
-							<label for="username">User name</label>
-							<input name="username" type="text" class="form-control" placeholder="User name" required>
-                </div>
-							<div class="form-group">
-								<label for="user_password">Password</label>
-								<input class="form-control" name="user_password" type="password" placeholder="Password" required>
-                </div>
-								<button type ="submit" class="btn btn-primary btn-block">Login</button>
-							</div>
-						</div>
-				</div>
-			</div>
-		</div>
-		{% endblock %}
+<div class="container">
+	<form method="POST" action="/">
+		<dl>
+			{{ form.csrf_token }}
+			{{ wtf.form_field(form.username }}
+			{{ wtf.form_field(form.password }}
+			<input type="submit" value="Login">
+         </dl>
+    </form>
+ </div>   
+{% endblock %}
+
+
+       
+
+
+
+		
