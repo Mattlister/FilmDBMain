@@ -24,11 +24,6 @@ def casting():
     return render_template('pages/casting.html')
 
 
-@app.route('/discover')
-def discover():
-    return render_template('pages/discover.html')
-
-
 @app.route('/login')
 def login():
     return render_template('pages/login.html')
