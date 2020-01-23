@@ -4,32 +4,32 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("pages/index.html")
 
 @app.route("/films")
 def films():
-    return render_template("films.html")
+    return render_template("pages/films.html")
 
 @app.route("/tv")
 def tv():
-    return render_template("tv.html")
+    return render_template("pages/tv.html")
 
 @app.route("/casting")
 def casting():
-    return render_template("casting.html")
+    return render_template("pages/casting.html")
 
 @app.route("/discover")
 def discover():
-    return render_template("discover.html")
+    return render_template("pages/discover.html")
   
 
 @app.route("/login")
 def login():
-    return render_template("login.html")  
+    return render_template("pages/login.html")  
 
 @app.route("/signup")
 def signup():
-    return render_template("signup.html")  
+    return render_template("pages/signup.html")  
 
 
 if __name__ == "__main__":
