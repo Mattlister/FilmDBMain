@@ -2,7 +2,7 @@ import os
 from flask import Flask, render_template
 
 app = Flask(__name__)
-pip 
+
 
 @app.route('/')
 def index():
@@ -29,9 +29,13 @@ def login():
     return render_template('pages/login.html')
 
 
-@app.route('/signup', methods=['GET', 'POST'])
+@app.route('/signup')
 def signup():
     return render_template('pages/signup.html')  
+
+@app.route('/modal')
+def modal():
+    return render_template('pages/modal.html')      
 
 
 if __name__ == "__main__":
