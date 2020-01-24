@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-
 	<meta charset="utf-8">
-	<title>Flask Pages Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Browser icon shown in tab, change icon later-->
+	<link rel="shortcut icon" type="image/png" href="assets/images/compass.ico">
+
+	<title>FilmDB</title>
 	<link rel="stylesheet" href="{{ url_for('static',     filename='css/style.css') }}">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css">
 	<link rel="stylesheet" href="static/css/style.css">
 </head>
 
-<body style="background-image: {{ url_for('static', filename='img/suits2.jpg') }}">
+<body>
 	<header>
 		<h1 class="logo">FilmDB</h1>
 
 	</header>
+
 	<div class="container">
 
 		<strong>
@@ -25,8 +29,9 @@
         
           <ul class="menu">
           <li><a href="{{ url_for('index') }}">Home</a></li>
-          <li><a href="{{'url_for('signup') }};">Register</a></li>
-          <li><a href="{{ url_for('login') }}">Login</a></li>
+          <li><a href="{{ url_for('signup') }};">Sign up</a></li>
+          <button class="btn-custom mb-4" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+          <li><a href="{{ url_for('index') }}">Login</a></li>
       
             <li><a href="{{ url_for('films') }}">Films</a></li>
             <li><a href="{{ url_for('tv') }}">TV</a></li>
@@ -38,8 +43,8 @@
           </div>
         </nav></strong>
 	</div>
- 
-    
+
+
 	<script src="static/js/script.js"></script>
 	<script>
 		$(document).ready(function() { 
