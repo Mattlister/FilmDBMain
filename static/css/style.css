@@ -32,6 +32,16 @@ font-family: 'Montserrat Subrayada', sans-serif;
 
 /* background, gradient and border settings */
 
+.signup {
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+div {
+  margin: 20px 0;
+}
+
 header {
   background-image: linear-gradient(to bottom right, red, black);
   height: 120px;

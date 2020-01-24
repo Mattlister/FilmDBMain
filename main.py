@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -25,17 +25,14 @@ def casting():
 
 
 @app.route('/login')
-def login():
+def signup(): 
     return render_template('pages/login.html')
 
 
 @app.route('/signup')
 def signup():
     return render_template('pages/signup.html')  
-
-@app.route('/modal')
-def modal():
-    return render_template('pages/modal.html')      
+   
 
 
 if __name__ == "__main__":
