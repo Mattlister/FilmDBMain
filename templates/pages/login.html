@@ -1,23 +1,31 @@
-{% extends "layout/base.html" %}
-{% import "pages/wtf.html" as wtf %}
-
-{% block title %}
-<title>WTForms</title>
-{% endblock %}
-
-{% block content %}
-<div class="container">
-	<form method="POST" action="/">
-		<dl>
-			{{ form.csrf_token }}
-			{{ wtf.form_field(form.username) }}
-			{{ wtf.form_field(form.password) }}
-			<input type="submit" value="Login">
-         </dl>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+ 
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+ 
+    <form action="" method="post">
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username">
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
     </form>
- </div>   
-{% endblock %}
-
+ 
+</body>
+</html>
 
        
 
