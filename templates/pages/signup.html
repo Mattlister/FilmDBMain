@@ -1,20 +1,20 @@
-{% extends "bootstrap/base.html" %}
+{% extends "layout/base.html" %}
 {% block content %}
-{% include 'modal.html' %}
+
 
 <h2>Sign Up</h2>
 <form action="" method="post">
-    <P>
-      {{form.username.label}} <br>
-      {{form.username(size=30)}}
+	<P>
+		{{form.username.label}} <br>
+        {{form.username(size=30)}}
     </p>
-    <p>
-        {{form.password.label}} <br>
+	<p>
+		{{form.password.label}} <br>
         {{form.password(size=30)}}
     </P>
-    <p>
-        {{form.submit()}}
-    </p>
+	<p>
+    	{{form.submit()}}
+	</p>
 </form>
 
 {% endblock %}

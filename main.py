@@ -1,8 +1,9 @@
 import os
 from flask import Flask, render_template
-from flask import SignUpForm
+from forms import SignUpForm
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'thefilmDB'
 
 
 @app.route('/index')
