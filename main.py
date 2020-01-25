@@ -1,5 +1,6 @@
 import os
 from flask import Flask, render_template
+from flask import SignUpForm
 
 app = Flask(__name__)
 
@@ -33,9 +34,11 @@ def login():
     return render_template('pages/login.html')
 
 
-@app.route('/signup', methods=['GET', 'POST'])
+@app.route('/signup')
 def signup():
-    return render_template('pages/signup.html')  
+    form = SignUpForm()
+    return render_template('pages/signup.html', form=form)  
+
 
 
 if __name__ == "__main__":
