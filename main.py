@@ -23,6 +23,10 @@ def tv():
 def casting():
     return render_template('pages/casting.html')
 
+@app.route('/contact')
+def contact():
+    return render_template('pages/contact.html')
+
 
 @app.route('/login')
 def login():
