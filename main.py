@@ -3,7 +3,6 @@ from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 from flask_pymongo import PyMongo
 from forms import SignUpForm
-from extensions import mongo
 
 main = Blueprint('main', __name__)
 
