@@ -4,6 +4,9 @@ from flask_bootstrap import Bootstrap
 from forms import SignUpForm
 
 app = Flask(__name__)
+Bootstrap(app)
+
+app = Flask(__name__)
 app.config['SECRET_KEY'] = 'thefilmDB'
 
 
