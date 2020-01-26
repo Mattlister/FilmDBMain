@@ -1,5 +1,6 @@
 import os
 from flask import Flask, render_template
+from flask_bootstrap import Bootstrap
 from forms import SignUpForm
 
 app = Flask(__name__)
