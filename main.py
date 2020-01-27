@@ -4,6 +4,9 @@ from flask_bootstrap import Bootstrap
 from forms import SignUpForm
 from flask_pymongo import PyMongo
 
+if path.exists("env.py"):
+    import env
+
 app = Flask(__name__)
 Bootstrap(app)
 
