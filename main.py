@@ -2,14 +2,18 @@ import os
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 from forms import SignUpForm
+from flask_pymongo import PyMongo
 
 app = Flask(__name__)
 Bootstrap(app)
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'thefilmDB'
+app.config['MONGO_URI'] = os.environ.get('MONGO_URI') 
+app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
+# Secret Key value
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
-mongo "mongodb+srv://FilmDB-wpg9e.mongodb.net/test"  --username root
+mongo = PyMongo(app)
 
 @app.route('/index')
 def index():
