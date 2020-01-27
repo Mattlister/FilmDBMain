@@ -9,6 +9,8 @@ Bootstrap(app)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'thefilmDB'
 
+mongo "mongodb+srv://FilmDB-wpg9e.mongodb.net/test"  --username root
+
 @app.route('/index')
 def index():
     return render_template('pages/index.html')
