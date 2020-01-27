@@ -7,3 +7,6 @@ flask-bootstrap
 flask-nav
 flask-debug
 flask-wtf
+datetime
+dnspython
+pymongo
