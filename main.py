@@ -1,28 +1,24 @@
 import os
 from flask import Flask, render_template
-from flask_bootstrap import Bootstrap
 from forms import SignUpForm
 from flask_pymongo import PyMongo
+from os import path
 
-os.path("env.py")
-
-import env
-
-if os.path.exists("env.py")
-    import env
-
+if path.exists("env.py"):
+   import env
 
 
 app = Flask(__name__)
-Bootstrap(app)
+print(os.environ.get('MONGO_URI'))
 
-app = Flask(__name__)
 app.config['MONGO_URI'] = os.environ.get('MONGO_URI') 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 # Secret Key value
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
+
+
 
 @app.route('/index')
 def index():
