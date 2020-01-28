@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for, request
 from forms import SignUpForm
 from flask_pymongo import PyMongo
 from os import path
@@ -44,7 +44,7 @@ def contact():
     return render_template('pages/contact.html')
 
 
-@app.route('/login')
+@app.route('/login', methods=["GET, POST"])
 def login():
     return render_template('pages/login.html')
 
