@@ -1,34 +1,24 @@
 {% extends "layout/base.html" %}
+{% extends "bootstrap/base.html"}
 {% block search %}
 
 <!-- Log in section-->
 
 <section>
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h3>Log in to share your passion for Movies and TV</h3>
+		<form class="form-signing">
+			<h2 class="form-siging-heading">Please sign in</h2>
+			<label for="InputUsername" class="sr-only">Username</label>
+			<input type="text" id="InputUsername" class="form-control" placeholder="Username" required autofocus>
+			<label for="inputPassword" class="sr-only">Password</label>
+			<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+			<div class="checkbox">
+				<label>
+        <input type="checkbox" value="remember-me"> Remember me	
+        </label>
 			</div>
-		</div>
-		<div class="row justify-content-center">
-			<form id="login-form">
-				<div class="form-group">
-					<label for="loginInput">Username</label>
-					<input type="text" class="form control" id="loginUsername" placeholder="Username" required>
-					<label for="loginInput">Password</label>
-					<input type="text" class="form control" id="loginPassword" placeholder="Password" required>
-   </div>
-					<button type="submit" class="btn btn-search">Log In</button>
-			</form>
-			<div class="col-sm-12">
-
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<a href="{{ url_for('signup') }}">Not Registered? Click Here.</a>
-			</div>
-		</div>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		</form>
 	</div>
 </section>
 

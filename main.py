@@ -6,6 +6,7 @@ from os import path
 from wtforms.validators import InputRequired, Email, Length
 
 app = Flask(__name__)
+Bootstrap(app)
 
 class LoginForm(FlaskForm):
     username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
@@ -14,7 +15,6 @@ class LoginForm(FlaskForm):
 
 if path.exists("env.py"):
    import env
-
 
 app = Flask(__name__)
 print(os.environ.get('MONGO_URI'))
@@ -32,9 +32,12 @@ mongo = PyMongo(app)
 def index():
     return render_template('pages/index.html')
 
-@app.route('/login', methods=["GET, POST"])
+@app.route('/login')
 def login():
-    return render_template('pages/login.html')
+    form = LoginForm()
+
+
+    return render_template('pages/login.html', form=form)
 
 
 @app.route('/signup', methods=['GET', 'POST'])
