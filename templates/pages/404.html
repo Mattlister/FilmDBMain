@@ -1,0 +1,28 @@
+{% extends "layout/base.html" %}
+{% block search %}
+    <!-- Custom 404 page telling the user something has gone wrong. -->
+    <section class="about">
+        <div class="container content login-detail">
+            <div class="row">
+                <div class="col-sm-12 about-title text-center">
+                    <h2>Oops, looks like we're going to need a bigger boat</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 404-desc text-center">
+                    <p class="page-help">Looks like this page isn't working, please use the navigation links to return to a previous
+                                         page. If this problem persists, try another browser or please email us using the email link below. 
+                                         A screenshot or any info provided with loads of detail would be great</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <img class="img-fluid" src="{{ url_for('static', filename='') }}"
+                         alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
