@@ -1,0 +1,27 @@
+{% extends "layout/base.html" %}
+{% block search %}
+    <!-- Error 500 page to detail to user server crashes issues -->
+    <section class="about">
+        <div class="container content login-detail">
+            <div class="row">
+                <div class="col-sm-12 about-title text-center">
+                    <h1>Oh Dear......</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="page-help"> Oops, looks like the server is having connectivity problems, please use the
+                        navigation links to return to a previous page. If this problem persists, try another browser or
+                        please email us using the email link below. A screenshot or any info provided with loads of detail
+                        would be great.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <img class="img-fluid" src="{{ url_for('static', filename='') }}"
+                         alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
