@@ -12,16 +12,19 @@
   <form id="login-form">
    <div class="form-group">
    <label for="loginInput">Username</label>
+   <input type="text" class="form control" id="loginUsername" placeholder="Username" required>
+   <label for="loginInput">Password</label>
    <input type="text" class="form control" id="loginPassword" placeholder="Password" required>
    </div>     
    <button type="submit" class="btn btn-search">Log In</button>
+   </form>
    <div class="col-sm-12">
  
  </div>
  </div>
  <div class="row">
  <div class="col-sm-12">
- <a href="{{ url_for('register') }}">Not Registered? Click Here.</a>
+ <a href="{{ url_for('signup') }}">Not Registered? Click Here.</a>
  </div>
  </div>
 </div>
