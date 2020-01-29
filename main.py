@@ -1,6 +1,5 @@
 import os
 from flask import Flask, render_template, redirect, url_for, request
-from forms import SignUpForm
 from flask_pymongo import PyMongo
 from os import path
 

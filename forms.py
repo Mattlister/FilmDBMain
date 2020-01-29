@@ -14,7 +14,7 @@ class RegistratrionForm(Form):
     password = PasswordField('New Password',
         validators.DataRequired(),
         validators.EqualTo('confirm', message='Passwords must match')
-
+"""
     confirm = PasswordField('Repeat Password')
     accept_rules = BooleanField('I accept the site rules', [validators.InputRequired()])
 
@@ -29,3 +29,4 @@ class RegistratrionForm(Form):
 
     class DeleteForm(FlaskForm):
         submit = SubmitField('Delete')
+ """
