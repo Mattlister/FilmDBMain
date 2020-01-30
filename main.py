@@ -85,10 +85,6 @@ def login():
             return result
 
 
-@app.route('/dashboard')
-def dashboard():
-    return render_template('dashboard')    
-
 @app.route('/films')
 def films():
     return render_template('pages/films.html')
@@ -108,13 +104,11 @@ def contact():
     return render_template('pages/contact.html')
 
 
-  
-
 # 404 error page
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('pages/404.html'), 404
 
-if __name__ == "__main__":
+if __name__ ==  "__main__":
     app.run(debug=True)
     
