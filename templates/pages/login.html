@@ -3,23 +3,26 @@
 {% import "bootstrap/wtf.html" as wtf %}
 {% block search %}
 
-{% block styles %}
-{{super()}}
-<link rel="stylesheet" href="{{url_for('.static', filename='static\css\signin.css')}}">
-{% endblock %}
 <!-- Log in section-->
 
-<section>
-	<div class="container">
-		<form class="form-signin" method="POST" action="/login">
-			<h2 class="form-siging-heading">Please sign in</h2>
-			{{ form.hidden_tag() }}
-			{{ wtf.form_field(form.username) }}
-			{{ wtf.form_field(form.password) }}
-			{{ wtf.form_field(form.remember) }}
-			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-		</form>
-	</div>
-</section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <form method=POST action="{{ url_for('signup') }}">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Username</label>
+                    <input type="text" class="form-control" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" name="pass" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
 
 {% endblock }
