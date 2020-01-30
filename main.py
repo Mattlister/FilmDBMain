@@ -14,10 +14,11 @@ class LoginForm(FlaskForm):
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
     remember = BooleanField('remember me')
 
-class RegistrationForm(FlaskForm)  
+class RegisterForm(FlaskForm):  
     username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
     email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=50])
     password = PassWordField('password', validators=[InputRequired(), Length(min=8, max=80)])
+    
 
 if path.exists("env.py"):
    import env
