@@ -6,12 +6,18 @@ from os import path
 from wtforms.validators import InputRequired, Email, Length
 
 app = Flask(__name__)
+app.comfig=['SECRET_KEY'] = 'Thisissupposedtobesecret'
 Bootstrap(app)
 
 class LoginForm(FlaskForm):
     username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
     remember = BooleanField('remember me')
+
+class RegistrationForm(FlaskForm)  
+    username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
+    email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=50])
+    password = PassWordField('password', validators=[InputRequired(), Length(min=8, max=80)])
 
 if path.exists("env.py"):
    import env
@@ -42,7 +48,7 @@ def login():
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
-    form = SignUpForm()
+    form = RegisterForm()
     return render_template('pages/signup.html', form=form)
 
 @app.route('/dashboard')
