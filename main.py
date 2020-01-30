@@ -46,7 +46,7 @@ def login():
     form = LoginForm()
 
     if form.validate_on_submit():
-        return '<h1>' + form.username.data + ' ' + form.password.data + "</h1>"
+        return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
 
 
     return render_template('pages/login.html', form=form)
@@ -56,6 +56,9 @@ def login():
 def signup():
     form = RegisterForm()
     return render_template('pages/signup.html', form=form)
+
+    if form.validate_on_submit():
+        return '<h1>' form.username.data + ' ' + form.password.data
 
 @app.route('/dashboard')
 def dashboard():
