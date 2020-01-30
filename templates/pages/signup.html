@@ -1,37 +1,25 @@
 {% extends "layout/base.html" %}
+{% extends "bootstrap/base.html" %}
 {% block content %}
+Sign Up
+{% endblock %}
 
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename=signin.css'))}}">
+{% endblock %}
+<div class="container">
 
+ <form class="form-signin" method="POST" action="/signup">
+    <h2 class="form-signin-heading">Sign up</h2>
+    <label for="InputUsername" class="sr-only">Username</label>
+    <input type="text" id="InputUsername" class="form-control" placeholder="Username" required autofocus>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit"> Sign Up</button>
+ </form>
 
-<div class="container-fluid">
-
-<div class="row">
-<div class="col-sm-12">
-<h2>Sign Up</h2>
-<form action="" method="post">
-	<P>
-		{{form.username.label}} <br>
-        {{form.username(size=30)}}
-    </p>
-	<p>
-		{{form.password.label}} <br>
-        {{form.password(size=30)}}
-    </P>
-       
-	<p>
-    	{{form.submit()}}
-	</p>
-</form>
-</div>
-</div>
-<div class="row">
-<div class="col-sm-12">
-<p>Welcome to Sign in</p>
-</div>
-</div>
-<div class="row">
-
-<div class="col-sm-12">
-</div>
 </div>
 {% endblock %}
