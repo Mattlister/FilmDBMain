@@ -38,9 +38,12 @@ mongo = PyMongo(app)
 def index():
     return render_template('pages/index.html')
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
+
+    if form.validate_on_submit():
+        return '<h1>' + form.username.data + ' ' + form.password.data + "</h1>"
 
 
     return render_template('pages/login.html', form=form)
