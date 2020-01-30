@@ -16,6 +16,12 @@ body {
   color: #FFFF;
 }
 
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
 /*
 font-family: 'Molengo', sans-serif;
 font-family: 'Oswald', sans-serif;
