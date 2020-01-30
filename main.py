@@ -6,7 +6,7 @@ from os import path
 from wtforms.validators import InputRequired, Email, Length
 
 app = Flask(__name__)
-app.comfig=['SECRET_KEY'] = 'Thisissupposedtobesecret'
+app.config['SECRET_KEY'] = 'Thisissupposedtobesecret!'
 Bootstrap(app)
 
 class LoginForm(FlaskForm):
@@ -16,7 +16,7 @@ class LoginForm(FlaskForm):
 
 class RegisterForm(FlaskForm):  
     username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
-    email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=50])
+    email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=50)])
     password = PassWordField('password', validators=[InputRequired(), Length(min=8, max=80)])
     
 
