@@ -84,22 +84,6 @@ def login():
             result = jsonify({"result":"No results found"})
             return result
 
-    
-
-    if form.validate_on_submit():
-
-
-    return render_template('pages/login.html', form=form)
-
-
-
-
-
-
-
-    
-
-
 
 @app.route('/dashboard')
 def dashboard():
@@ -132,5 +116,5 @@ def page_not_found(e):
     return render_template('pages/404.html'), 404
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
     
