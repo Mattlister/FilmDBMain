@@ -4,22 +4,20 @@ from flask_bootstrap import Bootstrap
 from flask_pymongo import PyMongo
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField
+from flask_bcrypt import Bcrypt
 from os import path
 from wtforms.validators import InputRequired, Email, Length
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'Thisissupposedtobesecret!'
-Bootstrap(app)
 
-class LoginForm(FlaskForm):
-    username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
-    password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
-    remember = BooleanField('remember me')
+app.config['MONGO_URI'] = os.environ.get('MONGO_URI') 
+app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
+# Secret Key value
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
-class RegisterForm(FlaskForm):  
-    username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
-    email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), Length(max=50)])
-    password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
+mongo = PyMongo(app)
+bcrypt = Bcrypt(app)
+
     
 
 if path.exists("env.py"):
@@ -28,10 +26,6 @@ if path.exists("env.py"):
 app = Flask(__name__)
 print(os.environ.get('MONGO_URI'))
 
-app.config['MONGO_URI'] = os.environ.get('MONGO_URI') 
-app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
-# Secret Key value
-app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
@@ -41,24 +35,50 @@ mongo = PyMongo(app)
 def index():
     return render_template('pages/index.html')
 
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+   users = mongo.db.users
+    first_name = request.get_json()['first_name']
+    last_name = request.get_json()['last_name']
+    email = request.get_json()['email']
+    password = bcrypt.generate_password_hash(request.get_json()['password']).decode('utf-8')
+    created = datetime.uctcnow()
+    
+    user_id = users.insert({
+        'first_name' : first_name,
+        'last_name' : last_name,
+        'email' : email,
+        'password' : password,
+        'created' : created,
+    })
+   
+   new_user = users.find_one({'_id' : user_id})
+
+   result = {'email' : new_user['email'] + 'registered'}
+
+   return jsonify({'result' : result})
+
+
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    form = LoginForm()
+    
 
     if form.validate_on_submit():
-        return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
 
 
     return render_template('pages/login.html', form=form)
 
 
-@app.route('/signup', methods=['GET', 'POST'])
-def signup():
-    form = RegisterForm()
-    return render_template('pages/signup.html', form=form)
 
-    if form.validate_on_submit():
-        return '<h1>' form.username.data + ' ' + form.password.data
+
+
+
+
+    
+
+
 
 @app.route('/dashboard')
 def dashboard():
