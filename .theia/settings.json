@@ -5,5 +5,6 @@
    "python.linting.flake8Enabled": true,
     "python.terminal.activateEnvironment": false,
    "files.autoSave": "onFocusChange",
-   "python.pythonPath": "env/bin/python3",
+"python.pythonPath": "env/bin/python3",
+"python.formatting.provider": "yapf",
 }

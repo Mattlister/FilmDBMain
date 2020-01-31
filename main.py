@@ -37,7 +37,7 @@ def index():
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
-   users = mongo.db.users
+    users = mongo.db.users
     first_name = request.get_json()['first_name']
     last_name = request.get_json()['last_name']
     email = request.get_json()['email']
@@ -52,7 +52,7 @@ def signup():
         'created' : created,
     })
    
-   new_user = users.find_one({'_id' : user_id})
+    new_user = users.find_one({'_id' : user_id})
 
    result = {'email' : new_user['email'] + 'registered'}
 
