@@ -10,12 +10,12 @@ from wtforms.validators import InputRequired, Email, Length
 
 app = Flask(__name__)
 
-app.config['MONGO_URI'] = os.environ.get('MONGO_URI') 
+app.config["MONGO_URI"] = os.environ.get('MONGO_URI') 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 # Secret Key value
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
-mongo = PyMongo(app)
+
 bcrypt = Bcrypt(app)
 
     
@@ -26,8 +26,6 @@ if path.exists("env.py"):
 app = Flask(__name__)
 print(os.environ.get('MONGO_URI'))
 
-
-mongo = PyMongo(app)
 
 
 @app.route('/')
@@ -54,9 +52,9 @@ def signup():
    
     new_user = users.find_one({'_id' : user_id})
 
-   result = {'email' : new_user['email'] + 'registered'}
+    result = {'email' : new_user['email'] + 'registered'}
 
-   return jsonify({'result' : result})
+    return jsonify({'result' : result})
 
 
 
@@ -78,11 +76,11 @@ def login():
             'email': response['email']}
             )
             result = jsonify({"token": access_token})
-            else:
+        else:
             result = jsonify({"error":"Invalid username and password"})
-            else:
+    else:
             result = jsonify({"result":"No results found"})
-            return result
+    return result
 
 
 @app.route('/films')
