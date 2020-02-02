@@ -1,9 +1,8 @@
 from os import path
 import os
-import datetime
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, request, url_for,
+request
 from flask_pymongo import PyMongo
-from flask import jsonify
 from flask_bcrypt import Bcrypt
 
 if path.exists("env.py"):
@@ -19,8 +18,9 @@ mongo = PyMongo(app)
 bcrypt = Bcrypt(app)
 users = mongo.db.users
 
-print(os.environ.get("MONGO_URI"))
+# Collections
 
+print(os.environ.get("MONGO_URI"))
 
 @app.route("/")
 @app.route("/index")
@@ -28,15 +28,61 @@ def index():
     return render_template("pages/index.html")
 
 
-@app.route("/signup", methods=["GET", "POST"])
-def signup():
-
-    return render_template("pages/signup.html")
-
-
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    # Check to see if user is already logged in
+    if 'user' in session:
+        user_in_db = users_collection.find_one({"username":
+session['user']})
+        if user_in_db:
+            # If found, redirect user to their profile
+            flash("This is the page you are looking for!")
+            return redirect(url_for('profile', user=user_in_db['username']))
+    else:
+        # Display login page for the user        
     return render_template("pages/login.html")
+
+#Sign up
+@app.route("/signup", methods=["GET", "POST"])
+def signup():
+    # Check if new user
+    if 'user' in session:
+        flash('You know this place!')
+        return redirect(url_for('index'))
+    if request.method == 'POST':
+        form = request.form.to_dict()
+        # Check if passwords match
+        if form['user_password'] == form['user_password1']:
+            # If successful, find user in db
+            user = users_collection.find_one({"username" :
+ form['username']})
+            if user:
+                flash(f"{form['username']} already exists!")
+                return redirect(url_for('register'))
+                    
+    users = mongo.db.users
+    first_name = request.get_json()["first_name"]
+    last_name = request.get_json()["last_name"]
+    email = request.get_json()["email"]
+    password = bcrypt.generate_password_hash(request.get_json()["password"]).decode(
+        "utf-8"
+    )
+    created = datetime.utcnow()
+    user_id = users.insert(
+        {
+            "first_name": first_name,
+            "last_name": last_name,
+            "email": email,
+            "password": password,
+            "created": created,
+        }
+    )
+
+    new_user = users.find_one({"_id": user_id})
+
+    result = {"email": new_user["email"] + "registered"}
+
+    return jsonify({"result": result})
 
 
 @app.route("/films")
