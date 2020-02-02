@@ -1,7 +1,7 @@
 from os import path
-import os, datetime
+import os
+import datetime
 from flask import Flask, render_template, redirect, url_for, request
-from flask_bootstrap import Bootstrap
 from flask_pymongo import PyMongo
 from flask import jsonify
 from flask_bcrypt import Bcrypt
@@ -10,18 +10,15 @@ if path.exists("env.py"):
     import env # pylint: disable=W0611
 
 app = Flask(__name__)
-
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 # Secret Key value
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
-
-bcrypt = Bcrypt(app)
 mongo = PyMongo(app)
+bcrypt = Bcrypt(app)
+users = mongo.db.users
 
-
-app = Flask(__name__)
 print(os.environ.get("MONGO_URI"))
 
 
@@ -40,8 +37,7 @@ def signup():
     password = bcrypt.generate_password_hash(request.get_json()["password"]).decode(
         "utf-8"
     )
-    created = datetime.uctcnow()
-
+    created = datetime.utcnow()
     user_id = users.insert(
         {
             "first_name": first_name,
@@ -112,4 +108,4 @@ def page_not_found(e):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
