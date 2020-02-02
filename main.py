@@ -3,11 +3,8 @@ import os, datetime
 from flask import Flask, render_template, redirect, url_for, request
 from flask_bootstrap import Bootstrap
 from flask_pymongo import PyMongo
-from flask_wtf import FlaskForm
 from flask import jsonify
-from wtforms import StringField, PasswordField, BooleanField
 from flask_bcrypt import Bcrypt
-from wtforms.validators import InputRequired, Email, Length
 
 if path.exists("env.py"):
     import env # pylint: disable=W0611
