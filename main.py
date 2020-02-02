@@ -7,7 +7,7 @@ from flask import jsonify
 from flask_bcrypt import Bcrypt
 
 if path.exists("env.py"):
-    import env # pylint: disable=W0611
+      import env # pylint: disable=W0611
 
 app = Flask(__name__)
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
@@ -30,55 +30,13 @@ def index():
 
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
-    users = mongo.db.users
-    first_name = request.get_json()["first_name"]
-    last_name = request.get_json()["last_name"]
-    email = request.get_json()["email"]
-    password = bcrypt.generate_password_hash(request.get_json()["password"]).decode(
-        "utf-8"
-    )
-    created = datetime.utcnow()
-    user_id = users.insert(
-        {
-            "first_name": first_name,
-            "last_name": last_name,
-            "email": email,
-            "password": password,
-            "created": created,
-        }
-    )
 
-    new_user = users.find_one({"_id": user_id})
-
-    result = {"email": new_user["email"] + "registered"}
-
-    return jsonify({"result": result})
+    return render_template("pages/signup.html")
 
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
-    users = mongo.db.users
-    email = request.get_json()["email"]
-    password = request.get_json()["password"]
-    result = ""
-
-    response = users.find_one({"email": email})
-
-    if response:
-        if bcrypt.check_password_hash(response["password"], password):
-            access_token = create_access_token(
-                identity={
-                    "first_name": response["first_name"],
-                    "last_name": response["last_name"],
-                    "email": response["email"],
-                }
-            )
-            result = jsonify({"token": access_token})
-        else:
-            result = jsonify({"error": "Invalid username and password"})
-    else:
-        result = jsonify({"result": "No results found"})
-    return result
+    return render_template("pages/login.html")
 
 
 @app.route("/films")
@@ -108,7 +66,6 @@ def page_not_found(e):
 
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP', '127.0.0.1'),
-            port=os.environ.get('PORT', '5000'),
-            debug=False)
-            
+    app.run(host=os.environ.get('IP'),
+            port=int(os.environ.get('PORT')),
+            debug=True)
