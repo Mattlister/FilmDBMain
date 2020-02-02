@@ -8,6 +8,10 @@ from flask_bcrypt import Bcrypt
 from os import path
 from wtforms.validators import InputRequired, Email, Length
 
+from os import path
+if path.exists("env.py"):
+  import env 
+
 app = Flask(__name__)
 
 app.config["MONGO_URI"] = os.environ.get('MONGO_URI') 
@@ -19,10 +23,6 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 bcrypt = Bcrypt(app)
 mongo = PyMongo(app)
 
-    
-
-if path.exists("env.py"):
-   import env
 
 app = Flask(__name__)
 print(os.environ.get('MONGO_URI'))
