@@ -1,18 +1,34 @@
 {% extends "layout/base.html" %}
 {% block search %}
-  
-<section class="">
-<div class="container-fluid">
- <div class="row">
- <div class="col-sm-12"></div>
- </div>
- <div class="row">
- <div class="col-sm-12"></div>
- </div>
- <div class="row">
- <div class="col-sm-12"></div>
- </div>
-</div>
-</section>
+
+<nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">FilmDB</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">options</i></a>
+            <div>
+            <ul id="nav-mobile" class="hide-on-med-and-down">
+                <li class="active" ><a href="#">Create</a></li>
+                <li><a href="#">Delete</a></li>
+                <li><a class="waves-effect waves-light btn" href="#">Login</a></li>
+                <li><a href="#">Edit</a></li>
+            </ul>
+        </div>
+    </nav>   
+    <ul class="sidenav" id="mobile-demo">
+        <li class="active" ><a href="#">Create</a></li>
+        <li><a href="#">Delete</a></li>
+        <li><a href="#">Edit</a></li>
+        <li><a class="waves-effect waves-light btn" href="#">Login</a></li>
+    </ul>
+
+  <div>
+    {% for film entries %}
+        {{}}
+        {{}}
+        {{}}
+        {{}}
+        
+    {% end for %}
+  </div>
 
 {% endblock }

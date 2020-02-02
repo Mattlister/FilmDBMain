@@ -107,5 +107,8 @@ def page_not_found(e):
     return render_template("pages/404.html"), 404
 
 
-if __name__ == "__main__":
-    app.run(debug=False)
+if __name__ == '__main__':
+    app.run(host=os.environ.get('IP', '127.0.0.1'),
+            port=os.environ.get('PORT', '5000'),
+            debug=False)
+            
