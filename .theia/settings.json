@@ -1,10 +1,9 @@
 {
-   "python.linting.pylintEnabled": false,
+   "python.linting.pylintEnabled": true,
    "python.linting.enabled": true,
    "python.linting.pep8Enabled": false,
    "python.linting.flake8Enabled": true,
     "python.terminal.activateEnvironment": false,
    "files.autoSave": "onFocusChange",
-"python.pythonPath": "env/bin/python3",
 "python.formatting.provider": "black",
 }
