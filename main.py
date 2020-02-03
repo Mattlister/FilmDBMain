@@ -1,7 +1,6 @@
-import path
 import os
 from flask import Flask
-import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request
 from flask_pymongo import PyMongo
 import PyMongo
 from flask_bcrypt import bcrypt
@@ -9,11 +8,11 @@ import Bcrypt
 
 if path.exists("env.py"):
 
-    import env . # pylint: disable
+    import env
 
 app = Flask(__name__)
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
-app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME") . #  Secret Key value
+app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
@@ -33,17 +32,19 @@ def index():
 
 @app.route('/login', methods=['GET'])
 def login():
-
+    for now
     if 'user' in session:
         user_in_db = users_collection.find_one({
          "username": session['user']
         })
     if user_in_db:
+        # If so redirect user to his profile
 
-
- return redirect(url_for('profile', user = user_in_db['username']))
-   else:#Display login page
- return render_template("login.html")
+   else:
+    flash("You are logged in already!")
+return redirect(url_for('profile', user = user_in_db['username']))
+else:
+return render_template("login.html")
 
 # Check user login details
 @app.route('/user_auth', methods = ['POST'])
@@ -88,8 +89,8 @@ user = users_collection.find_one({
 if user:
   flash(f "{form['username']} already exists!")
 return redirect(url_for('register'))# If user does not exist register new user
-else :#Hash password
-hash_pass = generate_password_hash(form['user_password'])# Create new user with hashed password
+else :#password
+hash_pass = generate_password_hash(form['user_password'])# Create new user with password
 users_collection.insert_one({
   'username': form['username'],
   'email': form['email'],
@@ -119,19 +120,10 @@ session.clear()
 flash('You were logged out!')
 return redirect(url_for('index'))
 
-# Profile Page
-@app.route('/profile/<user>')
-def profile(user): #Check
-if user is logged in
-  if 'user' in session: #If so get the user and pass him to template
-for now
-user_in_db = users_collection.find_one({
-  "username": user
-})
-return render_template('profile.html', user = user_in_db)
-else :
-  flash("You must be logged in!")
-return redirect(url_for('index'))
+
+
+
+
 
 @app.route("/films")
 def films():
