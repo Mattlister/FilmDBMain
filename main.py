@@ -59,10 +59,10 @@ def user_auth():
 				return redirect(url_for('profile', user=user_in_db['username']))
 			
 		else:
-			flash("Wrong password or user name!")
+			flash("We hate to say this but either your username or password is wrong!")
 			return redirect(url_for('login'))
 	else:
-		flash("You must be registered!")
+		flash("You must be a chosen one!")
 		return redirect(url_for('register'))
 
 # Sign up
@@ -70,7 +70,7 @@ def user_auth():
 def register():
 	# Check if user is not logged in already
 	if 'user' in session:
-		flash('You are already sign in!')
+		flash('You know this place!')
 		return redirect(url_for('index'))
 	if request.method == 'POST':
 		form = request.form.to_dict()
