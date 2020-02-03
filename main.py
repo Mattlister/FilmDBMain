@@ -1,9 +1,7 @@
 from os import path
 import os
-import datetime
 from flask import Flask, render_template, redirect, url_for, request
 from flask_pymongo import PyMongo
-from flask import jsonify
 from flask_bcrypt import Bcrypt
 
 if path.exists("env.py"):
@@ -31,9 +29,11 @@ def index():
 @app.route('/login', methods=['GET'])
 def login():
 	# Check if user is not logged in already
-	if 'user' in session:
+
+
+    if 'user' in session:
 		user_in_db = users_collection.find_one({"username": session['user']})
-		if user_in_db:
+	if user_in_db:
 			# If so redirect user to his profile
 			flash("You are logged in already!")
 			return redirect(url_for('profile', user=user_in_db['username']))
