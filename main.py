@@ -5,6 +5,7 @@ from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 
 if path.exists("env.py"):
+
     import env # pylint: disable=W0611
 
 app = Flask(__name__)
@@ -28,35 +29,33 @@ def index():
 # Login
 @app.route('/login', methods=['GET'])
 def login():
-	# Check if user is not logged in already
+	# Check if user is already logged in
 
 
     if 'user' in session:
 		user_in_db = users_collection.find_one({"username": session['user']})
 	if user_in_db:
-			# If so redirect user to his profile
-			flash("You are logged in already!")
+			
+			flash("You know this place!")
 			return redirect(url_for('profile', user=user_in_db['username']))
 	else:
-		# Render the page for user to be able to log in
+		# Display login page
 		return render_template("login.html")
 
-# Check user login details from login form
+# Check user login details
 @app.route('/user_auth', methods=['POST'])
 def user_auth():
 	form = request.form.to_dict()
 	user_in_db = users_collection.find_one({"username": form['username']})
-	# Check for user in database
+	# Check db for user
 	if user_in_db:
-		# If passwords match (hashed / real password)
-		if check_password_hash(user_in_db['password'], form['user_password']):
-			# Log user in (add to session)
+		
+		if check_password_hash(ser_in_db['password'], form['user_password']):
 			session['user'] = form['username']
-			# If the user is admin redirect him to admin area
 			if session['user'] == "admin":
 				return redirect(url_for('admin'))
 			else:
-				flash("You were logged in!")
+				flash("Yeah baby!")
 				return redirect(url_for('profile', user=user_in_db['username']))
 			
 		else:
@@ -101,11 +100,11 @@ def register():
 					session['user'] = user_in_db['username']
 					return redirect(url_for('profile', user=user_in_db['username']))
 				else:
-					flash("There was a problem savaing your profile")
+					flash("Dude, there was a problem signing in")
 					return redirect(url_for('register'))
 
 		else:
-			flash("Passwords dont match!")
+			flash("Passwords don't match, you shall not pass!")
 			return redirect(url_for('register'))
 		
 	return render_template("register.html")
