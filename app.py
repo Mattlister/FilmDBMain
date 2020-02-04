@@ -1,12 +1,7 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
-from os import path
-
-
-if path.exists("env.py"):
-    import env
 
 app = Flask(__name__)
 
