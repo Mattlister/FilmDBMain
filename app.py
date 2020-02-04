@@ -1,7 +1,6 @@
 import os
 from flask import Flask, render_template, url_for, flash
 from forms import RegistrationForm, LoginForm
-from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 
 app = Flask(__name__)
@@ -12,7 +11,6 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 bcrypt = Bcrypt(app)
-mongo = PyMongo(app)
 
 posts = [
     {
