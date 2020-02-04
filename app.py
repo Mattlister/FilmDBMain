@@ -58,8 +58,6 @@ def signup():
     return jsonify({'result' : result})
 
 
-
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     users = mongo.db.users
