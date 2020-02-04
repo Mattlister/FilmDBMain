@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, url_for, flash, redirect
+from flask import Flask, render_template, url_for, flash
 from forms import RegistrationForm, LoginForm
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
@@ -42,6 +42,7 @@ def index():
 @app.route('/', methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
+    if form.validate_on_submit()
     return render_template('pages/register.html', title='Register', form=form)
 
 
