@@ -42,7 +42,8 @@ def index():
 @app.route('/', methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
-    if form.validate_on_submit()
+    if form.validate_on_submit():
+        flash(f'Account created for {form.username.data}!')
     return render_template('pages/register.html', title='Register', form=form)
 
 
@@ -51,8 +52,6 @@ def login():
     form = LoginForm()
     return render_template('pages/login.html', title='Login', form=form)
 
-
-"""
 
 @app.route('/films')
 def films():
@@ -81,4 +80,3 @@ def page_not_found(e):
 
 if __name__ == "__main__":
     app.run(debug=True)
-    """
