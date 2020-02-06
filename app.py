@@ -27,8 +27,6 @@ posts = [
     },
 ]
 
-app = Flask(__name__)
-print(os.environ.get("MONGO_URI"))
 
 
 @app.route("/")
@@ -85,3 +83,10 @@ def contact():
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("pages/404.html"), 404
+
+
+if __name__ == '__main__':
+    app.run(host=os.environ.get('IP', '127.0.0.1'),
+            port=os.environ.get('PORT', '5000'),
+            debug=True)
+  
