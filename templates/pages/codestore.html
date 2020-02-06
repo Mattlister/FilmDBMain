@@ -18,13 +18,27 @@
     </header>
 
     <div class="container-fluid">
-       
+        <div class="row">
+            <div class="col-sm-12"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-12"></div>
+        </div>
         <strong>
 		    <nav class="navbar navbar default">
                 <div class="row">
 		                <div class="col-sm-12">
 
-		                    
+		                    <ul class="menu">
+		                                    <li><a href="{{ url_for('index') }}">Home</a></li>
+		                                    <li><a href="{{ url_for('register') }}">Sign up</a></li>
+		                                    <li><a href="{{ url_for('login') }}">Login</a></li>
+		                                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+		                                    <li><a href="{{ url_for('films') }}">Films</a></li>
+		                                    <li><a href="{{ url_for('tv') }}">TV</a></li>
+		                                    <li><a href="{{ url_for('casting') }}">Casting</a></li>  
+		                                </ul>
 		                            </div>
 		                        </div>
                                 
