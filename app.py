@@ -41,7 +41,7 @@ def index():
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
-        flash(f'Account created for {form.username.data}!', 'success')
+        flash("Account created for {form.username.data}", "success")
         return redirect(url_for('home'))
     return render_template('pages/register.html', title='Register', form=form)
 
@@ -53,7 +53,7 @@ def login():
     if form.validate_on_submit():
         if form.email.data == 'mdlister24@hotmail.com' and\
          form.password.data == 'password':
-            flash('You have been logged in!', 'success')
+            flash('You have been logged in', 'success')
             return redirect(url_for('home'))
         else:
             flash('Login Unsuccessful, please check username and\
