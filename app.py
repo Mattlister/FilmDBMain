@@ -1,8 +1,7 @@
 import os
 from flask import Flask, render_template, url_for, flash, redirect
 from forms import RegistrationForm, LoginForm
-from flask_pymongo import PyMongo
-from flask_bcrypt import Bcrypt
+
 
 app = Flask(__name__)
 
@@ -11,8 +10,6 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 # Secret Key value
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
-mongo = PyMongo(app)
-bcrypt = Bcrypt(app)
 
 posts = [
     {

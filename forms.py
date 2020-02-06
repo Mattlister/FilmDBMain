@@ -14,7 +14,7 @@ class RegistrationForm(FlaskForm):
     )
 
 
-submit = SubmitField("Sign Up")
+submit = SubmitField("Register")
 
 
 class LoginForm(FlaskForm):
