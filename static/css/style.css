@@ -13,7 +13,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #FFFF;
+  color: black;
 }
 
 }
@@ -55,8 +55,7 @@ header h1.logo {
   padding-left: 50px;
   padding-right: 700px;
   padding-bottom: 15px;
-  color: #fff;
-  text-transform: inherit;
+  color: rgb(15, 15, 15);
   float: left;
 }
 
@@ -66,14 +65,14 @@ header h1.logo {
 
 div.home {
   padding: 10px 0 30px 0;
-  background-color: #E6E6FA;
+  background-color: rgb(4, 4, 250);
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
 }
 div.about {
   padding: 10px 0 30px 0;
-  background-color: #E6E6FA;
+  background-color: rgb(30, 30, 245);
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -95,7 +94,7 @@ div.about {
 /* Menu font colours */
 .menu li a {
   font-family: 'Montserrat Subrayada', sans-serif;
-  color: #FFF;
+  color: rgb(2, 0, 0);
   text-decoration: none;
 }
 
@@ -110,7 +109,7 @@ div.about {
 
 .p1 {
     font-size: 20px;
-    color: #FFF;
+    color: rgb(2, 0, 0);
 }
 
 #movies img, #movie img{

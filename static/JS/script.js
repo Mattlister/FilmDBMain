@@ -111,6 +111,6 @@ function getMovie(){
 
             // assigns background-image
             $('body').css({backgroundImage:'url(image/'+img+')'});
-        });
+        })}
     });
 </script>
