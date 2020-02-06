@@ -18,8 +18,6 @@ function MyViewModel() {
         Plot: ko.observable(),
         Writer: ko.observable(),
         Director: ko.observable(),
-        Country: ko.observable(),
-        Language: ko.observable(),
         Title: ko.observable()
         
     };

@@ -1,6 +1,9 @@
 import os
 from flask import Flask, render_template, url_for, flash, redirect
 from forms import RegistrationForm, LoginForm
+from os import path
+if path.exists('env.py'):
+    import env
 
 
 app = Flask(__name__)
@@ -27,7 +30,7 @@ posts = [
 ]
 
 
-@app.route("/index")
+@app.route("/")
 def index():
     return render_template("pages/index.html")
 
@@ -54,6 +57,8 @@ def login():
             flash('Login Unsuccessful, please check username and\
              password', 'danger')
         return render_template('pages/login.html', title='Login', form=form)
+    return render_template('pages/login.html', title='Login', form=form)  
+
 
 
 @app.route("/films")
