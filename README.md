@@ -30,8 +30,7 @@ and the option for someone to become a moderator will be setup. Moderators will 
 * A website built for Film and TV lovers that can share their passion!!
 
 * The project I’ve designed is for my third milestone project for the Data Centric Development module of the Full Stack Developer Course. I’ve used Flask and Python to design the majority layout of the website. This is to provide functionality and sits within the HTML shell with added elements of CSS to add styling. JavaScript and JQuery have been used for
-  the. This is a Multi Page Applciation Film Database website. Users are able to login to a Mongo Database which works in conjunction with Heroku and WTForms.There's an API in the background that allows the user to search for Films, TV and Casting of screen entertainment. You can become a mediator 
-  option where a fan can makie sure that the website is being ran properly and is friendly for users of all ages.
+  the. This is a Multi Page Applciation Film Database website. Users are able to login to a Mongo Database which works in conjunction with Heroku and WTForms.There's an API in the background that allows the user to search for Films, TV and Casting of screen entertainment. There's a an option to become a mediator who have the option where a fan can makie sure that the website is being ran properly and is friendly for users of all ages.
 
 ## Contents
 
