@@ -34,7 +34,7 @@ function MyViewModel() {
          }
         
         $.getJSON("http://omdbapi.com/?s=" + self.searchTerm(), {
-            api_key: '7a5035cca9022ea67734112eb921d5d33680a63d'
+            api_key: 'be4b405e'
         }).done(function (data) {
             self.error(false);
             self.errorMessage('');
@@ -50,7 +50,7 @@ function MyViewModel() {
 
     self.viewMoreInfo = function (movie) {
         $.getJSON("http://omdbapi.com/?t=" + movie.Title(), {
-            api_key: '7a5035cca9022ea67734112eb921d5d33680a63d'
+            api_key: 'be4b405e'
         }).done(function (data) {
             self.error(false);
             self.errorMessage('');
