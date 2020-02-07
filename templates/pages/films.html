@@ -54,7 +54,34 @@
             </div>
         </div>
     </div>
+<div class="container content">
+		<div class="row">
+			<div class="jumbotron">
+				<h3 class="text-center">Search For Any Movie</h3>
+				<form id="searchForm">
+					<div class="col-12">
+						<input onkeyup="getanswer(document.getElementById('qurybox').value)" id="qurybox">
+						<div id="answer"></div>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+						<script>
+							var data;
+function getanswer(q){
+$.get("https://www.omdbapi.com/?s="+q+"&apikey=be4b405e", function(rawdata){    
+ let rawstring =JSON.stringify(rawdata);
+ data =JSON.parse(rawstring);
+ let title = data.Search[0].Title;
+ let year = data.Search[0].Year; 
+ let imdburl="https://www.imdb.com/title/"+data.Search[0].imdbID+"/";
 
+ let posterurl =data.Search[0].Poster;
+document.getElementById('answer').innerHTML="<h1>"+title+"</h1><br> <img src= '"+posterurl+"'><br><p> Year Released:"+year+"</p> <br> <p> IMDB page: <a href='"+imdburl+"'target='_blank'>"+imdburl+"</a></p>"; }); }
+						</script>
+					</div>
+			</div>
+		</div>
+	</div>
+
+</body>
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">

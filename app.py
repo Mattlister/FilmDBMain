@@ -57,7 +57,7 @@ def login():
             flash('Login Unsuccessful, please check username and\
              password', 'danger')
         return render_template('pages/login.html', title='Login', form=form)
-    return render_template('pages/login.html', title='Login', form=form)  
+    return render_template('pages/login.html', title='Login', form=form)
 
 
 
