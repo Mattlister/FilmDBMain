@@ -113,30 +113,3 @@ jumbotron{
     margin-bottom: 50px;
     text-align:center;
 }
-
-
-
-.login{
-    font-family: 'Montserrat Subrayada', sans-serif;
-}
-
-
-.p1 {
-    font-size: 20px;
-    color: #FFF;
-}
-
-#movies img, #movie img{
-    width:100%;
-}
-
-@media(min-with:960px){}
-
-#movies .col-md-3 .well{
-    height: 390px;
-}
-
-#movies .col-md-3 img{
-    height:240px;
-    }
-}
