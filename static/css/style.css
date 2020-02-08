@@ -100,20 +100,6 @@ div.about {
   text-decoration: none;
 }
 
-/* Jumbotron Styling */
-
-jumbotron{
-    font-family: 'Montserrat Subrayada', sans-serif;
-    position: relative;
-    padding:0 !important;
-    margin-top:70px !important;
-    width: 1000px;
-    background: linear-gradient(to bottom right, red, black);
-    margin-top: 23px;
-    margin-bottom: 50px;
-    text-align:center;
-}
-
 form input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -125,6 +111,7 @@ form input[type=text], select {
 }
 
 input[type=submit] {
+  font-family: 'Montserrat Subrayada', sans-serif;  
   width: 60;
   background: linear-gradient(to bottom right, red, black);
   color: white;
