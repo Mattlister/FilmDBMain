@@ -1,17 +1,18 @@
 {% extends "layout/base.html" %}
 {% block content %}
 
-
-
-<title>TV</title>
-<h3 class="text-center">Search For Any Favoutie TV Show</h3>
-<form id="searchForm">
-
-	<input onkeyup="getanswer(document.getElementById('qurybox').value)" id="qurybox">
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script>
-		var data;
+<div class="container content">
+	<div class="row">
+		<div class="jumbotron">
+			<title>TV</title>
+			<h3 class="text-center">Search For Any Favoutie TV Show</h3>
+			<form id="searchForm">
+				<div class="col-12">
+					<input onkeyup="getanswer(document.getElementById('qurybox').value)" id="qurybox">
+					<div id="answer"></div>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+					<script>
+						var data;
 function getanswer(q){
 $.get("https://www.omdbapi.com/?s="+q+"&apikey=be4b405e", function(rawdata){    
  let rawstring =JSON.stringify(rawdata);
@@ -22,35 +23,15 @@ $.get("https://www.omdbapi.com/?s="+q+"&apikey=be4b405e", function(rawdata){
 
  let posterurl =data.Search[0].Poster;
 document.getElementById('answer').innerHTML="<h1>"+title+"</h1><br> <img src= '"+posterurl+"'><br><p> Year Released:"+year+"</p> <br> <p> IMDB page: <a href='"+imdburl+"'target='_blank'>"+imdburl+"</a></p>"; }); }
+					</script>
+				</div>
+		</div>
+	</div>
+</div>
 
-const APIKEY = 'be4b405e';
-function searchMovies(MovieTitle) {
-  // let userFreeStyleTextSearch = $('#searchForm').val();
-  fetch(`http://omdbapi.com/?s=${MovieTitle}&apikey=${APIKEY}`)
-    .then(response => response.text())
-    .then(result => {
-        getSingleMovie(result.Search[0]);
-    })
-    .catch(error => console.log('error', error));
-}
-function getSingleMovie(id) {
-  fetch(`http://omdbapi.com/?i=${id}&apikey=${APIKEY}`)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-}
-function writeAllMovies(){
-	// writes to HTML
-	array.forEach(element => {
-	});
-}
-	</script>
+</body>
+
+</html>
 
 
-
-	</body>
-
-	</html>
-
-
-	{% endblock %}
+{% endblock %}
