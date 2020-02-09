@@ -4,17 +4,15 @@ FilmDB - Milestone 3 Project
 
 My Milestone project has been created as a combination of the 3 modules in the Python series of the Full Stack Developer course. These include
 Python Fundamentals, Practical Python and Data Centric Development. Using the knowledge from these 3 modules, I have created a responsive
-web application using the CRUD functionailty. CRUD which stands for Create, Read, Update and Delete allows the user to add information to the application. It has been designed for users who have a shared love of movies and tv to help create an open source database between lovers of the small and big screen.
-
+web application using the CRUD functionailty. CRUD which stands for Create, Read, Update and Delete allows the user to add information to the application. It has been designed for users who have a shared love of movies and tv to help create an open source database between fans of the small and big screen.
 
 
 ### Project Goals
 
 
-
 ## User Goals
 
-* This website has been designed with a target audience of movie and tv lovers. They can share what they think of what they see in todays visual entertainment market. They can watch anythng and upload information about it. If it's a multi million pound oscar winner that's designed to showcase the talents of a new or existing director, a multi million pound movie which unfortunately flops even with an incredible cast list all the way down to a free handheld open new movie by an unknown director whose starting their career. They've put their heart and soul into the film and shared it on YouTube, the users at FilmDB can watch it, review and share the film for others to see. I want this to be a totally immersible experience for anyone and it all stems from the most passionate of the small and large screen art form. The website is an open source application and technically built by the users to create word and mouth of everything they see.
+* This website has been designed with a target audience of movie and tv enthusiasts. They can share what they think of what they see in todays visual entertainment market. A fan can watch any type of movie they want excluding adult material films and upload information about it. If it's a multi million pound oscar winner that's designed to showcase the talents of a new or existing director, a multi million pound movie which unfortunately flops even with an incredible cast list all the way down to a free handheld open new movie by an unknown director whose starting their career. They've put their heart and soul into the film and shared it on YouTube, the users at FilmDB can watch it, review and share the film for others to see. I want this to be a totally immersible experience for anyone and it all stems from the most passionate of the small and large screen art form. The website is an open source application and technically built by the users to create word and mouth of everything they see.
 
 * Users all over the world will be able to access the site and so the productions can come from all over the world. UK, America, Foreign Films from Germany, Norway or the Middle East. Anyone can use the site to put their opinion down.
 
