@@ -100,27 +100,19 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 ### Colours
 
-* A colour scheme of blue presented itself from the main image. It was such a striking coloured picture, it was hard not to use it's natural photographic
-  colours to my advantage. The white of the mountains, the bright sun at the top and the skiers bright clothing was just stunning and so I built around this 
-  and chose images whic sat well with the background. On the back of the flipped images, I had the idea to use gradients like a window. The sun and blue
-  sky showed through a frosted glass perspective which I think kept in with the rest of the design. 
+* For the most part, the images used create the colour scheme themsleves. A bold image was chosen to add a poster effect. Then, I chose a colour scheme that would sit well on top of the images and so a white font used for all the wording. A Red and Black gradient used as the main header of the website.
+
+
 
 ### Images
 
-* Each image used was specifically chosen to showcase that holiday. I chose the idea of images because you instantly know what's 
-  represented. whether it's bike riding or shark cage diving. Once an option was chosen, a shadowed grey filter covered the background so the 
-  option chosen stands out at the forefront of the design. It was used to hide the background and add focus.
+* Each image chosen was used as they were instantly recognisable pictures from cineman and TV in the past 40 to 50 years. The target audience will range in variation and so I had to think of something that was striking, not a frightening image for smaller children but cool enough to bring people to the site. The images I chose I believe represented this idea very well and the options chosen stood out in the overall design of the site. 
 
 ### Styling
 
-* The style of the site as mentioned before is clean, neat and tidy. When landing on the site, everything is interactive so the user can 
-  immediately be drawn in from the offset. The images flip when hovered over which then displays the coloured background with Location and 
-  Information. 
+* I like the applications I design to be clean without being over the top and so I did the same with this. No over wording on the pages, just something to get you started.
 
-* When "The Location" option is selected, it displays a map which is the central point of that holiday destination. The user can zom out and
-  additional destinations and so they instantly knows where they can go.
-
-* They then hover over the image so if it was Yosamite for instance and they click on location. They have 3 climbs they can experience with Design and 
+* they click on location. They have 3 climbs they can experience with Design and 
   Conquer. It's just quick to use.
 
 * To get a taste of what the site offers, if they choose "Information" on the back of the flipped image, some content on the modal which pops up explains 
@@ -565,7 +557,7 @@ breaks which did help in regards to displaying on various sized devices.
 
 * The content of the Website I have produced is for educational purposes only including all images and videos.
 * The links for the Facebook and Twitter sites were added for educational use only as well
-* Vimeo and YouTube were chosen for their content but only for educational purposes only.
+* IMDB as a site and it's content were used for educational purposes only.
 
 
 ### For my friends currently working on their Milestone 2 projects.
@@ -582,10 +574,8 @@ breaks which did help in regards to displaying on various sized devices.
 ### How I’d like the website to be perceived:
 
 
-* This website would be an easy to use adventure holiday booking site which can be accessed all from one easy location.
+* This website would be an easy to use site to help users search for Movies and TV and to share site what they love or hate about their choices.
 
-* They've seen the locations on TV or in magazines and this is where the user can start their dream holiday.
+* They have a keen interest in the silver screen and it's smaller counterpart and this site will help them to share their interests and broaden their knowledge.
 
-* A nice clean UX single page design site all sat in one location. Click and point revolving images provide more information and the user never
-
-* leaves the cool holiday home page. Design & Conquer.
+* A nice clean UX multi page designed site. Choose your option and start your journey. Show others what you love and help to share that with them.
