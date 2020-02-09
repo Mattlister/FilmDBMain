@@ -107,15 +107,30 @@ jumbotron{
     position: relative;
     padding:0 !important;
     margin-top:70px !important;
-    width: 1000px;
+
     background: linear-gradient(to bottom right, red, black);
     margin-top: 23px;
     margin-bottom: 50px;
     text-align:center;
 }
 
+.form-group{
+    width: 900px;
+    text-align:center;
+    padding-left: 90px;
+
+
+}
+
+.div-class{
+    width: 900px;
+    text-align:center;
+    padding-left: 90px;
+
+}
+
 form input[type=text], select {
-  width: 100%;
+  width: 60%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -126,8 +141,10 @@ form input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background: linear-gradient(to bottom right, red, black);
+  text-align: center;
   color: white;
+  width: 30%; 
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -136,7 +153,9 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  width: 30%;  
+  background: linear-gradient(to bottom right, blue, grey);
+  text-align: center;
 }
 
 div {

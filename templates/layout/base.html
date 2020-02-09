@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+
 	<header>
 		<h1 class="logo">FilmDB</h1>
 	</header>
@@ -36,17 +38,23 @@
 	{% block content %}
 	{% endblock %}
 
-    <footer class="container-fluid">
+   
+
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+{% block footer %}
+ <footer class="container-fluid">
         <div class="row">
             <!-- List item with Creation note -->
             <div class="col-sm-12 col-md-4 created-by">
                 <p>Developer: Matthew Lister</p>
             </div>
-            <!-- Educational uses disclaimer -->
+    
             <div class="col-sm-12 col-md-4 text-center educational-only">
                 <p>Designed For Educational Purposes Only</p>
             </div>
-            <!-- Social Media Links, that when clicked will navigate user to each in new tab -->
+            <!-- Social Media -->
             <div class="col-sm-12 col-md-4 socials">
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
@@ -80,9 +88,8 @@
         </div>
     </footer>
 
-	<script src="http://code.jquery.com/jquery-1.12.4.min.js"
-		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
+{% endblock %}
 
 </body>
 
