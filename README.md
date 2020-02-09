@@ -1,3 +1,5 @@
+![](/static/images/header.jpg) 
+
 FilmDB - Milestone 3 Project
 
 My Milestone project has been created as a combination of the 3 modules in the Python series of the Full Stack Developer course. These include
@@ -8,7 +10,7 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 ### Project Goals
 
-![](/static/images/header.jpg) 
+
 
 ## User Goals
 
