@@ -8,7 +8,7 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 ### Project Goals
 
-![](/assets/images/header.jpg)
+![](/img/header.jpg)
 
 ## User Goals
 
