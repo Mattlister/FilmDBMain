@@ -92,13 +92,11 @@ and the option for someone to become a moderator will be setup. Moderators will 
 ### Design
 
 
-* As you can see in the wireframes section further down, I was originally going to use an orange jumbotron header but it lost something onscreen and
-  looked dated. I reviewed other sites that had more freedom in their approach as they weren't single page applications and so could offer more but
-  I didn't have that advantage with an SPA. I had to think how to showcase the site without being over worded and was pleasing to view 
-  from the outset. It had to stand out and so I came up with the second concept which is on the newer imaged wireframes. The sharp images showed what 
-  the website represents straight away. Adventure. 
-  
-  As they say, a picture paints a thousand words and so to my advantage, I used images and video to show heartstopping moments without many words
+* As you can see in the wireframes section further down, I kept pretty close to my original design. I tried various colour schemes for the heading title but I wanted something that worked well with the background images and seemed to fit with any colour of any image. Whether this was the image of Ripley, the image of or an image like, the Red and Black gradient colour looked great in both it's colour choice and as a header. The white coloured font stood better in the header comapred to black or grey which lost something when I made th image opaque.
+
+I looked at other sites that had a similar theme to mine and I felt mine was different enough to stand out and be something completely new and fresh and to look cool to a user.
+
+I had to think how to showcase the site to a user and tried to make it engaging from the moment the user clicks on the first page.
 
 ### Colours
 
