@@ -1,8 +1,6 @@
 {% extends "layout/base.html" %}
 {% block content %}
 
-<div class="container content">
-	<div class="row">
 		<h3 class="text-center">Search For Any Movie</h3>
 		<form id="searchForm">
 			<div class="col-12">
@@ -23,8 +21,7 @@ $.get("https://www.omdbapi.com/?s="+q+"&apikey=be4b405e", function(rawdata){
 document.getElementById('answer').innerHTML="<h1>"+title+"</h1><br> <img src= '"+posterurl+"'><br><p> Year Released:"+year+"</p> <br> <p> IMDB page: <a href='"+imdburl+"'target='_blank'>"+imdburl+"</a></p>"; }); }
 				</script>
 			</div>
-	</div>
-</div>
+
 
 
 {% endblock %}

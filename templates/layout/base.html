@@ -20,76 +20,75 @@
 	</header>
 
 	<strong>
-		        <nav class="navbar navbar default">
-		        <ul class="menu">
-		                                    <li><a href="{{ url_for('index') }}">Home</a></li>
-		                                    <li><a href="{{ url_for('register') }}">Sign up</a></li>
-		                                    <li><a href="{{ url_for('login') }}">Login</a></li>
-		                                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
-		                                    <li><a href="{{ url_for('films') }}">Films</a></li>
-		                                    <li><a href="{{ url_for('tv') }}">TV</a></li>
-		                                    <li><a href="{{ url_for('casting') }}">Casting</a></li>  
-		                                </ul>
-                 
-         
-        </nav></strong>
+			        <nav class="navbar navbar default">
+			        <ul class="menu">
+			                                    <li><a href="{{ url_for('index') }}">Home</a></li>
+			                                    <li><a href="{{ url_for('register') }}">Sign up</a></li>
+			                                    <li><a href="{{ url_for('login') }}">Login</a></li>
+			                                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+			                                    <li><a href="{{ url_for('films') }}">Films</a></li>
+			                                    <li><a href="{{ url_for('tv') }}">TV</a></li>
+			                                    <li><a href="{{ url_for('casting') }}">Casting</a></li>  
+			                                </ul>
+	                 
+	         
+	        </nav></strong>
 
 
 	{% block content %}
 	{% endblock %}
 
-   
+
 
 	<script src="http://code.jquery.com/jquery-1.12.4.min.js"
 		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
-{% block footer %}
- <footer class="container-fluid">
-        <div class="row">
-            <!-- List item with Creation note -->
-            <div class="col-sm-12 col-md-4 created-by">
-                <p>Developer: Matthew Lister</p>
-            </div>
-    
-            <div class="col-sm-12 col-md-4 text-center educational-only">
-                <p>Designed For Educational Purposes Only</p>
-            </div>
-            <!-- Social Media -->
-            <div class="col-sm-12 col-md-4 socials">
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="mailto:mdlister24@hotmail.com" rel="noopener">
-                            <i class="fas fa-at" aria-hidden="true"></i>
-                            <span class="sr-only">Email</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="" rel="noopener">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.linkedin.com/in/matthew-lister-1774b8171/" rel="noopener">
+	{% block footer %}
+	<footer class="container-fluid">
+		<div class="row">
+			<!-- List item with Creation note -->
+			<div class="col-sm-12 col-md-4 created-by">
+				<p>Developer: Matthew Lister</p>
+			</div>
 
-                            <i class="fab fa-linkedin" aria-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://github.com/Mattlister"
-                        rel="noopener">
-                            <i class="fab fa-github" aria-hidden="true"></i>
-                            <span class="sr-only">Github</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+			<div class="col-sm-12 col-md-4 text-center educational-only">
+				<p>Designed For Educational Purposes Only</p>
+			</div>
+			<!-- Social Media -->
+			<div class="col-sm-12 col-md-4 socials">
+				<ul class="list-inline social-links">
+					<li class="list-inline-item">
+						<a target="_blank" href="mailto:mdlister24@hotmail.com" rel="noopener">
+							<i class="fas fa-at" aria-hidden="true"></i>
+							<span class="sr-only">Email</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a target="_blank" href="" rel="noopener">
+							<i class="fab fa-instagram" aria-hidden="true"></i>
+							<span class="sr-only">Instagram</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a target="_blank" href="https://www.linkedin.com/in/matthew-lister-1774b8171/" rel="noopener">
+
+							<i class="fab fa-linkedin" aria-hidden="true"></i>
+							<span class="sr-only">LinkedIn</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a target="_blank" href="https://github.com/Mattlister" rel="noopener">
+							<i class="fab fa-github" aria-hidden="true"></i>
+							<span class="sr-only">Github</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 
 
-{% endblock %}
+	{% endblock %}
 
 </body>
 

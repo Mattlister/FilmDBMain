@@ -10,8 +10,7 @@
 	screen. </p>
 
 
-<div class="container content">
-	<div class="row">
+
 		<title>TV</title>
 		<h3 class="text-center">Search For Any Favoutie TV Show</h3>
 		<form id="searchForm">
@@ -33,8 +32,7 @@ $.get("https://www.omdbapi.com/?s="+q+"&apikey=be4b405e", function(rawdata){
 document.getElementById('answer').innerHTML="<h1>"+title+"</h1><br> <img src= '"+posterurl+"'><br><p> Year Released:"+year+"</p> <br> <p> IMDB page: <a href='"+imdburl+"'target='_blank'>"+imdburl+"</a></p>"; }); }
 				</script>
 			</div>
-	</div>
-</div>
+
 
 
 {% endblock %}
