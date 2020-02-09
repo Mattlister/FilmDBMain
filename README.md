@@ -1,11 +1,26 @@
 FilmDB - Milestone 3 Project
 
 My Milestone project has been created as a combination of the 3 modules in the Python series of the Full Stack Developer course. These include
-Python Fundamentals, Practical Python and Data Centric Development. Using these knowledge from these 3 modules, I have been creating a responsive
-web application using the CRUD functionailty. CRUD allows the application the user to create, read, update and delete information on movies to 
-help create a shared passion for movies and television in my application.
+Python Fundamentals, Practical Python and Data Centric Development. Using the knowledge from these 3 modules, I have created a responsive
+web application using the CRUD functionailty. CRUD which stands for Create, Read, Update and Delete allows the user to add information to the application. It has been designed for users who have a shared love of movies and tv to help create an open source database between lovers of the small and big screen.
 
-Project Functionailty
+
+
+### Project Goals
+
+![](/) 
+
+## User Goals
+
+* This website has been designed with a target audience of movie and tv lovers. They can share what they think of what they see in todays visual entertainment market. They can watch anythng and upload information about it. If it's a multi million pound oscar winner that's designed to showcase the talents of a new or existing director, a multi million pound movie which unfortunately flops even with an incredible cast list all the way down to a free handheld open new movie by an unknown director whose starting their career. They've put their heart and soul into the film and shared it on YouTube, the users at FilmDB can watch it, review and share the film for others to see. I want this to be a totally immersible experience for anyone and it all stems from the most passionate of the small and large screen art form. The website is an open source application and technically built by the users to create word and mouth of everything they see.
+
+* Users all over the world will be able to access the site and so the productions can come from all over the world. UK, America, Foreign Films from Germany, Norway or the Middle East. Anyone can use the site to put their opinion down.
+
+* This will then lead to people having a much wider variety of category and what they watch and so they're not watching a set category all the time. Their viewing opinions can be broadened if wanted to something they might never have thought about before but someones review of a film will spark that users interest. A new foreign film set in Sweden about drugs or an American art house piece about a lonely city in Texas. Who knows what the user will discover.
+
+* FilmDB will hopefully be a great place to start their journey into something new. Help bring new directors to peoples screens to help bring new stories to life and not just endless remakes or constant sequels. Fast and Furious anyone!!
+
+
 
 
 
@@ -13,7 +28,7 @@ Project Functionailty
 Design 
 
 
-![](/assets/images/header.jpg)
+![]()
 
 * This Milestone 3 project is named FilmDB (Film DataBase). It's a API that allows user to be able to add content to a website with a functional 
 databse at the backend. It's designed with fans of screen entertainment in mind who want to contribute to a working site to improve other 
@@ -25,7 +40,7 @@ and the option for someone to become a moderator will be setup. Moderators will 
  we want this website to be used by all ages and so if a child stumbles across a review done by an adult that contains foul language, this 
  will be removed from the website under the Terms and Conditions.
 
-[My page](https://mattlister.github.io/designandconquer/)
+[My page]()
 
 * A website built for Film and TV lovers that can share their passion!!
 
@@ -72,10 +87,7 @@ and the option for someone to become a moderator will be setup. Moderators will 
 
 ## Project Design
 
-* I've designed the website with engaging colour and content. As it's a single page application, I had to think how I could add 
-  a lot of visual information onto one page and not lose anything. The idea I had was for the user to "see something", "like something" and 
-  "choose something" It's crisp, clean and the heading stands out at the top with a clever description in the heading of what the website is
-  about "Design and Conquer".
+* I've designed the website with a clean layout but with plenty of story behind the design. A user will instantly know what they're looking at and they'll see images of some of the greatest characters in movies and TV. Someone older users will have known since their big scree debut in 1976 from a space horror film to a well structured TV show which hasn't been around for years but still made a lasting impression on the audience. The floating menu I liked because it allowed the title bar to be just a tile bar and not have the naivgation menu as part of it. 
 
 ### Design
 
