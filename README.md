@@ -547,10 +547,9 @@ breaks which did help in regards to displaying on various sized devices.
 ### Acknowledgements
 
 * I'd like to say thank you to my mentor Simen Daehlin who has supported me throughout the project and has been a great influence and inspired me to
-  keep going, especially when I really was ready to throw in the towel but a 10:30 call at night helped get me back on track. The Slack
+  keep going. The Slack
   community reviewed my code and pointed out issues/ offered advice to aide me in improving my sites to produce something greater and so I'm 
-  really grateful for their consistent support and it's good to know we're in this together. I'd also like to say thank you and acknowledge John Longgately
-  and Shane Muirhead for their help in regard to issues I had with my Javascript and JQUERY code. And finally, I'd like to say a big thank you to Anna Greaves and 
+  really grateful for their consistent support and it's good to know we're in this together. I'd also like to say thank you and acknowledge  for their help in regard to issues I had with my Javascript and JQUERY code. And finally, I'd like to say a big thank you to Anna Greaves and 
   Anthony O'Brien for their indepth code reviews.
 
 ### Disclaimer

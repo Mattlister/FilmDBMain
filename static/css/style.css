@@ -9,7 +9,10 @@ body {
  
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: url("../img/newali.jpg") no-repeat center center fixed;
-  background-position: 1000px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #FFFF;
 }
 
@@ -39,19 +42,19 @@ font-family: 'Montserrat Subrayada', sans-serif;
 header {
   background-image: linear-gradient(to bottom right, red, black);
   height: 120px;
-  width: 120%;
+  width: 100%;
   opacity: .8;
-  margin-bottom: 1px;
+  margin-bottom: 30px;
 }
 /* Film DB header and font */
 
 header h1.logo {
   font-family: 'Montserrat Subrayada', sans-serif;
   margin: 2;
-  font-size: 4.5em;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 150px;
+  font-size: 7em;
+  padding-left: 50px;
+  padding-right: 700px;
+  padding-bottom: 15px;
   color: #ffffff;
   text-transform: inherit;
   float: left;
@@ -84,8 +87,8 @@ div.about {
   font-family: 'Lato', sans-serif;  
   float: right;
   font-size: 30px;
-  margin-top: 2px;
-  padding-right: 70px;
+  margin-top: 9px;
+  padding-right: 10px;
   color: #ffffff;
 }
 
@@ -97,8 +100,22 @@ div.about {
   text-decoration: none;
 }
 
+/* Jumbotron Styling */
+
+jumbotron{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    position: relative;
+    padding:0 !important;
+    margin-top:70px !important;
+    width: 1000px;
+    background: linear-gradient(to bottom right, red, black);
+    margin-top: 23px;
+    margin-bottom: 50px;
+    text-align:center;
+}
+
 form input[type=text], select {
-  width: 10%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -108,11 +125,9 @@ form input[type=text], select {
 }
 
 input[type=submit] {
-  font-family: 'Montserrat Subrayada', sans-serif;  
-  width: 60;
-  background: linear-gradient(to bottom right, red, black);
+  width: 100%;
+  background-color: #4CAF50;
   color: white;
-  position: relative;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -121,10 +136,11 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background: linear-gradient(to bottom right, black, red);
+  background-color: #45a049;
 }
 
 div {
   border-radius: 5px;
+  background-color: #f2f2f2;
   padding: 20px;
 }
