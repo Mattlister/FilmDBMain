@@ -22,6 +22,14 @@ body {
   text-align: center;
 }
 
+header h1.logo {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  margin: 2;
+  font-size: 7em;
+  color: #ffffff;
+  float: left;
+}
+
 /*
 font-family: 'Molengo', sans-serif;
 font-family: 'Oswald', sans-serif;
@@ -48,13 +56,7 @@ header {
 }
 /* Film DB header and font */
 
-header h1.logo {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  margin: 2;
-  font-size: 7em;
-  color: #ffffff;
-  float: left;
-}
+
 
 ul {
   padding-top: 5px;
@@ -95,6 +97,10 @@ div.about {
   color: #ffffff;
 }
 
+.menu li:hover {
+  background-color: rgb(236, 0, 0);
+  opacity: .15;
+}
 
 /* Menu font colours */
 .menu li a {
@@ -102,6 +108,11 @@ div.about {
   color: #FFF;
   text-decoration: none;
 }
+
+[class*="col-"] {
+  width: 100%;
+}
+
 
 /* Jumbotron Styling */
 
@@ -157,11 +168,16 @@ input[type=submit] {
 
 input[type=submit]:hover {
   width: 30%;  
-  background: linear-gradient(to bottom right, blue, grey);
+  background: linear-gradient(to bottom right, rgb(202, 0, 27), grey);
   text-align: center;
 }
 
 div {
   border-radius: 5px;
   padding: 1x;
+}
+
+footer {
+    padding-top: 18px;
+  
 }
