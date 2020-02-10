@@ -172,6 +172,8 @@ h1 {
   text-align: center;
 }
 
+
+
 input[type=submit]:hover {
   width: 30%;  
   background: linear-gradient(to bottom right, rgb(202, 0, 27), grey);
