@@ -141,7 +141,9 @@ jumbotron{
 
 }
 
-
+h1 {
+    text-align: center;
+}
 
 .form-group[type=text], select {
   width: 60%;
