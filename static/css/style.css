@@ -129,7 +129,7 @@ jumbotron{
 .form-group{
     width: 900px;
     text-align:center;
-    padding-left: 90px;
+    padding-left: 200px;
 
 
 }
@@ -155,9 +155,10 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  
 }
 
-input[type=submit] {
+.input-class[type=submit] {
   width: 100%;
   background: linear-gradient(to bottom right, red, black);
   text-align: center;
@@ -168,6 +169,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-align: center;
 }
 
 input[type=submit]:hover {
@@ -176,9 +178,19 @@ input[type=submit]:hover {
   text-align: center;
 }
 
+/* form input fields */
+
+input_class {
+    padding: 80px;
+}
+
 div {
   border-radius: 5px;
   padding: 1x;
+}
+
+small{
+    text-align: center;
 }
 
 footer {

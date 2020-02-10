@@ -6,14 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-
-	<title>FilmDB</title>
-
 	<link rel="stylesheet" href="static/css/style.css">
+    <title>FilmDB</title>
 </head>
 
 <body>
-
 
 	<header>
 		<h1 class="logo">FilmDB</h1>
@@ -44,55 +41,13 @@
 	<script src="http://code.jquery.com/jquery-1.12.4.min.js"
 		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
-	{% block footer %}
-	<footer class="container-fluid">
-		<div class="row">
-			<!-- List item with Creation note -->
-			<div class="col-sm-12 col-md-4 created-by">
-				<p>Developer: Matthew Lister</p>
-			</div>
 
-			<div class="col-sm-12 col-md-4 text-center educational-only">
-				<p>Designed For Educational Purposes Only</p>
-			</div>
-			<!-- Social Media -->
-			<div class="col-sm-12 col-md-4 socials">
-				<ul class="list-inline social-links">
-					<li class="list-inline-item">
-						<a target="_blank" href="mailto:mdlister24@hotmail.com" rel="noopener">
-							<i class="fas fa-at" aria-hidden="true"></i>
-							<span class="sr-only">Email</span>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a target="_blank" href="" rel="noopener">
-							<i class="fab fa-instagram" aria-hidden="true"></i>
-							<span class="sr-only">Instagram</span>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a target="_blank" href="https://www.linkedin.com/in/matthew-lister-1774b8171/" rel="noopener">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-							<i class="fab fa-linkedin" aria-hidden="true"></i>
-							<span class="sr-only">LinkedIn</span>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a target="_blank" href="https://github.com/Mattlister" rel="noopener">
-							<i class="fab fa-github" aria-hidden="true"></i>
-							<span class="sr-only">Github</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</footer>
+{% include 'layout/footer.html' %}
 
+</body>
 
-	{% endblock %}
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-    </body>
 </html>
