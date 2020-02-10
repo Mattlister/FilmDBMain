@@ -172,7 +172,10 @@ h1 {
   text-align: center;
 }
 
-
+.qurybox{
+width: 100%;
+  text-align: center;
+}
 
 input[type=submit]:hover {
   width: 30%;  

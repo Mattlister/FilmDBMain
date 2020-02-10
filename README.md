@@ -14,14 +14,11 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 * This website has been designed with a target audience of movie and tv enthusiasts. They can share what they think of what they see in todays visual entertainment market. A fan can watch any type of movie they want excluding adult material films and upload information about it. If it's a multi million pound oscar winner that's designed to showcase the talents of a new or existing director, a multi million pound movie which unfortunately flops even with an incredible cast list all the way down to a free handheld open new movie by an unknown director whose starting their career. They've put their heart and soul into the film and shared it on YouTube, the users at FilmDB can watch it, review and share the film for others to see. I want this to be a totally immersible experience for anyone and it all stems from the most passionate of the small and large screen art form. The website is an open source application and technically built by the users to create word and mouth of everything they see.
 
-* Users all over the world will be able to access the site and so the productions can come from all over the world. UK, America, Foreign Films from Germany, Norway or the Middle East. Anyone can use the site to put their opinion down.
+* Users all over the world will be able to access the site and so the choices can come from anywhere. UK, America, Foreign Films from Germany, Norway or the Middle East. Anyone can use the site to put their opinion down.
 
 * This will then lead to people having a much wider variety of category and what they watch and so they're not watching a set category all the time. Their viewing opinions can be broadened if wanted to something they might never have thought about before but someones review of a film will spark that users interest. A new foreign film set in Sweden about drugs or an American art house piece about a lonely city in Texas. Who knows what the user will discover.
 
 * FilmDB will hopefully be a great place to start their journey into something new. Help bring new directors to peoples screens to help bring new stories to life and not just endless remakes or constant sequels. Fast and Furious anyone!!
-
-
-
 
 
 
@@ -87,7 +84,9 @@ and the option for someone to become a moderator will be setup. Moderators will 
 
 ## Project Design
 
-* I've designed the website with a clean layout but with plenty of story behind the design. A user will instantly know what they're looking at and they'll see images of some of the greatest characters in movies and TV. Someone older users will have known since their big scree debut in 1976 from a space horror film to a well structured TV show which hasn't been around for years but still made a lasting impression on the audience. The floating menu I liked because it allowed the title bar to be just a tile bar and not have the naivgation menu as part of it. 
+* I like to design my web sites with a bold image as a key feature. So much can be told from that image and when a user first lands on a page. The image is instantly recognisable and sets the design and tone of the entiere website. I like to build my designs around the image and this includes the colour scheme, the fonts and the entire layout of the page. I chose strong clear images including great characters from movies and TV. Whether that character is from a classic film or a well structured TV show, they makes a lasting impression on the audience. 
+
+* I chose a floating menu instead of a Nav bar because it gave the page something else. It's been hard to get the layout working with the menu but I believe it was a great feature to add.
 
 ### Design
 
