@@ -1,11 +1,10 @@
 {% extends "layout/base.html" %}
 {% block content %}
-
+<h1>Login Page</h1>
 <div class="content-section">
 	<form method="POST" action="">
 		{{ form.hidden_tag() }}
 		<fieldset class="form-group">
-			<legend>Log In</legend>
 			<div class="form-group">
 				{{ form.email.label(class="form-control-label") }}
 				{% if form.email.errors %}
