@@ -88,25 +88,23 @@ div.about {
 /* Welcome to FilmDB and FilmDB and main header */
 
 /* Main Header */
-.menu {
-  font-family: 'Lato', sans-serif;  
-  float: right;
-  font-size: 30px;
-  margin-top: 9px;
-  padding-right: 10px;
-  color: #ffffff;
-}
+.
+
+/* menu hover effect */
 
 .menu li:hover {
   background-color: rgb(236, 0, 0);
   opacity: .15;
 }
 
-/* Menu font colours */
+/* Menu styling*/
 .menu li a {
   font-family: 'Montserrat Subrayada', sans-serif;
   color: #FFF;
   text-decoration: none;
+  font-size: 35px;
+  margin-top: 9px;
+ 
 }
 
 [class*="col-"] {
@@ -143,7 +141,9 @@ jumbotron{
 
 }
 
-form input[type=text], select {
+
+
+.form-group[type=text], select {
   width: 60%;
   padding: 12px 20px;
   margin: 8px 0;
