@@ -12,13 +12,13 @@
 
 <body>
 
-	<header>
-		<h1 class="logo">FilmDB</h1>
-	</header>
+	<div class="header">
+  <a href="#default" class="logo">FilmDB</a>
 
-	<strong>
-	    <nav class="navbar navbar default">
-	       <ul class="menu">
+</div>
+
+<div class="header-right">
+     <ul class="menu">
                 <li><a href="{{ url_for('index') }}">Home</a></li>              <li><a href="{{ url_for('register') }}">Sign up</a></li>
 			    <li><a href="{{ url_for('login') }}">Login</a></li>
 			    <li><a href="{{ url_for('contact') }}">Contact</a></li>
@@ -26,8 +26,7 @@
 			    <li><a href="{{ url_for('tv') }}">TV</a></li>
 			     <li><a href="{{ url_for('casting') }}">Casting</a></li>  
 		  </ul>
-	   </nav
- ></strong>
+  </div>
 
 
 
