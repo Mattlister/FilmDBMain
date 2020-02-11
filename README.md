@@ -27,7 +27,7 @@ Design
 
 ![]()
 
-* This Milestone 3 project is named FilmDB (Film DataBase). It's a API that allows user to be able to add content to a website with a functional 
+* This Milestone 3 project is named FilmDB (Film DataBase). It's an API that allows a user to be able to add content to a website with a functional 
 databse at the backend. It's designed with fans of screen entertainment in mind who want to contribute to a working site to improve other 
 users knowledge on Films and TV. Due to the amount of information on the website, there are multiple pages to allow interactivity in various 
 categories. There's also a Sign Up/ register and Log in page which a user will need to do in order to add content to the site. The data they 
@@ -41,8 +41,10 @@ and the option for someone to become a moderator will be setup. Moderators will 
 
 * A website built for Film and TV lovers that can share their passion!!
 
-* The project I’ve designed is for my third milestone project for the Data Centric Development module of the Full Stack Developer Course. I’ve used Flask and Python to design the majority layout of the website. This is to provide functionality and sits within the HTML shell with added elements of CSS to add styling. JavaScript and JQuery have been used for
-  the. This is a Multi Page Applciation Film Database website. Users are able to login to a Mongo Database which works in conjunction with Heroku and WTForms.There's an API in the background that allows the user to search for Films, TV and Casting of screen entertainment. There's a an option to become a mediator who have the option where a fan can makie sure that the website is being ran properly and is friendly for users of all ages.
+* The project I’ve designed is for my third milestone project for the Data Centric Development module of the Full Stack Developer Course. I’ve used Flask and Python to design the majority of layout of the website. This is to provide functionality and sits within the HTML shell with added elements of CSS to add styling. JavaScript and JQuery have been used for
+  the. 
+  
+  This is a Multi Page Applciation website. Users are able to login to a Mongo Database which works in conjunction with Heroku and WTForms.There's an API in the background that allows the user to search for Films and TV from screen entertainment. There's a an option to become a mediator who have the option where a fan can makie sure that the website is being ran properly and is friendly for users of all ages.
 
 ## Contents
 
@@ -84,7 +86,7 @@ and the option for someone to become a moderator will be setup. Moderators will 
 
 ## Project Design
 
-* I like to design my web sites with a bold image as a key feature. So much can be told from that image and when a user first lands on a page. The image is instantly recognisable and sets the design and tone of the entiere website. I like to build my designs around the image and this includes the colour scheme, the fonts and the entire layout of the page. I chose strong clear images including great characters from movies and TV. Whether that character is from a classic film or a well structured TV show, they makes a lasting impression on the audience. 
+* I like to design my web sites with a bold image as the main focal point and as a key feature. The image makes an impact when thr user first lands on a page. The image is instantly recognisable and sets the design and tone of the entire website. I like the websites I design to be built around the image and including the colour scheme, the fonts and the entire layout of the page. I chose strong clear images including great characters from movies and TV. Whether that character is from a classic film or a well structured TV show, they makes a lasting impression on the audience. 
 
 * I chose a floating menu instead of a Nav bar because it gave the page something else. It's been hard to get the layout working with the menu but I believe it was a great feature to add.
 
