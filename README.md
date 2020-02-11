@@ -88,12 +88,12 @@ and the option for someone to become a moderator will be setup. Moderators will 
 
 * I like to design my web sites with a bold image as the main focal point and as a key feature. The image makes an impact when thr user first lands on a page. The image is instantly recognisable and sets the design and tone of the entire website. I like the websites I design to be built around the image and including the colour scheme, the fonts and the entire layout of the page. I chose strong clear images including great characters from movies and TV. Whether that character is from a classic film or a well structured TV show, they makes a lasting impression on the audience. 
 
-* I chose a floating menu instead of a Nav bar because it gave the page something else. It's been hard to get the layout working with the menu but I believe it was a great feature to add.
+* I chose a floating menu instead of a Nav bar because it stands out on the page. It's been hard to get the layout working with the menu but I believe it was a great feature to add.
 
 ### Design
 
 
-* As you can see in the wireframes section further down, I kept pretty close to my original design. I tried various colour schemes for the heading title but I wanted something that worked well with the background images and seemed to fit with any colour of any image. Whether this was the image of Ripley, the image of or an image like, the Red and Black gradient colour looked great in both it's colour choice and as a header. The white coloured font stood better in the header comapred to black or grey which lost something when I made th image opaque.
+* As you can see in the wireframes and concept section further down, I kept pretty close to my original design. I tried various colour schemes for the heading title but I wanted something that worked well with the background images and seemed to fit with any colour of any image. Whether this was the image of Ripley, the image of or an image like, the Red and Black gradient colour looked great with both it's colour choice and as a header. The white coloured font stood better in the header comapred to black or grey which lost impact when I made the title bar opaque.
 
 I looked at other sites that had a similar theme to mine and I felt mine was different enough to stand out and be something completely new and fresh and to look cool to a user.
 
@@ -101,7 +101,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 ### Colours
 
-* For the most part, the images used create the colour scheme themsleves. A bold image was chosen to add a poster effect. Then, I chose a colour scheme that would sit well on top of the images and so a white font used for all the wording. A Red and Black gradient used as the main header of the website.
+* For the most part, the images used create the colour scheme themsleves. A bold image was chosen to add a poster effect, like a movie poster. Then, I chose a colour scheme that would sit well on top of the images and so a white font used for all the wording. A Red and Black gradient used as the main header of the website finished off the design.
 
 
 
