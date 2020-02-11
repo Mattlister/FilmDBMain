@@ -64,10 +64,6 @@ body {
   color: black;
 }
 
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
 
 .header-right {
   float: right;

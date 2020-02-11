@@ -16,7 +16,7 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 * Users all over the world will be able to access the site and so the choices can come from anywhere. UK, America, Foreign Films from Germany, Norway or the Middle East. Anyone can use the site to put their opinion down.
 
-* This will then lead to people having a much wider variety of category and what they watch and so they're not watching a set category all the time. Their viewing opinions can be broadened if wanted to something they might never have thought about before but someones review of a film will spark that users interest. A new foreign film set in Sweden about drugs or an American art house piece about a lonely city in Texas. Who knows what the user will discover.
+* This will then lead to users variety of what they watch and so they're not stuck wi th the same old category all the time. Their viewing opinions can be broadened if they've never thought about a type of film but a good review will spark the users interest. A new foreign film set in Sweden about drugs or an American art house piece about a lonely city in Texas. Who knows what the user will discover.
 
 * FilmDB will hopefully be a great place to start their journey into something new. Help bring new directors to peoples screens to help bring new stories to life and not just endless remakes or constant sequels. Fast and Furious anyone!!
 
