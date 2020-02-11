@@ -104,7 +104,6 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * For the most part, the images used create the colour scheme themsleves. A bold image was chosen to add a poster effect, like a movie poster. Then, I chose a colour scheme that would sit well on top of the images and so a white font used for all the wording. A Red and Black gradient used as the main header of the website finished off the design.
 
 
-
 ### Images
 
 * Each image chosen was used as they were instantly recognisable pictures from cineman and TV in the past 40 to 50 years. The target audience will range in variation and so I had to think of something that was striking, not a frightening image for smaller children but cool enough to bring people to the site. The images I chose I believe represented this idea very well and the options chosen stood out in the overall design of the site. 
@@ -113,8 +112,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 * I like the applications I design to be clean without being over the top and so I did the same with this. No over wording on the pages, just something to get you started.
 
-* they click on location. They have 3 climbs they can experience with Design and 
-  Conquer. It's just quick to use.
+* 
 
 * To get a taste of what the site offers, if they choose "Information" on the back of the flipped image, some content on the modal which pops up explains 
 * what the adventure holds in store. There's also a video which when clicked 
