@@ -244,7 +244,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * Original Full Screen Design
 
 <p align="center">
-  <img width="400" height="400" src="/assets/wireframes/originalFSwireframe.png">
+  <img width="400" height="400" src="/static/images/Fullweb.jpg">
 </p>
 
 * Original Ipad Design
