@@ -256,7 +256,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * Concept idea
 
 <p align="center">
-  <img width="400" height="400" src="/static/images/alienWF.jpg">
+  <img width="400" height="400" src="/static/images/alienWF idea.jpg">
 </p>
 
 
