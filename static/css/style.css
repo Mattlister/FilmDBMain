@@ -86,6 +86,7 @@ height: auto !important;
   }
 }
 
+/* menu styling */
 ul {
   padding-top: 5px;
   padding-right: 10px;
@@ -156,6 +157,7 @@ jumbotron{
     width: 900px;
     text-align:center;
     padding-left: 200px;
+    padding-top: 40px;
 
 
 }
