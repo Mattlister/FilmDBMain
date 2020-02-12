@@ -247,16 +247,16 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   <img width="400" height="400" src="/static/images/Fullweb.jpg">
 </p>
 
-* Original Ipad Design
-
-<p align="center">
-  <img width="400" height="400" src="/assets/wireframes/originalipadwframe.png">
-</p>
-
 * Original Mobile Design
 
 <p align="center">
-  <img width="300" height="350" src="/assets/wireframes/orangemob.png">
+  <img width="300" height="350" src="/static/images/mobile.jpg">
+</p>
+
+* Concept idea
+
+<p align="center">
+  <img width="400" height="400" src="/static/images/alienWF.jpg">
 </p>
 
 
