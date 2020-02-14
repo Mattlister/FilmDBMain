@@ -1,9 +1,10 @@
 import os
+import flask_pymongo import PyMongo, pymongo
 from flask import Flask, render_template, url_for, flash, redirect
 from forms import RegistrationForm, LoginForm
 from os import path
 if path.exists('env.py'):
-    import env
+    import env as config
 
 
 app = Flask(__name__)
@@ -12,6 +13,8 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 # Secret Key value
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
+
+mongo = PyMongo(app)
 
 
 posts = [
@@ -57,7 +60,7 @@ def login():
             flash('Login Unsuccessful, please check username and\
              password', 'danger')
         return render_template('pages/login.html', title='Login', form=form)
-    return render_template('pages/login.html', title='Login', form=form)
+    return render_template('pages/login.html', title='Login', form=form)  
 
 
 
@@ -91,3 +94,4 @@ if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '127.0.0.1'),
             port=os.environ.get('PORT', '5000'),
             debug=True)
+            
