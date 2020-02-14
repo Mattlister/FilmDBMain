@@ -1,11 +1,11 @@
 import os
-import flask_pymongo import PyMongo, pymongo
+from flask_pymongo import PyMongo
 from flask import Flask, render_template, url_for, flash, redirect
 from forms import RegistrationForm, LoginForm
 from os import path
-if path.exists('env.py'):
-    import env as config
 
+if path.exists("env.py"):
+    import env
 
 app = Flask(__name__)
 
@@ -94,4 +94,3 @@ if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '127.0.0.1'),
             port=os.environ.get('PORT', '5000'),
             debug=True)
-            
