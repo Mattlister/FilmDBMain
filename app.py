@@ -1,5 +1,6 @@
 import os
 from flask import Flask, render_template, url_for, flash, redirect
+from flask_pymongo import PyMongo
 from forms import RegistrationForm, LoginForm
 from os import path
 if path.exists('env.py'):
@@ -14,20 +15,9 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 
-posts = [
-    {
-        "user": "Matthew Lister",
-        "title": "First movie entry",
-        "content": "Empire Sucks",
-        "date_posted": "February 4, 2020",
-    },
-    {
-        "user": "Samantha Lister",
-        "title": "First TV entry",
-        "content": "Loving Suits",
-        "date_posted": "February 5, 2020",
-    },
-]
+app = Flask(__name__)
+app.config["MONGO_URI"] = "mongodb://localhost:27017/myDatabase"
+mongo = PyMongo(app)
 
 
 @app.route("/")
