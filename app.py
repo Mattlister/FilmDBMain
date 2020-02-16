@@ -15,10 +15,6 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 
-app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb://localhost:27017/myDatabase"
-mongo = PyMongo(app)
-
 
 @app.route("/")
 def index():
