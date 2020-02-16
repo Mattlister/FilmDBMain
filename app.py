@@ -60,7 +60,6 @@ def login():
     return render_template('pages/login.html', title='Login', form=form)
 
 
-
 @app.route("/films")
 def films():
     return render_template("pages/films.html")
