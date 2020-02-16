@@ -2,6 +2,7 @@ import os
 from flask import Flask, render_template, url_for, flash, redirect
 from flask_pymongo import PyMongo
 from forms import RegistrationForm, LoginForm
+from bson.objectid import ObjectId
 from os import path
 if path.exists('env.py'):
     import env
@@ -14,6 +15,7 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 # Secret Key value
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
+mongo = PyMongo(app)
 
 
 @app.route("/")
