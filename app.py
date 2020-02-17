@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, url_for, flash, redirect
+from flask import Flask, render_template, url_for, request, flash, redirect
 from flask_pymongo import PyMongo
 from forms import RegistrationForm, LoginForm
 from bson.objectid import ObjectId
@@ -21,6 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 def index():
     return render_template("pages/index.html")
+
 
 
 @app.route('/register', methods=['GET', 'POST'])
