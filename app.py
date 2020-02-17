@@ -23,9 +23,9 @@ def index():
     return render_template("pages/index.html")
 
 
-@app.route("/pages/createmovie.html")
+@app.route("/pages/createmovie")
 def get_createinfo():
-    return render_template("tasks.html", tasks=mongo.db.tasks.find())
+    return render_template("createmovie.html", tasks=mongo.db.Pick_your_favourite())
 
 
 @app.route('/register', methods=['GET', 'POST'])
