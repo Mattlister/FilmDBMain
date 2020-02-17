@@ -23,6 +23,10 @@ def index():
     return render_template("pages/index.html")
 
 
+@app.route("/pages/createmovie.html")
+def get_createinfo():
+    return render_template("tasks.html", tasks=mongo.db.tasks.find())
+
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
