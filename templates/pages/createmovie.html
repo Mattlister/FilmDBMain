@@ -1,14 +1,8 @@
-html>
-    <head>
+{% extends "layout/base.html" %}
+{% block content %}
 
-    </head>
-    <body>
-        {% for task in tasks %}
-            {{task.task_name}}
-            {{task.category_name}}
-            {{task.task_description}}
-            {{task.is_urgent}}
-            {{task.due_date}}
-        {% endfor %}
-    </body>
-</html>
+<h1>Create Movie</h1>
+<p> If you want to let us know what you think of the site or how to become a moderator, please get in touch. </p>
+
+
+{% endblock %}
