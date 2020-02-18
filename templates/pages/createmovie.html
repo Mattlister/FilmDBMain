@@ -1,12 +1,12 @@
 {% extends "layout/base.html" %}
 {% block content %}
 
-        {% for task in tasks %}
-            {{tasks.task_name}}
-            {{tasks.category_name}}
-            {{tasks.task_description}}
-            {{tasks.is_urgent}}
-            {{tasks.due_date}}
+        {% for film in film %}
+            {{film.task_name}}
+            {{film.category_name}}
+            {{film.task_description}}
+            {{film.is_urgent}}
+            {{film.due_date}}
         {% endfor %}
 
 {% endblock %}

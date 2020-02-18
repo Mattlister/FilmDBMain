@@ -50,7 +50,7 @@ def login():
 
 @app.route("/createmovie")
 def createmovie():
-    return render_template("pages/createmovie.html", films=mongo.db.Film_Data.find())
+    return render_template("pages/createmovie.html", film=mongo.db.tasks.find())
 
 
 @app.route("/films")
