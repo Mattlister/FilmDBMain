@@ -23,7 +23,6 @@ def index():
     return render_template("pages/index.html")
 
 
-
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
@@ -31,12 +30,6 @@ def register():
         flash(f"Account created for {form.username.data}", "success")
         return redirect(url_for('home'))
     return render_template('pages/register.html', title='Register', form=form)
-
-
-@app.route("/createmovie")
-def get_createinfo():
-    return render_template("pages/createmovie.html", films=mongo.db.Film_Data.find())
-
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -52,6 +45,11 @@ def login():
              password', 'danger')
         return render_template('pages/login.html', title='Login', form=form)
     return render_template('pages/login.html', title='Login', form=form)
+
+
+@app.route("/createmovie")
+def createmovie():
+    return render_template("pages/createmovie.html", films=mongo.db.Film_Data.find())
 
 
 @app.route("/films")
