@@ -13,8 +13,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #FFFF;
+  color: black;
 }
+
 
 }
 .starter-template {
@@ -22,7 +23,7 @@ body {
   text-align: center;
 }
 
-/* background, gradient and border settings
+/* background, gradient and border settings */
 
 
 
@@ -94,9 +95,8 @@ ul {
   padding-left: 150px;
 }
 
-/*
- * Centering the body content
- */
+/* Centering the body content */
+ 
 
 div.home {
   padding: 10px 0 30px 0;
@@ -117,7 +117,7 @@ div.about {
 /* Welcome to FilmDB and FilmDB and main header */
 
 /* Main Header */
-.
+
 
 /* menu hover effect */
 
@@ -126,7 +126,7 @@ div.about {
   opacity: .15;
 }
 
-/* Menu styling*/
+/* Menu styling */
 .menu li a {
   font-family: 'Montserrat Subrayada', sans-serif;
   color: #FFF;
@@ -230,3 +230,4 @@ footer {
     padding-top: 18px;
   
 }
+
