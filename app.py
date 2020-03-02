@@ -7,7 +7,7 @@ from os import path
 if path.exists('env.py'):
     import env
 
-
+2
 app = Flask(__name__)
 
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
