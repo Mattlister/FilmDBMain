@@ -14,3 +14,74 @@ body {
   background-size: cover;
   color: #FFFF;
 }
+.header {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  overflow: hidden;
+  font-size: 4em;
+  background-image: linear-gradient(to bottom right, red, black);
+  padding: 20px 10px;
+}
+
+/* menu styling */
+ul {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+/* Welcome to FilmDB and FilmDB and main header */
+
+/* Main Header */
+
+
+/* menu hover effect */
+
+.menu li:hover {
+  background-color: rgb(236, 0, 0);
+  opacity: .15;
+}
+
+/* Menu styling */
+.menu li a {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  color: #FFF;
+  font-size: 15px;
+ 
+}
+
+.div-class{
+    width: 900px;
+    text-align:center;
+    padding-left: 90px;
+
+}
+/* form input fields */
+
+input_class {
+    padding: 80px;
+}
+
+div {
+  border-radius: 5px;
+  padding: 1x;
+}
+
+small{
+    text-align: center;
+}
+
+/* form input fields */
+
+input_class {
+    padding: 80px;
+}
+
+div {
+  border-radius: 5px;
+  padding: 1x;
+}
+
+
+footer {
+    padding-top: 18px;
+  
