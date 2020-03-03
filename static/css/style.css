@@ -1,0 +1,16 @@
+/* Main Background image and styling */
+
+@import url('https://fonts.googleapis.com/css?family=Molengo|Muli|Oswald&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Montserrat+Subrayada&display=swap');
+
+body {
+ 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: url("../images/newali.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #FFFF;
+}
