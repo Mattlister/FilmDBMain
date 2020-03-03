@@ -1,87 +1,64 @@
 /* Main Background image and styling */
-
-@import url('https://fonts.googleapis.com/css?family=Molengo|Muli|Oswald&display=swap');
-
-@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Montserrat+Subrayada&display=swap');
-
-body {
- 
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: url("../images/newali.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #FFFF;
+ @import url('https://fonts.googleapis.com/css?family=Molengo|Muli|Oswald&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Montserrat+Subrayada&display=swap');
+ body {
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     background: url("../images/newali.jpg") no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     color: #FFFF;
 }
-.header {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  overflow: hidden;
-  font-size: 4em;
-  background-image: linear-gradient(to bottom right, red, black);
-  padding: 20px 10px;
+ .header {
+     font-family: 'Montserrat Subrayada', sans-serif;
+     overflow: hidden;
+     font-size: 4em;
+     background-image: linear-gradient(to bottom right, red, black);
+     padding: 20px 10px;
 }
-
 /* menu styling */
-ul {
-  padding-top: 5px;
-  padding-bottom: 5px;
+ ul {
+     padding-top: 5px;
+     padding-bottom: 5px;
 }
-
-
 /* Welcome to FilmDB and FilmDB and main header */
-
 /* Main Header */
-
-
 /* menu hover effect */
-
-.menu li:hover {
-  background-color: rgb(236, 0, 0);
-  opacity: .15;
+ .menu li:hover {
+     background-color: rgb(236, 0, 0);
+     opacity: .15;
 }
-
 /* Menu styling */
-.menu li a {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  color: #FFF;
-  font-size: 15px;
- 
+ .menu li a {
+     font-family: 'Montserrat Subrayada', sans-serif;
+     color: #FFF;
+     font-size: 15px;
 }
-
-.div-class{
-    width: 900px;
-    text-align:center;
-    padding-left: 90px;
-
+ .div-class{
+     width: 900px;
+     text-align:center;
+     padding-left: 90px;
 }
 /* form input fields */
-
-input_class {
-    padding: 80px;
+ input_class {
+     padding: 80px;
 }
-
-div {
-  border-radius: 5px;
-  padding: 1x;
+ div {
+     border-radius: 5px;
+     padding: 1px;
 }
-
-small{
-    text-align: center;
+ small{
+     text-align: center;
 }
-
 /* form input fields */
-
-input_class {
-    padding: 80px;
+ input_class {
+     padding: 80px;
 }
-
-div {
-  border-radius: 5px;
-  padding: 1x;
+ div {
+     border-radius: 5px;
+     padding: 1px;
 }
-
-
-footer {
-    padding-top: 18px;
-  
+ footer {
+     padding-top: 18px;
+}
