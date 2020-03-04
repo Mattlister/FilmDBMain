@@ -17,6 +17,7 @@
      background-image: linear-gradient(to bottom right, red, black);
      padding: 20px 10px;
 }
+
 /* menu styling */
  ul {
      padding-top: 5px;
@@ -33,8 +34,30 @@
  .menu li a {
      font-family: 'Montserrat Subrayada', sans-serif;
      color: #FFF;
-     font-size: 15px;
+     font-size: 25px;
+     float: right;
+     text-align: right;
+    margin-top: 9px;
+  padding-right: 10px;
+  
+     
 }
+
+.menu {
+  font-family: 'Lato', sans-serif;  
+  float: right;
+  font-size: 30px;
+  margin-top: 9px;
+  padding-right: 10px;
+}
+
+/* Menu font colours */
+.menu li a {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  color: #FFF;
+  text-decoration: none;
+}
+
  .div-class{
      width: 900px;
      text-align:center;
