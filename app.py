@@ -18,7 +18,7 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-@app.route("/")
+@app.route('/')
 def index():
     return render_template("pages/index.html")
 
@@ -64,11 +64,6 @@ def films():
 @app.route("/tv")
 def tv():
     return render_template("pages/tv.html")
-
-
-@app.route("/casting")
-def casting():
-    return render_template("pages/casting.html")
 
 
 @app.route("/contact")

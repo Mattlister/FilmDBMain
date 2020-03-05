@@ -6,4 +6,5 @@
     "python.terminal.activateEnvironment": false,
    "files.autoSave": "onFocusChange",
 "python.formatting.provider": "black",
+"python.pythonPath": "env/bin/python2.7",
 }
