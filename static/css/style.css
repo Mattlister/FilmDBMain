@@ -14,8 +14,15 @@
      font-family: 'Montserrat Subrayada', sans-serif;
      overflow: hidden;
      font-size: 4em;
+     font: white;
      background-image: linear-gradient(to bottom right, red, black);
      padding: 20px 10px;
+}
+
+p {
+
+     float: right;
+     text-align: left;
 }
 
 /* menu styling */
@@ -38,8 +45,7 @@
      float: right;
      text-align: right;
     margin-top: 9px;
-  padding-right: 10px;
-  
+    padding-right: 10px;
      
 }
 
