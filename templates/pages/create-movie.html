@@ -1,0 +1,22 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+<h3>Add Movie Info</h3>
+<ul class="collapsible" data-collapsible="accordion">
+	{% for film in film %}
+	<li>
+		<div class="collapsible-header">
+
+        <i class="material-icons">expand_more</i>
+			{{film.task_name}}</strong> - {{film.due_date}}
+		</div>
+		<div class="collapsible-body">
+			<span>
+            {{film.task_description}}
+            </span>
+		</div>
+	</li>
+	{% endfor %}
+</ul>
+
+{% endblock %}
