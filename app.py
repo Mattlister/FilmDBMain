@@ -56,9 +56,6 @@ def login():
 def createmovie():
     return render_template("pages/createmovie.html", film=mongo.db.tasks.find())
 
-@app.route('/add_task')
-def add_task():
-    return render_template('pages/addtask.html')
 
 @app.route("/films")
 def films():
