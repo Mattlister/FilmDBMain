@@ -1,7 +1,6 @@
 import os
 from flask import Flask, render_template, url_for, request, flash, redirect
 from flask_pymongo import PyMongo
-from flask_bcrypt import Bcrypt
 from forms import RegistrationForm, LoginForm
 from bson.objectid import ObjectId
 from os import path
@@ -17,12 +16,9 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
-bcrypt = Bcrypt(app)
-users = mongo.db.users
 
 
-
-@app.route('/')
+@app.route("/")
 def index():
     return render_template("pages/index.html")
 
@@ -56,9 +52,6 @@ def login():
 def createmovie():
     return render_template("pages/createmovie.html", film=mongo.db.tasks.find())
 
-@app.route('/add_task')
-def add_task():
-    return render_template('pages/addtask.html')
 
 @app.route("/films")
 def films():
@@ -68,6 +61,11 @@ def films():
 @app.route("/tv")
 def tv():
     return render_template("pages/tv.html")
+
+
+@app.route("/casting")
+def casting():
+    return render_template("pages/casting.html")
 
 
 @app.route("/contact")

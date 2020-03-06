@@ -6,11 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="static/css/style.css">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   
-   
+    <title>FilmDB</title>
 </head>
 
 <body>
@@ -22,14 +22,15 @@
 
 <div class="container">
    <div class="row">
+<div class="col">
 
 <div class="col">
      <ul class="menu">
-                <li><a href="{{ url_for('index') }}">Home</a></li>            
+                <li><a href="{{ url_for('index') }}">Home</a></li>              <li><a href="{{ url_for('register') }}">Sign up</a></li>
+			    <li><a href="{{ url_for('login') }}">Login</a></li>
 			    <li><a href="{{ url_for('contact') }}">Contact</a></li>
 		        <li><a href="{{ url_for('films') }}">Films</a></li>
-                <li><a href="{{ url_for('createmovie') }}">Create Movie</a></li>
-                <li><a href="{{ url_for('add_task') }}">add task</a></li>
+			    <li><a href="{{ url_for('createmovie') }}">Create Movie</a></li>
 		  </ul>
   </div>
  </div> 
