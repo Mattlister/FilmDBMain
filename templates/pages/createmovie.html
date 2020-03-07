@@ -1,47 +1,30 @@
-{% extends 'layout/base.html' %} 
+{% extends 'layout/base.html' %}
 
 {% block content %}
 <h3>Add Task</h3>
 <div class="row">
-    <form action="" method="POST" class="col s12">
+	<form action="" method="POST" class="col s12">
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">assignment</i>
+				<input id="film_name" name="file_name" type="text">
+				<label for="">Film Name</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">subject</i>
+				<textarea name="review" id="review" cass="materialize-textarea"></textarea>
+				<label for="">Review</label>
+			</div>
+		</div>
         <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">assignment</i>
-                <input id="category_name" name="category_name" type="text">
-                <label for="icon_prefix">Film Name</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">subject</i>
-                <textarea name="task_name" id="task_name" class="materialize-textarea"></textarea>
-                <label for="icon_telephone">Film Description</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">today</i>
-                <input id="due_date" name="due_date" type="text" class="datepicker">
-                <label for="icon_prefix">Due Date</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="switch">
-                <label>
-                  <input id="is_urgent" name="is_urgent" type="checkbox">
-                  <span class="lever"></span>
-                  Is Urgent
-                </label>
-            </div>
-        </div>
-    </form>
-</div>
- <div class="row">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        	<button class="btn waves-effect waves-light" type="submit" name="action">Submit
                 <i class="material-icons right">playlist_add</i>
              </button>
         </div>
-   </form>
+	</form>
 </div>
-{% endblock %}
 
+
+{% endblock %}
