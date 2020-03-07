@@ -60,11 +60,12 @@ def createmovie():
 
     return render_template("pages/createmovie.html")
 
+
 @app.route("/createtv", methods=["GET", "POST"])  
 def createtv():
     if request.method == "POST":
         film_data = mongo.db.TVData
-        print(tv_data)
+        print(film_data)
         film_data.insert_one(request.form.to_dict())
         return render_template("pages/createtv.html")
 
