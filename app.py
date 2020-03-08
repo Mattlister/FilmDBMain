@@ -1,7 +1,7 @@
 import os
-from flask import Flask, render_template, url_for, request, flash, redirect
+from flask import Flask, render_template, url_for, request, session, redirect
 from flask_pymongo import PyMongo
-from forms import RegistrationForm, LoginForm
+import bcrypt
 from bson.objectid import ObjectId
 from os import path
 if path.exists('env.py'):
@@ -16,41 +16,46 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
-users = mongo.db.users
 
 
 
 @app.route('/')
 def index():
-    return render_template("pages/index.html")
 
+    if 'username' in session:
+           return 'You are logged in as ' + session['username']
 
-@app.route('/register', methods=['GET', 'POST'])
-def register():
-    form = RegistrationForm()
-    if form.validate_on_submit():
-        flash(f"Account created for {form.username.data}", "success")
-        return redirect(url_for('home'))
-    return render_template('pages/register.html', title='Register', form=form)
+    return render_template('index.html')
 
-
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['POST'])
 def login():
-    form = LoginForm()
+    users = mongo.db.users
+    login_user = users.find_one({'name' : request.form['username']})
 
-    if form.validate_on_submit():
-        if form.email.data == 'mdlister24@hotmail.com' and\
-         form.password.data == 'password':
-            flash('You have been logged in', 'success')
-            return redirect(url_for('home'))
-        else:
-            flash('Login Unsuccessful, please check username and\
-             password', 'danger')
-        return render_template('pages/login.html', title='Login', form=form)
-    return render_template('pages/login.html', title='Login', form=form)
+    if login_user:
+        if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
+            session['username'] = request.form['username']
+            return redirect(url_for('index'))
 
+    return 'Invalid username/password combination'
 
-@app.route("/createmovie", methods=["GET", "POST"])  
+@app.route('/register', methods=['POST', 'GET'])
+def register():
+    if request.method == 'POST':
+        users = mongo.db.users
+        existing_user = users.find_one({'name' : request.form['username']})
+
+        if existing_user is None:
+            hashpass = bcrypt.hashpw(request.form['pass'].encode('utf-8'), bcrypt.gensalt())
+            users.insert({'name' : request.form['username'], 'password' : hashpass})
+            session['username'] = request.form['username']
+            return redirect(url_for('index'))
+        
+        return 'That username already exists!'
+
+    return render_template('pages/register.html')
+
+@app.route("/createmovie", methods=['GET', 'POST'])  
 def createmovie():
     if request.method == "POST":
         film_data = mongo.db.FilmData
@@ -61,7 +66,7 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-@app.route("/createtv", methods=["GET", "POST"])  
+@app.route("/createtv", methods=['GET', 'POST'])  
 def createtv():
     if request.method == "POST":
         film_data = mongo.db.TVData
