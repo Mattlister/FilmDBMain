@@ -3,15 +3,14 @@ from flask import Flask, render_template, url_for, request, session, redirect
 from flask_pymongo import PyMongo
 import bcrypt
 from bson.objectid import ObjectId
-from os import path
-if path.exists('env.py'):
+if os.path.exists('env.py'):
     import env
 
 
 app = Flask(__name__)
 
-app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
+app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 # Secret Key value
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
@@ -24,7 +23,7 @@ def index():
     if 'username' in session:
            return 'You are logged in as ' + session['username']
 
-    return render_template('pages/index.html')
+    return render_template('pages/index.html', films=mongo.db.films.find())
 
 
 
@@ -62,7 +61,7 @@ def register():
 @app.route("/createmovie", methods=['GET', 'POST'])  
 def createmovie():
     if request.method == "POST":
-        film_data = mongo.db.FilmData
+        film_data = mongo.db.films
         print(film_data)
         film_data.insert_one(request.form.to_dict())
         return render_template("pages/createmovie.html")
@@ -74,7 +73,7 @@ def createmovie():
 def createtv():
     if request.method == "POST":
         film_data = mongo.db.TVData
-        print(film_data)
+        print(mongo.db.TVData)
         film_data.insert_one(request.form.to_dict())
         return render_template("pages/createtv.html")
 

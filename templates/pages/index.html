@@ -2,6 +2,9 @@
 {% extends "layout/base.html" %}
 {% block content %}
 
+{% for film in films %}
+{{ film.filmname }}
+{% endfor %}
 
 <p> At FilmDB (DataBase) WE LOVE MOVIES and we want the same for you.
 
