@@ -20,13 +20,13 @@ mongo = PyMongo(app)
 @app.route('/')
 def index():
     if 'username' in session:
-           return 'You are logged in as' + session['username']
+           return 'You are logged in as ' + session['username']
 
     return render_template('pages/index.html', films=mongo.db.films.find())
 
 
 
-@app.route('/login', methods=['POST', 'GET'])
+@app.route('/login', methods=['POST',])
 def login():
     users = mongo.db.users
     login_user = users.find_one({'name' : request.form['username']})
