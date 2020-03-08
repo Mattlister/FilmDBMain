@@ -58,7 +58,7 @@ def register():
 
     return render_template('pages/register.html')
 
-@app.route("/createmovie", methods=['GET', 'POST'])  
+@app.route("/createmovie", methods=['POST', 'GET'])  
 def createmovie():
     if request.method == "POST":
         film_data = mongo.db.films
