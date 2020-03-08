@@ -19,9 +19,8 @@ mongo = PyMongo(app)
 
 @app.route('/')
 def index():
-
     if 'username' in session:
-           return 'You are logged in as ' + session['username']
+           return 'You are logged in as' + session['username']
 
     return render_template('pages/index.html', films=mongo.db.films.find())
 
@@ -29,7 +28,6 @@ def index():
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
-    if request.method == 'POST':
     users = mongo.db.users
     login_user = users.find_one({'name' : request.form['username']})
 
@@ -70,7 +68,7 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-@app.route("/createtv", methods=['GET', 'POST'])  
+@app.route("/createtv", methods=['POST', 'GET'])  
 def createtv():
     if request.method == "POST":
         film_data = mongo.db.TVData
