@@ -18,14 +18,15 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-
 @app.route('/')
 def index():
 
     if 'username' in session:
            return 'You are logged in as ' + session['username']
 
-    return render_template('index.html')
+    return render_template('pages/index.html')
+
+
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -37,7 +38,10 @@ def login():
             session['username'] = request.form['username']
             return redirect(url_for('index'))
 
-    return 'Invalid username/password combination'
+            return 'Invalid username/password combination'
+            
+    return render_template('pages/login.html')
+
 
 @app.route('/register', methods=['POST', 'GET'])
 def register():
