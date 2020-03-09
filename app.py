@@ -31,7 +31,7 @@ def index():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        login_user = users.find_one({'name' : request.form['username']})
+    login_user = users.find_one({'name' : request.form['username']})
 
     if login_user:
         if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
@@ -61,6 +61,7 @@ def register():
         return 'That username already exists!'
 
     return render_template('pages/register.html')
+
 
 
 @app.route("/createmovie", methods=['POST', 'GET'])  
