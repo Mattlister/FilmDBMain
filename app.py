@@ -3,6 +3,7 @@ from flask import Flask, render_template, url_for, request, session, redirect, s
 from flask_pymongo import PyMongo
 from werkzeug.security import generate_password_hash, check_password_hash
 from bson.objectid import ObjectId
+import bcrypt
 if os.path.exists('env.py'):
     import env
 
@@ -27,7 +28,7 @@ def index():
 
 #Login 
 
-@app.route('/login', methods=['POST',])
+@app.route('/login', methods=['POST'])
 def login():
     users = mongo.db.users
     login_user = users.find_one({'name' : request.form['username']})
@@ -41,32 +42,7 @@ def login():
             
     return render_template('pages/login.html')
 
-#Checking user login deails
 
-@app.route('/user_auth', methods=['POST'])
-def user_auth():
-    form = request.form.to_dict()
-    user_in_db = users_collection.find_one({'username': form['username']})
-    # Search for user in database
-    if user_in_db:
-        # Do passwords match
-        if check_password_hash(user_in_db['password'], form['user_password']):
-            # Log user in
-            session['user'] = form['username']
-            # If the user is admin, redirect to admin area
-            if session['user'] == "admin":
-                    return redirect(url_for('admin'))
-            else:
-                    flash("you were logged in!")
-                    return redirect(url_for('profile',user=user_in_db['username']))
-    
-        else:
-                flash("Wrong password or username!")
-                return redirect(url_for(''))        
-
-    else:
-          flash("You must be registered")
-          return redirect(url_for('register'))                                    
 
 
 
@@ -85,6 +61,11 @@ def register():
         return 'That username already exists!'
 
     return render_template('pages/register.html')
+
+
+
+
+
 
 @app.route("/createmovie", methods=['POST', 'GET'])  
 def createmovie():
