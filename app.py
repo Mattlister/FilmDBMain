@@ -1,7 +1,7 @@
 import os
-from flask import Flask, render_template, url_for, request, session, redirect
+from flask import Flask, render_template, url_for, request, session, redirect, session, flash
 from flask_pymongo import PyMongo
-import bcrypt
+from werkzeug.security import generate_password_hash, check_password_hash
 from bson.objectid import ObjectId
 if os.path.exists('env.py'):
     import env
@@ -25,6 +25,7 @@ def index():
     return render_template('pages/index.html', films=mongo.db.films.find())
 
 
+#Login 
 
 @app.route('/login', methods=['POST',])
 def login():
@@ -39,6 +40,31 @@ def login():
             return 'Invalid username/password combination'
             
     return render_template('pages/login.html')
+
+#Checking user login deails
+
+@app.route('/user_auth', methods=['POST'])
+def user_auth():
+    form = request.form.to_dict()
+    user_in_db = users_collection.find_one({'username': form['username']})
+    # Search for user in database
+    if user_in_db:
+        # Do passwords match
+        if check_password_hash(user_in_db['password'], form['user_password']):
+            # Log user in
+            session['user'] = form['username']
+            # If the user is admin, redirect to admin area
+            if session['user'] == "admin":
+                    return redirect(url_for('admin'))
+            else:
+                    flash("you were logged in!")
+                    return redirect(url_for('profile',user=user_in_db['username']))
+        else:
+                    flash("You were logged in") 
+                    return redirect(url_for('profile', user=user_in_db['username']))
+    else:
+            flasj()                          
+
 
 
 @app.route('/register', methods=['POST', 'GET'])
