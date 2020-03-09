@@ -59,11 +59,14 @@ def user_auth():
             else:
                     flash("you were logged in!")
                     return redirect(url_for('profile',user=user_in_db['username']))
+    
         else:
-                    flash("You were logged in") 
-                    return redirect(url_for('profile', user=user_in_db['username']))
+                flash("Wrong password or username!")
+                return redirect(url_for(''))        
+
     else:
-            flasj()                          
+          flash("You must be registered")
+          return redirect(url_for('register'))                                    
 
 
 
