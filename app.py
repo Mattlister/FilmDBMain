@@ -1,9 +1,8 @@
 import os
-from flask import Flask, render_template, url_for, request, session, redirect, session, flash
+from flask import Flask, render_template, url_for, request, session, redirect
 from flask_pymongo import PyMongo
-from werkzeug.security import generate_password_hash, check_password_hash
-from bson.objectid import ObjectId
 import bcrypt
+from bson.objectid import ObjectId
 if os.path.exists('env.py'):
     import env
 
@@ -26,24 +25,23 @@ def index():
     return render_template('pages/index.html', films=mongo.db.films.find())
 
 
-#Login 
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['POST', 'GET'])
 def login():
     if request.method == 'POST':
-    login_user = users.find_one({'name' : request.form['username']})
-
-    if login_user:
-        if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
-            session['username'] = request.form['username']
+        users = mongo.db.users
+        login_user = users.find_one({'name' : request.form.get['username']})
+    
+        if login_user:
+            if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')):
+                session['username'] = request.form['username']
             return redirect(url_for('index'))
 
             return 'Invalid username/password combination'
             
     return render_template('pages/login.html')
 
-
-
+    
 
 
 @app.route('/register', methods=['POST', 'GET'])
@@ -61,6 +59,7 @@ def register():
         return 'That username already exists!'
 
     return render_template('pages/register.html')
+
 
 
 
