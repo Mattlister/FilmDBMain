@@ -43,13 +43,6 @@ def login():
             
     return render_template('pages/login.html')
 
-@app.route('/logout')
-def logout():
-    session.clear()
-    flash(f'Thank you for using FilmDB. Yippeekyay!!')
-    return redirect(url_for('index'))
-
-    
 
 
 @app.route('/register', methods=['POST', 'GET'])
@@ -69,6 +62,11 @@ def register():
     return render_template('pages/register.html', title='Register')
 
 
+@app.route('/logout')
+def logout():
+    session.clear()
+    flash(f'Thank you for using FilmDB. Yippeekyay!!')
+    return redirect(url_for('index'))
 
 
 @app.route("/createmovie", methods=['POST', 'GET'])  
@@ -111,6 +109,18 @@ def contact():
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("pages/404.html"), 404
+
+    @app.route('/admin')
+def admin():
+	if 'user' in session:
+		if session['user'] == "admin":
+			return render_template('admin.html')
+		else:
+			flash('Only Admins can access this page!')
+			return redirect(url_for('index'))
+	else:
+		flash('You must be logged')
+		return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
