@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, url_for, request, session, redirect
 from flask_pymongo import PyMongo
-import bcrypt
+from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
 if os.path.exists('env.py'):
     import env
@@ -15,6 +15,8 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
+bcrypt = Bcrypt()
+
 
 
 @app.route('/')
@@ -41,6 +43,12 @@ def login():
             
     return render_template('pages/login.html')
 
+@app.route('/logout')
+def logout():
+    session.clear()
+    flash(f'Thank you for using FilmDB. Yippeekyay!!')
+    return redirect(url_for('index'))
+
     
 
 
@@ -58,13 +66,14 @@ def register():
         
         return 'That username already exists!'
 
-    return render_template('pages/register.html')
+    return render_template('pages/register.html', title='Register')
 
 
 
 
 @app.route("/createmovie", methods=['POST', 'GET'])  
 def createmovie():
+    """Allows a user to log in and create Movie information"""
     if request.method == "POST":
         film_data = mongo.db.films
         print(film_data)
@@ -76,6 +85,7 @@ def createmovie():
 
 @app.route("/createtv", methods=['POST', 'GET'])  
 def createtv():
+    """Allows a user to log in and create TV information"""
     if request.method == "POST":
         film_data = mongo.db.TVData
         print(mongo.db.TVData)
