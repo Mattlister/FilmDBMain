@@ -120,7 +120,7 @@ def admin():
 			return redirect(url_for('index'))
 	else:
 		flash('You must be logged')
-		return redirect(url_for('index'))
+		return redirect(url_for('pages/index'))
 
 
 if __name__ == '__main__':
