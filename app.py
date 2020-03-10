@@ -110,18 +110,6 @@ def contact():
 def page_not_found(e):
     return render_template("pages/404.html"), 404
 
-    @app.route('/admin')
-def admin():
-	if 'user' in session:
-		if session['user'] == "admin":
-			return render_template('admin.html')
-		else:
-			flash('Only Admins can access this page!')
-			return redirect(url_for('index'))
-	else:
-		flash('You must be logged')
-		return redirect(url_for('pages/index'))
-
 
 if __name__ == '__main__':
     app.run(host=os.getenv('IP', '0.0.0.0'),
