@@ -65,7 +65,6 @@ def register():
 @app.route('/logout')
 def logout():
     session.clear()
-    flash(f'Thank you for using FilmDB. Yippeekyay!!')
     return redirect(url_for('index'))
 
 
