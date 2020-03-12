@@ -108,12 +108,13 @@ def contact():
 # 404 error page
 @app.errorhandler(404)
 def page_not_found(exception):
-    return render_template("pages/404.html", exception=exception)
+    return render_template("pages/404.html", exception=exception), 404
 
 # 500 error page
-@app.errohandler(500)
+@app.errorhandler(500)
 def page_not_found(exception):
-    return render_template("500.html", exception=exception)
+    return render_template("pages/500.html", exception=exception), 500
+
 
 
 
