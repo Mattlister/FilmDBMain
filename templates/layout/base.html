@@ -15,28 +15,43 @@
 </head>
 
 <body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
+</header>
 
 	<div class="header">
   <a href="#default" class="logo">FilmDB</a>
 
 </div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
 <div class="container">
    <div class="row">
 <div class="col">
 
 <div class="col">
-     <ul class="menu">
+ {% if 'username' not in session %}
+     <ul class="navbar-nav ml-auto uppercase">
+                            <li class="nav-item">
                 <li><a href="{{ url_for('index') }}">Home</a></li>              
                 <li><a href="{{ url_for('register') }}">register</a></li>
 			    <li><a href="{{ url_for('login') }}">Login</a></li>
 			    <li><a href="{{ url_for('contact') }}">Contact</a></li>
 		        <li><a href="{{ url_for('films') }}">Search</a></li>
-                <li><a href="{{ url_for('createmovie') }}">create movie
+		  </ul>
+ {% else %}
+         <ul class="navbar-nav ml-auto uppercase">
+                            <li class="nav-item">
+                            <li><a href="{{ url_for('index') }}">Home</a></li>
+                            <li><a href="{{ url_for('films') }}">Search</a></li>    
+          <li><a href="{{ url_for('createmovie') }}">create movie
                 <a></li>
                 <li><a href="{{ url_for('createtv') }}">create TV</a></li>
                 <li><a href="{{ url_for('logout') }}">Logout</a></li>
-		  </ul>
+          </ul>      
+        {% endif %}  
   </div>
  </div> 
  </div>
