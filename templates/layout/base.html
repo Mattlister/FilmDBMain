@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,82 +7,72 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="static/css/style.css">
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  
-    <title>FilmDB</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+	<title>FilmDB</title>
 </head>
 
 <body>
-<header>
-<nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
-</header>
+
 
 	<div class="header">
-  <a href="#default" class="logo">FilmDB</a>
+		<a href="#default" class="logo">FilmDB</a>
 
-</div>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+	</div>
 
-<div class="container">
-   <div class="row">
-<div class="col">
 
-<div class="col">
- {% if 'username' not in session %}
-     <ul class="navbar-nav ml-auto uppercase">
-                            <li class="nav-item">
-                <li><a href="{{ url_for('index') }}">Home</a></li>              
-                <li><a href="{{ url_for('register') }}">register</a></li>
-			    <li><a href="{{ url_for('login') }}">Login</a></li>
-			    <li><a href="{{ url_for('contact') }}">Contact</a></li>
-		        <li><a href="{{ url_for('films') }}">Search</a></li>
-		  </ul>
- {% else %}
-         <ul class="navbar-nav ml-auto uppercase">
-                            <li class="nav-item">
-                            <li><a href="{{ url_for('index') }}">Home</a></li>
-                            <li><a href="{{ url_for('films') }}">Search</a></li>    
-          <li><a href="{{ url_for('createmovie') }}">create movie
-                <a></li>
-                <li><a href="{{ url_for('createtv') }}">create TV</a></li>
-                <li><a href="{{ url_for('logout') }}">Logout</a></li>
-          </ul>      
-        {% endif %}  
-  </div>
- </div> 
- </div>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+
+				<div class="col">
+					{% if 'username' not in logged %}
+					<ul class="navbar-nav ml-auto uppercase">
+						<li class="nav-item">
+						<li><a href="{{ url_for('index') }}">Home</a></li>
+						<li><a href="{{ url_for('register') }}">register</a></li>
+						<li><a href="{{ url_for('login') }}">Login</a></li>
+						<li><a href="{{ url_for('contact') }}">Contact</a></li>
+						<li><a href="{{ url_for('films') }}">Search</a></li>
+					</ul>
+					{% else %}
+					<ul class="navbar-nav ml-auto uppercase">
+						<li class="nav-item">
+						<li><a href="{{ url_for('index') }}">Home</a></li>
+						<li><a href="{{ url_for('films') }}">Search</a></li>
+						<li><a href="{{ url_for('createmovie') }}">create movie
+								<a></li>
+						<li><a href="{{ url_for('createtv') }}">create TV</a></li>
+						<li><a href="{{ url_for('logout') }}">Logout</a></li>
+					</ul>
+					{% endif %}
+				</div>
+			</div>
+		</div>
 
 
 
-	{% block content %}
-	{% endblock %}
+		{% block content %}
+		{% endblock %}
 
 
 
-	<script src="http://code.jquery.com/jquery-1.12.4.min.js"
-		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script src="http://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
-     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.collapsible').collapsible();
-        })
-    </script>
-    
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.collapsible').collapsible();
-        })
-    </script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script type="text/javascript">
+			
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+	
 
 
 </body>

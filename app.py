@@ -16,6 +16,7 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 bcrypt = Bcrypt()
+users = mongo.db.users
 
 
 
@@ -106,8 +107,14 @@ def contact():
 
 # 404 error page
 @app.errorhandler(404)
-def page_not_found(e):
-    return render_template("pages/404.html"), 404
+def page_not_found(exception):
+    return render_template("pages/404.html", exception=exception)
+
+# 500 error page
+@app.errohandler(500)
+def page_not_found(exception):
+    return render_template("500.html", exception=exception)
+
 
 
 if __name__ == '__main__':
