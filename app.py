@@ -43,11 +43,9 @@ def login():
                 flash(f'Password Incorrect. Please try again', 'danger')
                 return redirect(url_for('login'))
 
-        
-        else: flash(f'You aren't welcome here, no matching username')
-                return redirect(url_('register'))
-        
-
+        else:
+            flash(f'No matching username')
+        return redirect(url_for('login'))
     return render_template('pages/login.html', title='Login')
 
 
