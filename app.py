@@ -21,43 +21,50 @@ mongo = PyMongo(app)
 def index():
 
     if 'username' in session:
-           return 'You are logged in as ' + session['username']
+        return 'You are logged in as ' + session['username']
 
     return render_template('pages/index.html', films=mongo.db.films.find())
 
 
 @app.route('/login', methods=['POST'])
 def login():
-    users = mongo.db.users
-    login_user = users.find_one({'name' : request.form['username']})
+
+    if request.method == "POST":
+        users = mongo.db.users
+        login_user = users.find_one({'name': request.form['username']})
 
     if login_user:
         if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
             session['username'] = request.form['username']
-            return redirect(url_for('index'))
+            return redirect(url_for('login'))
 
-            return 'Invalid username/password combination'
-            
-    return render_template('pages/login.html')
+            flash(f'Password incorrect. Please try again.', 'danger')
+            return redirect(url_for('login'))
+
+        flash(f'Username not found. Please try again.', 'danger')
+        return redirect(url_for('login'))
+
+    return render_template('pages/login.html', title='Login', form=login_form)
 
 
 @app.route('/register', methods=['POST', 'GET'])
 def register():
     if request.method == 'POST':
         users = mongo.db.users
-        existing_user = users.find_one({'name' : request.form['username']})
+        existing_user = users.find_one({'name': request.form['username']})
 
         if existing_user is None:
             hashpass = bcrypt.hashpw(request.form['pass'].encode('utf-8'), bcrypt.gensalt())
-            users.insert({'name' : request.form['username'], 'password' : hashpass})
+            users.insert({'name': request.form['username'], 'password': hashpass})
             session['username'] = request.form['username']
             return redirect(url_for('index'))
-        
+
         return 'That username already exists!'
 
     return render_template('pages/register.html')
 
-@app.route("/createmovie", methods=['POST', 'GET'])  
+
+@app.route("/createmovie", methods=['POST', 'GET'])
 def createmovie():
     if request.method == "POST":
         film_data = mongo.db.films
@@ -68,7 +75,7 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-@app.route("/createtv", methods=['GET', 'POST'])  
+@app.route("/createtv", methods=['GET', 'POST'])
 def createtv():
     if request.method == "POST":
         film_data = mongo.db.TVData
@@ -78,11 +85,10 @@ def createtv():
 
     return render_template("pages/createtv.html")
 
-    
-
 
 @app.route("/films")
 def films():
+
     return render_template("pages/films.html")
 
 
