@@ -33,17 +33,18 @@ def login():
         users = mongo.db.users
         login_user = users.find_one({'name': request.form['username']})
 
-    if login_user:
-        if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
-            session['username'] = request.form['username']
-            return redirect(url_for('login'))
+        if login_user:
+            if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
+                session['username'] = request.form['username']
+                flash(f'Thank you, you are now logged in')
+                return redirect(url_for('index'))
 
-            flash(f'Thank you, you are now logged in')
-            return redirect(url_for('login'))
+            else:
+                flash(f'Password Incorrect. Please try again', 'danger')
+                return redirect(url_for('login'))
 
-    else if request.method == 'GET':
-        flash(f'Password Incorrect. Please try again', 'danger')
-        return redirect(url_for('login'))
+        # else:
+            # handle what happens when there is no username that matches in the database
 
     return render_template('pages/login.html', title='Login', form=login_form)
 
