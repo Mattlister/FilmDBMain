@@ -38,10 +38,11 @@ def login():
             session['username'] = request.form['username']
             return redirect(url_for('login'))
 
-            flash(f'Password incorrect. Please try again.', 'danger')
+            flash(f'Thank you, you are now logged in')
             return redirect(url_for('login'))
 
-        flash(f'Username not found. Please try again.', 'danger')
+    else if request.method == 'GET':
+        flash(f'Password Incorrect. Please try again', 'danger')
         return redirect(url_for('login'))
 
     return render_template('pages/login.html', title='Login', form=login_form)
