@@ -43,10 +43,12 @@ def login():
                 flash(f'Password Incorrect. Please try again', 'danger')
                 return redirect(url_for('login'))
 
-        # else:
-            # handle what happens when there is no username that matches in the database
+        
+        else: flash(f'You aren't welcome here, no matching username')
+                return redirect(url_('register'))
+        
 
-    return render_template('pages/login.html', title='Login', form=login_form)
+    return render_template('pages/login.html', title='Login')
 
 
 @app.route('/register', methods=['POST', 'GET'])
