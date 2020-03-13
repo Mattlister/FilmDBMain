@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, url_for, request, session, redirect
 from flask_pymongo import PyMongo
-from flask_bcrypt import Bcrypt
+import bcrypt
 from bson.objectid import ObjectId
 if os.path.exists('env.py'):
     import env
@@ -15,35 +15,30 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
-bcrypt = Bcrypt()
-users = mongo.db.users
-
 
 
 @app.route('/')
 def index():
+
     if 'username' in session:
            return 'You are logged in as ' + session['username']
 
     return render_template('pages/index.html', films=mongo.db.films.find())
 
 
-
-@app.route('/login', methods=['POST', 'GET'])
+@app.route('/login', methods=['POST'])
 def login():
-    if request.method == 'POST':
-        users = mongo.db.users
-        login_user = users.find_one({'name' : request.form.get['username']})
-    
-        if login_user:
-            if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')):
-                session['username'] = request.form['username']
+    users = mongo.db.users
+    login_user = users.find_one({'name' : request.form['username']})
+
+    if login_user:
+        if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
+            session['username'] = request.form['username']
             return redirect(url_for('index'))
 
             return 'Invalid username/password combination'
             
     return render_template('pages/login.html')
-
 
 
 @app.route('/register', methods=['POST', 'GET'])
@@ -60,18 +55,10 @@ def register():
         
         return 'That username already exists!'
 
-    return render_template('pages/register.html', title='Register')
-
-
-@app.route('/logout')
-def logout():
-    session.clear()
-    return redirect(url_for('index'))
-
+    return render_template('pages/register.html')
 
 @app.route("/createmovie", methods=['POST', 'GET'])  
 def createmovie():
-    """Allows a user to log in and create Movie information"""
     if request.method == "POST":
         film_data = mongo.db.films
         print(film_data)
@@ -81,9 +68,8 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-@app.route("/createtv", methods=['POST', 'GET'])  
+@app.route("/createtv", methods=['GET', 'POST'])  
 def createtv():
-    """Allows a user to log in and create TV information"""
     if request.method == "POST":
         film_data = mongo.db.TVData
         print(mongo.db.TVData)
@@ -107,18 +93,11 @@ def contact():
 
 # 404 error page
 @app.errorhandler(404)
-def page_not_found(exception):
-    return render_template("pages/404.html", exception=exception), 404
-
-# 500 error page
-@app.errorhandler(500)
-def page_not_found(exception):
-    return render_template("pages/500.html", exception=exception), 500
-
-
+def page_not_found(e):
+    return render_template("pages/404.html"), 404
 
 
 if __name__ == '__main__':
-    app.run(host=os.getenv('IP', '0.0.0.0'),
-    port=int(os.getenv('PORT', 5000)),
-    debug=True)
+    app.run(host=os.environ.get('IP', '127.0.0.1'),
+            port=os.environ.get('PORT', '5000'),
+            debug=True)
