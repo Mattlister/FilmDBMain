@@ -23,7 +23,7 @@ def index():
     if 'username' in session:
         return 'You are logged in as ' + session['username']
 
-    return render_template('pages/index.html', films=mongo.db.films.find())
+    return render_template('pages/films.html', films=mongo.db.films.find())
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -40,7 +40,7 @@ def login():
                 return redirect(url_for('index'))
 
             else:
-                flash(f'Password Incorrect. Please try again', 'danger')
+                flash(f'Looks like you might be an impostor, your password is incorrect')
                 return redirect(url_for('login'))
 
         else:
