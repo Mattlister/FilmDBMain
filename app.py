@@ -26,7 +26,7 @@ def index():
     return render_template('pages/index.html', films=mongo.db.films.find())
 
 
-@app.route('/login', methods=['POST'])
+@app.route('/login', methods=['POST', 'GET'])
 def login():
 
     if request.method == "POST":
@@ -46,7 +46,7 @@ def login():
         else:
             flash(f'No matching username')
         return redirect(url_for('login'))
-    return render_template('indexo.html',data=Todos.query.all())
+    return render_template('pages/login.html')
 
 
 @app.route('/register', methods=['POST', 'GET'])
