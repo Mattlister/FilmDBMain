@@ -27,7 +27,7 @@
 			<div class="col">
 
 				<div class="col">
-					{% if 'username' not in logged %}
+					{% if 'username' not logged in %}
 					<ul class="navbar-nav ml-auto uppercase">
 						<li class="nav-item">
 						<li><a href="{{ url_for('index') }}">Home</a></li>

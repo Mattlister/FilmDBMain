@@ -26,7 +26,7 @@ def index():
     return render_template('pages/index.html', films=mongo.db.films.find())
 
 
-@app.route('/login', methods=['POST', 'GET'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
 
     if request.method == "POST":
@@ -46,10 +46,11 @@ def login():
         else:
             flash(f'No matching username')
         return redirect(url_for('login'))
+        
     return render_template('pages/login.html')
 
 
-@app.route('/register', methods=['POST', 'GET'])
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
         users = mongo.db.users
@@ -66,7 +67,7 @@ def register():
     return render_template('pages/register.html')
 
 
-@app.route("/createmovie", methods=['POST', 'GET'])
+@app.route("/createmovie", methods=['GET', 'POST'])
 def createmovie():
     if request.method == "POST":
         film_data = mongo.db.films
