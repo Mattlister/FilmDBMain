@@ -46,7 +46,7 @@ def login():
         else:
             flash(f'No matching username')
         return redirect(url_for('login'))
-    return render_template('pages/login.html', title='Login')
+    return render_template('indexo.html',data=Todos.query.all())
 
 
 @app.route('/register', methods=['POST', 'GET'])
