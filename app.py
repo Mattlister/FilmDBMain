@@ -23,7 +23,7 @@ def index():
     if 'username' in session:
         return 'You are logged in as ' + session['username']
 
-    return render_template('pages/films.html', films=mongo.db.films.find())
+    return render_template('pages/index.html', films=mongo.db.films.find())
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -34,7 +34,7 @@ def login():
         login_user = users.find_one({'name': request.form['username']})
 
         if login_user:
-            if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
+            if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password']:
                 session['username'] = request.form['username']
                 flash(f'Thank you, you are now logged in')
                 return redirect(url_for('index'))
