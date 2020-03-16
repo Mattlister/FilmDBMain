@@ -1,11 +1,7 @@
 import os
 from flask import Flask, render_template, url_for, request, session, redirect
 from flask_pymongo import PyMongo
-from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField
-from forms import LoginForm
-from wtforms.validators import InputRequired, Email, Length
-from werkzeug.security import generate_password_hash, check_password_hash
+import bcrypt
 from bson.objectid import ObjectId
 if os.path.exists('env.py'):
     import env
@@ -21,44 +17,54 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-@login_manager.user_loader
-def load_user(user_id):
-    return User.query.get(int(user_id))
-
-
 @app.route('/')
 def index():
 
     if 'username' in session:
         return 'You are logged in as ' + session['username']
 
-    return render_template('pages/index.html', films=mongo.db.films.find())
+    return render_template('pages/films.html', films=mongo.db.films.find())
 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    if request.method == 'POST':
-        identity = request.form.get("user")
-        UserCheck = User3.query.filter_by(username=identity).first()
-        PassCheck = request.form.get("password")
-        if  UserCheck is not None and  UserCheck.verify_password(PassCheck):
-            login_user(UserCheck, remember=True)
+
+    if request.method == "POST":
+        users = mongo.db.users
+        login_user = users.find_one({'name': request.form['username']})
+
+        if login_user:
+            if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
+                session['username'] = request.form['username']
+                flash(f'Thank you, you are now logged in')
+                return redirect(url_for('index'))
+
+            else:
+                flash(f'Looks like you might be an impostor, your password is incorrect')
+                return redirect(url_for('login'))
+
         else:
-            flash('Invalid username or password.')
-        return "<h1 style='color:blue'>logged in!</h1>"
+            flash(f'No matching username')
+        return redirect(url_for('login'))
+        
+    return render_template('pages/login.html')
+
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    form = RegForm()
     if request.method == 'POST':
-        if form.validate():
-            existing_user = User.objects(email=form.email.data).first()
-            if existing_user is None:
-                hashpass = generate_password_hash(form.password.data, method='sha256')
-                hey = User(form.email.data,hashpass).save()
-                login_user(hey)
-                return redirect(url_for('dashboard'))
-    return render_template('register.html', form=form)
+        users = mongo.db.users
+        existing_user = users.find_one({'name': request.form['username']})
+
+        if existing_user is None:
+            hashpass = bcrypt.hashpw(request.form['pass'].encode('utf-8'), bcrypt.gensalt())
+            users.insert({'name': request.form['username'], 'password': hashpass})
+            session['username'] = request.form['username']
+            return redirect(url_for('index'))
+
+        return 'That username already exists!'
+
+    return render_template('pages/register.html')
 
 
 @app.route("/createmovie", methods=['GET', 'POST'])
