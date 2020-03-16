@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, url_for, request, session, redirect
 from flask_pymongo import PyMongo
+from flask_bcrypt import Bcrypt
 import bcrypt
 from bson.objectid import ObjectId
 if os.path.exists('env.py'):
@@ -15,6 +16,8 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
+bcrypt = Bcrypt(app)
+
 
 
 @app.route('/')
@@ -23,7 +26,7 @@ def index():
     if 'username' in session:
         return 'You are logged in as ' + session['username']
 
-    return render_template('pages/index.html', films=mongo.db.films.find())
+    return render_template('pages/films.html', films=mongo.db.films.find())
 
 
 @app.route('/login', methods=['GET', 'POST'])
