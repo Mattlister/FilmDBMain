@@ -27,9 +27,16 @@ def index():
     return render_template('pages/index.html', films=mongo.db.films.find())
 
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
+    if form.validate_on_submit():
+       if form.username.data == 'admin' and form.password.data == 'password':
+           flash(f'You have been logged in!', 'success')
+           return redirect(url_for('home'))
+       else:
+           flash('Login Unsuccessful. Please check username and password', 'danger')
+
     return render_template('pages/login.html', title='Login', form=form)
 
 
