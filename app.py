@@ -1,8 +1,7 @@
 import os
 from flask import Flask, render_template, url_for, request, session, redirect
+from forms import RegistrationForm, LoginForm
 from flask_pymongo import PyMongo
-from flask_bcrypt import Bcrypt
-import bcrypt
 from bson.objectid import ObjectId
 if os.path.exists('env.py'):
     import env
@@ -16,7 +15,6 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
-bcrypt = Bcrypt(app)
 
 
 
@@ -26,48 +24,22 @@ def index():
     if 'username' in session:
         return 'You are logged in as ' + session['username']
 
-    return render_template('pages/films.html', films=mongo.db.films.find())
+    return render_template('pages/index.html', films=mongo.db.films.find())
 
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login')
 def login():
-
-    if request.method == "POST":
-        users = mongo.db.users
-        login_user = users.find_one({'name': request.form['username']})
-
-        if login_user:
-            if bcrypt.hashpw(request.form['pass'].encode('utf-8'), login_user['password'].encode('utf-8')) == login_user['password']:
-                session['username'] = request.form['username']
-                flash(f'Thank you, you are now logged in')
-                return redirect(url_for('index'))
-
-            else:
-                flash(f'Looks like you might be an impostor, your password is incorrect')
-                return redirect(url_for('login'))
-
-        else:
-            flash(f'No matching username')
-        return redirect(url_for('login'))
-        
-    return render_template('pages/login.html')
+    form = LoginForm()
+    return render_template('pages/login.html', title='Login', form=form)
 
 
-@app.route('/register', methods=['GET', 'POST'])
+
+@app.route('/register')
 def register():
-    if request.method == 'POST':
-        users = mongo.db.users
-        existing_user = users.find_one({'name': request.form['username']})
+    form = RegistrationForm()
+    return render_template('pages/register.html', title='Register', form=form)
 
-        if existing_user is None:
-            hashpass = bcrypt.hashpw(request.form['pass'].encode('utf-8'), bcrypt.gensalt())
-            users.insert({'name': request.form['username'], 'password': hashpass})
-            session['username'] = request.form['username']
-            return redirect(url_for('index'))
-
-        return 'That username already exists!'
-
-    return render_template('pages/register.html')
+    
 
 
 @app.route("/createmovie", methods=['GET', 'POST'])
