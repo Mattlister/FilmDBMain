@@ -27,7 +27,15 @@
 			<div class="col">
 
 				<div class="col">
-					{% if 'username' not in logged %}
+					{% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                         {% for category, message in messages %}
+                            <div class="alert alert-{{ category }}">
+                            {{ message }}
+                            </div>
+                         {% endfor %}
+                        {% endif %}}
+                    {% endwith %}
 					<ul class="navbar-nav ml-auto uppercase">
 						<li class="nav-item">
 						<li><a href="{{ url_for('index') }}">Home</a></li>
@@ -36,7 +44,6 @@
 						<li><a href="{{ url_for('contact') }}">Contact</a></li>
 						<li><a href="{{ url_for('films') }}">Search</a></li>
 					</ul>
-					{% else %}
 					<ul class="navbar-nav ml-auto uppercase">
 						<li class="nav-item">
 						<li><a href="{{ url_for('index') }}">Home</a></li>
@@ -44,9 +51,8 @@
 						<li><a href="{{ url_for('createmovie') }}">create movie
 								<a></li>
 						<li><a href="{{ url_for('createtv') }}">create TV</a></li>
-						<li><a href="{{ url_for('logout') }}">Logout</a></li>
 					</ul>
-					{% endif %}
+
 				</div>
 			</div>
 		</div>
