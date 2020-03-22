@@ -23,7 +23,6 @@ bcrypt = Bcrypt(app)
 @app.route('/')
 def index():
 
-
     if 'username' in session:
         return 'You are logged in as ' + session['username']
 
@@ -51,7 +50,7 @@ def register():
 
         if existing_user is None:
             hashed_password = bcrypt.generate_password_hash(request.form['password']).decode('utf-8')
-            users.insert({'username': request.form['username'], 'password' : hashed_password})
+            users.insert({'username': request.form['username'], 'password': hashed_password})
             session['username'] = request.form['username']
         flash('Your account has been created! You are now able to log in', 'success')
         return redirect(url_for('login'))
@@ -71,26 +70,20 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-@app.route("/createtv", methods=['GET', 'POST'])
-def createtv():
-    if request.method == "POST":
-        film_data = mongo.db.TVData
-        print(mongo.db.TVData)
-        film_data.insert_one(request.form.to_dict())
-        return render_template("pages/createtv.html")
-
-    return render_template("pages/createtv.html")
-
-
 @app.route("/films")
 def films():
 
     return render_template("pages/films.html")
 
+
 @app.route("/edit-movie.html")
 def editmovie():
     return render_template("pages/editmovie.html")
 
+
+@app.route("/delete-movie.html")
+def deletemovie():
+    return render_template("pages/deletemovie.html")
 
 
 
