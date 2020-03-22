@@ -1,9 +1,9 @@
 import os
 from flask import Flask, render_template, url_for, request, session, redirect, flash
-from forms import RegistrationForm, LoginForm
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
+from forms import LoginForm, RegistrationForm
 if os.path.exists('env.py'):
     import env
 
@@ -20,7 +20,6 @@ users = mongo.db.users
 bcrypt = Bcrypt(app)
 
 
-
 @app.route('/')
 def index():
 
@@ -34,13 +33,12 @@ def index():
 def login():
     form = LoginForm()
     if form.validate_on_submit():
-       if form.username.data == 'admin' and form.password.data == 'password':
-           flash(f'Go ahead, make my day!', 'success')
-           return redirect(url_for('home'))
-       else:
-           flash('Login Unsuccessful. Please check username and password', 'danger')
+        if form.username.data == 'admin' and form.password.data == 'password':
+            flash(f'Go ahead, make my day!', 'success')
+            return redirect(url_for('home'))
+        else:
+            flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('pages/login.html', title='Login', form=form)
-
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -48,12 +46,15 @@ def register():
     form = RegistrationForm()
     if form.validate_on_submit():
         users = mongo.db.users
-        existing_user = users.find_one({ 'username' : request.form['username']})
-        flash(f'Account created for {form.username.data}!', 'success')
-        return redirect(url_for('index'))
-    return render_template('pages/register.html', title='Register', form=form)
+        existing_user = users.find_one({'username': request.form['username']})
 
-    
+        if existing_user is None:
+            hashed_password = bcrypt.generate_password_hash(request.form['password']).decode('utf-8')
+            users.insert({'username': request.form['username'], 'password' : hashed_password})
+            session['username'] = request.form['username']
+        flash('Your account has been created! You are now able to log in', 'success')
+        return redirect(url_for('login'))
+    return render_template('pages/register.html', title='Register', form=form)
 
 
 @app.route("/createmovie", methods=['GET', 'POST'])

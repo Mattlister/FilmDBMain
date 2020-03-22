@@ -6,5 +6,5 @@
     "python.terminal.activateEnvironment": false,
    "files.autoSave": "onFocusChange",
 "python.formatting.provider": "black",
-"python.pythonPath": "env/bin/python2.7",
+"python.pythonPath": "/home/gitpod/.pyenv/versions/3.7.6/bin/python3",
 }
