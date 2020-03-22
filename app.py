@@ -3,7 +3,7 @@ from flask import Flask, render_template, url_for, request, session, redirect, f
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
-from forms import LoginForm, RegistrationForm, 
+from forms import LoginForm, RegistrationForm
 if os.path.exists('env.py'):
     import env
 
@@ -22,6 +22,7 @@ bcrypt = Bcrypt(app)
 
 @app.route('/')
 def index():
+
 
     if 'username' in session:
         return 'You are logged in as ' + session['username']
@@ -88,6 +89,7 @@ def films():
 
 @app.route("/edit-movie.html")
 def editmovie():
+    return render_template("pages/editmovie.html")
 
 
 
