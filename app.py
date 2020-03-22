@@ -2,6 +2,7 @@ import os
 from flask import Flask, render_template, url_for, request, session, redirect, flash
 from forms import RegistrationForm, LoginForm
 from flask_pymongo import PyMongo
+from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
 if os.path.exists('env.py'):
     import env
@@ -16,6 +17,7 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 users = mongo.db.users
+bcrypt = Bcrypt(app)
 
 
 
@@ -33,7 +35,7 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
        if form.username.data == 'admin' and form.password.data == 'password':
-           flash(f'You have been logged in!', 'success')
+           flash(f'Go ahead, make my day!', 'success')
            return redirect(url_for('home'))
        else:
            flash('Login Unsuccessful. Please check username and password', 'danger')
@@ -45,6 +47,8 @@ def login():
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
+        users = mongo.db.users
+        existing_user = users.find_one({ 'username' : request.form['username']})
         flash(f'Account created for {form.username.data}!', 'success')
         return redirect(url_for('index'))
     return render_template('pages/register.html', title='Register', form=form)
