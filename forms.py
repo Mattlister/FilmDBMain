@@ -23,3 +23,5 @@ class LoginForm(FlaskForm):
         "Confirm Password", validators=[DataRequired(), EqualTo("password")]
     )
     submit = SubmitField("Login")
+
+class 

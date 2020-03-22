@@ -3,7 +3,7 @@ from flask import Flask, render_template, url_for, request, session, redirect, f
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
-from forms import LoginForm, RegistrationForm
+from forms import LoginForm, RegistrationForm, 
 if os.path.exists('env.py'):
     import env
 
@@ -54,6 +54,8 @@ def register():
             session['username'] = request.form['username']
         flash('Your account has been created! You are now able to log in', 'success')
         return redirect(url_for('login'))
+    else:
+        flash("Usernamed already registered", 'danger')    
     return render_template('pages/register.html', title='Register', form=form)
 
 
@@ -83,6 +85,11 @@ def createtv():
 def films():
 
     return render_template("pages/films.html")
+
+@app.route("/edit-movie.html")
+def editmovie():
+
+
 
 
 @app.route("/contact")
