@@ -55,7 +55,7 @@ def register():
         flash('Your account has been created! You are now able to log in', 'success')
         return redirect(url_for('login'))
     else:
-        flash("Usernamed already registered", 'danger')    
+        flash("Usernamed already registered", 'danger')
     return render_template('pages/register.html', title='Register', form=form)
 
 
