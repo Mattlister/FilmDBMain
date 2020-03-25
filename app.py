@@ -35,7 +35,7 @@ def login():
     if form.validate_on_submit():
         if form.username.data == 'admin' and form.password.data == 'password':
             flash(f'Go ahead, make my day!', 'success')
-            return redirect(url_for('home'))     
+            return redirect(url_for('login'))
             flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('pages/login.html', title='Login', form=form)
 
@@ -59,7 +59,7 @@ def register():
 @app.route('/logout')
 def logout():
     session.clear()
-    return redirect(url_for('pages/index.html'))
+    return render_template('pages/index.html')
 
 
 @app.route("/createmovie", methods=['GET', 'POST'])
