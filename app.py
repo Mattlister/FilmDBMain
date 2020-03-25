@@ -35,8 +35,7 @@ def login():
     if form.validate_on_submit():
         if form.username.data == 'admin' and form.password.data == 'password':
             flash(f'Go ahead, make my day!', 'success')
-            return redirect(url_for('home'))
-        else:
+            return redirect(url_for('home'))     
             flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('pages/login.html', title='Login', form=form)
 
@@ -54,9 +53,13 @@ def register():
             session['username'] = request.form['username']
         flash('Your account has been created! You are now able to log in', 'success')
         return redirect(url_for('login'))
-    else:
-        flash("Usernamed already registered", 'danger')
     return render_template('pages/register.html', title='Register', form=form)
+
+
+@app.route('/logout')
+def logout():
+    session.clear()
+    return redirect(url_for('pages/index.html'))
 
 
 @app.route("/createmovie", methods=['GET', 'POST'])
@@ -67,7 +70,7 @@ def createmovie():
         film_data.insert_one(request.form.to_dict())
         return render_template("pages/createmovie.html")
 
-    return render_template("pages/createmovie.html")
+    return render_template("pages/login.html")
 
 
 @app.route("/films")
