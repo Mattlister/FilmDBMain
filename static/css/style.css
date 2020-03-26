@@ -10,6 +10,11 @@
      background-size: cover;
      color: #FFFF;
 }
+
+title {
+font: white;
+
+}
  .header {
      font-family: 'Montserrat Subrayada', sans-serif;
      overflow: hidden;
@@ -26,19 +31,21 @@ p {
 }
 
 /* menu styling */
- ul {
+ li {
      padding-top: 5px;
      padding-bottom: 5px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: #FFF;
 }
 /* Welcome to FilmDB and FilmDB and main header */
 /* Main Header */
 /* menu hover effect */
- .menu li:hover {
-     background-color: rgb(236, 0, 0);
+ .menu li {
+     background-color: black;
      opacity: .15;
 }
 /* Menu styling */
- .menu li a {
+ title{
      font-family: 'Montserrat Subrayada', sans-serif;
      color: #FFF;
      font-size: 25px;
@@ -49,6 +56,11 @@ p {
      
 }
 
+ul{
+  list-style-type: square;
+}
+
+
 .menu {
   font-family: 'Lato', sans-serif;  
   float: right;
@@ -58,7 +70,7 @@ p {
 }
 
 /* Menu font colours */
-.menu li a {
+.menu li {
   font-family: 'Montserrat Subrayada', sans-serif;
   color: #FFF;
   text-decoration: none;
