@@ -11,23 +11,12 @@
      color: #FFFF;
 }
 
-title {
-font: white;
-
-}
  .header {
      font-family: 'Montserrat Subrayada', sans-serif;
      overflow: hidden;
      font-size: 4em;
      font: white;
-     background-image: linear-gradient(to bottom right, red, black);
      padding: 20px 10px;
-}
-
-p {
-
-     float: right;
-     text-align: left;
 }
 
 /* menu styling */
@@ -35,7 +24,7 @@ p {
      padding-top: 5px;
      padding-bottom: 5px;
     font-family: 'Montserrat Subrayada', sans-serif;
-    color: #FFF;
+    olor: #FFF;
 }
 /* Welcome to FilmDB and FilmDB and main header */
 /* Main Header */
