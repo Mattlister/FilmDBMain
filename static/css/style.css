@@ -11,12 +11,19 @@
      color: #FFFF;
 }
 
- .header {
-     font-family: 'Montserrat Subrayada', sans-serif;
-     overflow: hidden;
-     font-size: 4em;
-     font: white;
-     padding: 20px 10px;
+header {
+  background-color: #ed0c22;
+  height: 80px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 30px;
+}
+header h1.logo {
+  margin: 0;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
 }
 
 /* menu styling */
