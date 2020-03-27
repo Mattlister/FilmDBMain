@@ -7,6 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="static/css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 
 	<title>FilmDB</title>
@@ -16,10 +18,9 @@
 
 
 	<div class="container">
-		<h1 class="logo">FilmDB</h1>
-        <strong><nav>
-			<div class="col">
 
+		<strong><nav>
+			<div class="col">
 				<div class="col">
 					{% with messages = get_flashed_messages(with_categories=true) %}
                         {% if messages %}
@@ -32,6 +33,7 @@
                     {% endwith %}
                 {% if 'username' not in session %}
 					<ul class="navbar-nav ml-auto uppercase">
+                        <h1 class="logo">FilmDB</h1>
 						<li class="nav-item">
 						<li><a href="{{ url_for('index') }}">Home</a></li>
 						<li><a href="{{ url_for('register') }}">Register</a></li>
@@ -51,32 +53,27 @@
                         
 					</ul>
                     </nav></strong>
-                  {% endif %} 
-				</div>
-			</div>
-		</div>
+		{% endif %}
+	</div>
+	</div>
+	</div>
 
-		{% block content %}
-		{% endblock %}
-
-
-		<script src="http://code.jquery.com/jquery-1.12.4.min.js"
-			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	{% block content %}
+	{% endblock %}
 
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-		<script type="text/javascript">
-			
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-	
-
-
-</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		</body>
 
 </html>
