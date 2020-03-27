@@ -32,8 +32,8 @@
                         {% endif %}
                     {% endwith %}
                 {% if 'username' not in session %}
+                <h1 class="logo">FilmDB</h1>
 					<ul class="navbar-nav ml-auto uppercase">
-                        <h1 class="logo">FilmDB</h1>
 						<li class="nav-item">
 						<li><a href="{{ url_for('index') }}">Home</a></li>
 						<li><a href="{{ url_for('register') }}">Register</a></li>

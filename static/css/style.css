@@ -11,21 +11,14 @@
      color: #FFFF;
 }
 
-ul {
+.logo {
   background-color: red;
   opacity: .7;
-  width: 1000px;
+
 }
 
 li a {
   color: white;
-}
-header {
-  background-color: #ed0c22;
-  height: 80px;
-  width: 100%;
-  opacity: .9;
-  margin-bottom: 30px;
 }
 header h1.logo {
   margin: 0;
