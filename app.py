@@ -82,7 +82,7 @@ def createmovie():
         film_data.insert_one(request.form.to_dict())
         return render_template("pages/createmovie.html")
 
-    return render_template("pages/login.html")
+    return render_template("pages/createmovie.html")
 
 
 @app.route("/films")
