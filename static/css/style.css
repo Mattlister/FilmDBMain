@@ -18,7 +18,7 @@ header {
     height: 80px;
     background-image: linear-gradient(to bottom right, red, black);
     height: 110px;
-    width: 1000%;
+    width: 100%;
     opacity: .6;
     opacity: .8;
     margin-bottom: 30px;
@@ -51,8 +51,19 @@ li a {
 }
 
 /* form design and styling */
-div {
-     border-radius: 5px;
-     padding: 10px;
+
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    padding: 70px;
+  border: 1px solid red;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
