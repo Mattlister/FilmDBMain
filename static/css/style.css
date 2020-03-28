@@ -11,10 +11,25 @@
      color: #FFFF;
 }
 
-.logo {
-  background-color: red;
-  opacity: .7;
+header {
+    background-color: #ed0c22;
+    height: 80px;
+    background-image: linear-gradient(to bottom right, red, black);
+    height: 110px;
+    width: 1000%;
+    opacity: .6;
+    opacity: .8;
+    margin-bottom: 30px;
 
+}
+.main-nav {
+    list-style-type: none;
+}
+.nav-links,
+
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 li a {
