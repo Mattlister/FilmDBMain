@@ -11,6 +11,8 @@
      color: #FFFF;
 }
 
+/* Design for the header title bar */
+
 header {
     background-color: #ed0c22;
     height: 80px;
@@ -20,99 +22,10 @@ header {
     opacity: .6;
     opacity: .8;
     margin-bottom: 30px;
+}
 
-}
-.main-nav {
-    list-style-type: none;
-}
-.nav-links,
-
-.logo {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
-}
+/* Navigation link design */
 
 li a {
   color: white;
-}
-header h1.logo {
-  margin: 0;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  float: left;
-}
-
-/* menu styling */
- li {
-     padding-top: 5px;
-     padding-bottom: 5px;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    olor: #FFF;
-}
-/* Welcome to FilmDB and FilmDB and main header */
-/* Main Header */
-/* menu hover effect */
- .menu li {
-     background-color: black;
-     opacity: .15;
-}
-/* Menu styling */
- title{
-     font-family: 'Montserrat Subrayada', sans-serif;
-     color: #FFF;
-     font-size: 25px;
-     float: right;
-     text-align: right;
-    margin-top: 9px;
-    padding-right: 10px;
-     
-}
-
-ul{
-  list-style-type: square;
-}
-
-
-.menu {
-  font-family: 'Lato', sans-serif;  
-  float: right;
-  font-size: 30px;
-  margin-top: 9px;
-  padding-right: 10px;
-}
-
-/* Menu font colours */
-.menu li {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  color: #FFF;
-  text-decoration: none;
-}
-
- .div-class{
-     width: 900px;
-     text-align:center;
-     padding-left: 90px;
-}
-/* form input fields */
- input_class {
-     padding: 80px;
-}
- div {
-     border-radius: 5px;
-     padding: 1px;
-}
- small{
-     text-align: center;
-}
-/* form input fields */
- input_class {
-     padding: 80px;
-}
- div {
-     border-radius: 5px;
-     padding: 1px;
-}
- footer {
-     padding-top: 18px;
 }
