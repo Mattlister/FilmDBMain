@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, BooleanField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, TextAreaField
 from wtforms.validators import DataRequired, Length, EqualTo, ValidationError
 
 
@@ -23,3 +23,15 @@ class LoginForm(FlaskForm):
         "Confirm Password", validators=[DataRequired(), EqualTo("password")]
     )
     submit = SubmitField("Login")
+
+
+class CreateMovieForm(FlaskForm):
+
+
+class EditMovieForm(FlaskForm):
+
+
+class DeleteMovieForm(FlaskForm):
+    username = StringField('username')
+    submit = SubmitField('Delete')
+   
