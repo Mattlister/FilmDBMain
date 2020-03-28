@@ -24,8 +24,35 @@ header {
     margin-bottom: 30px;
 }
 
+/* Main title styling */
+
+header h1.logo {
+  font-family: 'Montserrat Subrayada', sans-serif;   
+  margin: 0;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  float: left;
+}
+
 /* Navigation link design */
 
 li a {
   color: white;
+     font-family: 'Montserrat Subrayada', sans-serif;
+     color: #FFF;
+     font-size: 25px;
+     float: right;
+     text-align: right;
+    margin-top: 9px;
+    padding-right: 10px;
+    text-decoration: none;
+     
 }
+
+/* form design and styling */
+div {
+     border-radius: 5px;
+     padding: 10px;
+}
+
