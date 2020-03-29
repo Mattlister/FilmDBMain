@@ -1,5 +1,6 @@
-{% if 'username' in session and workout.username == session['username'] %}
+{% extends 'layout/base.html' %}
+{% block content %}
 
                         <li><a href="{{ url_for('editmovie') }}" class="btn btn-primary">edit movie info</a></li>
                         <li><a href="{{ url_for('deletemovie') }}" class="btn btn-danger">Delete stuff</a></li>
-                        {% endif %}
+                        {% endblock %}
