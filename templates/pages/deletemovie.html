@@ -1,15 +1,30 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-    <section class="">
-        <div class="conatiner">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h4>Delete Movie Info</h4>
-                </div>
-            </div>
-        </div>
-    </div>
 
+<h4>Delete Movie Info</h4>
+<div class="row">
+	<form action="" method="POST" class="col s12">
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">assignment</i>
+				<input id="film_name" name="file_name" type="text">
+				<label for="">Film Name</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">subject</i>
+				<textarea name="review" id="review" cass="materialize-textarea"></textarea>
+				<label for="">Review</label>
+			</div>
+		</div>
+        <div class="row">
+        	<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">playlist_add</i>
+             </button>
+        </div>
+	</form>
+</div>
 
 
 {% endblock %}

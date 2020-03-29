@@ -85,12 +85,6 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-@app.route("/films")
-def films():
-
-    return render_template("pages/films.html")
-
-
 @app.route("/edit-movie.html")
 def editmovie():
     return render_template("pages/editmovie.html")
@@ -101,10 +95,15 @@ def deletemovie():
     return render_template("pages/deletemovie.html")
 
 
-
 @app.route("/contact")
 def contact():
     return render_template("pages/contact.html")
+
+@app.route("/films")
+def films():
+
+    return render_template("pages/films.html")
+
 
 
 # 404 error page

@@ -27,11 +27,8 @@ class LoginForm(FlaskForm):
 
 class CreateMovieForm(FlaskForm):
 
+    class EditMovieForm(FlaskForm):
 
-class EditMovieForm(FlaskForm):
-
-
-class DeleteMovieForm(FlaskForm):
-    username = StringField('username')
-    submit = SubmitField('Delete')
-   
+        class DeleteMovieForm(FlaskForm):
+            username = StringField('username')
+            submit = SubmitField('Delete')
