@@ -99,14 +99,17 @@ def deletemovie():
 def contact():
     return render_template("pages/contact.html")
 
+
 @app.route("/films")
 def films():
 
     return render_template("pages/films.html")
 
+
 @app.route("/moviereviews")
 def moviereviews():
-    return render_template("pages/moviereviews.html")    
+    return render_template("pages/moviereviews.html")
+
 
 @app.route("/universal reviews")
 def universalreviews():
