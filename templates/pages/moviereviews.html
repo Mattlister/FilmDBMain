@@ -1,6 +1,19 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-
-                        <li><a href="{{ url_for('editmovie') }}" class="btn btn-primary">edit movie info</a></li>
-                        <li><a href="{{ url_for('deletemovie') }}" class="btn btn-danger">Delete stuff</a></li>
+    <div class="container">
+        <div class="row">
+        <form action="" method="POST" class="col s12">
+			<div class="col-sm-12 text-center">
+				<h4>Edit Movie Review</h4>
+			</div>
+<div class="col-sm-12 text-center">
+                        <li><a href="{{ url_for('editmovie') }}" class="btn btn-primary">
+                        <textarea name="review" id="review" class="materialize-textarea"></textarea>edit movie info</a></li>
+                        </div>
+                        <li><a href="{{ url_for('deletemovie') }}" class="btn btn-danger">
+                        <textarea name="review" id="review" cass="materialize-textarea"></textarea>Delete stuff</a></li>
+                        </div>
+        </div>
+        </div>
+        </form>
                         {% endblock %}
