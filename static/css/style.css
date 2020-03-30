@@ -56,8 +56,10 @@ form {
     padding: 70px;
     padding-left: 80px;
     border: 1px solid red;
+    border-radius: 30px;
     position: relative;
     display: inline-block;
+    margin-top: 23px;
     text-align: center;
 }
 
@@ -65,7 +67,8 @@ form {
 
 .jumbotron{
     padding: 70px;
-    border: 1px solid red;
+    border: 2px solid red;
+    border-radius: 9px;
     position: relative;
     background: none;
     margin-top: 23px;
@@ -74,7 +77,8 @@ form {
 
 h5 {
   font-family: 'Montserrat', sans-serif;     
-  border: 1px solid red;
+  border: 2px solid red;
+  border-radius: 9px;
   padding-top: 25px;
   padding: 23px;
   margin: 80px;
