@@ -63,14 +63,6 @@ form {
     text-align: center;
 }
 
-
-.container{
-  width: 100%;
-  text-align: center;
-}
-
-
-
 h5 {
   font-family: 'Montserrat', sans-serif;     
   border: 2px solid red;
@@ -83,4 +75,24 @@ h5 {
 
 body {
     text-align: center; 
+}
+
+textarea{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* button styling */
+
+.btn_small {
+    height: 24px;
+    width: 60px;
+    color: red;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
+}
+
+.task_header {
+    margin-top: 5px;
 }

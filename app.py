@@ -106,13 +106,15 @@ def films():
     return render_template("pages/films.html")
 
 
-@app.route("/moviereviews")
+@app.route("/movier-eviews")
 def moviereviews():
+
     return render_template("pages/moviereviews.html")
 
 
-@app.route("/universal reviews")
+@app.route("/universal-reviews")
 def universalreviews():
+
     return render_template("pages/universalreviews.html")
 
 # 404 error page
