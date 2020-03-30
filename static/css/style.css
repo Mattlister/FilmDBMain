@@ -63,19 +63,13 @@ form {
     text-align: center;
 }
 
-/* Jumbotron design and styling */
 
-.jumbotron{
-    padding: 70px;
-    border: 2px solid red;
-    border-radius: 9px;
-    justify-content: center;
-    margin: 10px 10px 10px 10px;
-    display: inline-block;
-    position: relative;
-    background: none;
-    margin-top: 23px;
+.container{
+  width: 100%;
+  text-align: center;
 }
+
+
 
 h5 {
   font-family: 'Montserrat', sans-serif;     
