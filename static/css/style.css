@@ -69,6 +69,7 @@ form {
     padding: 70px;
     border: 2px solid red;
     border-radius: 9px;
+    display: inline-block;
     position: relative;
     background: none;
     margin-top: 23px;
@@ -80,6 +81,11 @@ h5 {
   border: 2px solid red;
   border-radius: 9px;
   padding-top: 25px;
+  display: inline-block;
   padding: 23px;
   margin: 80px;
+}
+
+body {
+    text-align: center; 
 }
