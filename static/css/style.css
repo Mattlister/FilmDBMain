@@ -69,11 +69,12 @@ form {
     padding: 70px;
     border: 2px solid red;
     border-radius: 9px;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
     display: inline-block;
     position: relative;
     background: none;
     margin-top: 23px;
-    text-align:center;
 }
 
 h5 {
