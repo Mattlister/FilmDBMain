@@ -106,7 +106,7 @@ def films():
     return render_template("pages/films.html")
 
 
-@app.route("/movier-eviews")
+@app.route("/moviereviews")
 def moviereviews():
 
     return render_template("pages/moviereviews.html")
