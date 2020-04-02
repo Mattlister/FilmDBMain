@@ -36,8 +36,10 @@
 						<li><a href="{{ url_for('index') }}">Home</a></li>
 						<li><a href="{{ url_for('register') }}">Register</a></li>
 						<li><a href="{{ url_for('login') }}">Login</a></li>
-						<li><a href="{{ url_for('contact') }}">Contact</a></li>
+                        <li><a href="{{ url_for('moviereviews') }}">Universal reviews</a></li>
 						<li><a href="{{ url_for('films') }}">Search</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                        
 					</ul>
                 {% else %}
 					<ul class="navbar-nav ml-auto uppercase">
@@ -45,10 +47,11 @@
 						<li><a href="{{ url_for('index') }}">Home</a></li>
 						<li><a href="{{ url_for('createmovie') }}">create movie
 								<a></li>
-                         <li><a href="{{ url_for('moviereviews') }}">my movie reviews</a></li>
-                         <li><a href="{{ url_for('universalreviews') }}">Universal reviews</a></li>
+                         <li><a href="{{ url_for('myreviews') }}">my movie reviews</a></li>
+                         <li><a href="{{ url_for('moviereviews') }}">Universal reviews</a></li>
+                        <li><a href="{{ url_for('films') }}">Search</a></li>   
                         <li><a href="{{ url_for('logout') }}">logout</a></li>
-                        <li><a href="{{ url_for('films') }}">Search</a></li>     
+                          
                         
 					</ul>
                     </nav></strong>

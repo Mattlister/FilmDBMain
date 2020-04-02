@@ -112,10 +112,10 @@ def moviereviews():
     return render_template("pages/moviereviews.html")
 
 
-@app.route("/universal-reviews")
-def universalreviews():
+@app.route("/myreviews.html")
+def myreviews():
 
-    return render_template("pages/universalreviews.html")
+    return render_template("pages/myreviews.html")
 
 # 404 error page
 @app.errorhandler(404)
