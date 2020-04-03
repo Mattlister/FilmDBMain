@@ -33,21 +33,21 @@ def index():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
+
     if form.validate_on_submit():
-        found_username = users.find_one({'username': request.form['username']})
+        if 'username' in session:
+            flash("You crazy kid, you're already logged in", 'danger')
+        else:
+            users = mongo.db.users
+            found_username = users.find_one({'username': request.form['username']})
 
-        if found_username:
-            if bcrypt.check_password_hash(found_username['password'],
-                                          request.form.get('password').encode(
-                                              'utf-8')):
-                session['username'] = request.form.get('username')
-                session['logged-in'] = True
-                return redirect(url_for('films'))
-
-            flash(f'Ahh Ahh Ahh, You didnt say the magic word.' 'danger')
-            return redirect(url_for('login'))
-
-            flash('Login Unsuccessful. Please check username and password', 'danger')
+            if found_username:
+                if bcrypt.check_password_hash(found_username['password'],
+                    request.form('password').encode('utf-8')):
+                    session['username'] = request.form('username')
+                    return redirect(url_for('index'))
+                else:
+                    flash(f'Login Unsuccessful. Please check username and password', 'danger')
     return render_template('pages/login.html', title='Login', form=form)
 
 
