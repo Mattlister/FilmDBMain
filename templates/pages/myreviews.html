@@ -7,34 +7,12 @@
     
                     <h5>Welcome, this is your personal reviews page. This is where you'll find everything you've written about the silver screen.
                     We're as passionate about movies as much as you are and so we value your reviews just as much as everyone else's. No swearing,
-                    keep it nice and share what you think to help others. You can select a review if you wise to change or remove it</h5>
+                    keep it nice and share what you think to help others. You can select a review if you wise to change or</h5>
             </div>
         </div>
-        </div class="row"></div>
+        </div class="row">
+        </div>
     </section>
-    <div class="row">
-    <ul class="collapsible" data-collapsible="accordion">
-        {% for task in tasks %}
-        <li>
-            <div class="collapsible-header">
-                <div class="col s3">
-                    <i class="material-icons">expand_more</i>
-                    <a class="waves-effect waves-light btn btn_small">Done</a>
-                    <a class="waves-effect waves-light btn btn_small blue">Edit</a>
-                    
-                </div>
-                <div class="task_header col s9">
-                    <strong>{{task.task_name}}</strong> - {{task.due_date}}
-                </div>
-            </div>
-            <div class="collapsible-body">
-                <span>
-                {{task.task_description}} 
-            </span>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
+   
     
 {% endblock %}
