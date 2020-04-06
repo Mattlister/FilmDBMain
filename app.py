@@ -42,9 +42,8 @@ def login():
             found_username = users.find_one({'username': request.form['username']})
 
             if found_username:
-                if bcrypt.check_password_hash(found_username['password'],
-                    request.form('password').encode('utf-8')):
-                    session['username'] = request.form('username')
+                if bcrypt.check_password_hash(found_username['password'], (request.form['password']).encode('utf-8')):
+                    session['username'] = request.form['username']
                     return redirect(url_for('index'))
                 else:
                     flash(f'Login Unsuccessful. Please check username and password', 'danger')
