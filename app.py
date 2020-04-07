@@ -86,6 +86,10 @@ def createmovie():
 
 @app.route("/edit-movie.html")
 def editmovie():
+    if request.method == "POST":
+        film_data = mongo.db.films
+        print(film_data)
+        film_data.insert_one(request.form.to_dict())
     return render_template("pages/editmovie.html")
 
 
