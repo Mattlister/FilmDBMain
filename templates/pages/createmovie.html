@@ -1,32 +1,27 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-<div class="container">
-	<div class="row">
-		<form action="" method="POST" class="col s12">
-			<div class="input-field col s12">
-				<h4>Add Movie Info</h4>
-			</div>
 
-            
-			<div class="col-sm-12 text-align">
-				<textarea name="review" id="review" cass="materialize-textarea"></textarea>
+<h4>Add Movie Info</h4>
+<div class="container">
+	<form action="" method="POST" class="col s12">
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="film_name" name="file_name" type="text">
 				<label for="">Film Name</label>
 			</div>
-			<div class="col-sm-12 text-align">
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
 				<textarea name="review" id="review" cass="materialize-textarea"></textarea>
 				<label for="">Review</label>
 			</div>
-            <div class="col-sm-12 text-center">
-		        <button class="btn btn-outline-info" type="submit" name="action">Submit
+		</div>
+        <div class="row">
+        	<button class="btn btn-outline-info" type="submit" name="action">Submit
              </button>
-	</div>
-
-	</div>
-
+        </div>
 	</form>
-
 </div>
 
-</form>
-</div>
+
 {% endblock %}
