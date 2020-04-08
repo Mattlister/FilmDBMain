@@ -3,17 +3,15 @@
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 about-title text-center">
-                    <h5>My Reviews</h5>
-            </div>
-        </div>
-        <div class="row">
             <div class="col-sm-12 text-center">
                 {% if 'username' in session %}
-                    <p class="page-desc">Welcome {{session['username'] }}, this page will show you all of your movie reviews. This can be used to 
-                        help others in understanding movies that you're passionate about and we'd love for this to be shared across the database</p>
+                    <h5>Welcome {{session['username'] }}, this page will show you all of your movie reviews. This can be used to 
+                        help others in understanding movies that you're passionate about and we'd love for this to be shared across the database</h5>
                 {% endif %}        
         </div>
+       </div> 
+
+       </div>
     </section>
  
    
