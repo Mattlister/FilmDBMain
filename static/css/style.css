@@ -55,12 +55,13 @@ li a {
 form {
     padding: 70px;
     padding-left: 80px;
-    border: 1px solid red;
+    border: 2px solid red;
     border-radius: 30px;
     position: relative;
     display: inline-block;
     margin-top: 23px;
     text-align: center;
+    
 }
 
 h5 {
