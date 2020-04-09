@@ -55,30 +55,13 @@ li a {
 form {
     padding: 70px;
     padding-left: 80px;
-    border: 2px solid red;
-    border-radius: 9px;
+    border: 1px solid red;
+    border-radius: 30px;
     position: relative;
     display: inline-block;
     margin-top: 23px;
     text-align: center;
 }
-
-form {
-		margin: 0 auto;
-		width: 210px;
-	}
-
-	.form label{
-		display: inline-block;
-		text-align: right;
-		float: left;
-	}
-
-	.form input{
-		display: inline-block;
-		text-align: left;
-		float: right;
-	}
 
 h5 {
   font-family: 'Montserrat', sans-serif;     
@@ -88,11 +71,6 @@ h5 {
   display: inline-block;
   padding: 23px;
   margin: 80px;
-}
-
-button {
-    margin: 0 auto;
-    display: block;
 }
 
 body {
