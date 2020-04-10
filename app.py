@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, url_for, request, session, \
     redirect, flash
+from data import Myreviews
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
@@ -10,6 +11,8 @@ if os.path.exists('env.py'):
 
 
 app = Flask(__name__)
+
+Myreviews = Myreviews()
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
@@ -28,6 +31,11 @@ def index():
         return 'You are logged in as ' + session['username']
 
     return render_template('pages/index.html', films=mongo.db.films.find())
+
+
+@app.route('/Myreviews')
+def myreviews():
+    return render_template('pages/myreviews.html', myreviews=Myreviews)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -107,18 +115,6 @@ def films():
 
     return render_template("pages/films.html")
 
-
-@app.route("/moviereviews")
-def moviereviews():
-
-    return render_template("pages/moviereviews.html")
-
-
-@app.route("/myreviews.html")
-def myreviews():
-
-    return render_template("pages/myreviews.html")
-
 # 404 error page
 @app.errorhandler(404)
 def page_not_found(e):
@@ -129,3 +125,4 @@ if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '127.0.0.1'),
             port=os.environ.get('PORT', '5000'),
             debug=True)
+            

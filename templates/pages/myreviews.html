@@ -1,19 +1,10 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-    <section class="about">
-        <div class="container">
-            <div class="row">
-            <div class="col-sm-12 text-center">
-                {% if 'username' in session %}
-                    <h5>Welcome {{session['username'] }}, this page will show you all of your movie reviews. This can be used to 
-                        help others in understanding movies that you're passionate about and we'd love for this to be shared across the database</h5>
-                {% endif %}        
-        </div>
-       </div> 
-            
-       </div>
-    </section>
+    <h1>Reviews</h1>
+    {% for myreviews in myreviews %}
+    {{ myreviews }}
+
+
  
-   
-    
+    {% endfor %}
 {% endblock %}
