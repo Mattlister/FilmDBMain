@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, url_for, request, session, \
     redirect, flash
-from data import Myreviews
+from data import Articles
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
@@ -12,7 +12,7 @@ if os.path.exists('env.py'):
 
 app = Flask(__name__)
 
-Myreviews = Myreviews()
+Articles = Articles()
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
@@ -33,9 +33,9 @@ def index():
     return render_template('pages/index.html', films=mongo.db.films.find())
 
 
-@app.route('/Myreviews')
-def myreviews():
-    return render_template('pages/myreviews.html', myreviews=Myreviews)
+@app.route('/articles')
+def articles():
+    return render_template('pages/articles.html', articles =Articles)
 
 
 @app.route('/login', methods=['GET', 'POST'])
