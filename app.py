@@ -35,7 +35,7 @@ def index():
 
 @app.route('/articles')
 def articles():
-    return render_template('pages/articles.html', articles=Articles)
+    return render_template('pages/articles.html', articles = Articles)
 
 
 @app.route('/article/<string:id>/')

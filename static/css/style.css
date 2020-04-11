@@ -46,8 +46,9 @@ li a {
      margin-top: 9px;
      padding-right: 10px;
      text-decoration: none;
-     
 }
+
+/* styling for review articles */
 
 li.list-group-item {
     font-family: 'Montserrat', sans-serif; 
@@ -57,7 +58,7 @@ li.list-group-item {
     padding-top: 25px;
     padding: 23px;
     margin: 10px;
-    text-decoration: none;
+    text-align: center;
 }
 
 article {
