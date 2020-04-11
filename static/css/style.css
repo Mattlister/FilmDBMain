@@ -38,16 +38,31 @@ header h1.logo {
 /* Navigation link design */
 
 li a {
-  color: white;
      font-family: 'Montserrat Subrayada', sans-serif;
      color: #FFF;
      font-size: 25px;
      float: right;
      text-align: right;
-    margin-top: 9px;
-    padding-right: 10px;
-    text-decoration: none;
+     margin-top: 9px;
+     padding-right: 10px;
+     text-decoration: none;
      
+}
+
+li.list-group-item {
+    font-family: 'Montserrat', sans-serif; 
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 9px;
+    padding-top: 25px;
+    padding: 23px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+article {
+    font-family: 'Montserrat', sans-serif;   
+    color: red;
 }
 
 /* form design and styling */
@@ -63,6 +78,7 @@ form {
     text-align: center;
     
 }
+
 
 h5 {
   font-family: 'Montserrat', sans-serif;     
