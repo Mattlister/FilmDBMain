@@ -1,5 +1,5 @@
 def Movies():
-    movies = [
+    editmovie = [
         {
             'id': 1,
             'title': 'Article One',
@@ -23,4 +23,4 @@ def Movies():
         },
     ]
 
-    return movies
+    return editmovie

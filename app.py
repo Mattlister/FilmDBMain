@@ -5,7 +5,7 @@ from data import Movies
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
-from forms import LoginForm, RegistrationForm, CreateMovieForm, EditMovieForm, DeleteForm
+from forms import LoginForm, RegistrationForm, CreateMovieForm, EditMovieForm
 if os.path.exists('env.py'):
     import env
 
@@ -22,7 +22,6 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 users = mongo.db.users
 bcrypt = Bcrypt(app)
-get_movie = mongo.db.films
 
 
 @app.route('/')
@@ -79,12 +78,10 @@ def logout():
 
 @app.route("/createmovie", methods=['GET', 'POST'])
 def createmovie():
-    createmovie = CreateMovieForm()
 
     if request.method == "POST":
-        get_movie.insert_one({
+        createmovie.insert_one({
             'username': session['username'],
-
         })
         film_data = mongo.db.films
         print(film_data)
@@ -93,14 +90,11 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-@app.route("/editmovie/<movie_id>")
-def editmovie(movie_id):
-    editmovie=EditMovieForm()
-    movie = get_movies.find_one_or_404({'id': ObjectId(movie_id)})
-    if request.method == "POST":
-        film_data = mongo.db.films
-        print(film_data)
-        film_data.insert_one(request.form.to_dict())
+@app.route("/editmovie/<movie_id>", methods=['GET', 'POST'])
+def editmovie():
+    film_data = mongo.db.films
+    print(film_data)
+    film_data.insert_one(request.form.to_dict())
     return render_template("pages/editmovie.html")
 
 
