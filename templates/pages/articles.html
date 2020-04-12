@@ -1,9 +1,0 @@
-{% extends 'layout/base.html' %}
-{% block content %}
-    <h2>Articles</h2>
-    <ol class="list-group">
-        {% for article in articles %}
-        <li class="list-group-item"><a href="article/{{article.id}}">{{ article.title }}</li>
-        {% endfor %}
-    </ol>
-{% endblock %}

@@ -1,18 +1,18 @@
 import os
 from flask import Flask, render_template, url_for, request, session, \
     redirect, flash
-from data import Articles
+from data import Movies
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
-from forms import LoginForm, RegistrationForm
+from forms import LoginForm, RegistrationForm, CreateMovieForm, EditMovieForm, DeleteForm
 if os.path.exists('env.py'):
     import env
 
 
 app = Flask(__name__)
 
-Articles = Articles()
+Movies = Movies()
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
@@ -22,6 +22,7 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 users = mongo.db.users
 bcrypt = Bcrypt(app)
+get_movie = mongo.db.films
 
 
 @app.route('/')
@@ -31,17 +32,6 @@ def index():
         return 'You are logged in as ' + session['username']
 
     return render_template('pages/index.html', films=mongo.db.films.find())
-
-
-@app.route('/articles')
-def articles():
-    return render_template('pages/articles.html', articles = Articles)
-
-
-@app.route('/article/<string:id>/')
-def article(id):
-
-    return render_template('pages/article.html', id=id)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -77,7 +67,7 @@ def register():
             session['username'] = request.form['username']
             return redirect(url_for('index'))
         flash(f'This name already exists. Please use a different name', 'danger')
-        return redirect(url_for('register'))
+        return redirect(url_for('login'))
     return render_template('pages/register.html', title='Register', form=form)
 
 
@@ -89,7 +79,13 @@ def logout():
 
 @app.route("/createmovie", methods=['GET', 'POST'])
 def createmovie():
+    createmovie = CreateMovieForm()
+
     if request.method == "POST":
+        get_movie.insert_one({
+            'username': session['username'],
+
+        })
         film_data = mongo.db.films
         print(film_data)
         film_data.insert_one(request.form.to_dict())
@@ -97,8 +93,10 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-@app.route("/edit-movie.html")
-def editmovie():
+@app.route("/editmovie/<movie_id>")
+def editmovie(movie_id):
+    editmovie=EditMovieForm()
+    movie = get_movies.find_one_or_404({'id': ObjectId(movie_id)})
     if request.method == "POST":
         film_data = mongo.db.films
         print(film_data)

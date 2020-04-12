@@ -1,5 +1,5 @@
-def Articles():
-    articles = [
+def Movies():
+    movies = [
         {
             'id': 1,
             'title': 'Article One',
@@ -23,4 +23,4 @@ def Articles():
         },
     ]
 
-    return articles
+    return movies
