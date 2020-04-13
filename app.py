@@ -98,6 +98,7 @@ def editmovies(movie_id):
     return render_template("pages/editmovies.html", allmovies=AllMovies)
 
 
+
 @app.route("/delete-movie.html")
 def deletemovie():
     return render_template("pages/deletemovie.html")
