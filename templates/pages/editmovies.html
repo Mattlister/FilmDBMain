@@ -1,12 +1,11 @@
 {% extends 'layout/base.html' %}
 {% block content %}
+
     <h2>Edit Movies</h2>
-    <ol class="list-group">
+    
+    <ul class="list-group">
         {% for movie in allmovies %}
-        <li class="list-group-item"><a href="editmovies/{{movie}}">{{ movie.title }}</li>
-         <span>
-                    {{movie.movie_description}}
-                </span>
+        <li class="list-group-item"><a href="/editmovies/myreviews{{movie.id}}">{{ movie.title }}</a></li>
         {% endfor %}
-    </ol>
+    </ul>
 {% endblock %}

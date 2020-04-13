@@ -69,11 +69,11 @@ def register():
         return redirect(url_for('login'))
     return render_template('pages/register.html', title='Register', form=form)
 
+
 @app.route('/logout')
 def logout():
     session.clear()
     return render_template('pages/index.html')
-
 
 
 @app.route("/createmovie", methods=['GET', 'POST'])
@@ -123,4 +123,3 @@ if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '127.0.0.1'),
             port=os.environ.get('PORT', '5000'),
             debug=True)
-            
