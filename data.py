@@ -1,5 +1,5 @@
 def EditMovies():
-    editmovies = [
+    allmovies = [
         {
             'id': 1,
             'title': 'Movie One',
@@ -23,4 +23,4 @@ def EditMovies():
         },
     ]
 
-    return editmovies
+    return allmovies

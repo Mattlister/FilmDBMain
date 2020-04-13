@@ -12,7 +12,7 @@ if os.path.exists('env.py'):
 
 app = Flask(__name__)
 
-EditMovies = EditMovies()
+AllMovies = EditMovies()
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
@@ -69,11 +69,11 @@ def register():
         return redirect(url_for('login'))
     return render_template('pages/register.html', title='Register', form=form)
 
-
 @app.route('/logout')
 def logout():
     session.clear()
     return render_template('pages/index.html')
+
 
 
 @app.route("/createmovie", methods=['GET', 'POST'])
@@ -90,12 +90,12 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-@app.route("/editmovies/<editmovies_id>", methods=['GET', 'POST'])
-def editmovies():
+@app.route("/editmovies/<movie_id>", methods=['GET', 'POST'])
+def editmovies(movie_id):
     film_data = mongo.db.films
     print(film_data)
     film_data.insert_one(request.form.to_dict())
-    return render_template("pages/editmovies.html", editmovies=EditMovies)
+    return render_template("pages/editmovies.html", allmovies=AllMovies)
 
 
 @app.route("/delete-movie.html")
