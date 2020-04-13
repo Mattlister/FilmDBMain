@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, url_for, request, session, \
     redirect, flash
-from data import Movies
+from data import EditMovies
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
@@ -12,7 +12,7 @@ if os.path.exists('env.py'):
 
 app = Flask(__name__)
 
-Movies = Movies()
+EditMovies = EditMovies()
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
@@ -90,12 +90,12 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-@app.route("/editmovie/<movie_id>", methods=['GET', 'POST'])
-def editmovie():
+@app.route("/editmovies/<editmovies_id>", methods=['GET', 'POST'])
+def editmovies():
     film_data = mongo.db.films
     print(film_data)
     film_data.insert_one(request.form.to_dict())
-    return render_template("pages/editmovie.html")
+    return render_template("pages/editmovies.html", editmovies=EditMovies)
 
 
 @app.route("/delete-movie.html")

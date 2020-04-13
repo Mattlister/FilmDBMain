@@ -1,12 +1,5 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-    <h2>Movies</h2>
-    <ol class="list-group">
-        {% for movie in moviess %}
-        <li class="list-group-item"><a href="editmovie/{{movies.id}}">{{ movie.title }}</li>
-         <span>
-                    {{movie.movie_description}}
-                </span>
-        {% endfor %}
-    </ol>
+    <h1>{{ editmovies.id }}</h1>
+
 {% endblock %}
