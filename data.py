@@ -1,4 +1,4 @@
-def EditMovies():
+def AllMovies():
     allmovies = [
         {
             'id': 1,

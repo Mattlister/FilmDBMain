@@ -2,11 +2,8 @@
 {% block content %}
     <h2>Edit Movies</h2>
     <ol class="list-group">
-        {% for movie in allmovies %}
-        <li class="list-group-item"><a href="editmovies/{{movie}}">{{ movie.title }}</li>
-         <span>
-                    {{movie.movie_description}}
-                </span>
+        {% for editmovie in editmovies %}
+        <li class="list-group-item"><a href="editmovie/{{editmovie.id}}">{{ editmovie.title }}</li>
         {% endfor %}
     </ol>
 {% endblock %}

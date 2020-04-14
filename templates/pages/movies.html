@@ -3,7 +3,7 @@
     <h2>Movies</h2>
     <ol class="list-group">
         {% for editmovie in moviess %}
-        <li class="list-group-item"><a href="movie/{{movie.id}}">{{ movie.title }}</li>
+        <li class="list-group-item"><a href="url_for('movie')/{{movie.id}}">{{ movie.title }}</li>
          <span>
                     {{movie.movie_description}}
                 </span>
