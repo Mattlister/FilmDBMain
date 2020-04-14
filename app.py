@@ -12,7 +12,7 @@ if os.path.exists('env.py'):
 
 app = Flask(__name__)
 
-AllMovies = AllMovies()
+allmovies = AllMovies()
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
