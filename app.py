@@ -92,7 +92,8 @@ def createmovie():
 
 @app.route('/editmovies')
 def editmovies():
-    return render_template('pages/editmovies.html', editmoviews=editmovies)
+    editmovies = allmovies
+    return render_template('pages/editmovies.html', editmovies=editmovies)
 
 
 @app.route("/editmovie/<string:id>/")
