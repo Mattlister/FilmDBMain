@@ -25,6 +25,7 @@ bcrypt = Bcrypt(app)
 
 
 @app.route('/')
+@app.route('/index')
 def index():
 
     if 'username' in session:
@@ -49,7 +50,7 @@ def login():
                     session['username'] = request.form['username']
                     return redirect(url_for('index'))
                 else:
-                    flash(f'Login Unsuccessful. Please check username and password', 'danger')
+                    flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('pages/login.html', title='Login', form=form)
 
 
@@ -57,6 +58,7 @@ def login():
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
+        flash(f'Account created for {form.username.data}!', 'success')
         users = mongo.db.users
         existing_user = users.find_one({'username': request.form['username']})
 
@@ -66,7 +68,7 @@ def register():
             session['username'] = request.form['username']
             return redirect(url_for('index'))
         flash(f'This name already exists. Please use a different name', 'danger')
-        return redirect(url_for('login'))
+        return redirect(url_for('index'))
     return render_template('pages/register.html', title='Register', form=form)
 
 
@@ -79,6 +81,8 @@ def logout():
 @app.route("/createmovie", methods=['GET', 'POST'])
 def createmovie():
 
+    createmovieform = CreateMovieForm()
+    
     if request.method == "POST":
         createmovie.insert_one({
             'username': session['username'],
@@ -98,12 +102,14 @@ def editmovies():
 
 @app.route('/editmovie/<string:id>/')
 def editmovie(id):
+    editmovie = EditMovieForm()
 
     return render_template("pages/editmovie.html", id=id)
 
 
 @app.route("/delete-movie.html")
 def deletemovie():
+    deletemovie = DeleteMovie()
     return render_template("pages/deletemovie.html")
 
 
