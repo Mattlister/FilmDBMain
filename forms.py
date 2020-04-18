@@ -31,6 +31,6 @@ class EditMovieForm(FlaskForm):
     submit = SubmitField('Edit')
 
 
-class DeleteForm(FlaskForm):
+class DeleteMovieForm(FlaskForm):
     username = StringField('username')
     submit = SubmitField('Delete')

@@ -81,8 +81,6 @@ def logout():
 @app.route("/createmovie", methods=['GET', 'POST'])
 def createmovie():
 
-    createmovieform = CreateMovieForm()
-    
     if request.method == "POST":
         createmovie.insert_one({
             'username': session['username'],
@@ -91,7 +89,8 @@ def createmovie():
         print(film_data)
         film_data.insert_one(request.form.to_dict())
 
-    return render_template("pages/createmovie.html")
+    return render_template("pages/createmovie.html", title='New Post',
+                           form=CreateMovieForm)
 
 
 @app.route('/editmovies')
@@ -102,14 +101,13 @@ def editmovies():
 
 @app.route('/editmovie/<string:id>/')
 def editmovie(id):
-    editmovie = EditMovieForm()
 
     return render_template("pages/editmovie.html", id=id)
 
 
 @app.route("/delete-movie.html")
 def deletemovie():
-    deletemovie = DeleteMovie()
+
     return render_template("pages/deletemovie.html")
 
 
