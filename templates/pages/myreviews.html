@@ -1,8 +1,41 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-    <h2>Reviews</h2>
-    {% for Myreviews in Myreviews %}
-    {{ Myreviews }}
+    <section class="about">
+        <div class="container content">
+            <div class="row">
+                <div class="col-sm-12 about-title text-center">
+                    <h2>Reviews</h2>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-sm-12 about-title text-center">
+                    {% if username in session %}
+                    <p class="page-desc">"Welcome {{ session['username'] }}, here, you'll find all the reviews you've created for Movies you've watched
+                                         and these reviews will help others to learn and find their own passion about these movies"</p>
+                     {% else %}
+                     <p class="page-help"> You need to log in to view this page. Please Login.</p>
+                     {% endif %}                    
+                </div>
+            </div>
+
+        
+        </div>
+    </section>
+
+    <section class="lower-section">
+        <div class="container">
+            <div class="row review-cards-row">
+                 {% for Myreviews in Myreviews %}
+                    {% if review.username == session['username'] %}
+                        <div class="col-sm-12 col-md-6 review-cards card">
+                            <div class="card-body public-cards-body text-center">
+                                <a href="{{ url_for('') }}"
+                            </div>
+                        </div>
+            </div>
+        </div>
+    
+    <section>
 
 
  

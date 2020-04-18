@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, SelectField, BooleanField
+from wtforms import StringField, PasswordField, SubmitField, SelectField, BooleanField, TextAreaField
 from wtforms.validators import DataRequired, Length, EqualTo
 
 
@@ -23,6 +23,7 @@ class LoginForm(FlaskForm):
 
 class CreateMovieForm(FlaskForm):
     movie_name = SelectField('Name')
+    content = TextAreaField('Content', validators=[DataRequired()])
     submit = SubmitField('Create')
 
 
