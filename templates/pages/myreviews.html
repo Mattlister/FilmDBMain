@@ -29,7 +29,7 @@
                     {% if review.username == session['username'] %}
                         <div class="col-sm-12 col-md-6 review-cards card">
                             <div class="card-body public-cards-body text-center">
-                                <a href="{{ url_for('') }}"
+                                <a href="{{ url_for('movieview', movie_id=movie_id) }}"></a>
                             </div>
                         </div>
             </div>
