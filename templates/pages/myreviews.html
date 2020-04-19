@@ -4,12 +4,12 @@
         <div class="container content">
             <div class="row">
                 <div class="col-sm-12 about-title text-center">
-                    <h2>Reviews</h2>
+                    <h2>My Reviews</h2>
                 </div>
             </div>
              <div class="row">
                 <div class="col-sm-12 about-title text-center">
-                    {% if username in session %}
+                    {% if 'username' in session %}
                     <p class="page-desc">"Welcome {{ session['username'] }}, here, you'll find all the reviews you've created for Movies you've watched
                                          and these reviews will help others to learn and find their own passion about these movies"</p>
                      {% else %}
@@ -22,22 +22,4 @@
         </div>
     </section>
 
-    <section class="lower-section">
-        <div class="container">
-            <div class="row review-cards-row">
-                 {% for Myreviews in Myreviews %}
-                    {% if review.username == session['username'] %}
-                        <div class="col-sm-12 col-md-6 review-cards card">
-                            <div class="card-body public-cards-body text-center">
-                                <a href="{{ url_for('movieview', movie_id=movie_id) }}"></a>
-                            </div>
-                        </div>
-            </div>
-        </div>
-    
-    <section>
-
-
- 
-    {% endfor %}
 {% endblock %}

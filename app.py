@@ -122,6 +122,12 @@ def deletemovie():
     return render_template("pages/deletemovie.html")
 
 
+@app.route("/myreviews")
+def myreviews():
+
+    return render_template("pages/myreviews.html")
+
+
 @app.route("/contact")
 def contact():
     return render_template("pages/contact.html")
