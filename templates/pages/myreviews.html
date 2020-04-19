@@ -1,25 +1,9 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-    <section class="about">
-        <div class="container content">
-            <div class="row">
-                <div class="col-sm-12 about-title text-center">
-                    <h2>My Reviews</h2>
-                </div>
-            </div>
-             <div class="row">
-                <div class="col-sm-12 about-title text-center">
-                    {% if 'username' in session %}
-                    <p class="page-desc">"Welcome {{ session['username'] }}, here, you'll find all the reviews you've created for Movies you've watched
-                                         and these reviews will help others to learn and find their own passion about these movies"</p>
-                     {% else %}
-                     <p class="page-help"> You need to log in to view this page. Please Login.</p>
-                     {% endif %}                    
-                </div>
-            </div>
-
-        
-        </div>
-    </section>
-
+    <h2>My Movie Reviews</h2>
+    <ul class="list-group">
+        {% for myreview in myreviews %}
+        <li class="list-group-item"><a href="myreview/{{myreview.id}}">{{ myreview.title }}</li>
+        {% endfor %}
+    </ul>
 {% endblock %}
