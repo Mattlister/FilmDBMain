@@ -5,7 +5,7 @@ from data import AllMovies
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
-from forms import LoginForm, RegistrationForm, CreateMovieForm, EditMovieForm, DeleteMovieForm
+from forms import LoginForm, RegistrationForm, CreateMovieForm, DeleteMovieForm
 
 if os.path.exists('env.py'):
     import env
@@ -115,23 +115,16 @@ def myreview(id):
     return render_template("pages/myreview.html", id=id)
 
 
-@app.route("/editmovie/<string:id>/", methods=['GET', 'POST'])
-def editmovie(id):
-    if request.method == "POST":
-        myreview.insert.one({
-            'username': session['username'],
-        })
-
-        flash(f'Review Edited', 'Primary')
-        return redirect(url_for('index'))
-
-    return render_template("pages/editmovie.html")
-
-
 @app.route("/deletemovie.html")
 def deletemovie():
 
     return render_template("pages/deletemovie.html", form=DeleteMovieForm)
+
+
+@app.route("/editmovie")
+def editmovie():
+
+    return render_template("pages/editmovie.html")
 
 
 @app.route("/contact")
