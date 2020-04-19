@@ -8,12 +8,37 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    
+                    {% if 'username' in session %}
+                        <p class="page-desc"> In this section, you can delete a review but please be aware once done it's gone forever {{session ['username'] }}</p>
+
+                    {% endif %}    
+
                 </div>
             </div>
-        
         </div>
     </div>
 </section>
+
+{% if 'username' in session %}
+    <section class="lower-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-12">
+                        <form action="" method="POST">
+                            {{ form.hidden_tag() }}
+                             <div class="form-group text-center">
+                                {{ form.submit(class="btn btn-danger custom-form-btn") }}
+                            </div>
+                        </form>
+                    </div>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+
+    </section>
 
 {% endblock %}
