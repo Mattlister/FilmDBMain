@@ -83,19 +83,13 @@ def logout():
 
 @app.route("/createmovie", methods=['GET', 'POST'])
 def createmovie():
-
     if request.method == "POST":
-        createmovie.insert_one({
-            'username': session['username'],
-        })
         film_data = mongo.db.films
         print(film_data)
         film_data.insert_one(request.form.to_dict())
-        flash(f'Review added', 'primary')
-        return redirect(url_for('index'))
+        return render_template("pages/createmovie.html")
 
-    return render_template("pages/createmovie.html", title='New Post',
-                           form=CreateMovieForm)
+    return render_template("pages/createmovie.html")
 
 
 @app.route('/myreviews')

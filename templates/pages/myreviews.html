@@ -1,9 +1,17 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-    <h2>My Movie Reviews</h2>
-    <ul class="list-group">
-        {% for myreview in myreviews %}
-        <li class="list-group-item"><a href="myreview/{{myreview.id}}">{{ myreview.title }}</li>
-        {% endfor %}
-    </ul>
+<section class="about">
+	<div class="container">
+		<div class="row public-cards-row">
+            {% for myreview in myreviews %}
+                {% if myreview.username == session['username'] %}
+			<h2>My Movie Reviews</h2>
+			<ul class="list-group">
+				{% for myreview in myreviews %}
+				<li class="list-group-item"><a href="myreview/{{myreview.id}}">{{ myreview.title }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
 {% endblock %}
