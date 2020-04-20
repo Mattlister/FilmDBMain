@@ -1,17 +1,26 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-<section class="about">
-	<div class="container">
-		<div class="row public-cards-row">
-            {% for myreview in myreviews %}
+    <section class="about">
+        <div class="container">
+            <div class="row public-cards-row">
+                {% for film in films %}
                 {% if myreview.username == session['username'] %}
-			<h2>My Movie Reviews</h2>
-			<ul class="list-group">
-				{% for myreview in myreviews %}
-				<li class="list-group-item"><a href="myreview/{{myreview.id}}">{{ myreview.title }}</li>
-				{% endfor %}
-			</ul>
-		</div>
-	</div>
-</section>
+                <h2>My Movie Reviews</h2>
+                <ul class="list-group">
+                    {% for myreview in myreviews %}
+                    <li class="list-group-item"><a href="myreview/{{myreview.id}}">{{ myreview.title }}</li>0
+                    {% endfor %}
+                </ul>
+                <div class="">
+                    {% if 'username' in session and film.username == session['username'] %}
+                        <a href="{{ url_for('deletemovie', id=film.id) }}" class="btn btn-danger">Delete</a>
+                        <a href="{{ url_for('editmovie', id=film.id) }}" class="btn btn-primary">Edit</a>
+                    {% endif %}
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
 {% endblock %}
