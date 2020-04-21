@@ -92,21 +92,15 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-@app.route('/myreviews')
-def myreviews():
-    myreviews = mongo.db.films.find()
-    return render_template('pages/myreviews.html', myreviews=myreviews)
-
-
-@app.route('/myreview/<string:id>/', methods=['GET', 'POST'])
-def myreview(id):
+@app.route('/edit_reviews/<string_id>/', methods=['GET', 'POST'])
+def edit_reviews(movies_id):
     if request.method == "POST":
-        myreview.insert.one({
+        edit_reviews.insert.one({
             'username': session['username'],
         })
         flash(f'Review Edited', 'Primary')
         return redirect(url_for('index'))
-    return render_template("pages/myreview.html", id=id)
+    return render_template("pages/edit_reviews.html", movies=allmovies)
 
 
 @app.route("/deletemovie.html")

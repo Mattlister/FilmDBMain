@@ -3,11 +3,11 @@
 <div class="row">
 	<div class="container">
 		<div class="row public-cards-row">
-			{% for film in films %}
+			{% for edit_reviews in edit_reviews %}
 
 			<h2>My Movie Reviews</h2>
 			<ul class="list-group">
-				{% for myreview in myreviews %}
+				{% for edit_reviews in edit_reviews %}
 				<li class="list-group-item"><a href="{{url_for('myreview'/ myreview.id)}}">{{ myreview.title }}</li>
 				{% endfor %}
 			</ul>
