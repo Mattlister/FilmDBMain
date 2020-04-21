@@ -1,26 +1,26 @@
 {% extends 'layout/base.html' %}
 {% block content %}
 <div class="row">
-        <div class="container">
-            <div class="row public-cards-row">
-                {% for film in films %}
+	<div class="container">
+		<div class="row public-cards-row">
+			{% for film in films %}
 
-                <h2>My Movie Reviews</h2>
-                <ul class="list-group">
-                    {% for myreview in myreviews %}
-                    <li class="list-group-item"><a href="{{url_for('myreview'/ myreview.id)}}">{{ myreview.title }}</li>
-                    {% endfor %}
-                </ul>
-                <div class="myreview">
-                    {% if 'username' in session and film.username == session['username'] %}
-                        <a href="{{ url_for('deletemovie', id=film.id) }}" class="btn btn-danger">Delete</a>
-                        <a href="{{ url_for('editmovie', id=film.id) }}" class="btn btn-primary">Edit</a>
-                    {% endif %}
+			<h2>My Movie Reviews</h2>
+			<ul class="list-group">
+				{% for myreview in myreviews %}
+				<li class="list-group-item"><a href="{{url_for('myreview'/ myreview.id)}}">{{ myreview.title }}</li>
+				{% endfor %}
+			</ul>
+			<div class="myreview">
+				{% if 'username' in session and film.username == session['username'] %}
+				<a href="{{ url_for('deletemovie', id=film.id) }}" class="btn btn-danger">Delete</a>
+				<a href="{{ url_for('editmovie', id=film.id) }}" class="btn btn-primary">Edit</a>
+				{% endif %}
 
-                </div>
+			</div>
+			{% endfor %}
 
-
-            </div>
-        </div>
-    </div>
+		</div>
+	</div>
+</div>
 {% endblock %}

@@ -94,7 +94,10 @@ def createmovie():
 
 @app.route('/myreviews')
 def myreviews():
-    myreviews = allmovies
+    if request.method == "POST":
+        film_data = mongo.db.films
+        print(film_data)
+        film_data.insert_one(request.form.to_dict())
     return render_template('pages/myreviews.html', myreviews=myreviews)
 
 
