@@ -23,7 +23,7 @@ allmovies = AllMovies()
 mongo = PyMongo(app)
 users = mongo.db.users
 bcrypt = Bcrypt(app)
-get_reviews = mongo.db.reviews
+get_films = mongo.db.films
 
 
 @app.route('/')
