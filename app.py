@@ -92,17 +92,6 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-@app.route('/edit_reviews/<string_id>/', methods=['GET', 'POST'])
-def edit_reviews(movies_id):
-    if request.method == "POST":
-        edit_reviews.insert.one({
-            'username': session['username'],
-        })
-        flash(f'Review Edited', 'Primary')
-        return redirect(url_for('index'))
-    return render_template("pages/edit_reviews.html", movies=allmovies)
-
-
 @app.route("/deletemovie.html")
 def deletemovie():
 
