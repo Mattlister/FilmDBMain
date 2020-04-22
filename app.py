@@ -92,6 +92,8 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
+
+
 @app.route("/deletemovie.html")
 def deletemovie():
 
@@ -107,6 +109,18 @@ def editmovie():
 @app.route("/contact")
 def contact():
     return render_template("pages/contact.html")
+
+
+@app.route("/mymovie")
+def mymovie():
+
+    return render_template("pages/myreviews.html", reviews=get_films.find())
+
+
+@app.route("/amovie/<movieid>")
+def amovie(movieid):
+
+    return render_template("pages/myreview.html", review=get_films.find_one({"_id": ObjectId(movieid)}))
 
 
 @app.route("/films")
