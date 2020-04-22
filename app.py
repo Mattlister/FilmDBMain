@@ -92,26 +92,10 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
-
-
 @app.route("/deletemovie.html")
 def deletemovie():
 
     return render_template("pages/deletemovie.html", form=DeleteMovieForm)
-
-
-@app.route("/editmovie<edit_movie_id>")
-def editmovie(edit_movie_id):
-
-    return render_template("pages/editmovie.html", review=get_films.find_one({"_id": ObjectId(movieid)})))
-
-
-
-@app.route("/contact")
-def contact():
-    return render_template("pages/contact.html")
-
-
 
 
 @app.route("/mymovie")
@@ -131,6 +115,11 @@ def films():
 
     return render_template("pages/films.html")
 
+@app.route("/contact")
+def contact():
+    return render_template("pages/contact.html")
+
+
 # 404 error page
 @app.errorhandler(404)
 def page_not_found(e):
@@ -141,3 +130,4 @@ if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '127.0.0.1'),
             port=os.environ.get('PORT', '5000'),
             debug=True)
+            
