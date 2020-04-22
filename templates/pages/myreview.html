@@ -10,6 +10,8 @@
         </div>    
     </div>
 <div class="row">
+            {{ review.file_name }}
+            {{ review.review }}
     <div class="form-group">
         <textarea name="review" id="review" cass="materialize-textarea"></textarea>
         <label for="">Review</label>        
@@ -17,22 +19,6 @@
    </form> 
 </div>
 
-        
-        </div>
-    </form>
-
-</div>
-
-        <div class="container">
-            <div class="row">
-            {{ review.file_name }}
-            {{ review.review }}
-
-
-            </div>
-        </div>
-        
-
-       
+               
     
 {% endblock %}
