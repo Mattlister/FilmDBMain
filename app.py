@@ -100,15 +100,18 @@ def deletemovie():
     return render_template("pages/deletemovie.html", form=DeleteMovieForm)
 
 
-@app.route("/editmovie")
-def editmovie():
+@app.route("/editmovie<edit_movie_id>")
+def editmovie(edit_movie_id):
 
-    return render_template("pages/editmovie.html")
+    return render_template("pages/editmovie.html", review=get_films.find_one({"_id": ObjectId(movieid)})))
+
 
 
 @app.route("/contact")
 def contact():
     return render_template("pages/contact.html")
+
+
 
 
 @app.route("/mymovie")
