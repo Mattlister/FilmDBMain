@@ -115,6 +115,7 @@ def films():
 
     return render_template("pages/films.html")
 
+
 @app.route("/contact")
 def contact():
     return render_template("pages/contact.html")

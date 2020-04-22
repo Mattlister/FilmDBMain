@@ -1,9 +1,32 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-    <h2>My Movie Reviews</h2>
+
+<div class="content-section">
+    <form method="POST" action="">
+        <div class="form-group">
+        <h2>My Movie Reviews</h2>
+            <input id="film_name" name="file_name" type="text">
+			<label for="">Film Name</label>
+        </div>    
+    </div>
+<div class="row">
+    <div class="form-group">
+        <textarea name="review" id="review" cass="materialize-textarea"></textarea>
+        <label for="">Review</label>        
+    </div>
+   </form> 
+</div>
+
+        
+        </div>
+    </form>
+
+</div>
+
         <div class="container">
             <div class="row">
             {{ review.file_name }}
+            {{ review.review }}
 
 
             </div>
