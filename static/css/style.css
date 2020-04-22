@@ -61,11 +61,20 @@ li.list-group-item {
     text-align: center;
 }
 
-editmovies {
-    font-family: 'Montserrat', sans-serif;   
-    color: red;
-}
+/* card styles */
 
+.card {
+     padding: 70px;
+     background-color: transparent;
+    padding-left: 80px;
+    border: 2px solid red;
+    border-radius: 30px;
+    position: relative;
+    display: inline-block;
+    margin-top: 23px;
+    text-align: center;
+
+}
 
 /* form design and styling */
 
