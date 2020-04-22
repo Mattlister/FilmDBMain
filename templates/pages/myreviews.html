@@ -1,17 +1,26 @@
 {% extends 'layout/base.html' %}
 {% block content %}
-    <h2>My Movie Reviews</h2>
+    <section class="about">
         <div class="container">
             <div class="row">
-                {% for review in reviews %}
                 <div class="col-sm-12">
+            <h2>My Movie Reviews</h2>
+            </div>
+            <div class="row">
+              
+                {% for review in reviews %}
+                    {% if 'username' in session %}
+                    <div class="col-sm-12 col-md-6 card">
+                        <div class="card-body card">
                    <a href="{{ url_for('amovie', movieid=review._id )}}"> {{ review.file_name }}</a>
-                </div>
+                    </div>
+                    </div>
+                {% endif %}
         
          {% endfor %}
             </div>
         </div>
-        
+     </section>  
 
        
     
