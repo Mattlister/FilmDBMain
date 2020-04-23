@@ -110,6 +110,18 @@ def amovie(movieid):
     return render_template("pages/myreview.html", review=get_films.find_one({"_id": ObjectId(movieid)}))
 
 
+@app.route("/editmovie")
+def editmovie():
+
+    return render_template("pages/editmovie.html", reviews=get_films.find())
+
+
+@app.route("/editamovie/<movieid>")
+def editamovie(movieid):
+
+    return render_template("/pages/myreview.html")
+
+
 @app.route("/films")
 def films():
 

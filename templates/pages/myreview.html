@@ -2,23 +2,26 @@
 {% block content %}
 
 <div class="content-section">
-    <form method="POST" action="">
-        <div class="form-group">
-        <h2>My Movie Reviews</h2>
-            <input id="film_name" name="file_name" type="text">
+	<form method="POST" action="">
+		<div class="form-group">
+			<h2>My Movie Reviews</h2>
+			<input id="film_name" name="file_name" type="text">
 			<label for="">Film Name</label>
-        </div>    
-    </div>
+		</div>
+		<div class="form-group">
+			<textarea name="review" id="review" class="materialize-textarea"></textarea>
+			<label for="">Review</label>
+		</div>
+</div>
 <div class="row">
-            {{ review.file_name }}
-            {{ review.review }}
-    <div class="form-group">
-        <textarea name="review" id="review" class="materialize-textarea"></textarea>
-        <label for="">Review</label>        
-    </div>
-   </form> 
+	{{ review.file_name }}
+	{{ review.review }}
+</div>
+      <a href="{{ url_for('amovie', movieid=review.id )}}" class="btn btn-primary">Edit</a>
+     <a href="{{ url_for('amovie', movieid=review.id )}}" class="btn btn-danger">Delete</a>
+</form>
 </div>
 
-               
-    
+
+
 {% endblock %}
