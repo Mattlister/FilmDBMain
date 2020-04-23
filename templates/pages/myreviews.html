@@ -10,7 +10,7 @@
               
                 {% for review in reviews %}
                     {% if 'username' in session %}
-                    <div class="col-sm-12 col-md-6 card">
+                   <div class="card">
                         <div class="card-body">
                    <a href="{{ url_for('amovie', movieid=review._id )}}"> {{ review.file_name }}</a>
                     </div>
