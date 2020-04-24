@@ -6,8 +6,12 @@
                 <div class="col-sm-12">
             <h2>My Movie Reviews</h2>
             </div>
-            <div class="row">
-              
+        </div>
+       </div> 
+    </section>
+
+    <section class="lower-section">    
+        <div class="container">      
                 {% for review in reviews %}
                     {% if 'username' in session %}
                    <div class="card">
@@ -20,6 +24,7 @@
         
          {% endfor %}
             </div>
+        </div>
         </div>
      </section>  
 
