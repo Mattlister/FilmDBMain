@@ -112,12 +112,18 @@ def amovie(movieid):
 
 @app.route("/editmovie")
 def editmovie():
+   
 
     return render_template("pages/editmovie.html", reviews=get_films.find())
 
 
 @app.route("/editamovie/<movieid>")
 def editamovie(movieid):
+    if request.method == "POST":
+        film_data = mongo.db.films
+        print(film_data)
+        film_data.insert_one(request.form.to_dict())
+        return render_template("pages/editemovie.html")
 
     return render_template("/pages/myreview.html")
 
