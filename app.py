@@ -92,6 +92,16 @@ def createmovie():
     return render_template("pages/createmovie.html")
 
 
+@app.route("/editmovie", methods=["GET", "POST"])
+def editmovie():
+    if request.method == "POST":
+        film_data = mongo.db.films
+        print(film_data)
+        film_data.insert_many(request.form.to_dict())
+
+    return render_template("pages/editmovie.html", reviews=get_films.find())
+
+
 @app.route("/deletemovie.html")
 def deletemovie():
 
@@ -108,17 +118,6 @@ def mymovie():
 def amovie(movieid):
 
     return render_template("pages/myreview.html", review=get_films.find_one({"_id": ObjectId(movieid)}))
-
-
-@app.route("/editmovie/<movieid>", methods=['GET', 'POST'])
-def editmovie(movieid):
-    if request.method == "POST":
-        film_data = mongo.db.films
-        print(film_data)
-        film_data.insert_one(request.form.to_dict())
-        return render_template("pages/editemovie.html")
-
-    return render_template("/pages/myreview.html")
 
 
 @app.route("/films")
@@ -142,3 +141,4 @@ if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '127.0.0.1'),
             port=os.environ.get('PORT', '5000'),
             debug=True)
+   
