@@ -87,19 +87,15 @@ def createmovie():
         film_data = mongo.db.films
         print(film_data)
         film_data.insert_one(request.form.to_dict())
-        return render_template("pages/createmovie.html")
 
     return render_template("pages/createmovie.html")
 
 
-@app.route("/editmovie", methods=["GET", "POST"])
-def editmovie():
-    if request.method == "POST":
-        film_data = mongo.db.films
-        print(film_data)
-        film_data.insert_many(request.form.to_dict())
+@app.route("/editmovie/<movieid>", methods=["GET", "POST"])
+def editmovie(movieid):
+    if 'username' in session:
 
-    return render_template("pages/editmovie.html", reviews=get_films.find())
+        return render_template("pages/editmovie.html", films=mongo.db.films.find_one({"_id": ObjectId(movieid)}))
 
 
 @app.route("/deletemovie.html")
