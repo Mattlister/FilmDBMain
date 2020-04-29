@@ -93,9 +93,8 @@ def createmovie():
 
 @app.route("/editmovie/<movieid>", methods=["GET", "POST"])
 def editmovie(movieid):
-    if 'username' in session:
 
-        return render_template("pages/editmovie.html", films=mongo.db.films.find_one({"_id": ObjectId(movieid)}))
+    return render_template("pages/editmovie.html", reviews=get_films.find())
 
 
 @app.route("/deletemovie.html")
