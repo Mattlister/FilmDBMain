@@ -111,7 +111,8 @@ def mymovie():
 
 @app.route("/amovie/<movieid>")
 def amovie(movieid):
-
+    review = get_films.find_one({"_id": ObjectId(movieid)})
+    print(review)
     return render_template("pages/myreview.html", review=get_films.find_one({"_id": ObjectId(movieid)}))
 
 
