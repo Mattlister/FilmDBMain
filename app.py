@@ -81,6 +81,8 @@ def logout():
     return render_template('pages/index.html')
 
 
+# create movie entry
+
 @app.route("/createmovie", methods=['GET', 'POST'])
 def createmovie():
     if request.method == "POST":
@@ -90,6 +92,16 @@ def createmovie():
 
     return render_template("pages/createmovie.html")
 
+
+# read movie entries
+
+@app.route("/mymovie")
+def mymovie():
+
+    return render_template("pages/myreviews.html", reviews=get_films.find())
+
+
+# update movie entry
 
 @app.route("/editmovie/<movieid>", methods=["GET", "POST"])
 def editmovie(movieid):
@@ -103,17 +115,15 @@ def editmovie(movieid):
     return render_template("pages/editmovie.html", reviews=get_films.find_one({"_id": ObjectId(movieid)}))
 
 
+# delete movie entry
+
 @app.route("/deletemovie/<movieid>", methods=["GET", "POST"])
 def deletemovie(movieid):
     get_films.delete_one({"_id": ObjectId(movieid)})
     return render_template("pages/deletemovie.html")
 
 
-@app.route("/mymovie")
-def mymovie():
-
-    return render_template("pages/myreviews.html", reviews=get_films.find())
-
+# display movie reviews
 
 @app.route("/amovie/<movieid>")
 def amovie(movieid):
@@ -121,6 +131,8 @@ def amovie(movieid):
     print(review)
     return render_template("pages/myreview.html", review=get_films.find_one({"_id": ObjectId(movieid)}))
 
+
+# search for movies
 
 @app.route("/films")
 def films():
