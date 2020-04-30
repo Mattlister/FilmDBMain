@@ -103,14 +103,12 @@ def editmovie(movieid):
     return render_template("pages/editmovie.html", reviews=get_films.find_one({"_id": ObjectId(movieid)}))
 
 
-@app.route("/deletemovie/<movieid>", methods=["GET", "POST"])
+@app.route("/deletemovie/<movieid>")
 def deletemovie(movieid):
     if request.method == "POST":
-        movie = get_films.remove_one({"_id": ObjectId(movieid)})
+        mongo.db.films.remove({"_id": ObjectId(movieid)})
 
-        get_films.update_one(movie, {"$set": request.form.to_dict()})
-
-    return render_template("pages/mymovie.html")
+        return render_template("pages/deletemovie.html", reviews=get_films.find_one({"_id": ObjectId(movieid)}))
 
 
 @app.route("/mymovie")
