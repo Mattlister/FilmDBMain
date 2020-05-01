@@ -97,8 +97,9 @@ form {
 
 h4 {
   font-family: 'Montserrat', sans-serif; 
-  color: #22009c;
-  font-size: 50px;
+  color: red;
+  font-size: 30px;
+  padding-top: 90px;
   text-align: center;
   text-shadow: 8px 10px 40px #ffff,
   1px 1px 3px #00ffff;
