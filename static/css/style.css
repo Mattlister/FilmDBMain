@@ -93,6 +93,17 @@ form {
     
 }
 
+/* Footer styling */
+
+h4 {
+  font-family: 'Montserrat', sans-serif; 
+  color: #22009c;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 8px 10px 40px #ffff,
+  1px 1px 3px #00ffff;
+}
+
 /* review buttons */
 
 
@@ -136,3 +147,6 @@ width: 125px;
 
 .task_header {
     margin-top: 5px;
+
+
+

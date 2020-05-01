@@ -18,6 +18,7 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 # Secret Key value
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
+
 allmovies = AllMovies()
 
 mongo = PyMongo(app)
