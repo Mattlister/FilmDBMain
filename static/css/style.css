@@ -97,12 +97,25 @@ form {
 
 h4 {
   font-family: 'Montserrat', sans-serif; 
-  color: red;
-  font-size: 30px;
-  padding-top: 90px;
+  color: white;
+  font-size: 20px;
+  padding-top: 10px;
   text-align: center;
-  text-shadow: 8px 10px 40px #ffff,
   1px 1px 3px #00ffff;
+}
+
+/* social media links styling */
+
+a {
+    color: red;
+     font-size: 15px;
+     width: 80px;
+     padding: 5px;
+    
+}
+
+.fab:hover {
+  color: white;
 }
 
 /* review buttons */
@@ -127,6 +140,9 @@ textarea{
     margin-right: auto;
 }
 
+
+
+
 /* button styling */
 
 .btn_small {
@@ -148,6 +164,4 @@ width: 125px;
 
 .task_header {
     margin-top: 5px;
-
-
 
