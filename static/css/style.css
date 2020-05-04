@@ -93,6 +93,20 @@ form {
 
 }
 
+input[type=text] {
+  border: 2px solid red;
+  border-radius: 4px;
+  color: white;
+  background-color: transparent;
+}
+
+textarea {
+  border: 2px solid red;
+  border-radius: 4px;
+  color: white;
+  background-color: transparent;
+}
+
 .container {
 
 margin-bottom: 40px;
