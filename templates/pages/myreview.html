@@ -11,12 +11,9 @@
 
 		</div>
 		<div class="form-group">
-			<a href="{{ url_for('editmovie', movieid=review._id )}}" class="btn btn-outline-primary">Edit</a>
-			<a href="{{ url_for('deletemovie', movieid=review._id )}}" class="btn btn-outline-danger">Delete</a>
+			<a href="{{ url_for('editmovie', movieid=review._id )}}" button class="btn btn-outline-primary">Edit</a>
+			<a href="{{ url_for('deletemovie', movieid=review._id )}}" button class="btn btn-outline-danger">Delete</a>
 		</div>
-
-<button class="btn btn-outline-info" type="submit" name="action">Update
-             </button>
 
 
 </form>
