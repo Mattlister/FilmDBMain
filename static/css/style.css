@@ -93,6 +93,8 @@ form {
 
 }
 
+/* input and text area review boxes styliung*/
+
 input[type=text] {
   border: 2px solid red;
   border-radius: 4px;
@@ -101,6 +103,13 @@ input[type=text] {
 }
 
 textarea {
+  border: 2px solid red;
+  border-radius: 4px;
+  color: white;
+  background-color: transparent;
+}
+
+.input-onkeyup {
   border: 2px solid red;
   border-radius: 4px;
   color: white;
