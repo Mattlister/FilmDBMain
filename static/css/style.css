@@ -90,7 +90,19 @@ form {
     display: inline-block;
     margin-top: 23px;
     text-align: center;
-    
+
+}
+
+.container {
+
+margin-bottom: 40px;
+
+}
+
+.small {
+
+margin-bottom: 40px;
+
 }
 
 /* Footer styling */
@@ -99,7 +111,6 @@ h4 {
   font-family: 'Montserrat', sans-serif; 
   color: white;
   font-size: 20px;
-  padding-top: 10px;
   text-align: center;
   1px 1px 3px #00ffff;
 }
@@ -107,15 +118,16 @@ h4 {
 /* social media links styling */
 
 a {
-    color: red;
-     font-size: 10px;
+    color: white;
+     font-size: 15px;
      width: 50px;
      padding: 5px;
+     padding-top: 5px;
     
 }
 
 .fab:hover {
-  color: white;
+  color: red;
 }
 
 /* review buttons */
@@ -128,7 +140,7 @@ h5 {
   padding-top: 25px;
   display: inline-block;
   padding: 23px;
-  margin: 80px;
+  margin: 40px;
 }
 
 body {
