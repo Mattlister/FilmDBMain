@@ -95,7 +95,7 @@ form {
 
 /* input and text area review boxes styliung*/
 
-input[type=text] {
+input {
   border: 2px solid red;
   border-radius: 4px;
   color: white;
