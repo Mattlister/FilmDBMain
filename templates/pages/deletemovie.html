@@ -4,14 +4,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="form-group">
-				<div class="col-sm-12">
-					<h2>Your review has been deleted</h2>
+				<div class="card-body">
+					<p class="card-text">Your review has been deleted</p>
 				</div>
 			
 			<div class="row">
 				<div class="col-sm-12">
 					{% if 'username' in session %}
-					<p class="page-desc"> Hasta la vista, baby</p>
+					<p class="card-text"> Hasta la vista, baby</p>
 
 					<p>{{session ['username'] }}</p>
 
