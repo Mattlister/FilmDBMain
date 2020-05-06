@@ -30,7 +30,7 @@ get_films = mongo.db.films
 @app.route('/index')
 def index():
     if 'username' in session:
-        flash(f'You are logged in as ' + session['username'])
+        flash(f'You are logged in as ' + session['username'], 'success')
 
     return render_template('pages/index.html', films=mongo.db.films.find())
 
@@ -39,16 +39,16 @@ def index():
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
-        flash(f'Account created for {form.username.data}!', 'success')
         users = mongo.db.users
-        existing_user = users.find_one({'username': request.form['username']})
+        found_username = users.find_one({'username': request.form['username']})
 
-        if existing_user is None:
+        if found_username is None:
             hashed_password = bcrypt.generate_password_hash(request.form['password']).decode('utf-8')
             users.insert({'username': request.form['username'], 'password': hashed_password})
             session['username'] = request.form['username']
             return redirect(url_for('index'))
-        flash(f'This name already exists. Please use a different name', 'danger')
+        else:
+            flash(f'This name already exists. Please use a different name', 'danger')
         return redirect(url_for('index'))
     return render_template('pages/register.html', title='Register', form=form)
 
@@ -106,7 +106,7 @@ def mymovie():
 @app.route("/editmovie/<movieid>", methods=["GET", "POST"])
 def editmovie(movieid):
     if request.method == "POST":
-        movie = get_films.find_one({"_id": ObjectId(movieid)})
+        movie = get_films.find_one_or_404({"_id": ObjectId(movieid)})
         # print(movie)
         # print(movieid)
         # print(request.form.to_dict())
@@ -156,8 +156,14 @@ def my_form():
 
 # 404 error page
 @app.errorhandler(404)
-def page_not_found(e):
+def page_not_found(error):
     return render_template("pages/404.html"), 404
+
+
+# 404 error page
+@app.errorhandler(500)
+def server_not_found(error):
+    return render_template("pages/500.html"), 500
 
 
 if __name__ == '__main__':
