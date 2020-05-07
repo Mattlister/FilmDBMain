@@ -433,7 +433,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 * For cloning this project from Github: 
 
-1. Choose the following link: [Design and Conquer GitHub repository](https://github.com/Mattlister/designandconquer)
+1. Choose the following link: 
 2. Under repository name, select "Clone or download"
 3. You'll see Clone in the HTTPs section, copy the URL for the repository.
 4. In your own IDE, open Git Bash.
@@ -519,46 +519,20 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * I've used various code for this website. As they say, a lazy programmer is a smart programmer so I used some of my code from my 
 * MS1 project to start working on this. The Javasctipt was 
 
-* HTML - All code produced by Matthew Lister except for the content such as videos and*  images. These were searched and found on Google Chrome and
+* HTML - All code produced by Matthew Lister except for the content such as images. These were searched and found on Google Chrome and
 then added into iframe and img source code which I had put together. The modal formats and forms were taken from my MS1 and edited to correspond
 to the needs of this website. I used script tags from Google Fonts to display the correct formatted fonts.
 
 * CSS - All CSS code was produced by Matthew Lister originally typed to add styling to the HTML page. This included Font styling, image sizing and
-colour choices except for the gradients for the back of the flip boxes. This can be found at: http://www.annenbergdl.org/tutorials/easy-breezy-beautiful-css-gradients/
-which helps add so much more to the back of the flip boxes. Once I had the code typed up, I ran it through Autoprefixer to clean up and resolve any
-breaks which did help in regards to displaying on various sized devices.
- 
-
-* JavaScript - The JavaScript took on many forms. All the content was written by myself with some support at various flavours provided by Simen Daehlin,
-*              John Lonngately and Shane Muirhead who I've thanked further below but they worked the JavaScript with me at points to improve the layout
-*              and the way my code was written. It was always "correct" but I had some points which needed to be neatened up and so fortunately, I had 
-*             support helping me to produce greater script.
-
-* JSON within the JavaScript, initially a separate file - The code was produced using information found online on how to produce a JSON file. Once I had 
-*             the basis, I added more informtion to the file to hold multiple markers that will display on the map.
+colour choices
 
 
 
 
 
 
-### Disclaimer
-
-* The content of the Website I have produced is for educational purposes only including all images and videos.
-* The links for the Facebook and Twitter sites were added for educational use only as well
-* IMDB as a site and it's content were used for educational purposes only.
 
 
-### For my friends currently working on their Milestone 2 projects.
-
-* I'm happy if youy'd like to use my readme file as a reference and guide as an example of how to write a strucured milestone project. The format will hopefully
-  be of use to you but it is not ok to copy directly from mine for your own project. 
-
-* Thank you for your understanding,
-
-* Kind Regards,
-
-* Matthew
 
 ### How I’d like the website to be perceived:
 
@@ -569,6 +543,24 @@ breaks which did help in regards to displaying on various sized devices.
 
 * A nice clean UX multi page designed site. Choose your option and start your journey. Show others what you love and help to share that with them.
 
+
+* For cloning this project from Github: 
+
+1. Choose the following link: 
+2. Under repository name, select "Clone or download"
+3. You'll see Clone in the HTTPs section, copy the URL for the repository.
+4. In your own IDE, open Git Bash.
+5. Change the current working directory to your location of choice where you'd like the directory to be made.
+6. Type the command git clone, and then paste the URL copied in step 3.
+7. Then Press Enter and your local clone will be created.
+
+
+### I used default commands to push to Github such as:
+
+* git status when checking what needed uploading.
+* git commit -m "" with the named update between the quotes for anyone reading what changes I made. A short piece of info helps understand
+* the changes I make.
+* git push -u origin master which then pushes my update and I then need to enter my username and password for security.
 
 ### Credits
 
@@ -595,3 +587,23 @@ breaks which did help in regards to displaying on various sized devices.
   community reviewed my code and pointed out issues/ offered advice to aide me in improving my sites to produce something greater and so I'm 
   really grateful for their consistent support and it's good to know we're in this together. I'd also like to say thank you and acknowledge  for their help in regard to issues I had with my Javascript and JQUERY code. And finally, I'd like to say a big thank you to Anna Greaves and 
   Anthony O'Brien for their indepth code reviews.
+
+
+### Disclaimer
+
+* The content of the Website I have produced is for educational purposes only including all images and videos.
+* The links for the Facebook and Twitter sites were added for educational use only as well
+* IMDB as a site and it's content were used for educational purposes only.
+
+
+
+### For my friends currently working on their Milestone 3 projects.
+
+* I'm happy if youy'd like to use my readme file as a reference and guide as an    example of how to write a strucured milestone project. The format will hopefully
+  be of use to you but it is not ok to copy directly from mine for your own project. 
+
+* Thank you for your understanding,
+
+* Kind Regards,
+
+* Matthew
