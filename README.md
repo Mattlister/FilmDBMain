@@ -541,13 +541,6 @@ breaks which did help in regards to displaying on various sized devices.
 
 
 
-### Acknowledgements
-
-* I'd like to say thank you to my mentor Simen Daehlin who has supported me throughout the project and has been a great influence and inspired me to
-  keep going. The Slack
-  community reviewed my code and pointed out issues/ offered advice to aide me in improving my sites to produce something greater and so I'm 
-  really grateful for their consistent support and it's good to know we're in this together. I'd also like to say thank you and acknowledge  for their help in regard to issues I had with my Javascript and JQUERY code. And finally, I'd like to say a big thank you to Anna Greaves and 
-  Anthony O'Brien for their indepth code reviews.
 
 ### Disclaimer
 
@@ -575,3 +568,30 @@ breaks which did help in regards to displaying on various sized devices.
 * They have a keen interest in the silver screen and it's smaller counterpart and this site will help them to share their interests and broaden their knowledge.
 
 * A nice clean UX multi page designed site. Choose your option and start your journey. Show others what you love and help to share that with them.
+
+
+### Credits
+
+* The Bcypt and Hashing passwords security credit goes to Corey Schafer for his tutorial on Youtube.
+
+* For creating and adding users to the MongoDB, credit to Anna Greaves for her support on getting the features to work.
+
+* For helping with the Editing and Delete changes, credit to Scott Kipp for his assistance with getting these features finished within the app.
+
+* Credit to Anthony O'Brien for assisting me and advising on some of the parts of the project I'd been struggling with and also, his allowance to review his code to help me build my project.
+
+### Huge Thanks and Acknowledgements
+
+* I'd like to say thank you to my mentor Simen Daehlin who has supported me     throughout the project and has been a great influence and inspired me to
+  keep going. 
+
+* I'd like to say a huge thank you to Anna Greaves for helping me, seeing my determination and helping me with my project.
+
+* Thank you to Anthony O'Brien for his reassurance in my low points and for saying, "Don't worry about the level of commis, over 500 is fine!!" and for checking in and making sure I'm keeping my chin up.
+
+* Thank you as well to Anna, Scott, Tim, Samantha, Hayley and all the CI tutors and support team who really had my back to help me progress with the project.
+
+  The Slack
+  community reviewed my code and pointed out issues/ offered advice to aide me in improving my sites to produce something greater and so I'm 
+  really grateful for their consistent support and it's good to know we're in this together. I'd also like to say thank you and acknowledge  for their help in regard to issues I had with my Javascript and JQUERY code. And finally, I'd like to say a big thank you to Anna Greaves and 
+  Anthony O'Brien for their indepth code reviews.
