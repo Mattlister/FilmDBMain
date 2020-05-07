@@ -144,6 +144,25 @@ margin-bottom: 40px;
 
 }
 
+/*success alert styling */
+
+.alert {
+  border: 2px solid green;
+  border-radius: 4px;
+  color: white;
+  background-color: transparent;
+}
+
+/* danger alert styling */
+
+.alert-danger {
+  border: 2px solid red;
+  border-radius: 4px;
+  color: white;
+  background-color: transparent;
+}
+
+
 /* Footer styling */
 
 h4 {
