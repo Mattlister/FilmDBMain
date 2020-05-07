@@ -356,17 +356,17 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 * HTML
 * CSS 
-* Javascript
-* [JQUERY](https://jquery.com/)
+* Python Flask
+* MongoDB
 * [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 
 * Bootstrap was used to build a solid and yet simple structure which allowed the site to be responsive easily.
 
 * The same IDE was used but it moved from one product supplier of just Cloud 9 to AWS (Amazon) Cloud 9 for all the above languages.
  
-* [Google Maps](https://developers.google.com/maps/documentation)
+* [OMDB API](http://www.omdbapi.com/)
 
-* Google maps were used as the maps based software for this project. 
+* IMDB and The OMDB were used as guides and references for my site. The OMDB API was used for the movie search function on my website. 
 
 * [Google Fonts](https://fonts.google.com/)
 
@@ -391,8 +391,8 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 ### The goals for the website are:
 
-* To be seen as an easy to use resource for a holiday adventurer wanting to try something new. Also, it showcases my working knowledge of various software
-  languages which I've learnt during the various sections leading up to the MS2 project.
+* To be seen as an easy to use resource for movie enthusiasts wanting to learn or add something new in regards to a film theu're passionate about. Also, it showcases my working knowledge of various software
+  languages which I've learnt during the various sections leading up to the MS3 project.
 
 
 
@@ -410,12 +410,18 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   Booking forms and Get in touch forms are clear and concise for when the user wants to book a holiday
 
 
+
+
+
 ### Deployment
 
 * This project was developed using the Cloud9 development software originally and then AWS Cloud9. The data is stored in git using the Cloud9 platform.
 
 * The project was regularly pushed to GitHub repository https://github.com/Mattlister/designandconquer/commits/master and 
   published to GitHub pages using the GitHub settings.
+
+
+
 
 ### Deployment to Github
 
@@ -475,11 +481,8 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 ### Testing
 
-* I tested the website half way through the project on Mozilla Firefox, Google Chrome and Safari. I was always using Google Chrome and found no issues when 
-  using this browser. The website worked to the normal standard on Mozilla Firefox as well. So far, So good. But, On Apple's Safari browser, there were bugs 
-  displayed. The images when hovered over as you'll see will flip and they'll be a grdient background with both a Location and Information button on the back.
-  When testing in Safari, the image flipped and stayed as the image but a mirrored version. When the buttons did show, it flipped the image back to the originally
-  and there was no maps or modals appearing. These are bugs I need to look into but this is a junction I came to mid project.
+* I tested the website at different points through the project on Mozilla Firefox, Google Chrome and Safari. I was always using Google Chrome and found no issues when 
+  using these browsers. 
 
 * Now working safari issue by using the AutoPrefixer software. No more pausing issues on Safari.
 
