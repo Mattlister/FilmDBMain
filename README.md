@@ -138,10 +138,8 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * As standard when building a site, I used [Google Fonts](https://fonts.google.com/) and spent time looking through the options. I wanted something that looked futuristic to tie in with the image and engaging to the user. Chosen Fonts: Montserrat
 
 
-### UX
 
-- It wasn't bold enough and so a single blown up image with a colourful picture I feel gives it a much bigger impact when viewed by
-- a user.
+
 
 
 ### Project Goals
@@ -404,10 +402,6 @@ colour choices
 
 
 
-
-
-
-
 ### How I’d like the website to be perceived:
 
 
@@ -418,18 +412,39 @@ colour choices
 * A nice clean UX multi page designed site. Choose your option and start your journey. Show others what you love and help to share that with them.
 
 
-* For cloning this project from Github: 
 
-1. Choose the following link: 
-2. Under repository name, select "Clone or download"
-3. You'll see Clone in the HTTPs section, copy the URL for the repository.
-4. In your own IDE, open Git Bash.
+### Software Deployment and Software Cloning Technologies Used:
+
+* This project was developed using the GitPod IDE (Integrated Development Environment) software. The data was then pushed to GitHub also using the GitPod IDE (Integrated Development Environment)
+
+* The project was regularly pushed to the GitHub repository https://film-db.herokuapp.com/ and published to GitHub and Heroku pages using GitPod commands. Please read the guides below.
+
+GitHub Full Template Used as part of the process including software extensions for GitPod [Gitpod-Full-Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+### Deployment to Github
+
+### When deploying FilmDB from the [GitHub repository](https://film-db.herokuapp.com/), I used the following process:
+
+### Cloning the repository
+
+1. Open the GitHub dashboard and choose the repository.
+2. Under repository name, select the "Clone or download" green button located to the right of the page.
+3. Select the "clipboard icon" on the right hand side of the page to copy the URL of the clone.
+4. In your own IDE, open a terminal window.
 5. Change the current working directory to your location of choice where you'd like the directory to be made.
-6. Type the command git clone, and then paste the URL copied in step 3.
+6. Paste your Git URL which you copied and click "OK".
 7. Then Press Enter and your local clone will be created.
 
 
-### I used default commands to push to Github such as:
+### I used default commands to push to Github and Heroku once logged in:
+
+* I first had to install the Heroku software using the following commands:
+
+1. npm install -g heroku and press enter.
+2. Enter heroku login -i and press enter.
+3. You'll need your email and password that you used to login to Heroku with to create your project.
+
+* Once done, I was then at the Heroku "logged in" prompt so each command I entered pushed to GitHub and also Heroku so using the following commands updated both instances of the project.
 
 * git status when checking what needed uploading.
 * git commit -m "" with the named update between the quotes for anyone reading what changes I made. A short piece of info helps understand
@@ -437,31 +452,9 @@ colour choices
 * git push -u origin master which then pushes my update and I then need to enter my username and password for security.
 
 
-### Deployment
-
-* This project was developed using the Cloud9 development software originally and then AWS Cloud9. The data is stored in git using the Cloud9 platform.
-
-* The project was regularly pushed to GitHub repository https://github.com/Mattlister/designandconquer/commits/master and 
-  published to GitHub pages using the GitHub settings.
-
-
-
-
-### Deployment to Github
-
-### When deploying Design and Conquer from the [GitHub repository](https://github.com/Mattlister/designandconquer), I used the following process:
-
-1. Log into GitHub.
-2. From the list of GitHub repositories, select Mattlister/designandconquer
-3. At the top the page, where the menu items are, you'll see Settings.
-4. Once selected, scroll down the page to the GitHub pages section
-5. Under Source, click the drop-down menu labelled and select Master Branch
-6. When you select Master Branch, the page will automatically be refreshed and Design and Conquer is then deployed.
-7. Once done, scroll back down to the GitHub pages section and you will be able to retrieve the link to the deployed website.
-
 ### To run the project locally
 
-* To run this project within your own IDE such as Visual Studio or PyCharm, you'll need the following installed on your machine as they are necessary tools needed for the sites creation:
+* To run this project within your own IDE such as GitPod, Visual Studio or PyCharm, you'll need the following installed on your machine as they are necessary tools needed for the sites creation:
 
 [PIP](https://pip.pypa.io/en/stable/installing/) Is a standard package management system used to install and manage software packages specifically written in Python.
 
@@ -518,13 +511,13 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
 
 * The Bcypt and Hashing passwords security credit goes to Corey Schafer for his tutorial on Youtube.
 
-* W3CSchools notes were used for styling the buttons which helped keep it connected to the original design.
-
 * For creating and adding users to the MongoDB, credit to Anna Greaves for her support on getting the features to work.
 
 * For helping with the Editing and Delete changes, credit to Scott Kipp for his assistance with getting these features finished within the app.
 
 * Credit to Anthony O'Brien for assisting me and advising on some of the parts of the project I'd been struggling with and also, his allowance to review his code to help me build my project.
+
+* W3CSchools notes were used for styling the buttons which helped keep it connected to the original design.
 
 ### Huge Thanks and Acknowledgements
 
@@ -532,15 +525,11 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
 
 * I'd like to say a huge thank you to Anna Greaves for helping me, seeing my determination and helping me with my project.
 
-* Thank you to Anthony O'Brien for his reassurance in my low points and for saying, "Don't worry about the level of commis, over 500 is fine!!" and for checking in and making sure I'm keeping my chin up.
+* Thank you to Anthony O'Brien for his reassurance in my low points and for saying, "Don't worry about the level of commits, over 500 is fine!!" and for checking in and making sure I'm keeping my chin up.
 
 * Thank you as well to Anna, Scott, Tim, Samantha, Hayley and all the CI tutors and support team who really had my back to help me progress with the project.
 
-  The Slack
-  community reviewed my code and pointed out issues/ offered advice to aide me in improving my sites to produce something greater and so I'm 
-  really grateful for their consistent support and it's good to know we're in this together. I'd also like to say thank you and acknowledge  for their help in regard to issues I had with my Javascript and JQUERY code. And finally, I'd like to say a big thank you to Anna Greaves and 
-  Anthony O'Brien for their indepth code reviews.
-
+ 
 
 ### Disclaimer
 
