@@ -575,7 +575,7 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
 
 ## The next stage pushing to Heroku
 
-# Once running in GitHub, the commits I make then need to reflect within Heroku and so to do this, I have to create a new Heroku application by doing the following.
+### Once running in GitHub, the commits I make then need to reflect within Heroku and so to do this, I have to create a new Heroku application by doing the following.
 
 1. Create an account and log into the Heroku website. Then, Create a new app by clicking the "New" button in the dashboard. You need to name the application so I gave mine the same name as the application I'm creating and then set the region to Europe.
 
@@ -583,9 +583,17 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
 
 3. Confirm the linking of the Heroku app to the correct GitHub repository. This ties the two applications together.
 
-4. Once done, you'll need to add the settings to tie Heroku in with Github, the application you are building and the Mongo DataBase you have created. So, first from the Heroku dashboard of the applcation, click on "Settings"> "Reveeal Config Vars"
+4. Once done, you'll need to add the settings to tie Heroku in with Github, the application you are building and the Mongo DataBase you have created. So, first from the Heroku dashboard of the applcation, click on "Settings"> "Reveal Config Vars"
 
 5. Set the config vars as follows:
+
+### key                                     ### value
+
+DEBUG         FALSE
+IP          0.0.0.0
+MONGO_URI   mongodb+srv:/<username>:<password>@<cluster_name>-qtxun.mongodb.net/            <database_name>?retryWrites=true&w=majority
+PORT        5000
+SECRET_KEY  <your_secret_key>
 
 
 
