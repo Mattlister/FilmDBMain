@@ -587,10 +587,14 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
 
 5. Set the config vars as follows:
 
-| Syntax      | Description |
+| Key     | Value |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| DEBUG  | FALSE       |
+| IP   | 0.0.0.0     |
+| MONGO_URI  | mongodb+srv:/<username>:<password>@<cluster_name>-qtxun.mongodb.net/            <database_name>?retryWrites=true&w=majority      |
+| PORT  | 5000        |
+| SECRET_KEY  | <your_secret_key>     |
+
 
 
 ### key                                     ### value
