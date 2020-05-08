@@ -1,6 +1,6 @@
 import os
 from flask import Flask, render_template, url_for, request, session, \
-    redirect, flash    
+    redirect, flash
 from data import AllMovies
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt

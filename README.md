@@ -189,9 +189,9 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 ### User Stories
 
-* As a user aged between 16 and upwards, I want:
+* For any user, I would like:
 
-1. The objectives to be met when using the site so there's no confusion and it's easy to navigate around the page.
+1. The objectives of the to be met when using the site so there's no confusion and it's easy to navigate around the page.
 
 2. As it's a single page application, I wanted the modals to hold more information and allow me to move around and find new content without leaving
    the page. I was able to showcase more using this technique through visual images and video.
@@ -559,9 +559,49 @@ colour choices
 * the changes I make.
 * git push -u origin master which then pushes my update and I then need to enter my username and password for security.
 
-### Credits
+
+### Heroku Deployment
+
+To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBook Pro laptop.
+
+1. I had to download and install the Heroku CLI software and run: heroku/brew && brew install heroku from the command line. This makes it easier to create and manage the Heroku application direct from the command line.
+
+2. I had to create a requirement.txt file using a terminal command: pip freeze > requirements.txt.
+
+3. Then, I had to add to create a Procfile using the following command: echo web: python app.py > Procfile.
+
+4. I then had to push the files to GitHub. git add (Enter) git commit (Named commit) which adds the requirements and Procfile to GitHub. Then using the git push command, it updates to my GitHub repository.
+
+
+## The next stage pushing to Heroku
+
+# Once running in GitHub, the commits I make then need to reflect within Heroku and so to do this, I have to create a new Heroku application by doing the following.
+
+1. Create an account and log into the Heroku website. Then, Create a new app by clicking the "New" button in the dashboard. You need to name the application so I gave mine the same name as the application I'm creating and then set the region to Europe.
+
+2. On the Heroku dashboard, you'll see Deploy. You need to click on "Deply" > "Deployment method" and select Github. 
+
+3. Confirm the linking of the Heroku app to the correct GitHub repository. This ties the two applications together.
+
+4. Once done, you'll need to add the settings to tie Heroku in with Github, the application you are building and the Mongo DataBase you have created. So, first from the Heroku dashboard of the applcation, click on "Settings"> "Reveeal Config Vars"
+
+5. Set the config vars as follows:
+
+
+
+
+
+
+
+
+
+
+
+### Coding credits
 
 * The Bcypt and Hashing passwords security credit goes to Corey Schafer for his tutorial on Youtube.
+
+* W3CSchools notes were used for styling the buttons which helped keep it connected to the original design.
 
 * For creating and adding users to the MongoDB, credit to Anna Greaves for her support on getting the features to work.
 
@@ -571,8 +611,7 @@ colour choices
 
 ### Huge Thanks and Acknowledgements
 
-* I'd like to say thank you to my mentor Simen Daehlin who has supported me     throughout the project and has been a great influence and inspired me to
-  keep going. 
+* I'd like to say a special thank you to my mentor Simen Daehlin who has supported me throughout the project and has been a great influence and inspired me to keep going. He helped me understand better processes of my code and more efficient industry standards.
 
 * I'd like to say a huge thank you to Anna Greaves for helping me, seeing my determination and helping me with my project.
 
