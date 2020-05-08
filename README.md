@@ -50,7 +50,7 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 * This website has been designed with a target audience of movie enthusiasts. 
 
-  * To share what they think of what they see in todays visual entertainment market. A fan can watch any type of movie they want excluding adult material films and upload information about it. If it's a multi million pound oscar winner that's designed to showcase the talents of a new or existing director, a multi million pound movie which unfortunately flops with an incredible cast list all the way down to a free handheld open new movie by an unknown director starting their career. They've put their heart and soul into the film and shared it on YouTube, the users at FilmDB can watch it, review and share the film for others to see. I want this to be an easy to use quick experience that will grow as time goes. It's for everyone and it stems from the most passionate of the small and large screen art form. The website is an open source application and technically built by the users to create word and mouth of everything they see.
+  * To share what they think of what they see in todays visual entertainment market. A fan can watch any type of movie they want excluding adult material films and upload information about it. If it's a multi million pound oscar winner that's designed to showcase the talents of a new or existing director, a multi million pound flop with an incredible cast list all the way down to a free handheld open new movie by an unknown director starting their career. They've put their heart and soul into the film and shared it on YouTube, the users at FilmDB can watch it, review and share the film for others to see. I want this to be an easy to use quick experience that will grow as time goes. It's for everyone and it stems from the most passionate of the small and large screen art form. The website is an open source application and technically built by the users to create word and mouth of everything they see.
 
 * Users all over the world will be able to access the site and so the choices can come from anywhere. UK, America, Foreign Films from Germany, Norway or the Middle East. Anyone can use the site to put their opinion down.
 
@@ -65,50 +65,20 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 * I wouldn't want to overload the site with company advert images or links to other pages so it would all be done during those trailers.
 
+
+
 ### User Stories
 
 * For any user, I would like:
 
-1. Them to be able to use the website to search for a movie they might be interested in. Once done, they can then search the database and find reviews on the film. They can also 
+1. Them to be able to use the website to search for a movie they have an interest in or they've heard about. Once done, they can then search the database and find reviews on the film. If they find one, great but if not, they can create a review and leave it for someone else.
 
 
+2. I don't want it to be confusing to the user and cause anything that might put them off from using the site.
 
+3. Everything is laid out and presented well, it's simply informative and each items is easy to use and understand and follow.
 
-
-
-2. As it's a single page application, I wanted the modals to hold more information and allow me to move around and find new content without leaving
-   the page. I was able to showcase more using this technique through visual images and video.
-
-3. As for the vidoes I used for the website, they again displayed so much in a single piece of visual content more than words could. Somebody stepping
-   off the plane into the blue. A boat ride out to the sea to be within 2 metres of a Great White Shark. The unbelievable surf of Banzai's coast.
-   It engaged me, gave me the thrill to get on the plane and try that adventure for myself and in turn the audience. I could visualise and imagine 
-   the destination.
-
-4. Visual images before the box flipped shows you instantly what the adventure is going to be.
-
-5. Stunning videos with inspriing music are used as mentioned before to really showcase the adventure.
- 
-6. 'The Location' is pinpointed to the central point of the holiday. Seperate markers on the map shows locations where you choose your adventure.
-
-
-### For the user
-
-1. I want them to find the site enjoyable and engaging.
-
-2. I want it to hold enough information without being too confusing to use. 
-
-3. The idea behind the site is, they find the destination by watching the videos and then contacting us. I travelled to New York this year and
-   I went to Virgin (other holiday booking companies are available) to book it. I found going to see them was such a constructive experience. They
-   located the hotel, the best places to visit, the sites to see and helped make the entire experience easier before I'd left the travel agents. The 
-   idea behind Design and Conquer is the user visits the site, chooses their adventure and contacts the organiser of the site. The organiser then 
-   helps to "design" the package which would include travelling, accomodation and insurances. That way, the user would only then need to worry about
-   packing their clothes and personal neccesities. Again, the idea behind the site is the user can "see something", "like something" and "choose something". 
-   The organiser then puts together options with the user to "design" a personal experience.
-
-4. This design I am also using to create other websites for 2 other companies. 
-
-5. As I will be using the website on my portfolio, easy to find contact information will also be displayed on the site for a user to find.
-
+4. Searching for a movie is a simple experience and they can find more information out as there is a link to the imdb site for more info if they need it.
 
 
 Design 
