@@ -587,6 +587,12 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
 
 5. Set the config vars as follows:
 
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+
 ### key                                     ### value
 
 DEBUG         FALSE
