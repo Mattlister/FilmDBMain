@@ -645,8 +645,8 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
 * I'm happy if youy'd like to use my readme file as a reference and guide as an    example of how to write a strucured milestone project. The format will hopefully
   be of use to you but it is not ok to copy directly from mine for your own project. 
 
-* Thank you for your understanding,
+Thank you for your understanding,
 
-* Kind Regards,
+Kind Regards,
 
-* Matthew
+Matthew
