@@ -157,41 +157,35 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 ### User Objects
 
-* The website has been designed for people that want to try a new type of holiday that's not on the normal scale. It's also designed for people
- who want to add to their list of adventures.
+* The website has been designed for film fans that want to learn, share and inform others about film. It's an open source design where users can tell anyone and everyone about a film they've just seen.
 
-* Aimed at thrill seekers and people who have a passion for the extraordinary, this site can be used to find that thrill of the unknown. The goals of
-  the site are:
+* Aimed at movie enthusiasts who want to spread knowledge of cinema and film.
 
-* Starting that adventure
-* Finding that thrill
+* Sharing something passionate about film
+* Finding that film information from sone that loves or loathes a movie.
 * Easy to use
-* A clean and neat home page with easily findable information
+* A clean site with clear easy to use information
 * Bright and engaging for the user
-* Striking images and easily readable content
-* Watchable videos that can help a user see what they can achieve
+* Striking with identifiable comment
+* Searching for a film through the search option and finding the review.
 
-### Design and Conquer helps a user find their passion because:
+### FilmdDB helps a user learn about a filn before viewing because:
 
-* The design of the site is to showcase whats available via visual content with description. This helps the user to see what they will
- be able to do when they book the holiday.
+* Designing the site was done with the user in mind. Nice big easy to use guides and short descriptions. This helps the user to understand how to use the site.
  
-* It's easy to navigate and book the adventure they want to try. A helpful handy guide is prominent on the home page to stop any confusion.
- Images and map markers showcase the central point and locations so the user know where their adventures take place.
+* It's easy to navigate around the site and use the options available.
 
 
 ### Developers Objects
 
-* Well stuctured and content friendly with well thought out programming.
+* Nicely designed and content friendly with a well thought out user experience.
 * The layout is formatted in a way that the user can navigate around the site without frustration.
-* A professionally layed out single page application with includes JavaScript, some JQuery, complex HTML and CSS.
-* A site that the developer would use themselves and I will be using the format again for other clients. It will be a forefront of his portfolio.
+* A professionally mutli paged aite with includes Python, Jinga, complex HTML and CSS.
 
 ### Future plans
 
-* Offer more holiday destinations by expanding the adventures and portfolio
-* Showcase more self made videos from users about their experiences
-* More dynamic script in the JavaScript
+* Offer a larger search functionality
+* Add a movie trailer option
 
 ### User Stories
 

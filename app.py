@@ -140,20 +140,6 @@ def films():
     return render_template("pages/films.html")
 
 
-@app.route("/contact")
-def contact():
-    return render_template("pages/contact.html")
-
-
-@app.route("/contact", methods=["GET", "POST"])
-def my_form():
-    if request.method == 'POST':
-        reply_to = request.form.get('email')
-        message = request.form.get('message')
-        # send_email(message, reply_to)
-    return render_template('my_form.html')
-
-
 # 404 error page
 @app.errorhandler(404)
 def page_not_found(error):
