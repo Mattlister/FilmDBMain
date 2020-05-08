@@ -407,47 +407,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 
 
-### Deployment
 
-* This project was developed using the Cloud9 development software originally and then AWS Cloud9. The data is stored in git using the Cloud9 platform.
-
-* The project was regularly pushed to GitHub repository https://github.com/Mattlister/designandconquer/commits/master and 
-  published to GitHub pages using the GitHub settings.
-
-
-
-
-### Deployment to Github
-
-### When deploying Design and Conquer from the [GitHub repository](https://github.com/Mattlister/designandconquer), I used the following process:
-
-1. Log into GitHub.
-2. From the list of GitHub repositories, select Mattlister/designandconquer
-3. At the top the page, where the menu items are, you'll see Settings.
-4. Once selected, scroll down the page to the GitHub pages section
-5. Under Source, click the drop-down menu labelled and select Master Branch
-6. When you select Master Branch, the page will automatically be refreshed and Design and Conquer is then deployed.
-7. Once done, scroll back down to the GitHub pages section and you will be able to retrieve the link to the deployed website.
-
-### To run the project locally
-
-* For cloning this project from Github: 
-
-1. Choose the following link: 
-2. Under repository name, select "Clone or download"
-3. You'll see Clone in the HTTPs section, copy the URL for the repository.
-4. In your own IDE, open Git Bash.
-5. Change the current working directory to your location of choice where you'd like the directory to be made.
-6. Type the command git clone, and then paste the URL copied in step 3.
-7. Then Press Enter and your local clone will be created.
-
-
-### I used default commands to push to Github such as:
-
-* git status when checking what needed uploading.
-* git commit -m "" with the named update between the quotes for anyone reading what changes I made. A short piece of info helps understand
-* the changes I make.
-* git push -u origin master which then pushes my update and I then need to enter my username and password for security.
 
 
 ### Issues and setbacks whilst building the site and time taken
@@ -524,6 +484,13 @@ to the needs of this website. I used script tags from Google Fonts to display th
 colour choices
 
 
+1. Choose the following link: 
+2. Under repository name, select "Clone or download"
+3. You'll see Clone in the HTTPs section, copy the URL for the repository.
+4. In your own IDE, open Git Bash.
+5. Change the current working directory to your location of choice where you'd like the directory to be made.
+6. Type the command git clone, and then paste the URL copied in step 3.
+7. Then Press Enter and your local clone will be created.
 
 
 
@@ -560,11 +527,42 @@ colour choices
 * git push -u origin master which then pushes my update and I then need to enter my username and password for security.
 
 
+### Deployment
+
+* This project was developed using the Cloud9 development software originally and then AWS Cloud9. The data is stored in git using the Cloud9 platform.
+
+* The project was regularly pushed to GitHub repository https://github.com/Mattlister/designandconquer/commits/master and 
+  published to GitHub pages using the GitHub settings.
+
+
+
+
+### Deployment to Github
+
+### When deploying Design and Conquer from the [GitHub repository](https://github.com/Mattlister/designandconquer), I used the following process:
+
+1. Log into GitHub.
+2. From the list of GitHub repositories, select Mattlister/designandconquer
+3. At the top the page, where the menu items are, you'll see Settings.
+4. Once selected, scroll down the page to the GitHub pages section
+5. Under Source, click the drop-down menu labelled and select Master Branch
+6. When you select Master Branch, the page will automatically be refreshed and Design and Conquer is then deployed.
+7. Once done, scroll back down to the GitHub pages section and you will be able to retrieve the link to the deployed website.
+
+### To run the project locally
+
+* To run this project within your own IDE such as Visual Studio or PyCharm, you'll need the following installed on your machine as they are necessary tools needed for the sites creation:
+
+[PIP](https://pip.pypa.io/en/stable/installing/) Is a standard package management system used to install and manage software packages specifically written in Python.
+
+[Python3 (MAC SPECIFIC)](https://www.python.org/downloads/mac-osx/) Prerequisites for installing Python3 on MAC
+
+
 ### Heroku Deployment
 
 To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBook Pro laptop.
 
-1. I had to download and install the Heroku CLI software and run: heroku/brew && brew install heroku from the command line. This makes it easier to create and manage the Heroku application direct from the command line.
+1. I had to download and install the Heroku CLI software and run: brew install heroku from the command line. This makes it easier to create and manage the Heroku application direct from the command line.
 
 2. I had to create a requirement.txt file using a terminal command: pip freeze > requirements.txt.
 
@@ -602,6 +600,8 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
  7. In the Manual Deployment section of the page, make sure you have the master branch selected. Now click "Deploy Branch".
 
  8. Your site has now been deployed successfully.
+
+
 
 
 ### Coding credits
