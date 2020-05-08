@@ -113,7 +113,7 @@ enter will be stored in the Mongo Database at the back end and this is the creat
 ### Design
 
 
-* As you can see in the wireframes and concept section further down, I kept pretty close to my original design. I tried various colour schemes for the heading title but I wanted something that worked well with the background images and seemed to fit with any colour of any image. Whether this was the image of Ripley, the image of or an image like, the Red and Black gradient colour looked great with both it's colour choice and as a header. The white coloured font stood better in the header comapred to black or grey which lost impact when I made the title bar opaque.
+* As you can see in the wireframes and concept section further down, I kept pretty close to my original design. I tried various colour schemes for the heading title but I wanted something that worked well with the background image, the red and black gradient colour looked great with both the image and the color of the borders with the black sci-fi background. The white coloured font stood better in the header comapred to black or grey which lost impact when I made the title bar opaque.
 
 I looked at other sites that had a similar theme to mine and I felt mine was different enough to stand out and be something completely new and fresh and to look cool to a user.
 
@@ -121,47 +121,25 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 ### Colours
 
-* For the most part, the images used create the colour scheme themsleves. A bold image was chosen to add a poster effect, like a movie poster. Then, I chose a colour scheme that would sit well on top of the images and so a white font used for all the wording. A Red and Black gradient used as the main header of the website finished off the design.
+* For the most part, the images used create the colour scheme themsleves. A bold image was chosen to add a poster effect, like a movie poster. Then, I chose a colour scheme that would sit well on top of the images and so a white font used for all the wording. A Red and Black gradient used as the main header of the website finished off the design. Then simple Red, black, White and touch of green for successful login was fresh but retro and worked well together.
 
 
 ### Images
 
-* Each image chosen was used as they were instantly recognisable pictures from cineman and TV in the past 40 to 50 years. The target audience will range in variation and so I had to think of something that was striking, not a frightening image for smaller children but cool enough to bring people to the site. The images I chose I believe represented this idea very well and the options chosen stood out in the overall design of the site. 
+* The image chosen was used because it's an instantly recognisable character from the world of cinema from in the past 40 years. The target audience will range in variation and so I had to think of something that was striking, not a frightening image for smaller children but cool enough to bring people to the site. The image I chose I believe represented this idea very well and the image stood out in the overall design of the site. 
 
 ### Styling
 
 * I like the applications I design to be clean without being over the top and so I did the same with this. No over wording on the pages, just something to get you started.
 
-* 
-
-* To get a taste of what the site offers, if they choose "Information" on the back of the flipped image, some content on the modal which pops up explains 
-* what the adventure holds in store. There's also a video which when clicked 
-  showcases a users experience of that holiday. Once watched and chosen, they can go to the "What We Do and How to Book" below the header which again, 
-  showcases a users video with various adventures into a showreel. There's then a "Booking Here" button under the video which displays
-  a booking form. The user can fill it in with some brief information and once done, they click on the "Submit" button and that's when the holiday
-  organisers go to work. I was trying to keep everything minimal but engaging without headache and I had to think of each step of the users
-  experience.
 
 ### Fonts
 
-* I tried and tested various fonts for the site. At the beginning, I had 20 fonts all in one page and over a 2 hour period, tried each one.
-  I found the Barrio font to be perfect for the header. Off key, scribbled a little, not quite neat enough. A holiday adventurers font.
-  When reviewed within peer review in Slack, the feedback on the font choice was very positive.
-
-* The second font I used, Megrim was again chosen from a long list of font choices. I thought it was cool, sharp and fitted in well with the design 
-  of the site. I used this for the smaller content fonts in the modals and it's response wasn't as good so I chose to use it as the smaller headings 
-  and description font.
-
-* My third main font used was Oxygen. This was clear, concise and fitted neatly into the modals and all readable sections. 
-
- * Each font chosen wasn't done on a whim. I started off as explained with around 20 fonts each time I tried something new. Tested and had them all reviewed
-   and listened to the response of colleagues, friends, family and then my mentor and reviewers from the peers section in Slack. Each review helped
-   me select the font options I have used as they have been postiviely received in each use and instance.
+* As standard when building a site, I used [Google Fonts](https://fonts.google.com/) and spent time looking through the options. I wanted something that looked futuristic to tie in with the image and engaging to the user. Chosen Fonts: Montserrat
 
 
 ### UX
 
-- I drew up various mock wireframes and initially had a a jumobotron header with a white background and then the 9 images on top. 
 - It wasn't bold enough and so a single blown up image with a colourful picture I feel gives it a much bigger impact when viewed by
 - a user.
 
@@ -171,10 +149,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 ![](/assets/images/flipimage1.jpg) 
 
 
-* The primary goal of Design and Conquer is a single page application where a user can book an adventure holiday. As the title indicates, the user
-  is able to "design" the adventure and then "conquer" it. There are 9 options on the home page to choose from but an optional form is under the
-  What We Do? section where a user can change choose a holiday if needed. The user can watch videos on each slide and read information about the 
-  location. There's also a Help Guide on the home page which explains the website and how to use it.
+* The primary goal of FilmDB was to 
 
 
 ### User Objects
