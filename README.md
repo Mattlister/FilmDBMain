@@ -225,44 +225,8 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 ### Site Features
 
-* When building the original layout, as you can see on the site as it is now, I changed the font to white. It stood out better against
-  the blue. Once in place, I could start my concept of building content from one location. I came up with the idea
-  of having the flipped image as my original sketch shows. The 9 images and the idea behind the flipped image is at the bottom.
-  I think it works well and looks strong on screen.
-
-<p align="center">
-  <img width="500" height="250" src="/assets/wireframes/conceptsketch2.png">
-</p>
-
- * To show this as a functioning working project, I attached the following shots below to show the process and fluid nature of the design working.
 
 
-
-* Image 1 shows the image mid flip revealing the back of the box
-
-<p align="center">
-  <img width="500" height="250" src="/assets/images/flipimage2.jpg">
-</p>
-
-* Image 2 shows the back of the box showing 'The Location' and 'Information' buttons
-
-<p align="center">
-  <img width="500" height="250" src="/assets/images/flipimage3.jpg">
-</p>
-
-* Image 3 shows the how displayed when the reveal has finished
-
-<p align="center">
-  <img width="500" height="250" src="/assets/images/flipimage4.jpg">
-</p>
-
-* Images 4 and 5 have been added to show that the images are all responsive and consistent when selected.
-
-<p align="center">
-  <img width="500" height="250" src="/assets/images/flip2images1.jpg">
-</p><p align="center">
-  <img width="500" height="250" src="/assets/images/flip2images2.jpg">
-</p>
 
 
 ### [Home Page](https://github.com/Mattlister/designandconquer)
