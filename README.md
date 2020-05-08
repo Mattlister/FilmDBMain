@@ -217,23 +217,10 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 * Full Screen Design - Displays great, really happy with the results and it's responsness. Splits as it should when minimised.
 
-<p align="center">
-  <img width="400" height="400" src="/assets/wireframes/Newfswireframe.png">
-</p>
-
-* Ipad Design - Again, looks great. Fit's the tablets great and displays as I wanted it too.
-
-<p align="center">
-  <img width="400" height="400" src="/assets/wireframes/ipadnewwf.png">
-</p>
 
 * Mobile Design - The only slight issue which I wasn't able to rectify no matter how many screen changes I made was the smaller pixel 
   sized screen when the images were more centralised and so the skier character wasn't as visible. He is meant to be slightly seen
   on all devices with the images slighlty pulled to the left so he's displayed.
-
-<p align="center">
-  <img width="300" height="350" src="/assets/wireframes/mobwireframe.png">
-</p>
 
 
 ### Site Features
