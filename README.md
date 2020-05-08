@@ -595,24 +595,13 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
 | PORT  | 5000        |
 | SECRET_KEY  | <your_secret_key>     |
 
+ * You're MONGO_URI is specific to YOUR site, to create your own, read the MongoDB Atlas deocumenation [Found Here](https://docs.atlas.mongodb.com/)
 
+ 6. Back in the Heroku dashboard, click the "Deploy" button.
 
-### key                                     ### value
+ 7. In the Manual Deployment section of the page, make sure you have the master branch selected. Now click "Deploy Branch".
 
-DEBUG         FALSE
-IP          0.0.0.0
-MONGO_URI   mongodb+srv:/<username>:<password>@<cluster_name>-qtxun.mongodb.net/            <database_name>?retryWrites=true&w=majority
-PORT        5000
-SECRET_KEY  <your_secret_key>
-
-
-
-
-
-
-
-
-
+ 8. Your site has now been deployed successfully.
 
 
 ### Coding credits
