@@ -13,9 +13,18 @@
 
 /* Design for the header title bar */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 header {
     background-color: #ed0c22;
     height: 80px;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(red), to(black));
+    background-image: -o-linear-gradient(top left, red, black);
     background-image: linear-gradient(to bottom right, red, black);
     height: 110px;
     width: 100%;

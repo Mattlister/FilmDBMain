@@ -298,107 +298,24 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 
 
-### This project is the best way to help them achieve these things because:
-
-* The website has one page that has all navigation and options direct from the one page.
-
-### This website is:
-
-
-* Easy to navigate through.
-
-* Allows the user to work through the site with an easy to understand front end design.
-  Provides the user the information they need without it being overwhelming.
-  Booking forms and Get in touch forms are clear and concise for when the user wants to book a holiday
-
-
-
-
-
-
-
-
-### Issues and setbacks whilst building the site and time taken
-
-* This site has been a hard and long slog to work through. I wrote the JavaScript 3 times in various formats. Firstly, I wrote a fetch command which
-  was indepth JavaScript code that was meant to display the maps through JSON. I thought the content worked and centralised the locations, but it was 
-  the HTML code. It should have pulled data from JSON to add the markers. The code was clean, there were no errors. DevTools was fine and the arrays 
-  pulled the data back but.... the maps would not show the markers on the maps provided by HTML. So, back to the drawing board. The second attempt was 
-  much more difficult to put together. I had more to workout because, when I added a centralised location to the modal 1, it worked great. Adding modal 
-  2 though overwrote the information and so I had to work that out. It took me a week to resolve this through various searches and code checks to stop 
-  the data overwriting when new information was added. To achiever this,I had to write all of the code individually for wach working modal and functions. 
-  When finished, it was 100% working, it looked good but it was all hard coded and as I was concerned about losing marks and so, onto option number 3. 
-  I wrote the project with more dynamic code and I was able to get the markers to display and the maps worked. I was happy with the end results and so 
-  I was ready to submit. The JavaScript took a while. For my first attempt, I had extra sessions with my mentor, I had tutors looking and advising but 
-  the maps would not display the markers and so moving onto the next way of working produced exactly what I needed. The third options gave me the final 
-  code as I wanted it to be.
-
-* This site has set me back a few times with various issues when putting the project in place. But, I have learnt a great deal working on this project, 
-  and yes, it has taken me longer but I believe I did create something relatively complicated. I only say this because when researching what I was doing, 
-  the answers weren't always obvious to others. I was able to work through this and keep my head up and keep going to produce what I have now.
-
-* One other issue i had was the map was sometimes greyed out. I tried different things to fix it. It would work 9 out of times or 3 would work and 1
-  1 wouldn't so I added: google.maps.event.trigger(map, 'resize'); to resolve the issue.
-
-
-### Testing
-
-* I tested the website at different points through the project on Mozilla Firefox, Google Chrome and Safari. I was always using Google Chrome and found no issues when 
-  using these browsers. 
-
-* Now working safari issue by using the AutoPrefixer software. No more pausing issues on Safari.
-
-* I used Autoprefixer as explained above to resolve the safari issues I had. I also tested on various iphone formats, ipad tablets and laptops. This inclued Macbook
- with Safari and laptops with Windows 10 installed. Tested on various browsers on both laptops to show everything displayed as it should and planned.
-
-* As I mentioned, I've spent a fair amount of time working on the site and so: Peer Review has been a great help to me. Get feedback from fellow programmers is a really 
-* helpful way of making I'm working to a high standard. From all walks of coding, alumni, mentors, tutors and peers all reviewed the code, pointed out issues I'd be better 
-* to change and work through. Better layout. Better fonts to use. Better styling and to be more aware of the smaller screens. Even more than I was already. Having a coders
-  eyes look over my work and spotting potential issues was a great testing tool as they're aware of changes that needed to be made on a high scale.
-
-* I ran all my code through validators on a regular basis as part of my testing. [JSHint](https://jshint.com/), the [W3C validator](https://validator.w3.org/) and 
-  CSS stlying I found to all be of great use to me when I was checking my code. I also used the Jigsaw validator which showed some issues but only as I was using 
-  non recognised vendors for some of the display colours and graphics, not because there was an issue with the code itself. [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator)
- 
-* Personal testing from family and friends. I had my wife (whose honesty is always sharp) test the site and she was impressed with it. She saw a lot of potentional in what 
-  I'd put it together. She showed it to some of her friends and from that, I've been offered a freelance job to produce a site like mine but it's for a cake making business
-  which I take as a massive positive and so I've started working on that. 
-
-* A work colleague who did photography and graphics at university and who is also a budding programmerwent through the site. He found the visuals to be very on point and strong
-  and the code to be up to date, nice and clean. The images he advised were clear and precise and from a photography point of view, they were striking and detailed.
-
-
-
 ### Media and Content
 
-* The text, images and videos were found on various sites for each particular venture. 
-
-* The content was taken and used in context from actual sites running these adventures for real and so their write up's were specific for the use of 
-  promoting the products.
 * The images were searched and found on Google
-* The videos were searched for and found on Google. I used Vimeo videos as they're clearer than YouTube videos.
 
+* All content was written by myself.
 
 ### Code
 
-* I've used various code for this website. As they say, a lazy programmer is a smart programmer so I used some of my code from my 
-* MS1 project to start working on this. The Javasctipt was 
+* I've used various code for this website all written fresh. I did get an understanding for part of the code by deciphering some of Anthony O'Brien's and Paul Bennet's code. It was generic code, nothing direct from their content but I had an issue with the hashed encryption and I had it the wrong way around. I was also using encode instead of decode. I spoke with tutors but the one's I spoke with had used the Werkzeug security system and so I was advised to speak to others who had used bcrypt. Anthony and Paul had done so they showed me their code so I could put mine in the correct order to allow the login to work. Registering was fne but Login was causing me issues.
 
-* HTML - All code produced by Matthew Lister except for the content such as images. These were searched and found on Google Chrome and
-then added into iframe and img source code which I had put together. The modal formats and forms were taken from my MS1 and edited to correspond
-to the needs of this website. I used script tags from Google Fonts to display the correct formatted fonts.
+
+* HTML - All code produced by Matthew Lister except for the content such as the main background image. This was searched and found on Google Chrome and
+then added into img source code which I had put together. I used script tags from Google Fonts to display the correct formatted fonts.
+
+* Python and Flask - All code produced by Matthew Lister with some support from CI tutors and the review of Anthony and Paul's code to assist resolving an issue i had.
 
 * CSS - All CSS code was produced by Matthew Lister originally typed to add styling to the HTML page. This included Font styling, image sizing and
 colour choices
-
-
-1. Choose the following link: 
-2. Under repository name, select "Clone or download"
-3. You'll see Clone in the HTTPs section, copy the URL for the repository.
-4. In your own IDE, open Git Bash.
-5. Change the current working directory to your location of choice where you'd like the directory to be made.
-6. Type the command git clone, and then paste the URL copied in step 3.
-7. Then Press Enter and your local clone will be created.
 
 ### How I’d like the website to be perceived:
 
@@ -409,6 +326,23 @@ colour choices
 
 * A nice clean UX multi page designed site. Choose your option and start your journey. Show others what you love and help to share that with them.
 
+
+
+### Issues and setbacks whilst building the site and time taken (that should be my nickname)
+
+* THe site works fine across all browsers which is great but on small mobile devices, the navbar caused me issues. Either the Header title or the Navbar would not sit right at the top of the page. Changes to both caused major display issues on other devices so it was a headache trying to resolve the issue.
+
+* I struggled with some of the CRUD stuff and multiple pages but help from tutors got me through the process. I spent a lot of time researching things myself and got far but the last parts I struggled with. It needed a 2nd persons eyes to spot those small mistakes and advise on the changes. I really need to contact a tutor sooner rather than later.
+
+### Testing and Bugs
+
+* I tested the website on multiple browser platforms including Mozilla Firefox, Google Chrome and Safari. I used Google Chrome and Mozilla Firefox at different points whilst designing the site due to some caching issues in Chrome at times. 
+
+* As always with my projects, they take me a while to do as I've struggled with the course. Workkng on site has been good though and I've learnt a lot. Testing was done by my family to see if they could navigate around the site and this worked well, especially when my daughters saw there names displayed on screen so they got a personal feeling which is nice.
+
+* I also asked for the site to be tested through Slack in Peer Review which gave me some great feedback.
+
+* I ran my code through validators on a regular basis such as the [W3c Validator] and through [PEP8]
 
 
 
