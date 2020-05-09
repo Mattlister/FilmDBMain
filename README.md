@@ -415,9 +415,11 @@ colour choices
 
 ### Software Deployment and Software Cloning Technologies Used:
 
-* This project was developed using the GitPod IDE (Integrated Development Environment) software. The data was then pushed to GitHub also using the GitPod IDE (Integrated Development Environment)
+* This project was developed using the GitPod IDE (Integrated Development Environment) software. The data was then pushed to GitHub also using the GitPod IDE.
 
 * The project was regularly pushed to the GitHub repository https://film-db.herokuapp.com/ and published to GitHub and Heroku pages using GitPod commands. Please read the guides below.
+
+* First, I used the following as pre made template base for my site provided by Code Institute: 
 
 GitHub Full Template Used as part of the process including software extensions for GitPod [Gitpod-Full-Template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
@@ -436,7 +438,7 @@ GitHub Full Template Used as part of the process including software extensions f
 7. Then Press Enter and your local clone will be created.
 
 
-### I used default commands to push to Github and Heroku once logged in:
+### I used default commands to push to Github but I also had to prepare for the Heroku part of the process and so once logged in:
 
 * I first had to install the Heroku software using the following commands:
 
@@ -458,10 +460,10 @@ GitHub Full Template Used as part of the process including software extensions f
 
 [PIP](https://pip.pypa.io/en/stable/installing/) Is a standard package management system used to install and manage software packages specifically written in Python.
 
-[Python3 (MAC SPECIFIC)](https://www.python.org/downloads/mac-osx/) Prerequisites for installing Python3 on MAC
+[Python3 (Mine is MAC SPECIFIC)](https://www.python.org/downloads/mac-osx/) Prerequisites for installing Python3 on MAC
 
 
-### Heroku Deployment
+### Back to Heroku Deployment (Windows Deployment is different and explained within the course)
 
 To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBook Pro laptop.
 
@@ -476,7 +478,7 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
 
 ## The next stage pushing to Heroku
 
-### Once running in GitHub, the commits I make then need to reflect within Heroku and so to do this, I have to create a new Heroku application by doing the following.
+### We know the commits push to GirHub but I need the commits I make to reflect within Heroku and so to do this, I have to create a new Heroku application by doing the following.
 
 1. Create an account and log into the Heroku website. Then, Create a new app by clicking the "New" button in the dashboard. You need to name the application so I gave mine the same name as the application I'm creating and then set the region to Europe.
 
