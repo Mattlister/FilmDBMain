@@ -2,6 +2,10 @@
 
 [FilmDB](https://film-db.herokuapp.com/) - My Milestone 3 Project
 
+My 3rd Milestone project has been created as a combination of the 3 modules in the Python series of the Full Stack Developer course. These include
+Python Fundamentals, Practical Python and Data Centric Development. Using the knowledge from these 3 modules, I have created a responsive
+web application using the CRUD functionailty. CRUD which stands for Create, Read, Update and Delete allows the user to add information to the application. It has been designed for users who have a shared love of movies to help create an open source database between fans of the silver screen.
+
 ## Contents
 
 ### 1. UX
@@ -37,9 +41,7 @@
 
 ### 5. [Acknowledgements](#Acknowledgements)
 
-My 3rd Milestone project has been created as a combination of the 3 modules in the Python series of the Full Stack Developer course. These include
-Python Fundamentals, Practical Python and Data Centric Development. Using the knowledge from these 3 modules, I have created a responsive
-web application using the CRUD functionailty. CRUD which stands for Create, Read, Update and Delete allows the user to add information to the application. It has been designed for users who have a shared love of movies to help create an open source database between fans of the silver screen.
+
 
 ### Project Goals
 
@@ -58,12 +60,9 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 * FilmDB will hopefully be a great place to start their journey into something new. Help bring new directors to peoples screens to help bring new stories to life and not just endless remakes or constant sequels. Fast and Furious anyone!!
 
 
-## Business Goals
+## Registed and Logged in User Experience
 
-* As the site grew, the opportunity to advertise before or during the trailer videos would bring revenue. Like advertisemetns on TV for instance.
-
-* I wouldn't want to overload the site with company advert images or links to other pages so it would all be done during those trailers.
-
+## What I want the website to work as
 
 
 ### User Stories
@@ -94,13 +93,6 @@ enter will be stored in the Mongo Database at the back end and this is the creat
  we want this website to be used by all ages and so if a child stumbles across a review done by an adult that contains foul language, this 
  will be hopefully be seen by a moderator and removed or edited.
 
-[My page](https://film-db.herokuapp.com/)
-
-* A website built for Film lovers that can share their passion!!
-
-* The project I’ve designed is for my third milestone project for the Data Centric Development module of the Full Stack Developer Course. I’ve used Flask and Python to design the majority of layout of the website. This is to provide functionality and sits within the HTML shell with added elements of CSS to add styling. 
-
-  This is a Multi Page Applciation website. Users are able to login to a Mongo Database which works in conjunction with Heroku and WTForms.There's an API in the background that allows the user to search for Films and even TV from screen entertainment. As mentioned, there's a contact page which as well.
 
 
 ## Project Design
@@ -117,6 +109,8 @@ enter will be stored in the Mongo Database at the back end and this is the creat
 I looked at other sites that had a similar theme to mine and I felt mine was different enough to stand out and be something completely new and fresh and to look cool to a user.
 
 I had to think how to showcase the site to a user and tried to make it engaging from the moment the user clicks on the first page.
+
+### Logo
 
 ### Colours
 
@@ -136,10 +130,51 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 * As standard when building a site, I used [Google Fonts](https://fonts.google.com/) and spent time looking through the options. I wanted something that looked futuristic to tie in with the image and engaging to the user. Chosen Fonts: Montserrat
 
+[My page](https://film-db.herokuapp.com/)
+
+* A website built for Film lovers that can share their passion!!
+
+* The project I’ve designed is for my third milestone project for the Data Centric Development module of the Full Stack Developer Course. I’ve used Flask and Python to design the majority of layout of the website. This is to provide functionality and sits within the HTML shell with added elements of CSS to add styling. 
+
+  This is a Multi Page Applciation website. Users are able to login to a Mongo Database which works in conjunction with Heroku and WTForms.There's an API in the background that allows the user to search for Films and even TV from screen entertainment. As mentioned, there's a contact page which as well.
+
+
+### Original wireframe concepts
+
+* The wireframes below were the original design I had in mind. A bold header and the images were to be sat on a blank background. How I visualised
+  it and how it showed were very different and it was much duller on screen. The images which hadn't been chosen at the time might have brought it 
+  into a better light but I reviewed other sites and they either had a similar design or something more dramatic.
+
+* Original Full Screen Design
+
+<p align="center">
+  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+</p>
+
+* Original Mobile Design
+
+<p align="center">
+  <img width="300" height="350" src="/static/images/mobile.jpg">
+</p>
+
+* Concept idea
+
+<p align="center">
+  <img width="400" height="400" src="/static/images/alienWF.jpg">
+</p>
 
 
 
+* Changing it to a design more along the lines below made an impact straight away. It had colour giving a better overall layout and made
+  a difference from the moment I added the background image. Nothing else but that image changed everything. I could then layer over the 
+  top of it and add my original plan. I was able to build from the bottom up and show something more with imagery.
 
+* Full Screen Design - Displays great, really happy with the results and it's responsness. Splits as it should when minimised.
+
+
+* Mobile Design - The only slight issue which I wasn't able to rectify no matter how many screen changes I made was the smaller pixel 
+  sized screen when the images were more centralised and so the skier character wasn't as visible. He is meant to be slightly seen
+  on all devices with the images slighlty pulled to the left so he's displayed.
 
 ### Project Goals
 
@@ -182,49 +217,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * Add a movie trailer option
 
 
-
-### Original wireframe concepts
-
-* The wireframes below were the original design I had in mind. A bold header and the images were to be sat on a blank background. How I visualised
-  it and how it showed were very different and it was much duller on screen. The images which hadn't been chosen at the time might have brought it 
-  into a better light but I reviewed other sites and they either had a similar design or something more dramatic.
-
-* Original Full Screen Design
-
-<p align="center">
-  <img width="400" height="400" src="/static/images/Fullweb.jpg">
-</p>
-
-* Original Mobile Design
-
-<p align="center">
-  <img width="300" height="350" src="/static/images/mobile.jpg">
-</p>
-
-* Concept idea
-
-<p align="center">
-  <img width="400" height="400" src="/static/images/alienWF.jpg">
-</p>
-
-
-* Changing it to a design more along the lines below made an impact straight away. It had colour giving a better overall layout and made
-  a difference from the moment I added the background image. Nothing else but that image changed everything. I could then layer over the 
-  top of it and add my original plan. I was able to build from the bottom up and show something more with imagery.
-
-* Full Screen Design - Displays great, really happy with the results and it's responsness. Splits as it should when minimised.
-
-
-* Mobile Design - The only slight issue which I wasn't able to rectify no matter how many screen changes I made was the smaller pixel 
-  sized screen when the images were more centralised and so the skier character wasn't as visible. He is meant to be slightly seen
-  on all devices with the images slighlty pulled to the left so he's displayed.
-
-
 ### Site Features
-
-
-
-
 
 ### [Home Page](https://github.com/Mattlister/designandconquer)
 
