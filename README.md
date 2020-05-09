@@ -2,10 +2,6 @@
 
 [FilmDB](https://film-db.herokuapp.com/) - My Milestone 3 Project
 
-My 3rd Milestone project has been created as a combination of the 3 modules in the Python series of the Full Stack Developer course. These include
-Python Fundamentals, Practical Python and Data Centric Development. Using the knowledge from these 3 modules, I have created a responsive
-web application using the CRUD functionailty. CRUD which stands for Create, Read, Update and Delete allows the user to add information to the application. It has been designed for users who have a shared love of movies to help create an open source database between fans of the silver screen.
-
 ## Contents
 
 ### 1. UX
@@ -41,10 +37,13 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 ### 5. [Acknowledgements](#Acknowledgements)
 
+My 3rd Milestone project has been created as a combination of the 3 modules in the Python series of the Full Stack Developer course. These include
+Python Fundamentals, Practical Python and Data Centric Development. Using the knowledge from these 3 modules, I have created a responsive
+web application using the CRUD functionailty. CRUD which stands for Create, Read, Update and Delete allows the user to add information to the application. It has been designed for users who have a shared love of movies to help create an open source database between fans of the silver screen.
 
 ### Project Goals
 
-### UX
+### User Experience - UX
 
 ## User Goals
 
