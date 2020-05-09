@@ -400,8 +400,6 @@ colour choices
 6. Type the command git clone, and then paste the URL copied in step 3.
 7. Then Press Enter and your local clone will be created.
 
-
-
 ### How I’d like the website to be perceived:
 
 
@@ -411,6 +409,27 @@ colour choices
 
 * A nice clean UX multi page designed site. Choose your option and start your journey. Show others what you love and help to share that with them.
 
+
+
+
+### Registration and Login Design
+
+I added security to my application and built templates and the functionailty into the app.py file. This included the following:
+
+A registration technique that posted a user's accepted details to the MongoDB collection in the database.
+
+Once registered, I created the Login part of the process which allowed a user to login respectively and they were then able to work with the CRUD system and Create an entry, Read an entry, Update an entry or Delete an entry to build the Database.
+
+The security built acted in the following process:
+
+1. Register, if already registered, a "Go to the Login page" function was added.
+2. If passwords don't match when registering, a "Passwords do not match" message pops up.
+3. If a user is already registered with that name a "That username is already registered, please choose another" message is displayed.
+4. Login, if not registered, "Go to the registration page" function was added.
+5. If password is incorrect, a "Password is incorrect message is displayed"
+6. Logged in twice, a flash message "You crazy kid, you're already logged in" was displayed.
+7. Once logged in or registered, a green outlined box is shown showing "A successful login" and you'll also have that displayed on the home page when the user is logged in.
+8. The logged in name is also displayed when a delete is made.
 
 
 ### Software Deployment and Software Cloning Technologies Used:
