@@ -147,6 +147,13 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 * Original Full Screen Design
 
+<details>
+<summary>How do I dropdown?</summary>
+<br>
+This is how you dropdown.
+</details>
+
+
 <p align="center">
   <img width="400" height="400" src="/static/images/Fullweb.jpg">
 </p>
