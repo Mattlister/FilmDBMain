@@ -253,12 +253,9 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 ### Search movie before
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/searchmovie.jpg">
-</p>
-
-<p align="center">
   <img width="500" height="350" src="static/wireframes/searchmovieno.jpg">
 </p>
+
 
 <p align="center">
   <img width="500" height="350" src="static/wireframes/searchmoviemobno.jpg">
@@ -271,7 +268,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/searchmovietabbyes.jpg">
+  <img width="500" height="350" src="static/wireframes/searchmovietab.jpg">
 </p>
 
 <p align="center">
