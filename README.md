@@ -162,7 +162,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/firstscreen.jpg">
+  <img width="400" height="400" src="static/wireframes/homepagemob.jpg">
 </p>
 
 ### Register Page
@@ -176,12 +176,9 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/beforeaftermenu.jpg">
+  <img width="400" height="400" src="static/wireframes/registermob.jpg">
 </p>
 
-<p align="center">
-  <img width="400" height="400" src="static/wireframes/registerpage.jpg">
-</p>
 
 ### Login
 
@@ -194,7 +191,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/loginpage.jpg">
+  <img width="400" height="400" src="static/wireframes/loginmob.jpg">
 </p>
 
 ### Logged in page
@@ -208,7 +205,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/loggedinpage.jpg">
+  <img width="400" height="400" src="static/wireframes/loggedinmob.jpg">
 </p>
 
 ### Created Page
@@ -219,33 +216,31 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 
-### Reviews
+### Movie Reviews
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/reviewsdisplayed.jpg">
+  <img width="500" height="350" src="static/wireframes/moviereview.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/reviewpage.jpg">
+  <img width="400" height="400" src="static/wireframes/moviereviewtab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/displayedreview.jpg">
+  <img width="400" height="400" src="static/wireframes/moviereviewmob.jpg">
 </p>
 
+### Your reviews
+
+
+### Update
 
 <p align="center">
-  <img width="500" height="400" src="static/wireframes/yourreviewtab.jpg">
-</p>
-
-### Updatte
-
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/updatepage.jpg">
+  <img width="500" height="350" src="static/wireframes/review.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/updatemob.jpg">
+  <img width="400" height="400" src="static/wireframes/reviewmob.jpg">
 </p>
 
 ### Edit Delete
@@ -259,11 +254,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/editdeletepage.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/fullscreendeleted.jpg">
+  <img width="400" height="400" src="static/wireframes/editdeletemob.jpg">
 </p>
 
 
@@ -274,23 +265,14 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/moviedisplayed.jpg">
+  <img width="500" height="350" src="static/wireframes/searchmob.jpg">
 </p>
 
+### Deleted
 
 <p align="center">
-  <img width="500" height="400" src="static/wireframes/searchmovietab.jpg">
+  <img width="500" height="350" src="static/wireframes/deleted.jpg">
 </p>
-
-
-<p align="center">
-  <img width="400" height="400" src="static/wireframes/searchmob.jpg">
-</p>
-
-<p align="center">
-  <img width="400" height="400" src="static/wireframes/searchmobimg.jpg">
-</p>
-
 
 </details>
 
