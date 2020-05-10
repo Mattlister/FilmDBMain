@@ -208,14 +208,6 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   <img width="400" height="400" src="static/wireframes/loggedinmob.jpg">
 </p>
 
-### Created Page
-
-
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/moviecreated.jpg">
-</p>
-
-
 ### Movie Reviews
 
 <p align="center">
@@ -258,15 +250,34 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 
-### Search movie
+### Search movie before
 
 <p align="center">
   <img width="500" height="350" src="static/wireframes/searchmovie.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/searchmob.jpg">
+  <img width="500" height="350" src="static/wireframes/searchmovieno.jpg">
 </p>
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/searchmoviemobno.jpg">
+</p>
+
+### Search movie after
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/searchmovieyes.jpg">
+</p>
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/searchmovietabbyes.jpg">
+</p>
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/searchmoviemobyes.jpg">
+</p>
+
 
 ### Deleted
 
