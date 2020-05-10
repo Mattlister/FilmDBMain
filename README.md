@@ -146,61 +146,106 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   into a better light but I reviewed other sites and they either had a similar design or something more dramatic.
 
 * Original Full Screen Design
-
 <details>
 <summary>Full Screen Dropdown</summary>
 <br>
 
 <p align="center">
-  <img width="400" height="400" src=".../wireframes/homepage.jpg">
+  <img width="400" height="400" src="static/wireframes/homepage.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+  <img width="400" height="400" src="static/wireframes/register.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+  <img width="400" height="400" src="static/wireframes/login.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+  <img width="400" height="400" src="static/wireframes/loggedin.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+  <img width="400" height="400" src="static/wireframes/moviecreated.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+  <img width="400" height="400" src="static/wireframes/reviewsdisplayed.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+  <img width="400" height="400" src="static/wireframes/updatepage.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+  <img width="400" height="400" src="static/wireframes/editdelete.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/fullscreendeleted.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/searchmovie.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/moviedisplayed.jpg">
+</p>
+
+</details>
+
+ Tablet Screen Design
+<details>
+<summary>Tablet Screen Dropdown</summary>
+<br>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/homepagetab.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/registertab.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/logintab.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/loggedintab.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/reviewtab.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/yourreviewtab.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/editdeltab.jpg">
+</p>
+
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/searchmovietab.jpg">
+</p>
+
+
+</details>
+
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/fullweb.jpg">
 </p>
 
 
 
-
-
 <p align="center">
-  <img width="400" height="400" src="/static/images/Fullweb.jpg">
-</p>
-
-
-
-<p align="center">
-  <img width="300" height="350" src="/static/images/mobile.jpg">
-</p>
-
-
-
-<p align="center">
-  <img width="400" height="400" src="/static/images/alienWF.jpg">
+  <img width="400" height="400" src="/static/wireframes/alienWF.jpg">
 </p>
 
 </details>
