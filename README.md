@@ -152,7 +152,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 <br>
 
 <p align="center">
-  <img width="400" height="400" src="/static/images/wireframes/homepage.jpg">
+  <img width="400" height="400" src="../images/wireframes/homepage.jpg">
 </p>
 
 <p align="center">
