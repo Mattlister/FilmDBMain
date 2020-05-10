@@ -150,100 +150,29 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 <summary>Full Screen Dropdown</summary>
 <br>
 
+### Home Page
+
 <p align="center">
   <img width="500" height="400" src="static/wireframes/homepage.jpg">
 </p>
 
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/register.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/login.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/loggedin.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/moviecreated.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/reviewsdisplayed.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/updatepage.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/editdelete.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/fullscreendeleted.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/searchmovie.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="350" src="static/wireframes/moviedisplayed.jpg">
-</p>
-
-</details>
-
- Tablet Screen Design
-<details>
-<summary>Tablet Screen Dropdown</summary>
-<br>
 
 <p align="center">
   <img width="500" height="400" src="static/wireframes/homepagetab.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="400" src="static/wireframes/registertab.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="400" src="static/wireframes/logintab.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="400" src="static/wireframes/loggedintab.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="400" src="static/wireframes/reviewtab.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="400" src="static/wireframes/yourreviewtab.jpg">
-</p>
-
-<p align="center">
-  <img width="500" height="400" src="static/wireframes/editdeltab.jpg">
-</p>
-
-
-<p align="center">
-  <img width="500" height="400" src="static/wireframes/searchmovietab.jpg">
-</p>
-
-
-</details>
-
- Tablet Screen Design
-<details>
-<summary>Mobile Screen Dropdown</summary>
-<br>
-
-<p align="center">
   <img width="400" height="400" src="static/wireframes/firstscreen.jpg">
+</p>
+
+### Register Page
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/register.jpg">
+</p>
+
+<p align="center">
+  <img width="500" height="400" src="static/wireframes/registertab.jpg">
 </p>
 
 <p align="center">
@@ -254,12 +183,46 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   <img width="400" height="400" src="static/wireframes/registerpage.jpg">
 </p>
 
+### Login
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/login.jpg">
+</p>
+
+<p align="center">
+  <img width="500" height="400" src="static/wireframes/logintab.jpg">
+</p>
+
 <p align="center">
   <img width="400" height="400" src="static/wireframes/loginpage.jpg">
 </p>
 
+### Logged in page
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/loggedin.jpg">
+</p>
+
+<p align="center">
+  <img width="500" height="400" src="static/wireframes/loggedintab.jpg">
+</p>
+
 <p align="center">
   <img width="400" height="400" src="static/wireframes/loggedinpage.jpg">
+</p>
+
+### Created Page
+
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/moviecreated.jpg">
+</p>
+
+
+### Reviews
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/reviewsdisplayed.jpg">
 </p>
 
 <p align="center">
@@ -270,9 +233,55 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   <img width="400" height="400" src="static/wireframes/displayedreview.jpg">
 </p>
 
+
+<p align="center">
+  <img width="500" height="400" src="static/wireframes/yourreviewtab.jpg">
+</p>
+
+### Updatte
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/updatepage.jpg">
+</p>
+
 <p align="center">
   <img width="400" height="400" src="static/wireframes/updatemob.jpg">
 </p>
+
+### Edit Delete
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/editdelete.jpg">
+</p>
+
+<p align="center">
+  <img width="500" height="400" src="static/wireframes/editdeltab.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/editdeletepage.jpg">
+</p>
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/fullscreendeleted.jpg">
+</p>
+
+
+### Search movie
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/searchmovie.jpg">
+</p>
+
+<p align="center">
+  <img width="500" height="350" src="static/wireframes/moviedisplayed.jpg">
+</p>
+
+
+<p align="center">
+  <img width="500" height="400" src="static/wireframes/searchmovietab.jpg">
+</p>
+
 
 <p align="center">
   <img width="400" height="400" src="static/wireframes/searchmob.jpg">
@@ -282,9 +291,32 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   <img width="400" height="400" src="static/wireframes/searchmobimg.jpg">
 </p>
 
-<p align="center">
-  <img width="400" height="400" src="static/wireframes/editdeletepage.jpg">
-</p>
+
+</details>
+
+ Tablet Screen Design
+<details>
+<summary>Tablet Screen Dropdown</summary>
+<br>
+
+
+
+
+
+
+
+
+</details>
+
+ Tablet Screen Design
+<details>
+<summary>Mobile Screen Dropdown</summary>
+<br>
+
+
+
+
+
 
 
 </details>
