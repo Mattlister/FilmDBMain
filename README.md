@@ -151,19 +151,53 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 <summary>Full Screen Dropdown</summary>
 <br>
 
+<p align="center">
+  <img width="400" height="400" src="/static/images/wireframes/homepage.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="/static/images/Fullweb.jpg">
+</p>
+
+
+
 
 
 <p align="center">
   <img width="400" height="400" src="/static/images/Fullweb.jpg">
 </p>
 
-* Original Mobile Design
+
 
 <p align="center">
   <img width="300" height="350" src="/static/images/mobile.jpg">
 </p>
 
-* Concept idea
+
 
 <p align="center">
   <img width="400" height="400" src="/static/images/alienWF.jpg">
