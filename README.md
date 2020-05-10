@@ -275,8 +275,17 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 <p align="center">
+  <img width="400" height="400" src="static/wireframes/searchmob.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/searchmobimg.jpg">
+</p>
+
+<p align="center">
   <img width="400" height="400" src="static/wireframes/editdeletepage.jpg">
 </p>
+
 
 </details>
 
