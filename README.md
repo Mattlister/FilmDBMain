@@ -237,6 +237,48 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 </details>
 
+ Tablet Screen Design
+<details>
+<summary>Mobile Screen Dropdown</summary>
+<br>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/firstscreen.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/beforeaftermenu.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/register.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/loginpage.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/loggedinpage.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/reviewwpage.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/displayedreview.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/updatemob.jpg">
+</p>
+
+<p align="center">
+  <img width="400" height="400" src="static/wireframes/editdeletepage.jpg">
+</p>
+
+</details>
 
 <p align="center">
   <img width="400" height="400" src="static/wireframes/fullweb.jpg">
