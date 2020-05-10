@@ -148,10 +148,9 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * Original Full Screen Design
 
 <details>
-<summary>How do I dropdown?</summary>
+<summary>Full Screen Dropdown</summary>
 <br>
-This is how you dropdown.
-</details>
+
 
 
 <p align="center">
@@ -170,7 +169,7 @@ This is how you dropdown.
   <img width="400" height="400" src="/static/images/alienWF.jpg">
 </p>
 
-
+</details>
 
 * Changing it to a design more along the lines below made an impact straight away. It had colour giving a better overall layout and made
   a difference from the moment I added the background image. Nothing else but that image changed everything. I could then layer over the 
