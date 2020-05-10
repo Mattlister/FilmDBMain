@@ -151,47 +151,47 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 <br>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/homepage.jpg">
+  <img width="500" height="400" src="static/wireframes/homepage.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/register.jpg">
+  <img width="500" height="350" src="static/wireframes/register.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/login.jpg">
+  <img width="500" height="350" src="static/wireframes/login.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/loggedin.jpg">
+  <img width="500" height="350" src="static/wireframes/loggedin.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/moviecreated.jpg">
+  <img width="500" height="350" src="static/wireframes/moviecreated.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/reviewsdisplayed.jpg">
+  <img width="500" height="350" src="static/wireframes/reviewsdisplayed.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/updatepage.jpg">
+  <img width="500" height="350" src="static/wireframes/updatepage.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/editdelete.jpg">
+  <img width="500" height="350" src="static/wireframes/editdelete.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/fullscreendeleted.jpg">
+  <img width="500" height="350" src="static/wireframes/fullscreendeleted.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/searchmovie.jpg">
+  <img width="500" height="350" src="static/wireframes/searchmovie.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/moviedisplayed.jpg">
+  <img width="500" height="350" src="static/wireframes/moviedisplayed.jpg">
 </p>
 
 </details>
@@ -202,36 +202,36 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 <br>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/homepagetab.jpg">
+  <img width="500" height="400" src="static/wireframes/homepagetab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/registertab.jpg">
+  <img width="500" height="400" src="static/wireframes/registertab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/logintab.jpg">
+  <img width="500" height="400" src="static/wireframes/logintab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/loggedintab.jpg">
+  <img width="500" height="400" src="static/wireframes/loggedintab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/reviewtab.jpg">
+  <img width="500" height="400" src="static/wireframes/reviewtab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/yourreviewtab.jpg">
+  <img width="500" height="400" src="static/wireframes/yourreviewtab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/editdeltab.jpg">
+  <img width="500" height="400" src="static/wireframes/editdeltab.jpg">
 </p>
 
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/searchmovietab.jpg">
+  <img width="500" height="400" src="static/wireframes/searchmovietab.jpg">
 </p>
 
 
@@ -251,7 +251,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/register.jpg">
+  <img width="400" height="400" src="static/wireframes/registerpage.jpg">
 </p>
 
 <p align="center">
@@ -263,7 +263,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/reviewwpage.jpg">
+  <img width="400" height="400" src="static/wireframes/reviewpage.jpg">
 </p>
 
 <p align="center">
