@@ -37,19 +37,42 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 * [Favicons](#Favicons)
 * [Autoprefixer](#AutoPrefixer)
 
-### 4. [Testing](#Testing)
-
-### 5. [Acknowledgements](#Acknowledgements)
 
 
 
-### Project Goals
 
-### User Experience - UX
 
-## User Goals
 
-* This website has been designed with a target audience of movie enthusiasts. 
+
+### Project Functionailty of FilmDB. 
+
+* The FilmDB application is a website built with HTML, CSS and most importantly, Flask within Python. It uses the CRUD (Create, Read, Update and Delete) functinality and has a backend handling database using MongoDB. As required, I used Bootstrap for the general layout of the page but I worked outside the norm to include a floating menu rather than sitting at the top in the navigation bar.
+
+* I've included a few extras in the project such as both Registration and Login features adding security to the website and in turn the database. Once logged in, the database offers view of all reviews that a user can read to share the data between secure users.
+
+* Also as required, all code is deployed to the hosting platform Heroku and controlled through Git and Github. To enhance security and stop others from viewing the secret key, I've created a git ignore file which holds environment variables information such as the secret key as is standard by todays project requirements.
+
+
+
+### UX (User Experience)
+
+### User Stories
+
+* For me as a user, I would like:
+
+1. The site to look nice and be a pleasure to use. I want it to be well designed and the functionailty of the website to work as expected.
+
+2. To register or login with ease and create or update reviews. I also want to be able to have full optional changes to these reviews if I require.
+
+3. To be able to use the search movie function for a movie I have an interest in. Once done, I can then search the database and find reviews on that film. If I find one, great but if not, I can then watch the film and create a review that will provide information to someone else.
+
+4. I don't want it to be confusing to use which might put me off from using the site.
+
+5. Searching for a movie to be a simple experience and I can find more information from a review or follow a link to the imdb site for more info if needed.
+
+ * For me as a designer, I would like:
+
+
 
   * To share what they think of what they see in todays visual entertainment market. A fan can watch any type of movie they want excluding adult material films and upload information about it. If it's a multi million pound oscar winner that's designed to showcase the talents of a new or existing director, a multi million pound flop with an incredible cast list all the way down to a free handheld open new movie by an unknown director starting their career. They've put their heart and soul into the film and shared it on YouTube, the users at FilmDB can watch it, review and share the film for others to see. I want this to be an easy to use quick experience that will grow as time goes. It's for everyone and it stems from the most passionate of the small and large screen art form. The website is an open source application and technically built by the users to create word and mouth of everything they see.
 
@@ -65,18 +88,6 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 ## What I want the website to work as
 
 
-### User Stories
-
-* For any user, I would like:
-
-1. Them to be able to use the website to search for a movie they have an interest in or they've heard about. Once done, they can then search the database and find reviews on the film. If they find one, great but if not, they can create a review and leave it for someone else.
-
-
-2. I don't want it to be confusing to the user and cause anything that might put them off from using the site.
-
-3. Everything is laid out and presented well, it's simply informative and each items is easy to use and understand and follow.
-
-4. Searching for a movie is a simple experience and they can find more information out as there is a link to the imdb site for more info if they need it.
 
 
 ### Design 
