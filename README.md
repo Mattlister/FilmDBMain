@@ -307,8 +307,7 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 <br>
 
 
-* The search page is available to both logged in and logged out users. Simply type in the name of a movie you're searching for and it'll bring up a poster image of the movie and a link to the movie on imdb.
-
+* The search page is available to both logged in and logged out users. Simply type in the name of a movie you're searching for and it'll bring up a poster image of the movie and a link to the movie on imdb. The search is automatic, you type and it'll automatically display the movie.
 
 <p align="center">
   <img width="700" height="400" src="static/wireframes/searchmovieno.jpg">
