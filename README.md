@@ -269,6 +269,9 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 
 ### Search movie before
 
+* The search page is available to both logged in and logged out users. Simply type in the name of a movie you're searching for and it'll bring up a poster image of the movie and a link to the movie on imdb.
+
+
 <p align="center">
   <img width="500" height="350" src="static/wireframes/searchmovieno.jpg">
 </p>
@@ -279,6 +282,8 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 </p>
 
 ### Search movie after
+
+* As indicated, the search option will show the movie poster (image) and a link will also show to the imdb page.
 
 <p align="center">
   <img width="500" height="350" src="static/wireframes/searchmovieyes.jpg">
@@ -294,6 +299,8 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 
 
 ### Deleted
+
+* A logged in user has the option to delete the movie and once done, a flashed message pops up saying the info has been deleted, I'll use a movie reference in the finished site as well.
 
 <p align="center">
   <img width="500" height="350" src="static/wireframes/deleted.jpg">
