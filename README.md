@@ -383,7 +383,7 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 * [Balsamiq](https://balsamiq.cloud/#login)
 * [pencil](https://pencil.evolus.vn/)
 * [W3C HTML Validator](https://validator.w3.org/), [W3C-CSS-Validator](https://jigsaw.w3.org/css-validator/) and [PEP-Python-Checker](http://pep8online.com/)
-* [OMDB API](http://www.omdbapi.com/) - IMDB and The OMDB were used as guides and references for my site. The OMDB API was used for the movie search function on my website. 
+* [OMDB API](http://www.omdbapi.com/) - IMDB and The OMDB were used as guides and references for my site. The OMDB API was used for the movie search function on my website. Thanks to [Cukmekerb-coding-class-for-the-help-here] (https://www.youtube.com/watch?v=67eJTr6_ylY)
 * [Google Fonts](https://fonts.google.com/) -  Google was used for stylising the website fonts as it gave me a great selection to choose from. 
 * [Favicons](https://www.favicon.cc/) - Favicons was used for the URL toolbar icon
 *  [Autoprefixer](https://autoprefixer.github.io/) - Autoprefixer was used to correct issues within the CSS which prevented the page displaying on products using Safari and made sure
