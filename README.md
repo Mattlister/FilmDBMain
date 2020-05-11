@@ -372,17 +372,17 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 * HTML
 * CSS 
 * Python Flask
-* GidPod IDE
+* [GidPod-IDE](https://www.gitpod.io/)
 * [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/ - Bootstrap was used to build a solid and yet simple structure which allowed the site to be responsive easily.
-* Github
-* heroku
+* [Github](https://www.github.com)
+* [Heroku](https://www.heroku.com)
 
 #### Tools Used
 
-* MongoDB
-* Balsamiq
-* pencil
-* W3C HTML Validator, W3C CSS Validator and PEP Python Checker
+* [MongoDB](https://www.mongodb.com/cloud/atlas)
+* [Balsamiq](https://balsamiq.cloud/#login)
+* [pencil](https://pencil.evolus.vn/)
+* [W3C HTML Validator](https://validator.w3.org/), [W3C-CSS-Validator](https://jigsaw.w3.org/css-validator/) and [PEP-Python-Checker](http://pep8online.com/)
 * [OMDB API](http://www.omdbapi.com/) - IMDB and The OMDB were used as guides and references for my site. The OMDB API was used for the movie search function on my website. 
 * [Google Fonts](https://fonts.google.com/) -  Google was used for stylising the website fonts as it gave me a great selection to choose from. 
 * [Favicons](https://www.favicon.cc/) - Favicons was used for the URL toolbar icon
@@ -465,7 +465,7 @@ colour choices
 
 * I also asked for the site to be tested through Slack in Peer Review which gave me some great feedback.
 
-* I ran my code through validators on a regular basis such as the [W3c Validator] and through [PEP8]
+* I ran my code through validators on a regular basis such as the [W3CValidator](https://validator.w3.org/) and through [PEP8](http://pep8online.com/)
 
 
 ### Deployment
