@@ -40,17 +40,11 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 ### Project Functionailty of FilmDB. 
 
-* The FilmDB application is a website built with HTML, CSS and most importantly, Flask within Python. It uses the CRUD (Create, Read, Update and Delete) functinality and has a backend handling database using MongoDB. As required, I used Bootstrap for the general layout of the page but I worked outside the norm to include a floating menu rather than sitting at the top in the navigation bar.
+* The FilmDB application is a website built with HTML, CSS and most importantly, Flask within Python. It uses the CRUD (Create, Read, Update and Delete) functionality and has a backend handling database using MongoDB. As required, I used Bootstrap for the general layout of the page but I worked outside the norm to include a floating menu rather than sitting at the top in the navigation bar.
 
-* I've included a few extras in the project such as both Registration and Login features adding security to the website and in turn the database. Once logged in, the database offers view of all reviews that a user can read to share the data between secure users.
+* I've included a few extras in the project such as both Registration and Login features adding security to the website and in turn the database. Once logged in, the database offers a view of all user reviews which are shared between secure users.
 
-* Also as required, all code is deployed to the hosting platform Heroku and controlled through Git and Github. To enhance security and stop others from viewing the secret key, I've created a git ignore file which holds environment variables information such as the secret key as is standard by todays project requirements.
-
-
-
-
-
-
+* Also as required, all code is deployed to the hosting platform Heroku and controlled through Git and Github. To enhance security and stop others from viewing the secret key, I've created a git an ignore file which holds environment variables information such as the secret key as is standard by todays requirements.
 
 
 ### UX (User Experience)
@@ -59,29 +53,31 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 * For me as a user, I would like:
 
-1. The site to look nice and be a pleasure to use. I want it to be well designed and the functionailty of the website to work as expected.
+1. The website to look good and be a pleasure to use. I want it to be well designed and the functionailty of the site to work as expected.
 
-2. To register or login with ease and create or update reviews. I also want to be able to have full optional changes to these reviews if I require.
+2. To register or login with ease and create or update reviews. I also want to be able to have full optional changes to these reviews if required.
 
-3. To be able to use the search movie function for a movie I have an interest in. Once done, I can then search the database and find reviews on that film. If I find one, great but if not, I can then watch the film and create a review that will provide information to someone else.
+3. To use the search function to look for a movie I may be interested in. Once done, I can then search the database and find reviews on that film. If I find one, great but if not, I can then watch the film and create a review that will provide information to someone else.
 
 4. I don't want it to be confusing to use which might put me off from using the site.
 
 5. Searching for a movie to be a simple experience and I can find more information from a review or follow a link to the imdb site for more info if needed.
 
- * For me as a developer, I would like:
+ * For me as a developer:
 
- * I've enjoyed working with Python and Flask and the capabilities it provides. I'd like to use the programming language to create more applications and websites. 
+ * I've enjoyed working with Python and Flask as I prefer it to JavaScript and the capabilities it provides. I'd like to use the programming language to create more applications and websites.
 
- * I'd like to see the website/ application to grow as fans create reviews and build the database. I'd like users to become moderators to help build the site to something more.
+ * I'd like to see the website/ application to grow as fans create reviews and build the database. 
+ 
+ * I'd like users to become moderators to help build the site to something more.
 
  * I'd like it to become profitable if it were a real site. To do this, trailers would have advertisements to create revenue.
 
 
 
-### User Goals
+### User and Project Goals
 
-I would also like the user:
+I would also like users:
 
   * To share what they think of what they see in todays visual entertainment market. A fan can watch any type of movie they want excluding adult material films and upload information about it. If it's a multi million pound oscar winner that's designed to showcase the talents of a new or existing director, a multi million pound flop with an incredible cast list all the way down to a free handheld open new movie by an unknown director starting their career. They've put their heart and soul into the film and shared it on YouTube, the users at FilmDB can watch it, review and share the film for others to see. I want this to be an easy to use quick experience that will grow as time goes. It's for everyone and it stems from the most passionate of the small and large screen art form. The website is an open source application and technically built by the users to create word and mouth of everything they see.
 
@@ -92,51 +88,29 @@ I would also like the user:
 * To find FilmDB a great place to start their journey into something new. Help bring new directors to peoples screens to help bring new stories to life and not just endless remakes or constant sequels. Fast and Furious anyone!!
 
 
---
-
-
-### Project Goals
-
-![](/assets/images/flipimage1.jpg) 
-
-
-* The primary goal of FilmDB was to 
-
-
 ### User Objects
 
-* The website has been designed for film fans that want to learn, share and inform others about film. It's an open source design where users can tell anyone and everyone about a film they've just seen.
+* The website has been designed for film fans that want to learn, share and inform others about film. It's an open source design where users can tell anyone and everyone about a film they've seen.
 
-* Aimed at movie enthusiasts who want to spread knowledge of cinema and film.
-
-* Sharing something passionate about film
-* Finding that film information from sone that loves or loathes a movie.
-* Easy to use
-* A clean site with clear easy to use information
-* Bright and engaging for the user
-* Striking with identifiable comment
+* Aimed at movie enthusiasts who want to spread knowledge of cinema and film
+* Finding that film information from sone that love or loath a movie.
+* Easy to use.
+* A clean site with clear easy to use information.
+* Bright and engaging for the user.
+* Striking with identifiable comments.
 * Searching for a film through the search option and finding the review.
-
-### FilmdDB helps a user learn about a filn before viewing because:
-
-* Designing the site was done with the user in mind. Nice big easy to use guides and short descriptions. This helps the user to understand how to use the site.
- 
-* It's easy to navigate around the site and use the options available.
-
 
 ### Developers Objects
 
 * Nicely designed and content friendly with a well thought out user experience.
 * The layout is formatted in a way that the user can navigate around the site without frustration.
-* A professionally mutli paged aite with includes Python, Jinga, complex HTML and CSS.
+* A professionally mutli paged site which includes Python, HTML and CSS.
 
 ### Future plans
 
 * Offer a larger search functionality
 * Add a movie trailer option
 
-
---
 
 ## Project Design
 
@@ -161,16 +135,13 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 ### Images
 
-* The image chosen was used because it's an instantly recognisable character from the world of cinema from in the past 40 years. The target audience will range in variation and so I had to think of something that was striking, not a frightening image for smaller children but cool enough to bring people to the site. The image I chose I believe represented this idea very well and the image stood out in the overall design of the site. 
-
-### Styling
-
-* I like the applications I design to be clean without being over the top and so I did the same with this. No over wording on the pages, just something to get you started.
-
+* The image chosen was used because it's an instantly recognisable character from the world of cinema from the past 40 years. The target audience will range in variation and so I had to think of something that was striking, not a frightening image for smaller children but cool enough to bring people to the site. The image I chose I believe represented this idea very well and the image stood out in the overall design of the site. 
 
 ### Fonts
 
-* As standard when building a site, I used [Google Fonts](https://fonts.google.com/) and spent time looking through the options. I wanted something that looked futuristic to tie in with the image and engaging to the user. Chosen Fonts: Montserrat
+* As standard when building a site, I used [Google Fonts](https://fonts.google.com/) and spent time looking through the options. I wanted something that looked futuristic to tie in with the image and engaging to the user. 
+
+Chosen Fonts: Montserrat
 
 [My page](https://film-db.herokuapp.com/)
 
@@ -186,7 +157,7 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 * The wireframes were originally drawn out by hand and then I created the final concept design below the wireframes. A bold header and striking image was how I visualised it and the final product stayed pretty true to concept design.
 
-* Wireframes show each page on a differnet format including a Full Screen web page, a Tablet and a Mobile layout. Due to my free versions of Balsamiq coming to an end and one type. I used Mocha for the mobile and I apologise but I used pencil for the others which weren't as nice
+* Wireframes show each page on a differnet format including a Full Screen web page, a Tablet and a Mobile layout. Due to my free versions of Balsamiq coming to an end and one type. I used Mocha for the mobile and I apologise but I used pencil for the others which wasn't as nice
 
 
 
@@ -197,22 +168,22 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * The home or index page contained two different menus, a before and after logged in menu. You'll see this in other images below but the top image on a mobile device indictates the difference in menus. A main hero image is used as the main background and the character is from a very well known movie franchise. The character being a forefront in cinema indicates this is a movie entertainment built website. The home page also has a brief informatio piece of what the website is about.
 
 <p align="center">
-  <img width="500" height="400" src="static/wireframes/bothmenus.jpg">
+  <img width="500" height="300" src="static/wireframes/bothmenus.jpg">
 </p>
 
 
 
 <p align="center">
-  <img width="500" height="400" src="static/wireframes/homepage.jpg">
+  <img width="700" height="400" src="static/wireframes/homepage.jpg">
 </p>
 
 
 <p align="center">
-  <img width="500" height="400" src="static/wireframes/homepagetab.jpg">
+  <img width="700" height="400" src="static/wireframes/homepagetab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/homepagemob.jpg">
+  <img width="500" height="300" src="static/wireframes/homepagemob.jpg">
 </p>
 
 </details>
@@ -224,15 +195,15 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * The registration page is simple in design but the fundamentals and technology behind it is fairly compicated. It pushes the users data to the MongoDB through Python Flask routes. The front end registers the user and once done, a message indicating they're logged in as the user when clicking submit. If they have an account and they click registration. The design keeps the aesthetics of the original home page layout. If a user is already registered, a link to the login page will be added.
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/register.jpg">
+  <img width="700" height="400" src="static/wireframes/register.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="400" src="static/wireframes/registertab.jpg">
+  <img width="700" height="400" src="static/wireframes/registertab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/registermob.jpg">
+  <img width="500" height="300" src="static/wireframes/registermob.jpg">
 </p>
 
 </details>
@@ -245,15 +216,15 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * The login page has been designed the same as the registration page but with less showing on page. Registration becomes Login and only one password field This again, when clicking on login will show a flash message saying "You are logged in as (username)". If the user isn't registered, a link to the Registration page will be added.
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/login.jpg">
+  <img width="700" height="400" src="static/wireframes/login.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="400" src="static/wireframes/logintab.jpg">
+  <img width="700" height="400" src="static/wireframes/logintab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/loginmob.jpg">
+  <img width="500" height="300" src="static/wireframes/loginmob.jpg">
 </p>
 
 </details>
@@ -266,15 +237,15 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * The logged in page as explained above is displayed once registered or logged in showing successful connection to the site and to the database.
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/loggedin.jpg">
+  <img width="700" height="400" src="static/wireframes/loggedin.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="400" src="static/wireframes/loggedintab.jpg">
+  <img width="700" height="400" src="static/wireframes/loggedintab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/loggedinmob.jpg">
+  <img width="500" height="300" src="static/wireframes/loggedinmob.jpg">
 </p>
 
 </details>
@@ -287,15 +258,15 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * To do anything based around a review, you will need to be logged in as this navigation menu will be locked out to none users. Once logged in, the Create Movie reviews option is displayed. Here, you will simply type in the name of the movie and then enter your review.
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/moviereview.jpg">
+  <img width="700" height="400" src="static/wireframes/moviereview.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/moviereviewtab.jpg">
+  <img width="700" height="400" src="static/wireframes/moviereviewtab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/moviereviewmob.jpg">
+  <img width="500" height="300" src="static/wireframes/moviereviewmob.jpg">
 </p>
 
 </details>
@@ -308,11 +279,11 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 This is where a logged in user can see all reviews from the database. More than one review can be added for a film with the same name so you could have 5 reviews for "King Kong2 for instance. You also have the ability to change a review by cliking on the name of the movie.
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/review.jpg">
+  <img width="700" height="400" src="static/wireframes/review.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/reviewmob.jpg">
+  <img width="500" height="300" src="static/wireframes/reviewmob.jpg">
 </p>
 
 </details>
@@ -325,15 +296,15 @@ This is where a logged in user can see all reviews from the database. More than 
 Once you've clicked on the name of the movie, the Edit or Delete options are displayed. These are self explanatory and this is where the user is able to make a change or remove a review.
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/editdelete.jpg">
+  <img width="700" height="5400" src="static/wireframes/editdelete.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="400" src="static/wireframes/editdeltab.jpg">
+  <img width="700" height="400" src="static/wireframes/editdeltab.jpg">
 </p>
 
 <p align="center">
-  <img width="400" height="400" src="static/wireframes/editdeletemob.jpg">
+  <img width="500" height="300" src="static/wireframes/editdeletemob.jpg">
 </p>
 
 
@@ -348,12 +319,12 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/searchmovieno.jpg">
+  <img width="700" height="400" src="static/wireframes/searchmovieno.jpg">
 </p>
 
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/searchmoviemobno.jpg">
+  <img width="500" height="300" src="static/wireframes/searchmoviemobno.jpg">
 </p>
 
 </details>
@@ -366,15 +337,15 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 * As indicated, the search option will show the movie poster (image) and a link will also show to the imdb page.
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/searchmovieyes.jpg">
+  <img width="700" height="400" src="static/wireframes/searchmovieyes.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/searchmovietab.jpg">
+  <img width="700" height="400" src="static/wireframes/searchmovietab.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/searchmoviemobyes.jpg">
+  <img width="500" height="300" src="static/wireframes/searchmoviemobyes.jpg">
 </p>
 
 </details>
@@ -387,7 +358,7 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 * A logged in user has the option to delete the movie and once done, a flashed message pops up saying the info has been deleted, I'll use a movie reference in the finished site as well.
 
 <p align="center">
-  <img width="500" height="350" src="static/wireframes/deleted.jpg">
+  <img width="700" height="400" src="static/wireframes/deleted.jpg">
 </p>
 
 </details>
@@ -404,21 +375,26 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 
 ### Technologies Used
 
+#### Languages, Frameworks, IDE and Deployment Control
 
 * HTML
 * CSS 
 * Python Flask
-* MongoDB
+* GidPod IDE
 * [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/ - Bootstrap was used to build a solid and yet simple structure which allowed the site to be responsive easily.
- * [OMDB API](http://www.omdbapi.com/)
+* Github
+* heroku
 
-* IMDB and The OMDB were used as guides and references for my site. The OMDB API was used for the movie search function on my website. 
+#### Tools Used
 
+* MongoDB
+* Balsamiq
+* pencil
+* W3C HTML Validator, W3C CSS Validator and PEP Python Checker
+* [OMDB API](http://www.omdbapi.com/) - IMDB and The OMDB were used as guides and references for my site. The OMDB API was used for the movie search function on my website. 
 * [Google Fonts](https://fonts.google.com/) -  Google was used for stylising the website fonts as it gave me a great selection to choose from. 
-
 * [Favicons](https://www.favicon.cc/) - Favicons was used for the URL toolbar icon
-
- [Autoprefixer](https://autoprefixer.github.io/) - Autoprefixer was used to correct issues within the CSS which prevented the page displaying on products using Safari and made sure
+*  [Autoprefixer](https://autoprefixer.github.io/) - Autoprefixer was used to correct issues within the CSS which prevented the page displaying on products using Safari and made sure
   all css prefixes were up to date.
 
 ## Main Features
@@ -454,8 +430,6 @@ The security built acted in the following process:
 * To be seen as an easy to use resource for movie enthusiasts wanting to learn or add something new in regards to a film theu're passionate about. Also, it showcases my working knowledge of various software
   languages which I've learnt during the various sections leading up to the MS3 project.
 
-
-
 ### Media and Content
 
 * The images were searched and found on Google
@@ -476,7 +450,6 @@ then added into img source code which I had put together. I used script tags fro
 colour choices
 
 ### How I’d like the website to be perceived:
-
 
 * This website would be an easy to use site to help users search for Movies and TV and to share site what they love or hate about their choices.
 
@@ -595,8 +568,6 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
  7. In the Manual Deployment section of the page, make sure you have the master branch selected. Now click "Deploy Branch".
 
  8. Your site has now been deployed successfully.
-
-
 
 
 ### Coding credits
