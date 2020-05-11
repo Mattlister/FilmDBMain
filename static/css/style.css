@@ -41,7 +41,7 @@ header h1.logo {
   font-size: 7em;
   color: #fff;
   text-transform: uppercase;
-  float: left;
+  text-align: left;
 }
 
 /* Navigation link design */
