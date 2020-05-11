@@ -20,19 +20,6 @@
 * Browsers: last 4 version
 */
 
-header {
-    background-color: #ed0c22;
-    height: 80px;
-    background-image: -webkit-gradient(linear, left top, right bottom, from(red), to(black));
-    background-image: -o-linear-gradient(top left, red, black);
-    background-image: linear-gradient(to bottom right, red, black);
-    height: 110px;
-    width: 100%;
-    opacity: .6;
-    opacity: .8;
-    margin-bottom: 30px;
-}
-
 /* Main title styling */
 
 header h1.logo {
