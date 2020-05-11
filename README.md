@@ -308,38 +308,10 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 
 </details>
 
- Tablet Screen Design
-<details>
-<summary>Tablet Screen Dropdown</summary>
-<br>
 
+## Early draft concept design
 
-
-
-
-
-
-
-</details>
-
- Tablet Screen Design
-<details>
-<summary>Mobile Screen Dropdown</summary>
-<br>
-
-
-
-
-
-
-
-</details>
-
-<p align="center">
-  <img width="400" height="400" src="static/wireframes/fullweb.jpg">
-</p>
-
-
+* This was an original concept design I thought of when I first started to the project. I think the finalised website kept the similarities to the original layout.
 
 <p align="center">
   <img width="400" height="400" src="/static/wireframes/alienWF.jpg">
