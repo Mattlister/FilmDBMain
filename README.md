@@ -380,6 +380,33 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
  [Autoprefixer](https://autoprefixer.github.io/) - Autoprefixer was used to correct issues within the CSS which prevented the page displaying on products using Safari and made sure
   all css prefixes were up to date.
 
+## Main Features
+
+* CRUD - Create, Read, Update and Delete
+
+Create - A user can login to the site and create a movie review.
+Read - A user can read a published review.
+Update - A user is able to update one of the published reviews.
+Delete - A user is able to delete a published review.
+
+### Registration and Login Design added for security and defensive design purposes to protect data from the database.
+
+I added security to my application and built templates and the functionailty into the app.py file. This included the following:
+
+A registration technique that posted a user's accepted details to the MongoDB collection in the database.
+
+Once registered, I created the Login part of the process which allowed a user to login respectively and they were then able to work with the CRUD system and Create an entry, Read an entry, Update an entry or Delete an entry to build the Database.
+
+The security built acted in the following process:
+
+1. Register, if already registered, a "Go to the Login page" function was added.
+2. If passwords don't match when registering, a "Passwords do not match" message pops up.
+3. If a user is already registered with that name a "That username is already registered, please choose another" message is displayed.
+4. Login, if not registered, "Go to the registration page" function was added.
+5. If password is incorrect, a "Password is incorrect message is displayed"
+6. Logged in twice, a flash message "You crazy kid, you're already logged in" was displayed.
+7. Once logged in or registered, a green outlined box is shown showing "A successful login" and you'll also have that displayed on the home page when the user is logged in.
+8. The logged in name is also displayed when a delete is made.
 
 ### The goals for the website are:
 
@@ -433,27 +460,6 @@ colour choices
 * I also asked for the site to be tested through Slack in Peer Review which gave me some great feedback.
 
 * I ran my code through validators on a regular basis such as the [W3c Validator] and through [PEP8]
-
-
-
-### Registration and Login Design
-
-I added security to my application and built templates and the functionailty into the app.py file. This included the following:
-
-A registration technique that posted a user's accepted details to the MongoDB collection in the database.
-
-Once registered, I created the Login part of the process which allowed a user to login respectively and they were then able to work with the CRUD system and Create an entry, Read an entry, Update an entry or Delete an entry to build the Database.
-
-The security built acted in the following process:
-
-1. Register, if already registered, a "Go to the Login page" function was added.
-2. If passwords don't match when registering, a "Passwords do not match" message pops up.
-3. If a user is already registered with that name a "That username is already registered, please choose another" message is displayed.
-4. Login, if not registered, "Go to the registration page" function was added.
-5. If password is incorrect, a "Password is incorrect message is displayed"
-6. Logged in twice, a flash message "You crazy kid, you're already logged in" was displayed.
-7. Once logged in or registered, a green outlined box is shown showing "A successful login" and you'll also have that displayed on the home page when the user is logged in.
-8. The logged in name is also displayed when a delete is made.
 
 
 ### Software Deployment and Software Cloning Technologies Used:
