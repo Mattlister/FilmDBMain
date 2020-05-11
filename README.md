@@ -70,7 +70,15 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 5. Searching for a movie to be a simple experience and I can find more information from a review or follow a link to the imdb site for more info if needed.
 
- * For me as a designer, I would like:
+ * For me as a developer, I would like:
+
+ * I've enjoyed working with Python and Flask and the capabilities it provides. I'd like to use the programming language to create more applications and websites. 
+
+ * I'd like to see the website/ application to grow as fans create reviews and build the database. I'd like users to become moderators to help build the site to something more.
+
+ * I'd like it to become profitable if it were a real site. To do this, trailers would have advertisements to create revenue.
+
+
 
 
 
@@ -81,13 +89,6 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 * This will then lead to users variety of what they watch and so they're not stuck with the same old category all the time. Their viewing opinions can be broadened if they've never thought about a type of film but a good review will spark the users interest. A new foreign film set in Sweden about drugs or an American art house piece about a lonely city in Texas. Who knows what the user will discover.
 
 * FilmDB will hopefully be a great place to start their journey into something new. Help bring new directors to peoples screens to help bring new stories to life and not just endless remakes or constant sequels. Fast and Furious anyone!!
-
-
-## Registed and Logged in User Experience
-
-## What I want the website to work as
-
-
 
 
 ### Design 
