@@ -16,7 +16,7 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 * [User Stories](#User-Stories)
 * [Wireframes](#Original-wireframe-concepts)
 * [Deployment](#Deployment)
-* [Testing](#Testing)
+* [Testing](#Testing and Bugs)
 
 
 
@@ -26,16 +26,6 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 * [Future Plans](#Future-plans)
 
 ### 3. [Technologies Used](#Technologies-Used)
-
-* [HTML](#HTML)
-* [CSS](#CSS)
-* [JavaScript](#JavaScript)
-* [JQUERY](#JQUERY)
-* [Bootstrap](#Bootstrap)
-* [Google Maps](#Google-Maps)
-* [Google Fonts](#Google-Fonts)
-* [Favicons](#Favicons)
-* [Autoprefixer](#AutoPrefixer)
 
 
 ### Project Functionailty of FilmDB. 
@@ -474,6 +464,9 @@ colour choices
 * I also asked for the site to be tested through Slack in Peer Review which gave me some great feedback.
 
 * I ran my code through validators on a regular basis such as the [W3c Validator] and through [PEP8]
+
+
+### Deployment
 
 
 ### Software Deployment and Software Cloning Technologies Used:
