@@ -361,17 +361,6 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 
 </details>
 
-* Changing it to a design more along the lines below made an impact straight away. It had colour giving a better overall layout and made
-  a difference from the moment I added the background image. Nothing else but that image changed everything. I could then layer over the 
-  top of it and add my original plan. I was able to build from the bottom up and show something more with imagery.
-
-* Full Screen Design - Displays great, really happy with the results and it's responsness. Splits as it should when minimised.
-
-
-* Mobile Design - The only slight issue which I wasn't able to rectify no matter how many screen changes I made was the smaller pixel 
-  sized screen when the images were more centralised and so the skier character wasn't as visible. He is meant to be slightly seen
-  on all devices with the images slighlty pulled to the left so he's displayed.
-
 ### Technologies Used
 
 
