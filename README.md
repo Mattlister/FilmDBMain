@@ -188,11 +188,11 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 * Wireframes show each page on a differnet format including a Full Screen web page, a Tablet and a Mobile layout. Due to my free versions of Balsamiq coming to an end and one type. I used Mocha for the mobile and I apologise but I used pencil for the others which weren't as nice
 
-<details>
-<summary></summary>
-<br>
 
-### Home Page
+
+<details>
+<summary>Home page</summary>
+<br>
 
 * The home or index page contained two different menus, a before and after logged in menu. You'll see this in other images below but the top image on a mobile device indictates the difference in menus. A main hero image is used as the main background and the character is from a very well known movie franchise. The character being a forefront in cinema indicates this is a movie entertainment built website. The home page also has a brief informatio piece of what the website is about.
 
@@ -215,7 +215,11 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   <img width="400" height="400" src="static/wireframes/homepagemob.jpg">
 </p>
 
-### Registeration Page
+</details>
+
+<details>
+<summary>Registration page</summary>
+<br>
 
 * The registration page is simple in design but the fundamentals and technology behind it is fairly compicated. It pushes the users data to the MongoDB through Python Flask routes. The front end registers the user and once done, a message indicating they're logged in as the user when clicking submit. If they have an account and they click registration. The design keeps the aesthetics of the original home page layout. If a user is already registered, a link to the login page will be added.
 
@@ -231,8 +235,12 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   <img width="400" height="400" src="static/wireframes/registermob.jpg">
 </p>
 
+</details>
 
-### Login
+<details>
+<summary>Login page</summary>
+<br>
+
 
 * The login page has been designed the same as the registration page but with less showing on page. Registration becomes Login and only one password field This again, when clicking on login will show a flash message saying "You are logged in as (username)". If the user isn't registered, a link to the Registration page will be added.
 
@@ -248,7 +256,12 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   <img width="400" height="400" src="static/wireframes/loginmob.jpg">
 </p>
 
-### Logged in page
+</details>
+
+<details>
+<summary>Logged in page</summary>
+<br>
+
 
 * The logged in page as explained above is displayed once registered or logged in showing successful connection to the site and to the database.
 
@@ -264,7 +277,12 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   <img width="400" height="400" src="static/wireframes/loggedinmob.jpg">
 </p>
 
-### Movie Reviews
+</details>
+
+<details>
+<summary>Create Reviews page</summary>
+<br>
+
 
 * To do anything based around a review, you will need to be logged in as this navigation menu will be locked out to none users. Once logged in, the Create Movie reviews option is displayed. Here, you will simply type in the name of the movie and then enter your review.
 
@@ -280,7 +298,12 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   <img width="400" height="400" src="static/wireframes/moviereviewmob.jpg">
 </p>
 
-### Reviews
+</details>
+
+<details>
+<summary>Movie Reviews page</summary>
+<br>
+
 
 This is where a logged in user can see all reviews from the database. More than one review can be added for a film with the same name so you could have 5 reviews for "King Kong2 for instance. You also have the ability to change a review by cliking on the name of the movie.
 
@@ -292,7 +315,12 @@ This is where a logged in user can see all reviews from the database. More than 
   <img width="400" height="400" src="static/wireframes/reviewmob.jpg">
 </p>
 
-### Edit Delete
+</details>
+
+<details>
+<summary>Edit and Delete page</summary>
+<br>
+
 
 Once you've clicked on the name of the movie, the Edit or Delete options are displayed. These are self explanatory and this is where the user is able to make a change or remove a review.
 
@@ -309,7 +337,12 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 </p>
 
 
-### Search movie before
+</details>
+
+<details>
+<summary>Search page</summary>
+<br>
+
 
 * The search page is available to both logged in and logged out users. Simply type in the name of a movie you're searching for and it'll bring up a poster image of the movie and a link to the movie on imdb.
 
@@ -323,7 +356,12 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
   <img width="500" height="350" src="static/wireframes/searchmoviemobno.jpg">
 </p>
 
-### Search movie after
+</details>
+
+<details>
+<summary>Search Movies page</summary>
+<br>
+
 
 * As indicated, the search option will show the movie poster (image) and a link will also show to the imdb page.
 
@@ -339,8 +377,12 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
   <img width="500" height="350" src="static/wireframes/searchmoviemobyes.jpg">
 </p>
 
+</details>
 
-### Deleted
+<details>
+<summary>Deleted Page</summary>
+<br>
+
 
 * A logged in user has the option to delete the movie and once done, a flashed message pops up saying the info has been deleted, I'll use a movie reference in the finished site as well.
 
@@ -359,7 +401,6 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
   <img width="400" height="400" src="/static/wireframes/alienWF.jpg">
 </p>
 
-</details>
 
 ### Technologies Used
 
