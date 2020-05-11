@@ -16,16 +16,18 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 * [User Stories](#User-Stories)
 * [Wireframes](#Original-wireframe-concepts)
 * [Deployment](#Deployment)
-* [Testing](#Testing and Bugs)
+* [Testing](#Testing-and-Bugs)
 
 
 
 ### 2. Features
 
-* [Site Featured](#Site-Features)
+* [Site Features](#Site-Features)
 * [Future Plans](#Future-plans)
 
-### 3. [Technologies Used](#Technologies-Used)
+### 3. Technologies Used 
+
+* [Technologies Used](#Technologies-Used)
 
 
 ### Project Functionailty of FilmDB. 
@@ -387,7 +389,7 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 *  [Autoprefixer](https://autoprefixer.github.io/) - Autoprefixer was used to correct issues within the CSS which prevented the page displaying on products using Safari and made sure
   all css prefixes were up to date.
 
-## Main Features
+## Site Features
 
 * CRUD - Create, Read, Update and Delete
 
