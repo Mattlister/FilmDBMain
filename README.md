@@ -467,6 +467,7 @@ colour choices
 
 * I ran my code through validators on a regular basis such as the [W3CValidator](https://validator.w3.org/) and through [PEP8](http://pep8online.com/)
 
+* My toolbar and header cause issues and won't line up properly causing some issues on smaller devices. Many CSS changes made as testing but unable to resolve.
 
 ### Deployment
 
