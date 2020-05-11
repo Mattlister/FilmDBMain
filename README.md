@@ -38,12 +38,6 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 * [Autoprefixer](#AutoPrefixer)
 
 
-
-
-
-
-
-
 ### Project Functionailty of FilmDB. 
 
 * The FilmDB application is a website built with HTML, CSS and most importantly, Flask within Python. It uses the CRUD (Create, Read, Update and Delete) functinality and has a backend handling database using MongoDB. As required, I used Bootstrap for the general layout of the page but I worked outside the norm to include a floating menu rather than sitting at the top in the navigation bar.
@@ -51,6 +45,11 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 * I've included a few extras in the project such as both Registration and Login features adding security to the website and in turn the database. Once logged in, the database offers view of all reviews that a user can read to share the data between secure users.
 
 * Also as required, all code is deployed to the hosting platform Heroku and controlled through Git and Github. To enhance security and stop others from viewing the secret key, I've created a git ignore file which holds environment variables information such as the secret key as is standard by todays project requirements.
+
+
+
+
+
 
 
 
@@ -80,41 +79,70 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 
 
+### User Goals
 
+I would also like the user:
 
   * To share what they think of what they see in todays visual entertainment market. A fan can watch any type of movie they want excluding adult material films and upload information about it. If it's a multi million pound oscar winner that's designed to showcase the talents of a new or existing director, a multi million pound flop with an incredible cast list all the way down to a free handheld open new movie by an unknown director starting their career. They've put their heart and soul into the film and shared it on YouTube, the users at FilmDB can watch it, review and share the film for others to see. I want this to be an easy to use quick experience that will grow as time goes. It's for everyone and it stems from the most passionate of the small and large screen art form. The website is an open source application and technically built by the users to create word and mouth of everything they see.
 
-* Users all over the world will be able to access the site and so the choices can come from anywhere. UK, America, Foreign Films from Germany, Norway or the Middle East. Anyone can use the site to put their opinion down.
+* All over the world will be able to access the site and so the choices can come from anywhere. UK, America, Foreign Films from Germany, Norway or the Middle East. Anyone can use the site to put their opinion down.
 
-* This will then lead to users variety of what they watch and so they're not stuck with the same old category all the time. Their viewing opinions can be broadened if they've never thought about a type of film but a good review will spark the users interest. A new foreign film set in Sweden about drugs or an American art house piece about a lonely city in Texas. Who knows what the user will discover.
+* Variety of what they watch to change so they're not stuck with the same old category all the time. Their viewing opinions can be broadened if they've never thought about a type of film but a good review will spark the users interest. A new foreign film set in Sweden about drugs or an American art house piece about a lonely city in Texas. Who knows what the user will discover.
 
-* FilmDB will hopefully be a great place to start their journey into something new. Help bring new directors to peoples screens to help bring new stories to life and not just endless remakes or constant sequels. Fast and Furious anyone!!
-
-
-### Design 
+* To find FilmDB a great place to start their journey into something new. Help bring new directors to peoples screens to help bring new stories to life and not just endless remakes or constant sequels. Fast and Furious anyone!!
 
 
-![]()
-
-* This Milestone 3 project is named FilmDB (Film DataBase). It's an API that allows a user to be able to add content to a website with a functional 
-databse at the backend. It's designed with fans of screen entertainment in mind who want to contribute to a working site to improve other 
-users knowledge on Films. Due to the amount of information on the website, there are multiple pages to allow interactivity in various 
-categories. There's also a Sign Up/ register and Log in page which a user will need to do in order to add content to the site. The data they 
-enter will be stored in the Mongo Database at the back end and this is the creative idea behind FilmDB. There is also a contact us page which someone can use to either contact the creators of the site or ask about becoming a moderator as the site is currently unmanaaged. The idea behind the site is the users look after it so it self evolves. Moderators will be fans and so they will end up having a valued input behind
- the website helping it to be ran by fans for fans. A moderator will keep an eye for bad language in a review. A bad review is acceptable but 
- we want this website to be used by all ages and so if a child stumbles across a review done by an adult that contains foul language, this 
- will be hopefully be seen by a moderator and removed or edited.
+--
 
 
+### Project Goals
+
+![](/assets/images/flipimage1.jpg) 
+
+
+* The primary goal of FilmDB was to 
+
+
+### User Objects
+
+* The website has been designed for film fans that want to learn, share and inform others about film. It's an open source design where users can tell anyone and everyone about a film they've just seen.
+
+* Aimed at movie enthusiasts who want to spread knowledge of cinema and film.
+
+* Sharing something passionate about film
+* Finding that film information from sone that loves or loathes a movie.
+* Easy to use
+* A clean site with clear easy to use information
+* Bright and engaging for the user
+* Striking with identifiable comment
+* Searching for a film through the search option and finding the review.
+
+### FilmdDB helps a user learn about a filn before viewing because:
+
+* Designing the site was done with the user in mind. Nice big easy to use guides and short descriptions. This helps the user to understand how to use the site.
+ 
+* It's easy to navigate around the site and use the options available.
+
+
+### Developers Objects
+
+* Nicely designed and content friendly with a well thought out user experience.
+* The layout is formatted in a way that the user can navigate around the site without frustration.
+* A professionally mutli paged aite with includes Python, Jinga, complex HTML and CSS.
+
+### Future plans
+
+* Offer a larger search functionality
+* Add a movie trailer option
+
+
+--
 
 ## Project Design
 
-* I like to design my web sites with a bold image as the main focal point and as a key feature. The image makes an impact when thr user first lands on a page. The image is instantly recognisable and sets the design and tone of the entire website. I like the websites I design to be built around the image and including the colour scheme, the fonts and the entire layout of the page. I chose strong clear images including great characters from movies and TV. Whether that character is from a classic film or a well structured TV show, they makes a lasting impression on the audience. 
+* I like to design my web sites with a bold image as the main focal point and as a key feature. The image makes an impact when the user first lands on a page. An instantly recognisable image sets the design and tone of the entire website. 
 
 * I chose a floating menu instead of a Nav bar because it stands out on the page. It's been hard to get the layout working with the menu but I believe it was a great feature to add.
-
-### Design
-
 
 * As you can see in the wireframes and concept section further down, I kept pretty close to my original design. I tried various colour schemes for the heading title but I wanted something that worked well with the background image, the red and black gradient colour looked great with both the image and the color of the borders with the black sci-fi background. The white coloured font stood better in the header comapred to black or grey which lost impact when I made the title bar opaque.
 
@@ -127,6 +155,8 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 ### Colours
 
 * For the most part, the images used create the colour scheme themsleves. A bold image was chosen to add a poster effect, like a movie poster. Then, I chose a colour scheme that would sit well on top of the images and so a white font used for all the wording. A Red and Black gradient used as the main header of the website finished off the design. Then simple Red, black, White and touch of green for successful login was fresh but retro and worked well together.
+
+
 
 
 ### Images
@@ -153,13 +183,13 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 ### Original wireframe concepts
 
-* The wireframes below were the original design I had in mind. A bold header and the images were to be sat on a blank background. How I visualised
-  it and how it showed were very different and it was much duller on screen. The images which hadn't been chosen at the time might have brought it 
-  into a better light but I reviewed other sites and they either had a similar design or something more dramatic.
 
-* Original Full Screen Design
+* The wireframes were originally drawn out by hand and then I created the final concept design below the wireframes. A bold header and striking image was how I visualised it and the final product stayed pretty true to concept design.
+
+* Wireframes show each page on a differnet format including a Full Screen web page, a Tablet and a Mobile layout. Due to my free versions of Balsamiq coming to an end and one type. I used Mocha for the mobile and I apologise but I used pencil for the others which weren't as nice
+
 <details>
-<summary>Full Screen Dropdown</summary>
+<summary></summary>
 <br>
 
 ### Home Page
@@ -342,75 +372,6 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
   sized screen when the images were more centralised and so the skier character wasn't as visible. He is meant to be slightly seen
   on all devices with the images slighlty pulled to the left so he's displayed.
 
-### Project Goals
-
-![](/assets/images/flipimage1.jpg) 
-
-
-* The primary goal of FilmDB was to 
-
-
-### User Objects
-
-* The website has been designed for film fans that want to learn, share and inform others about film. It's an open source design where users can tell anyone and everyone about a film they've just seen.
-
-* Aimed at movie enthusiasts who want to spread knowledge of cinema and film.
-
-* Sharing something passionate about film
-* Finding that film information from sone that loves or loathes a movie.
-* Easy to use
-* A clean site with clear easy to use information
-* Bright and engaging for the user
-* Striking with identifiable comment
-* Searching for a film through the search option and finding the review.
-
-### FilmdDB helps a user learn about a filn before viewing because:
-
-* Designing the site was done with the user in mind. Nice big easy to use guides and short descriptions. This helps the user to understand how to use the site.
- 
-* It's easy to navigate around the site and use the options available.
-
-
-### Developers Objects
-
-* Nicely designed and content friendly with a well thought out user experience.
-* The layout is formatted in a way that the user can navigate around the site without frustration.
-* A professionally mutli paged aite with includes Python, Jinga, complex HTML and CSS.
-
-### Future plans
-
-* Offer a larger search functionality
-* Add a movie trailer option
-
-
-### Site Features
-
-### [Home Page](https://github.com/Mattlister/designandconquer)
-
-* Being a SPA, you never leave the one page. You can do everything all in one place and the necessary features come from that starting point.
-
-* All revolving images as stated have a location button which displays the map. The information button holds brief content and a video to watch. 
-
-
-### Hopes for the website are:
-
-* A user can navigate around the site with ease and simplicity
-
-* The website can be used to find the perfect holiday 
-
-* It allows a user to start their dream and passion
-
-* It's found to be a nice design that allows each user to move around the site comfortably.
-
-* It's clean, clear and easy to use.
-
-
- * There will always be bold adventurers looking for something new. Watching the amazing documentary Free Solo, it showcased how far someone
-   will go to fill that need and addiction for something different. I wanted this site to be bold, colourful but all in one easy to use
-   place. Design and Conquer is a website I was going to add to my portfolio from a few years ago but I neved made it. As a project, I thought this was
-   perfect to use for the holiday allowance project for the course and allows me to showcase what I've learnt.
-
-
 ### Technologies Used
 
 
@@ -418,35 +379,17 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 * CSS 
 * Python Flask
 * MongoDB
-* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
-
-* Bootstrap was used to build a solid and yet simple structure which allowed the site to be responsive easily.
-
-* The same IDE was used but it moved from one product supplier of just Cloud 9 to AWS (Amazon) Cloud 9 for all the above languages.
- 
-* [OMDB API](http://www.omdbapi.com/)
+* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/ - Bootstrap was used to build a solid and yet simple structure which allowed the site to be responsive easily.
+ * [OMDB API](http://www.omdbapi.com/)
 
 * IMDB and The OMDB were used as guides and references for my site. The OMDB API was used for the movie search function on my website. 
 
-* [Google Fonts](https://fonts.google.com/)
+* [Google Fonts](https://fonts.google.com/) -  Google was used for stylising the website fonts as it gave me a great selection to choose from. 
 
-* Google was used for stylising the website fonts as it gave me a great selection to choose from. 
+* [Favicons](https://www.favicon.cc/) - Favicons was used for the URL toolbar icon
 
-* [Favicons](https://www.favicon.cc/)
-
-* Favicons was used for the URL toolbar icon
-
-
-
- [Autoprefixer](https://autoprefixer.github.io/)
- 
-* Autoprefixer was used to correct issues within the CSS which prevented the page displaying on products using Safari and made sure
+ [Autoprefixer](https://autoprefixer.github.io/) - Autoprefixer was used to correct issues within the CSS which prevented the page displaying on products using Safari and made sure
   all css prefixes were up to date.
-
-* Microsoft Word - I used this product to crop images which I used for my README.md file.
-
-* Vimeo - Searching on Vimeo allowed me to find a strong video for each holiday selection which have only been used for educational purposes.
-
 
 
 ### The goals for the website are:
