@@ -127,11 +127,11 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * Red Colour Palette
 
 <p align="center">
-  <img width="300" height="50" src="static/images/redcpalette.jpg">
+  <img width="300" height="50" src="static/images/redpalette.jpg">
 </p>
 
 <p align="center">
-  <img width="300" height="50" src="static/images/bluewhitepalettejpg">
+  <img width="300" height="50" src="static/images/bluewhitepalette.jpg">
 </p>
 
 
@@ -299,7 +299,7 @@ This is where a logged in user can see all reviews from the database. More than 
 Once you've clicked on the name of the movie, the Edit or Delete options are displayed. These are self explanatory and this is where the user is able to make a change or remove a review.
 
 <p align="center">
-  <img width="700" height="5400" src="wireframes/editdelete.jpg">
+  <img width="700" height="400" src="wireframes/editdelete.jpg">
 </p>
 
 <p align="center">
@@ -307,7 +307,7 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 </p>
 
 <p align="center">
-  <img width="500" height="300" src="ireframes/editdeletemob.jpg">
+  <img width="500" height="300" src="wireframes/editdeletemob.jpg">
 </p>
 
 
