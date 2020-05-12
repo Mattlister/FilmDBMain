@@ -5,7 +5,7 @@ from data import AllMovies
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
-from forms import LoginForm, RegistrationForm, CreateMovieForm, DeleteMovieForm
+from forms import LoginForm, RegistrationForm
 
 if os.path.exists('env.py'):
     import env
@@ -37,7 +37,7 @@ def index():
 # Register New User
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-
+    form = RegistrationForm()
     if form.validate_on_submit():
         users = mongo.db.users
         found_username = users.find_one({'username': request.form['username']})

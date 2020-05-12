@@ -19,19 +19,3 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     remember = BooleanField('Remember Me')
     submit = SubmitField('Login')
-
-
-class CreateMovieForm(FlaskForm):
-    movie_name = SelectField('Name')
-    content = TextAreaField('Content', validators=[DataRequired()])
-    submit = SubmitField('Create')
-
-
-class EditMovieForm(FlaskForm):
-    movie_name = SelectField('Name')
-    submit = SubmitField('Edit')
-
-
-class DeleteMovieForm(FlaskForm):
-    username = StringField('username')
-    submit = SubmitField('Delete')
