@@ -125,8 +125,6 @@ def editmovie(movieid):
 
 @app.route("/deletemovie/<movieid>", methods=["GET", "POST"])
 def deletemovie(movieid):
-    """ Delete reviews from page in this section. A warning is displayed advising once
-    deleted, it's gone forever """
     get_films.delete_one({"_id": ObjectId(movieid)})
     return render_template("pages/deletemovie.html")
 
@@ -144,26 +142,17 @@ def amovie(movieid):
 
 @app.route("/films")
 def films():
-    """ A simple movie search function which will display a poster and link to the imdb page
-    of the movie """
-
     return render_template("pages/films.html")
 
 
 # 404 error page
 @app.errorhandler(404)
-"""When 404 error occurs, display custom 404.html page"""
-
-
 def page_not_found(error):
     return render_template("pages/404.html"), 404
 
 
-# 404 error page
+# 500 error page
 @app.errorhandler(500)
-"""When 500 error occurs, display custom 500.html page"""
-
-
 def server_not_found(error):
     return render_template("pages/500.html"), 500
 
