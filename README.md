@@ -529,7 +529,7 @@ GitHub Full Template Used as part of the process including software extensions f
 
 [Python3 (Mine is MAC SPECIFIC)](https://www.python.org/downloads/mac-osx/) Prerequisites for installing Python3 on MAC
 
-[Git] (https://gist.github.com/derhuerst/1b15ff4652a867391f03)
+[Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
 
  * You're MONGO_URI is specific to YOUR site, to create your own, read the MongoDB Atlas deocumenation [Found Here](https://docs.atlas.mongodb.com/)
 
