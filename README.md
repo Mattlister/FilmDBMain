@@ -122,7 +122,17 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 ### Colours
 
-* For the most part, the images used create the colour scheme themsleves. A bold image was chosen to add a poster effect, like a movie poster. Then, I chose a colour scheme that would sit well on top of the images and so a white font used for all the wording. A Red and Black gradient used as the main header of the website finished off the design. Then simple Red, black, White and touch of green for successful login was fresh but retro and worked well together.
+* For the most part, the images used create the colour scheme themsleves. A bold image was chosen to add a poster effect, like a movie poster. Then, I chose a colour scheme that would sit well on top of the images and so a white font used for all the wording. 
+
+* Red Colour Palette
+
+<p align="center">
+  <img width="500" height="300" src="static/images/redcolourpalette.jpg">
+</p>
+
+
+
+
 
 
 
@@ -162,13 +172,13 @@ Chosen Fonts: Montserrat
 * The home or index page contained two different menus, a before and after logged in menu. You'll see this in other images below but the top image on a mobile device indictates the difference in menus. A main hero image is used as the main background and the character is from a very well known movie franchise. The character being a forefront in cinema indicates this is a movie entertainment built website. The home page also has a brief informatio piece of what the website is about.
 
 <p align="center">
-  <img width="500" height="300" src="static/wireframes/bothmenus.jpg">
+  <img width="500" height="300" src="wireframes/bothmenus.jpg">
 </p>
 
 
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/homepage.jpg">
+  <img width="700" height="400" src="wireframes/homepage.jpg">
 </p>
 
 
