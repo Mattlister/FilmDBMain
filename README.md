@@ -2,9 +2,7 @@
 
 [FilmDB](https://film-db.herokuapp.com/) - My Milestone 3 Project
 
-My 3rd Milestone project has been created as a combination of the 3 modules in the Python series of the Full Stack Developer course. These include
-Python Fundamentals, Practical Python and Data Centric Development. Using the knowledge from these 3 modules, I have created a responsive
-web application using the CRUD functionailty. CRUD which stands for Create, Read, Update and Delete allows the user to add information to the application. It has been designed for users who have a shared love of movies to help create an open source database between fans of the silver screen.
+FilmDB is a online database application which is related to all things cinema. A website built wit a search functionailty that allows a user to find a movie and then share their review on that movie. A user's critical review can be used to influence anyone that has an interest in film and FilmDB is the starting point to building that interest. This is the start of something that will grow and in time, it will become the movie search engine with the help of the users for the users.
 
 ## Contents
 
@@ -43,17 +41,17 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 ### User Stories
 
-* For me as a user, I would like:
+* As a user:
 
-1. The website to look good and be a pleasure to use. I want it to be well designed and the functionailty of the site to work as expected.
+1. I expect the website to look good and it to be a pleasure to use. I expect it to be well designed and the functionailty of the site to work well.
 
-2. To register or login with ease and create or update reviews. I also want to be able to have full optional changes to these reviews if required.
+2. I expect to be able to register or login with ease and create or update reviews. I also expect to have the ability to change reviews if required.
 
-3. To use the search function to look for a movie I may be interested in. Once done, I can then search the database and find reviews on that film. If I find one, great but if not, I can then watch the film and create a review that will provide information to someone else.
+3. I expect the search function to look for a movie I may be interested in. Once done, I can then search the database and find reviews on that film. If I find one, great but if not, I can then watch the film and create a review that will provide information to someone else.
 
 4. I don't want it to be confusing to use which might put me off from using the site.
 
-5. Searching for a movie to be a simple experience and I can find more information from a review or follow a link to the imdb site for more info if needed.
+5. I expect searching for a movie to be a simple experience and I can find more information from a review or follow a link to the imdb site for more info if needed.
 
  * For me as a developer:
 
@@ -71,7 +69,11 @@ web application using the CRUD functionailty. CRUD which stands for Create, Read
 
 I would also like users:
 
-  * To share what they think of what they see in todays visual entertainment market. A fan can watch any type of movie they want excluding adult material films and upload information about it. If it's a multi million pound oscar winner that's designed to showcase the talents of a new or existing director, a multi million pound flop with an incredible cast list all the way down to a free handheld open new movie by an unknown director starting their career. They've put their heart and soul into the film and shared it on YouTube, the users at FilmDB can watch it, review and share the film for others to see. I want this to be an easy to use quick experience that will grow as time goes. It's for everyone and it stems from the most passionate of the small and large screen art form. The website is an open source application and technically built by the users to create word and mouth of everything they see.
+  * To share what they think of what they see in todays visual entertainment market. A fan can watch any type of movie they want excluding adult material films and upload information about it. 
+  
+  * If it's a multi million pound oscar winner that's designed to showcase the talents of a new or existing director, a multi million pound flop with an incredible cast list all the way down to a free handheld open new movie by an unknown director starting their career. They've put their heart and soul into the film and shared it on YouTube, the users at FilmDB can watch it, review and share the film for others to see. 
+  
+  * I want this to be an easy to use quick experience that will grow as time goes. It's for everyone and it stems from the most passionate of the small and large screen art form. The website is an open source application and technically built by the users to create word and mouth of everything they see.
 
 * All over the world will be able to access the site and so the choices can come from anywhere. UK, America, Foreign Films from Germany, Norway or the Middle East. Anyone can use the site to put their opinion down.
 
