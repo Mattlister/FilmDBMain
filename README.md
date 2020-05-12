@@ -127,11 +127,11 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * Red Colour Palette
 
 <p align="center">
-  <img width="300" height="50" src="static/images/redpalette.jpg">
+  <img width="600" height="100" src="static/images/redpalette.jpg">
 </p>
 
 <p align="center">
-  <img width="300" height="50" src="static/images/bluewhitepalette.jpg">
+  <img width="600" height="100" src="static/images/bluewhitepalette.jpg">
 </p>
 
 
