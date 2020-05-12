@@ -127,13 +127,12 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 * Red Colour Palette
 
 <p align="center">
-  <img width="500" height="300" src="static/images/redcolourpalette.jpg">
+  <img width="300" height="50" src="static/images/redcpalette.jpg">
 </p>
 
-
-
-
-
+<p align="center">
+  <img width="300" height="50" src="static/images/bluewhitepalettejpg">
+</p>
 
 
 
@@ -183,11 +182,11 @@ Chosen Fonts: Montserrat
 
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/homepagetab.jpg">
+  <img width="700" height="400" src="wireframes/homepagetab.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="300" src="static/wireframes/homepagemob.jpg">
+  <img width="500" height="300" src="wireframes/homepagemob.jpg">
 </p>
 
 </details>
@@ -199,15 +198,15 @@ Chosen Fonts: Montserrat
 * The registration page is simple in design but the fundamentals and technology behind it is fairly compicated. It pushes the users data to the MongoDB through Python Flask routes. The front end registers the user and once done, a message indicating they're logged in as the user when clicking submit. If they have an account and they click registration. The design keeps the aesthetics of the original home page layout. If a user is already registered, a link to the login page will be added.
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/register.jpg">
+  <img width="700" height="400" src="wireframes/register.jpg">
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/registertab.jpg">
+  <img width="700" height="400" src="wireframes/registertab.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="300" src="static/wireframes/registermob.jpg">
+  <img width="500" height="300" src="wireframes/registermob.jpg">
 </p>
 
 </details>
@@ -220,15 +219,15 @@ Chosen Fonts: Montserrat
 * The login page has been designed the same as the registration page but with less showing on page. Registration becomes Login and only one password field This again, when clicking on login will show a flash message saying "You are logged in as (username)". If the user isn't registered, a link to the Registration page will be added.
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/login.jpg">
+  <img width="700" height="400" src="wireframes/login.jpg">
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/logintab.jpg">
+  <img width="700" height="400" src="wireframes/logintab.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="300" src="static/wireframes/loginmob.jpg">
+  <img width="500" height="300" src="wireframes/loginmob.jpg">
 </p>
 
 </details>
@@ -241,15 +240,15 @@ Chosen Fonts: Montserrat
 * The logged in page as explained above is displayed once registered or logged in showing successful connection to the site and to the database.
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/loggedin.jpg">
+  <img width="700" height="400" src="wireframes/loggedin.jpg">
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/loggedintab.jpg">
+  <img width="700" height="400" src="wireframes/loggedintab.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="300" src="static/wireframes/loggedinmob.jpg">
+  <img width="500" height="300" src="wireframes/loggedinmob.jpg">
 </p>
 
 </details>
@@ -262,15 +261,15 @@ Chosen Fonts: Montserrat
 * To do anything based around a review, you will need to be logged in as this navigation menu will be locked out to none users. Once logged in, the Create Movie reviews option is displayed. Here, you will simply type in the name of the movie and then enter your review.
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/moviereview.jpg">
+  <img width="700" height="400" src="wireframes/moviereview.jpg">
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/moviereviewtab.jpg">
+  <img width="700" height="400" src="wireframes/moviereviewtab.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="300" src="static/wireframes/moviereviewmob.jpg">
+  <img width="500" height="300" src="wireframes/moviereviewmob.jpg">
 </p>
 
 </details>
@@ -283,11 +282,11 @@ Chosen Fonts: Montserrat
 This is where a logged in user can see all reviews from the database. More than one review can be added for a film with the same name so you could have 5 reviews for "King Kong2 for instance. You also have the ability to change a review by cliking on the name of the movie.
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/review.jpg">
+  <img width="700" height="400" src="wireframes/review.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="300" src="static/wireframes/reviewmob.jpg">
+  <img width="500" height="300" src="wireframes/reviewmob.jpg">
 </p>
 
 </details>
@@ -300,15 +299,15 @@ This is where a logged in user can see all reviews from the database. More than 
 Once you've clicked on the name of the movie, the Edit or Delete options are displayed. These are self explanatory and this is where the user is able to make a change or remove a review.
 
 <p align="center">
-  <img width="700" height="5400" src="static/wireframes/editdelete.jpg">
+  <img width="700" height="5400" src="wireframes/editdelete.jpg">
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/editdeltab.jpg">
+  <img width="700" height="400" src="wireframes/editdeltab.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="300" src="static/wireframes/editdeletemob.jpg">
+  <img width="500" height="300" src="ireframes/editdeletemob.jpg">
 </p>
 
 
@@ -322,12 +321,12 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 * The search page is available to both logged in and logged out users. Simply type in the name of a movie you're searching for and it'll bring up a poster image of the movie and a link to the movie on imdb. The search is automatic, you type and it'll automatically display the movie.
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/searchmovieno.jpg">
+  <img width="700" height="400" src="wireframes/searchmovieno.jpg">
 </p>
 
 
 <p align="center">
-  <img width="500" height="300" src="static/wireframes/searchmoviemobno.jpg">
+  <img width="500" height="300" src="wireframes/searchmoviemobno.jpg">
 </p>
 
 </details>
@@ -340,15 +339,15 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 * As indicated, the search option will show the movie poster (image) and a link will also show to the imdb page.
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/searchmovieyes.jpg">
+  <img width="700" height="400" src="wireframes/searchmovieyes.jpg">
 </p>
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/searchmovietab.jpg">
+  <img width="700" height="400" src="wireframes/searchmovietab.jpg">
 </p>
 
 <p align="center">
-  <img width="500" height="300" src="static/wireframes/searchmoviemobyes.jpg">
+  <img width="500" height="300" src="wireframes/searchmoviemobyes.jpg">
 </p>
 
 </details>
@@ -361,7 +360,7 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 * A logged in user has the option to delete the movie and once done, a flashed message pops up saying the info has been deleted, I'll use a movie reference in the finished site as well.
 
 <p align="center">
-  <img width="700" height="400" src="static/wireframes/deleted.jpg">
+  <img width="700" height="400" src="wireframes/deleted.jpg">
 </p>
 
 </details>
@@ -372,7 +371,7 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 * This was an original concept design I thought of when I first started to the project. I think the finalised website kept the similarities to the original layout.
 
 <p align="center">
-  <img width="400" height="400" src="/static/wireframes/alienWF.jpg">
+  <img width="400" height="400" src="wireframes/alienWF.jpg">
 </p>
 
 
