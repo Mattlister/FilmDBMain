@@ -142,7 +142,8 @@ def amovie(movieid):
 
 @app.route("/films")
 def films():
-   return render_template("pages/films.html")
+    """Search for movies with the API"""
+    return render_template("pages/films.html")
 
 
 # 404 error page
