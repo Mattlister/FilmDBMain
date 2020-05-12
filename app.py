@@ -5,7 +5,7 @@ from data import AllMovies
 from flask_pymongo import PyMongo
 from flask_bcrypt import Bcrypt
 from bson.objectid import ObjectId
-from forms import LoginForm, RegistrationForm
+from forms import LoginForm, RegistrationForm, CreateMovieForm, DeleteMovieForm
 
 if os.path.exists('env.py'):
     import env
@@ -37,8 +37,7 @@ def index():
 # Register New User
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    """ User registration. If the username doesn't exist in MongoDB, users
-    Hashing password using Bcrypt works. Corey Schafer video user for creating bcrypt security"""
+
     if form.validate_on_submit():
         users = mongo.db.users
         found_username = users.find_one({'username': request.form['username']})
@@ -142,7 +141,7 @@ def amovie(movieid):
 
 @app.route("/films")
 def films():
-    return render_template("pages/films.html")
+   return render_template("pages/films.html")
 
 
 # 404 error page
