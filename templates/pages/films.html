@@ -5,11 +5,13 @@
 
 <div class="container">
 	<div class="row">
-    <form action="" method="POST" class="col s12">
-        <legend class="border-bottom mb-4">Search Here for a movie and the cool thing is, no need to press Enter. It'll display automatically!!</legend>
+		<form action="" method="POST" class="col s12">
+			<legend class="border-bottom mb-4">Search Here for a movie and the cool thing is, no need to press Enter.
+				It'll display automatically!!</legend>
 			<div class="col-12">
 				<input onkeyup="getanswer(document.getElementById('qurybox').value)" id="qurybox">
 				<div id="answer"></div>
+
 				<script>
 					var data;
 function getanswer(q){
@@ -23,9 +25,9 @@ $.get("https://www.omdbapi.com/?s="+q+"&apikey=be4b405e", function(rawdata){
  let posterurl =data.Search[0].Poster;
 document.getElementById('answer').innerHTML="<h1>"+title+"</h1><br> <img src= '"+posterurl+"'><br><p> Year Released:"+year+"</p> <br> <p> IMDB page: <a href='"+imdburl+"'target='_blank'>"+imdburl+"</a></p>"; }); }
 				</script>
-                </form>
-			</div>
+		</form>
 	</div>
+</div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
