@@ -1,108 +1,81 @@
+1:06
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="{{ url_for('static',  filename='css/style.css') }}">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="shortcut icon" type="image/png" href="assets/images/compass.ico">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-
-	<header>
-		<h1 class="logo">FilmDB</h1>
-	</header>
-</head>
-
-<body>
-	<div class="container">
-		<strong><nav>
-			<div class="col">
-				<div class="col">
-					{% with messages = get_flashed_messages(with_categories=true) %}
-                        {% if messages %}
-                         {% for category, message in messages %}
-                            <div class="alert alert-{{ category }}">
-                            {{ message }}
-                            </div>
-                         {% endfor %}
-                        {% endif %}
-                    {% endwith %}
-                {% if 'username' not in session %}
-					<ul class="navbar-nav ml-auto uppercase">
-						<li class="nav-item">
-						<li><a href="{{ url_for('index') }}">Home</a></li>
-						<li><a href="{{ url_for('register') }}">Register</a></li>
-						<li><a href="{{ url_for('login') }}">Login</a></li>
-						<li><a href="{{ url_for('films') }}">Search</a></li>
-                        
-					</ul>
-                {% else %}
-					<ul class="navbar-nav ml-auto uppercase">
-						<li class="nav-item">
-						<li><a href="{{ url_for('index') }}">Home</a></li>
-						<li><a href="{{ url_for('createmovie') }}">create movie
-								<a></li>
-                                 <li><a href="{{ url_for('mymovie') }}">Movie Reviews</a></li>
-                        <li><a href="{{ url_for('films') }}">Search</a></li>   
-                        <li><a href="{{ url_for('logout') }}">logout</a></li>
-                        
-                          
-                        
-					</ul>
-                    </nav></strong>
-		{% endif %}
-	</div>
-	</div>
-	</div>
-	{% block content %}
-	{% endblock %}
-
-
-	<footer>
-
-		<a href="https://www.facebook.com/matt.lister.505" target="_blank" rel="noopener"
-			aria-label="Follow us on Facebook">
-			<i class="fab fa-facebook fa-3x"></i>
-		</a>
-
-		<a href="https://twitter.com/Mattlister" target="_blank" rel="noopener"
-			aria-label="Follow us on Twitter">
-			<i class="fab fa-twitter fa-3x"></i>
-		</a>
-
-        <a href="https://www.linkedin.com/in/matthew-lister1979" target="_blank" rel="noopener"
-            aria-label="Find me on Linkedin"> <i class="fab fa-linkedin fa-3x"></i>
-                        </a>
-
-        <a href="https://github.com/Mattlister" target="_blank" 
-                        rel="noopener" aria-label="Find me on Github">
-                        
-                            <i class="fab fa-github fa-3x"></i>
-                        </a>                
-
-		<h4>FilmDB Designed and Created by Matthew Lister 2020</h4>
-
-		<h4>For Educational Purposes Only</h4>
-
-
-	</footer>
-
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="shortcut icon" type="image/png" href="assets/images/compass.ico">
+    <link rel="stylesheet" href="{{ url_for('static',  filename='css/style.css') }}">
+    <title>FilmDB</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">FilmDB</h1>
+    </header>
+    <div class="container">
+        <nav>
+          <div class="col">
+            <div class="col">
+              {% with messages = get_flashed_messages(with_categories=true) %}
+              {% if messages %}
+              {% for category, message in messages %}
+              <div class="alert alert-{{ category }}">
+                {{ message }}
+              </div>
+              {% endfor %}
+              {% endif %}
+              {% endwith %}
+              {% if 'username' not in session %}
+              <ul class="navbar-nav ml-auto uppercase">
+                <li class="nav-item">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('films') }}">Search</a></li>
+              </ul>
+              {% else %}
+              <ul class="navbar-nav ml-auto uppercase">
+                <li class="nav-item">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li>
+                  <a href="{{ url_for('createmovie') }}">create movie
+                  <a>
+                </li>
+                <li><a href="{{ url_for('mymovie') }}">Movie Reviews</a></li>
+                <li><a href="{{ url_for('films') }}">Search</a></li>
+                <li><a href="{{ url_for('logout') }}">logout</a></li>
+              </ul>
+        </nav>
+      {% endif %}
+      </div>
+      </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <footer>
+      <a href="https://www.facebook.com/matt.lister.505" target="_blank" rel="noopener"
+        aria-label="Follow us on Facebook">
+      <i class="fab fa-facebook fa-3x"></i>
+      </a>
+      <a href="https://twitter.com/Mattlister" target="_blank" rel="noopener"
+        aria-label="Follow us on Twitter">
+      <i class="fab fa-twitter fa-3x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/matthew-lister1979" target="_blank" rel="noopener"
+        aria-label="Find me on Linkedin"> <i class="fab fa-linkedin fa-3x"></i>
+      </a>
+      <a href="https://github.com/Mattlister" target="_blank" 
+        rel="noopener" aria-label="Find me on Github">
+      <i class="fab fa-github fa-3x"></i>
+      </a>                
+      <h4>FilmDB Designed and Created by Matthew Lister 2020</h4>
+      <h4>For Educational Purposes Only</h4>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
 </html>

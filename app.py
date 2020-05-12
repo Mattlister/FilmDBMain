@@ -37,11 +37,12 @@ def index():
 # Register New User
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    form = RegistrationForm()
+    """ User registration. If the username doesn't exist in MongoDB, users
+    Hashing password using Bcrypt works. Corey Schafer video user for creating bcrypt security"""
     if form.validate_on_submit():
         users = mongo.db.users
         found_username = users.find_one({'username': request.form['username']})
-
+    
         if found_username is None:
             hashed_password = bcrypt.generate_password_hash(request.form['password']).decode('utf-8')
             users.insert({'username': request.form['username'], 'password': hashed_password})
@@ -56,6 +57,8 @@ def register():
 # Login User
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    """ Login section. Bcrypt used again but due to some issues, advice was given by both
+    Anthony O'Brien and Paul Bennett, both fellow students """
     form = LoginForm()
 
     if form.validate_on_submit():
@@ -77,6 +80,7 @@ def login():
 
 @app.route('/logout')
 def logout():
+    """ Logout the user and clears the cache and redirects to logged out page """
     session.clear()
     return render_template('pages/index.html')
 
@@ -85,6 +89,9 @@ def logout():
 
 @app.route("/createmovie", methods=['GET', 'POST'])
 def createmovie():
+
+    """ Logged in user can create a movie review form this page. Data is then pushed
+    to the MongoDB backend """
     if request.method == "POST":
         film_data = mongo.db.films
         print(film_data)
@@ -105,6 +112,8 @@ def mymovie():
 
 @app.route("/editmovie/<movieid>", methods=["GET", "POST"])
 def editmovie(movieid):
+    """ User can update reviews in this section. This is a collaboration page so each update 
+    changes for everyone """
     if request.method == "POST":
         movie = get_films.find_one_or_404({"_id": ObjectId(movieid)})
         get_films.update_one(movie, {"$set": request.form.to_dict()})
@@ -116,6 +125,8 @@ def editmovie(movieid):
 
 @app.route("/deletemovie/<movieid>", methods=["GET", "POST"])
 def deletemovie(movieid):
+    """ Delete reviews from page in this section. A warning is displayed advising once
+    deleted, it's gone forever """
     get_films.delete_one({"_id": ObjectId(movieid)})
     return render_template("pages/deletemovie.html")
 
@@ -133,18 +144,26 @@ def amovie(movieid):
 
 @app.route("/films")
 def films():
+    """ A simple movie search function which will display a poster and link to the imdb page
+    of the movie """
 
     return render_template("pages/films.html")
 
 
 # 404 error page
 @app.errorhandler(404)
+"""When 404 error occurs, display custom 404.html page"""
+
+
 def page_not_found(error):
     return render_template("pages/404.html"), 404
 
 
 # 404 error page
 @app.errorhandler(500)
+"""When 500 error occurs, display custom 500.html page"""
+
+
 def server_not_found(error):
     return render_template("pages/500.html"), 500
 
