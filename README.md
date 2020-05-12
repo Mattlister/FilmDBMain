@@ -137,7 +137,6 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 </p>
 
 
-
 ### Images
 
 * The image chosen was used because it's an instantly recognisable character from the world of cinema from the past 40 years. The target audience will range in variation and so I had to think of something that was striking, not a frightening image for smaller children but cool enough to bring people to the site. The image I chose I believe represented this idea very well and the image stood out in the overall design of the site. 
@@ -455,7 +454,9 @@ colour choices
 
 ### Issues and setbacks whilst building the site and time taken (that should be my nickname)
 
-* THe site works fine across all browsers which is great but on small mobile devices, the navbar caused me issues. Either the Header title or the Navbar would not sit right at the top of the page. Changes to both caused major display issues on other devices so it was a headache trying to resolve the issue.
+* THe site works fine across all browsers which is great but on small mobile devices, the navbar caused me issues. it worked fine when logged in on most devices but either the Header title or the Navbar would not sit right at the top of the page. Changes to both caused major display issues on other devices so it was a headache trying to resolve the issue.
+
+* The search function displays the film as you automatically type so you don't have to press Enter. I tried to chanbge this so you had to press Enter but it kept giving me Method Not Allowed. But, searching and the movie displaying the poster which is what it's meant to do worked 100%.
 
 * I struggled with some of the CRUD stuff and multiple pages but help from tutors got me through the process. I spent a lot of time researching things myself and got far but the last parts I struggled with. It needed a 2nd persons eyes to spot those small mistakes and advise on the changes. I really need to contact a tutor sooner rather than later.
 
@@ -463,7 +464,7 @@ colour choices
 
 * I tested the website on multiple browser platforms including Mozilla Firefox, Google Chrome and Safari. I used Google Chrome and Mozilla Firefox at different points whilst designing the site due to some caching issues in Chrome at times. 
 
-* As always with my projects, they take me a while to do as I've struggled with the course. Workkng on site has been good though and I've learnt a lot. Testing was done by my family to see if they could navigate around the site and this worked well, especially when my daughters saw there names displayed on screen so they got a personal feeling which is nice.
+* As always with my projects, they take me a while to do as I've struggled with the course. Workkng on this site has been good though and I've learnt a lot. Testing was done by my family to see if they could navigate around the site and this worked well, especially when my daughters saw there names displayed on screen so they got a personal feeling which is nice.
 
 * I also asked for the site to be tested through Slack in Peer Review which gave me some great feedback, a few things to work through:
 <details>
