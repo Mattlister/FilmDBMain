@@ -465,7 +465,38 @@ colour choices
 
 * As always with my projects, they take me a while to do as I've struggled with the course. Workkng on site has been good though and I've learnt a lot. Testing was done by my family to see if they could navigate around the site and this worked well, especially when my daughters saw there names displayed on screen so they got a personal feeling which is nice.
 
-* I also asked for the site to be tested through Slack in Peer Review which gave me some great feedback.
+* I also asked for the site to be tested through Slack in Peer Review which gave me some great feedback, a few things to work through:
+<details>
+<summary>Feedback Page</summary>
+<br>
+
+Morning @Matthew , couple of small things in your code I noticed via your Repo:
+In your css file, the very last css declaration on line 236 for the .task-header is missing it's closing } curly brace, found this in your repo. It might be a good idea to pass the css file into a validator aswell as some of your indentation is a bit un-uniform throughout the file.
+Your get answer function in your js file could use a comment or explanatory jsdoc comment to explain what it does?
+I'm not sure if it was intentional, but you have inline JS script in your films.html template? But it looks identical to what you have in your js file, so it might be worth removing this?
+On github, some of your html layout is a bit skewed? I'm not sure if this is because of GitPod, but I remember recently someone got scored down on this even though it was beautified via GitPod. Might be worth a little check into this via your Github to see what I mean, for example: createmovie.html template.
+In your index.html template, you have a huge paragraph in your h5 element. Conventionally speaking, it might be considered better use of code to split this content into a definable heading element and then a supporting paragraph element.
+In your base.html file you have two jQuery script links?
+In your app.py, you have some commented out print statement on lines 110-112, it might be worth removing those before submission as commented out code is considered bad practice.
+It might also be worth checking out Python docstrings to add some complementary commentry to your functions for the assessor. https://www.python.org/dev/peps/pep-0257/
+
+Website feedback:
+Your linked-in social link didn't direct me anywhere? It kept returning me back to the home page and updating the link to this: https://film-db.herokuapp.com/www.linkedin.com/in/www.linkedin.com/in/www.linkedin.com/in/matthew-lister1979 .....very strange.
+The search bar worked great, I typed in Alien, and it was returned instantly so well done on that. However, as I wanted to see how a generic user might act, I added alien and then clicked enter.....it redirected me to a Method Not Allowed page? Gyazo gif attached below.
+Registration & Login worked great!
+Not sure if this is intentional, but I was able to update a record already added to the Movie Reviews section. I updated Crocodile Dundee to Croc-Attack ? Is this intentional? If so, maybe add some context text to this page to tell the user that this is a Publicly-Updated DB much like how wikipedia works etc.
+I was able to create a movie review but on submitted I expected to be redirected to the Movie Reviews page to see my record add dynamically to the list of reviews?
+Deleting the review was fine, however, it is a one-click delete, to a user that might be detrimental to User Experience if they clicked delete by accident, for example, if they meant to click on edit, but instead hit delete.
+Logout worked great!
+
+Responsiveness:
+From 320px to 442px, you are getting some squashed elements, especially on the home page. Screenshot attached. I think it's being caused by your FILMDB logo? Might be worth a check. I highlighted the issue in pink....this may be just a once-off, as it didn't behave this way once I logged in.
+
+Great project man, these are just my thoughts on it  (edited) 
+
+</details>
+
+* Plenty to keep me on my toes and all rectified now thankfully. Thanks to [Anthony](https://github.com/auxfuse)
 
 * I ran my code through validators on a regular basis such as the [W3CValidator](https://validator.w3.org/) and through [PEP8](http://pep8online.com/)
 
@@ -488,32 +519,7 @@ GitHub Full Template Used as part of the process including software extensions f
 
 ### When deploying FilmDB from the [GitHub repository](https://film-db.herokuapp.com/), I used the following process:
 
-### Cloning the repository
-
-1. Open the GitHub dashboard and choose the repository.
-2. Under repository name, select the "Clone or download" green button located to the right of the page.
-3. Select the "clipboard icon" on the right hand side of the page to copy the URL of the clone.
-4. In your own IDE, open a terminal window.
-5. Change the current working directory to your location of choice where you'd like the directory to be made.
-6. Paste your Git URL which you copied and click "OK".
-7. Then Press Enter and your local clone will be created.
-
-
-### I used default commands to push to Github but I also had to prepare for the Heroku part of the process and so once logged in:
-
-* I first had to install the Heroku software using the following commands:
-
-1. npm install -g heroku and press enter.
-2. Enter heroku login -i and press enter.
-3. You'll need your email and password that you used to login to Heroku with to create your project.
-
-* Once done, I was then at the Heroku "logged in" prompt so each command I entered pushed to GitHub and also Heroku so using the following commands updated both instances of the project.
-
-* git status when checking what needed uploading.
-* git commit -m "" with the named update between the quotes for anyone reading what changes I made. A short piece of info helps understand
-* the changes I make.
-* git push -u origin master which then pushes my update and I then need to enter my username and password for security.
-
+### Deployment
 
 ### To run the project locally
 
@@ -523,6 +529,42 @@ GitHub Full Template Used as part of the process including software extensions f
 
 [Python3 (Mine is MAC SPECIFIC)](https://www.python.org/downloads/mac-osx/) Prerequisites for installing Python3 on MAC
 
+[Git] (https://gist.github.com/derhuerst/1b15ff4652a867391f03)
+
+ * You're MONGO_URI is specific to YOUR site, to create your own, read the MongoDB Atlas deocumenation [Found Here](https://docs.atlas.mongodb.com/)
+
+ 1. Open the GitHub dashboard and locate the repository[https://github.com/Mattlister/FilmDBMain](https://github.com/Mattlister/FilmDBMain.git)
+
+2. Under repository name, select the "Clone or download" green button located to the right of the page.
+
+3. Select the "clipboard icon" on the right hand side of the page to copy the URL of the clone.
+
+4. In your own IDE, open a terminal window.
+
+5. Change the current working directory to your location of choice where you'd like the directory to be made.
+
+6. Paste your Git URL which you copied and click "OK".
+
+7. Then Press Enter and your local clone will be created.
+
+8. You mauy need to upgrade pip locally with:
+
+pip install --upgrade pip
+
+To install all required modules, use the command
+
+pip -r requirements.txt.
+
+
+9. In your local IDE create a file called .env (environment variables file)
+
+Inside the .env file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. Please make sure to call your database FilmdDB.
+
+10. To run the application, use the command
+
+python app.py
+
+Then, you can visit the website at http://127.0.0.1:5000
 
 ### Back to Heroku Deployment (Windows Deployment is different and explained within the course)
 
@@ -559,8 +601,6 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
 | PORT  | 5000        |
 | SECRET_KEY  | <your_secret_key>     |
 
- * You're MONGO_URI is specific to YOUR site, to create your own, read the MongoDB Atlas deocumenation [Found Here](https://docs.atlas.mongodb.com/)
-
  6. Back in the Heroku dashboard, click the "Deploy" button.
 
  7. In the Manual Deployment section of the page, make sure you have the master branch selected. Now click "Deploy Branch".
@@ -568,7 +608,7 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
  8. Your site has now been deployed successfully.
 
 
-### CAcknowledgements
+### Acknowledgements
 
 * The Bcypt and Hashing passwords security credit goes to [Corey Schafer](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=1) for his tutorial on Youtube.
 
