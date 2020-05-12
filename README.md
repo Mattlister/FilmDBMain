@@ -130,6 +130,8 @@ I had to think how to showcase the site to a user and tried to make it engaging 
   <img width="600" height="100" src="static/images/redpalette.jpg">
 </p>
 
+* Image created colour palette
+
 <p align="center">
   <img width="600" height="100" src="static/images/bluewhitepalette.jpg">
 </p>
@@ -140,11 +142,10 @@ I had to think how to showcase the site to a user and tried to make it engaging 
 
 * The image chosen was used because it's an instantly recognisable character from the world of cinema from the past 40 years. The target audience will range in variation and so I had to think of something that was striking, not a frightening image for smaller children but cool enough to bring people to the site. The image I chose I believe represented this idea very well and the image stood out in the overall design of the site. 
 
-### Fonts
+### Font Used
 
-* As standard when building a site, I used [Google Fonts](https://fonts.google.com/) and spent time looking through the options. I wanted something that looked futuristic to tie in with the image and engaging to the user. 
+* [Monserrat found at Google Fonts](https://fonts.google.com/)
 
-Chosen Fonts: Montserrat
 
 [My page](https://film-db.herokuapp.com/)
 
@@ -377,13 +378,19 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 
 ### Technologies Used
 
-#### Languages, Frameworks, IDE and Deployment Control
+#### Languages IDE and Deployment Control
 
 * HTML
 * CSS 
-* Python Flask
-* [GidPod-IDE](https://www.gitpod.io/)
-* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/ - Bootstrap was used to build a solid and yet simple structure which allowed the site to be responsive easily.
+* Python
+* Javascript
+
+### Frameworks and Libraries
+
+* Flask
+* [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/
+* [Google Fonts](https://fonts.google.com/) 
+* [Favicons](https://www.favicon.cc/)
 * [Github](https://www.github.com)
 * [Heroku](https://www.heroku.com)
 
@@ -392,12 +399,12 @@ Once you've clicked on the name of the movie, the Edit or Delete options are dis
 * [MongoDB](https://www.mongodb.com/cloud/atlas)
 * [Balsamiq](https://balsamiq.cloud/#login)
 * [pencil](https://pencil.evolus.vn/)
-* [W3C HTML Validator](https://validator.w3.org/), [W3C-CSS-Validator](https://jigsaw.w3.org/css-validator/) and [PEP-Python-Checker](http://pep8online.com/)
-* [OMDB API](http://www.omdbapi.com/) - IMDB and The OMDB were used as guides and references for my site. The OMDB API was used for the movie search function on my website. Thanks to [Cukmekerb-coding-class-for-the-help-here] (https://www.youtube.com/watch?v=67eJTr6_ylY)
-* [Google Fonts](https://fonts.google.com/) -  Google was used for stylising the website fonts as it gave me a great selection to choose from. 
-* [Favicons](https://www.favicon.cc/) - Favicons was used for the URL toolbar icon
-*  [Autoprefixer](https://autoprefixer.github.io/) - Autoprefixer was used to correct issues within the CSS which prevented the page displaying on products using Safari and made sure
-  all css prefixes were up to date.
+* [W3C HTML Validator](https://validator.w3.org/)
+* [W3C-CSS-Validator](https://jigsaw.w3.org/css-validator/)
+* [PEP-Python-Checker](http://pep8online.com/)
+* [OMDB API](http://www.omdbapi.com/) 
+* [Cukmekerb-coding-class-for-the-help-here] (https://www.youtube.com/watch?v=67eJTr6_ylY)
+*  [Autoprefixer](https://autoprefixer.github.io/)
 
 ## Site Features
 
@@ -427,11 +434,6 @@ The security built acted in the following process:
 7. Once logged in or registered, a green outlined box is shown showing "A successful login" and you'll also have that displayed on the home page when the user is logged in.
 8. The logged in name is also displayed when a delete is made.
 
-### The goals for the website are:
-
-* To be seen as an easy to use resource for movie enthusiasts wanting to learn or add something new in regards to a film theu're passionate about. Also, it showcases my working knowledge of various software
-  languages which I've learnt during the various sections leading up to the MS3 project.
-
 ### Media and Content
 
 * The images were searched and found on Google
@@ -450,16 +452,6 @@ then added into img source code which I had put together. I used script tags fro
 
 * CSS - All CSS code was produced by Matthew Lister originally typed to add styling to the HTML page. This included Font styling, image sizing and
 colour choices
-
-### How I’d like the website to be perceived:
-
-* This website would be an easy to use site to help users search for Movies and TV and to share site what they love or hate about their choices.
-
-* They have a keen interest in the silver screen and it's smaller counterpart and this site will help them to share their interests and broaden their knowledge.
-
-* A nice clean UX multi page designed site. Choose your option and start your journey. Show others what you love and help to share that with them.
-
-
 
 ### Issues and setbacks whilst building the site and time taken (that should be my nickname)
 
@@ -576,27 +568,27 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
  8. Your site has now been deployed successfully.
 
 
-### Coding credits
+### CAcknowledgements
 
-* The Bcypt and Hashing passwords security credit goes to Corey Schafer for his tutorial on Youtube.
+* The Bcypt and Hashing passwords security credit goes to [Corey Schafer](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH&index=1) for his tutorial on Youtube.
 
-* For creating and adding users to the MongoDB, credit to Anna Greaves for her support on getting the features to work.
+* For creating and adding users to the MongoDB, credit to [Anna Greaves](https://github.com/AJGreaves) for her support on getting the features to work.
 
-* For helping with the Editing and Delete changes, credit to Scott Kipp for his assistance with getting these features finished within the app.
+* For helping with the Editing and Delete changes, credit to [Scott Kipp](https://github.com/ShavingSeagull) for his assistance with getting these features finished within the app.
 
-* Credit to Anthony O'Brien for assisting me and advising on some of the parts of the project I'd been struggling with and also, his allowance to review his code to help me build my project.
+* Credit to [Anthony O'Brien](https://github.com/auxfuse) for assisting me and advising on some of the parts of the project I'd been struggling with and also, his allowance to review his code to help me build my project.
 
-* W3CSchools notes were used for styling the buttons which helped keep it connected to the original design.
+* [W3CSchools](https://www.w3schools.com/css/css3_buttons.asp) notes were used for styling the buttons which helped keep it connected to the original design.
 
-### Huge Thanks and Acknowledgements
+### Huge Thanks 
 
-* I'd like to say a special thank you to my mentor Simen Daehlin who has supported me throughout the project and has been a great influence and inspired me to keep going. He helped me understand better processes of my code and more efficient industry standards.
+* I'd like to say a special thank you to my mentor [Simen Daehlin](https://github.com/Eventyret) who has supported me throughout the project and has been a great influence and inspired me to keep going. He helped me understand better processes of my code and more efficient industry standards.
 
-* I'd like to say a huge thank you to Anna Greaves for helping me, seeing my determination and helping me with my project.
+* I'd like to say a huge thank you to [Anna Greaves](https://github.com/AJGreaves) for helping me, seeing my determination and helping me with my project.
 
-* Thank you to Anthony O'Brien for his reassurance in my low points and for saying, "Don't worry about the level of commits, over 500 is fine!!" and for checking in and making sure I'm keeping my chin up.
+* Thank you to [Anthony O'Brien](https://github.com/auxfuse) for his reassurance in my low points and for saying, "Don't worry about the level of commits, over 500 is fine!!" and for checking in and making sure I'm keeping my chin up.
 
-* Thank you as well to Anna, Scott, Tim, Samantha, Hayley and all the CI tutors and support team who really had my back to help me progress with the project.
+* Thank you as well to <b>Anna</b>, <b>Scott</b>, <b>Tim</b>, <b>Samantha</b>, <b>Hayley</b> and all the <b>CI tutors</b> and <b>support team</b> who really had my back to help me progress with the project.
 
  
 
