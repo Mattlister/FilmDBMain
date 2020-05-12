@@ -531,7 +531,7 @@ GitHub Full Template Used as part of the process including software extensions f
 
 [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
 
- * You're MONGO_URI is specific to YOUR site, to create your own, read the MongoDB Atlas deocumenation [Found Here](https://docs.atlas.mongodb.com/)
+ * You're MONGO_URI is specific to YOUR site, to create your own, read the MongoDB Atlas documenation [Found Here](https://docs.atlas.mongodb.com/)
 
  1. Open the GitHub dashboard and locate the repository[https://github.com/Mattlister/FilmDBMain](https://github.com/Mattlister/FilmDBMain.git)
 
@@ -585,7 +585,7 @@ To deploy FilmDB to Heroku, I used a Linux based system as I have an Apple MacBo
 
 1. Create an account and log into the Heroku website. Then, Create a new app by clicking the "New" button in the dashboard. You need to name the application so I gave mine the same name as the application I'm creating and then set the region to Europe.
 
-2. On the Heroku dashboard, you'll see Deploy. You need to click on "Deply" > "Deployment method" and select Github. 
+2. On the Heroku dashboard, you'll see Deploy. You need to click on "Deploy" > "Deployment method" and select Github. 
 
 3. Confirm the linking of the Heroku app to the correct GitHub repository. This ties the two applications together.
 
