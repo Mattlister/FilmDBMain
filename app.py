@@ -111,8 +111,7 @@ def mymovie():
 
 @app.route("/editmovie/<movieid>", methods=["GET", "POST"])
 def editmovie(movieid):
-    """ User can update reviews in this section. This is a collaboration page so each update 
-    changes for everyone """
+    """ User can update reviews in this section. This is a collaboration page so each update changes for everyone. Thanks to Scott from CI with his assistance here """
     if request.method == "POST":
         movie = get_films.find_one_or_404({"_id": ObjectId(movieid)})
         get_films.update_one(movie, {"$set": request.form.to_dict()})
@@ -124,6 +123,7 @@ def editmovie(movieid):
 
 @app.route("/deletemovie/<movieid>", methods=["GET", "POST"])
 def deletemovie(movieid):
+    """Delete the page section written, tested and working"""
     get_films.delete_one({"_id": ObjectId(movieid)})
     return render_template("pages/deletemovie.html")
 
@@ -132,6 +132,7 @@ def deletemovie(movieid):
 
 @app.route("/amovie/<movieid>")
 def amovie(movieid):
+    """Movie id working, thanks to Stephen from CI with his assistance on this"""
     review = get_films.find_one({"_id": ObjectId(movieid)})
     print(review)
     return render_template("pages/myreview.html", review=get_films.find_one({"_id": ObjectId(movieid)}))
