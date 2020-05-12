@@ -107,9 +107,6 @@ def mymovie():
 def editmovie(movieid):
     if request.method == "POST":
         movie = get_films.find_one_or_404({"_id": ObjectId(movieid)})
-        # print(movie)
-        # print(movieid)
-        # print(request.form.to_dict())
         get_films.update_one(movie, {"$set": request.form.to_dict()})
 
     return render_template("pages/editmovie.html", reviews=get_films.find_one({"_id": ObjectId(movieid)}))
