@@ -460,6 +460,8 @@ colour choices
 
 * I struggled with some of the CRUD stuff and multiple pages but help from tutors got me through the process. I spent a lot of time researching things myself and got far but the last parts I struggled with. It needed a 2nd persons eyes to spot those small mistakes and advise on the changes. I really need to contact a tutor sooner rather than later.
 
+* A MongoDB issue with the naming prevented major issues with the application. I had a problem where my DataBase was somehow hidden within Mongo and it was only deleting something that I spotted it. Unforunately, it left me with a MongoDB named Test which I know is incorrect but everything was working. I spent 3 days speaking with tutors who couldn't see the problem and as I was behind with time, I needed to press on.
+
 ### Testing and Bugs
 
 * I tested the website on multiple browser platforms including Mozilla Firefox, Google Chrome and Safari. I used Google Chrome and Mozilla Firefox at different points whilst designing the site due to some caching issues in Chrome at times. 
