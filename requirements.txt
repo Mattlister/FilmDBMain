@@ -24,7 +24,7 @@ heroku==0.1.4
 idna==2.9
 itsdangerous==1.1.0
 loginform==1.2.0
-lxml==4.5.0
+lxml==4.6.2
 mongo==0.2.0
 omdb==0.10.1
 passlib==1.7.2
